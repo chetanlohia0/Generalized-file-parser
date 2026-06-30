@@ -1,0 +1,582 @@
+{
+  "document_id": "clm_01",
+  "source_format": ".pdf",
+  "total_pages": 1,
+  "elements": [
+    {
+      "element_id": "global_block_0",
+      "type": "paragraph",
+      "text": "S.N. COLUMN NAME"
+    },
+    {
+      "element_id": "global_block_1",
+      "type": "paragraph",
+      "text": "DATA TYPE DATA LENGTH"
+    },
+    {
+      "element_id": "global_block_2",
+      "type": "paragraph",
+      "text": "1 SOURCE"
+    },
+    {
+      "element_id": "global_block_3",
+      "type": "paragraph",
+      "text": "VARCHAR2"
+    },
+    {
+      "element_id": "global_block_4",
+      "type": "paragraph",
+      "text": "20"
+    },
+    {
+      "element_id": "global_block_5",
+      "type": "paragraph",
+      "text": "2 SN"
+    },
+    {
+      "element_id": "global_block_6",
+      "type": "paragraph",
+      "text": "NUMBER"
+    },
+    {
+      "element_id": "global_block_7",
+      "type": "paragraph",
+      "text": "10"
+    },
+    {
+      "element_id": "global_block_8",
+      "type": "paragraph",
+      "text": "3 CLMNUM"
+    },
+    {
+      "element_id": "global_block_9",
+      "type": "paragraph",
+      "text": "VARCHAR2"
+    },
+    {
+      "element_id": "global_block_10",
+      "type": "paragraph",
+      "text": "50"
+    },
+    {
+      "element_id": "global_block_11",
+      "type": "paragraph",
+      "text": "4 CLAIMLINENUMBER NUMBER"
+    },
+    {
+      "element_id": "global_block_12",
+      "type": "paragraph",
+      "text": "4"
+    },
+    {
+      "element_id": "global_block_13",
+      "type": "paragraph",
+      "text": "5 CLMTYPE"
+    },
+    {
+      "element_id": "global_block_14",
+      "type": "paragraph",
+      "text": "VARCHAR2"
+    },
+    {
+      "element_id": "global_block_15",
+      "type": "paragraph",
+      "text": "20"
+    },
+    {
+      "element_id": "global_block_16",
+      "type": "paragraph",
+      "text": "6 CLMTYPEDESC"
+    },
+    {
+      "element_id": "global_block_17",
+      "type": "paragraph",
+      "text": "VARCHAR2"
+    },
+    {
+      "element_id": "global_block_18",
+      "type": "paragraph",
+      "text": "50"
+    },
+    {
+      "element_id": "global_block_19",
+      "type": "paragraph",
+      "text": "7 CLMCATEGORY"
+    },
+    {
+      "element_id": "global_block_20",
+      "type": "paragraph",
+      "text": "VARCHAR2"
+    },
+    {
+      "element_id": "global_block_21",
+      "type": "paragraph",
+      "text": "20"
+    },
+    {
+      "element_id": "global_block_22",
+      "type": "paragraph",
+      "text": "8 MEMID"
+    },
+    {
+      "element_id": "global_block_23",
+      "type": "paragraph",
+      "text": "VARCHAR2"
+    },
+    {
+      "element_id": "global_block_24",
+      "type": "paragraph",
+      "text": "50"
+    },
+    {
+      "element_id": "global_block_25",
+      "type": "paragraph",
+      "text": "9 ENRID"
+    },
+    {
+      "element_id": "global_block_26",
+      "type": "paragraph",
+      "text": "VARCHAR2"
+    },
+    {
+      "element_id": "global_block_27",
+      "type": "paragraph",
+      "text": "20"
+    },
+    {
+      "element_id": "global_block_28",
+      "type": "paragraph",
+      "text": "10 RELFLAG"
+    },
+    {
+      "element_id": "global_block_29",
+      "type": "paragraph",
+      "text": "VARCHAR2"
+    },
+    {
+      "element_id": "global_block_30",
+      "type": "paragraph",
+      "text": "3"
+    },
+    {
+      "element_id": "global_block_31",
+      "type": "paragraph",
+      "text": "11 MEMFIRSTNAME VARCHAR2"
+    },
+    {
+      "element_id": "global_block_32",
+      "type": "paragraph",
+      "text": "30"
+    },
+    {
+      "element_id": "global_block_33",
+      "type": "paragraph",
+      "text": "12 MEMLASTNAME"
+    },
+    {
+      "element_id": "global_block_34",
+      "type": "paragraph",
+      "text": "VARCHAR2"
+    },
+    {
+      "element_id": "global_block_35",
+      "type": "paragraph",
+      "text": "50"
+    },
+    {
+      "element_id": "global_block_36",
+      "type": "paragraph",
+      "text": "13 GENDER"
+    },
+    {
+      "element_id": "global_block_37",
+      "type": "paragraph",
+      "text": "VARCHAR2"
+    },
+    {
+      "element_id": "global_block_38",
+      "type": "paragraph",
+      "text": "1"
+    },
+    {
+      "element_id": "global_block_39",
+      "type": "paragraph",
+      "text": "14 DOB"
+    },
+    {
+      "element_id": "global_block_40",
+      "type": "paragraph",
+      "text": "DATE"
+    },
+    {
+      "element_id": "global_block_41",
+      "type": "paragraph",
+      "text": "15 ADDR1"
+    },
+    {
+      "element_id": "global_block_42",
+      "type": "paragraph",
+      "text": "VARCHAR2"
+    },
+    {
+      "element_id": "global_block_43",
+      "type": "paragraph",
+      "text": "50"
+    },
+    {
+      "element_id": "global_block_44",
+      "type": "paragraph",
+      "text": "16 ADDR2"
+    },
+    {
+      "element_id": "global_block_45",
+      "type": "paragraph",
+      "text": "VARCHAR2"
+    },
+    {
+      "element_id": "global_block_46",
+      "type": "paragraph",
+      "text": "50"
+    },
+    {
+      "element_id": "global_block_47",
+      "type": "paragraph",
+      "text": "17 CITY"
+    },
+    {
+      "element_id": "global_block_48",
+      "type": "paragraph",
+      "text": "VARCHAR2"
+    },
+    {
+      "element_id": "global_block_49",
+      "type": "paragraph",
+      "text": "50"
+    },
+    {
+      "element_id": "global_block_50",
+      "type": "paragraph",
+      "text": "18 STATE"
+    },
+    {
+      "element_id": "global_block_51",
+      "type": "paragraph",
+      "text": "VARCHAR2"
+    },
+    {
+      "element_id": "global_block_52",
+      "type": "paragraph",
+      "text": "2"
+    },
+    {
+      "element_id": "global_block_53",
+      "type": "paragraph",
+      "text": "19 ZIP"
+    },
+    {
+      "element_id": "global_block_54",
+      "type": "paragraph",
+      "text": "VARCHAR2"
+    },
+    {
+      "element_id": "global_block_55",
+      "type": "paragraph",
+      "text": "15"
+    },
+    {
+      "element_id": "global_block_56",
+      "type": "paragraph",
+      "text": "20 HOMEPHONE"
+    },
+    {
+      "element_id": "global_block_57",
+      "type": "paragraph",
+      "text": "VARCHAR2"
+    },
+    {
+      "element_id": "global_block_58",
+      "type": "paragraph",
+      "text": "20"
+    },
+    {
+      "element_id": "global_block_59",
+      "type": "paragraph",
+      "text": "21 WORKPHONE"
+    },
+    {
+      "element_id": "global_block_60",
+      "type": "paragraph",
+      "text": "VARCHAR2"
+    },
+    {
+      "element_id": "global_block_61",
+      "type": "paragraph",
+      "text": "20"
+    },
+    {
+      "element_id": "global_block_62",
+      "type": "paragraph",
+      "text": "22 FROMDATE"
+    },
+    {
+      "element_id": "global_block_63",
+      "type": "paragraph",
+      "text": "DATE"
+    },
+    {
+      "element_id": "global_block_64",
+      "type": "paragraph",
+      "text": "23 TODATE"
+    },
+    {
+      "element_id": "global_block_65",
+      "type": "paragraph",
+      "text": "DATE"
+    },
+    {
+      "element_id": "global_block_66",
+      "type": "paragraph",
+      "text": "24 SERVICEDATE"
+    },
+    {
+      "element_id": "global_block_67",
+      "type": "paragraph",
+      "text": "DATE"
+    },
+    {
+      "element_id": "global_block_68",
+      "type": "paragraph",
+      "text": "25 RCVDATE"
+    },
+    {
+      "element_id": "global_block_69",
+      "type": "paragraph",
+      "text": "DATE"
+    },
+    {
+      "element_id": "global_block_70",
+      "type": "paragraph",
+      "text": "26 PAIDDATE"
+    },
+    {
+      "element_id": "global_block_71",
+      "type": "paragraph",
+      "text": "DATE"
+    },
+    {
+      "element_id": "global_block_72",
+      "type": "paragraph",
+      "text": "27 BILLTYPE"
+    },
+    {
+      "element_id": "global_block_73",
+      "type": "paragraph",
+      "text": "VARCHAR2"
+    },
+    {
+      "element_id": "global_block_74",
+      "type": "paragraph",
+      "text": "20"
+    },
+    {
+      "element_id": "global_block_75",
+      "type": "paragraph",
+      "text": "28 POSCODE"
+    },
+    {
+      "element_id": "global_block_76",
+      "type": "paragraph",
+      "text": "VARCHAR2"
+    },
+    {
+      "element_id": "global_block_77",
+      "type": "paragraph",
+      "text": "20"
+    },
+    {
+      "element_id": "global_block_78",
+      "type": "paragraph",
+      "text": "29 POSDESC"
+    },
+    {
+      "element_id": "global_block_79",
+      "type": "paragraph",
+      "text": "VARCHAR2"
+    },
+    {
+      "element_id": "global_block_80",
+      "type": "paragraph",
+      "text": "70"
+    },
+    {
+      "element_id": "global_block_81",
+      "type": "paragraph",
+      "text": "30 SPECCODE"
+    },
+    {
+      "element_id": "global_block_82",
+      "type": "paragraph",
+      "text": "VARCHAR2"
+    },
+    {
+      "element_id": "global_block_83",
+      "type": "paragraph",
+      "text": "20"
+    },
+    {
+      "element_id": "global_block_84",
+      "type": "paragraph",
+      "text": "31 SPECDESC"
+    },
+    {
+      "element_id": "global_block_85",
+      "type": "paragraph",
+      "text": "VARCHAR2"
+    },
+    {
+      "element_id": "global_block_86",
+      "type": "paragraph",
+      "text": "70"
+    },
+    {
+      "element_id": "global_block_87",
+      "type": "paragraph",
+      "text": "32 DIAGCODE"
+    },
+    {
+      "element_id": "global_block_88",
+      "type": "paragraph",
+      "text": "VARCHAR2"
+    },
+    {
+      "element_id": "global_block_89",
+      "type": "paragraph",
+      "text": "20"
+    },
+    {
+      "element_id": "global_block_90",
+      "type": "paragraph",
+      "text": "33 DIAGDESC"
+    },
+    {
+      "element_id": "global_block_91",
+      "type": "paragraph",
+      "text": "VARCHAR2"
+    },
+    {
+      "element_id": "global_block_92",
+      "type": "paragraph",
+      "text": "120"
+    },
+    {
+      "element_id": "global_block_93",
+      "type": "paragraph",
+      "text": "34 FIRSTDIAGCODE"
+    },
+    {
+      "element_id": "global_block_94",
+      "type": "paragraph",
+      "text": "VARCHAR2"
+    },
+    {
+      "element_id": "global_block_95",
+      "type": "paragraph",
+      "text": "20"
+    },
+    {
+      "element_id": "global_block_96",
+      "type": "paragraph",
+      "text": "35 FIRSTDIAGDESC"
+    },
+    {
+      "element_id": "global_block_97",
+      "type": "paragraph",
+      "text": "VARCHAR2"
+    },
+    {
+      "element_id": "global_block_98",
+      "type": "paragraph",
+      "text": "250"
+    },
+    {
+      "element_id": "global_block_99",
+      "type": "paragraph",
+      "text": "36 SECONDDIAGCODE VARCHAR2"
+    },
+    {
+      "element_id": "global_block_100",
+      "type": "paragraph",
+      "text": "20"
+    },
+    {
+      "element_id": "global_block_101",
+      "type": "paragraph",
+      "text": "37 SECONDDIAGDESC VARCHAR2"
+    },
+    {
+      "element_id": "global_block_102",
+      "type": "paragraph",
+      "text": "250"
+    },
+    {
+      "element_id": "global_block_103",
+      "type": "paragraph",
+      "text": "38 THIRDDIAGCODE VARCHAR2"
+    },
+    {
+      "element_id": "global_block_104",
+      "type": "paragraph",
+      "text": "20"
+    },
+    {
+      "element_id": "global_block_105",
+      "type": "paragraph",
+      "text": "39 THIRDDIAGDESC"
+    },
+    {
+      "element_id": "global_block_106",
+      "type": "paragraph",
+      "text": "VARCHAR2"
+    },
+    {
+      "element_id": "global_block_107",
+      "type": "paragraph",
+      "text": "250"
+    },
+    {
+      "element_id": "global_block_108",
+      "type": "paragraph",
+      "text": "40 FOURTHDIAGCODE VARCHAR2"
+    },
+    {
+      "element_id": "global_block_109",
+      "type": "paragraph",
+      "text": "20"
+    },
+    {
+      "element_id": "global_block_110",
+      "type": "paragraph",
+      "text": "41 FOURTHDIAGDESC VARCHAR2"
+    },
+    {
+      "element_id": "global_block_111",
+      "type": "paragraph",
+      "text": "250"
+    },
+    {
+      "element_id": "global_block_112",
+      "type": "paragraph",
+      "text": "42 FIFTHDIAGCODE"
+    },
+    {
+      "element_id": "global_block_113",
+      "type": "paragraph",
+      "text": "VARCHAR2"
+    },
+    {
+      "element_id": "global_block_114",
+      "type": "paragraph",
+      "text": "20"
+    }
+  ]
+}

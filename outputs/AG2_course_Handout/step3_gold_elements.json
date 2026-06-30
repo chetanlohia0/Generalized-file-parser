@@ -1,0 +1,642 @@
+{
+  "document_id": "AG2_course_Handout",
+  "source_format": ".pdf",
+  "total_pages": 4,
+  "elements": [
+    {
+      "element_id": "global_block_0",
+      "type": "paragraph",
+      "text": "SRM INSTITUTE OF SCIENCE AND TECHNOLOGY"
+    },
+    {
+      "element_id": "global_block_1",
+      "type": "paragraph",
+      "text": "COLLEGE OF ENGINEERING AND TECHNOLOGY, KATTANKULATHUR CAMPUS"
+    },
+    {
+      "element_id": "global_block_2",
+      "type": "paragraph",
+      "text": "DEPARTMENT OF COMPUTING TECHNOLOGIES"
+    },
+    {
+      "element_id": "global_block_3",
+      "type": "table",
+      "pages_spanned": [
+        1
+      ],
+      "raw_matrix": [
+        [
+          "Course Code",
+          "21CSC304J",
+          "",
+          "",
+          "L T P C",
+          "2 0 2 3"
+        ],
+        [
+          "Course Title",
+          "Compiler Design",
+          "",
+          "",
+          "Faculty Name",
+          "Dr. M S Nagar"
+        ],
+        [
+          "Semester",
+          "VI",
+          "",
+          "",
+          "Mail ID",
+          "mituln@srmist.edu.in"
+        ],
+        [
+          "Pre-requisite /\nCo-Requisite",
+          "Nil",
+          "",
+          "",
+          "Slot & Class\nHours:",
+          "Batch 1: DO3: 8.00-9.40\nBatch 2: DO3: 12.30-\n2.15"
+        ],
+        [
+          "Lecture Hall #",
+          "TP2- CLS1006",
+          "Laboratory\nLocation",
+          "UB1213",
+          "",
+          ""
+        ]
+      ]
+    },
+    {
+      "element_id": "global_block_4",
+      "type": "table",
+      "pages_spanned": [
+        1
+      ],
+      "raw_matrix": [
+        [
+          "Organisation of the course",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Classes will be predominantly lectures, interlaced with invited guests, tutorials. There will be opportunities for group discussions, group tasks, in-class\nassignments.",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Course Outcome(s)",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "1",
+          "Acquire knowledge of Lexical Analyzer from a specification of a language's lexical rules",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "2",
+          "Apply different parsing algorithms to develop the parsers for a given grammar",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "3",
+          "Gain knowledge to translate a system into various intermediate codes",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "4",
+          "Analyze the methods of implementing a Code Generator for compilers",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "5",
+          "Design the methods of developing a Code Optimizer",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Learning Materials",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "T1. Alfred V. Aho, Monica S. Lam, Ravi Sethi, Jeffrey D. Ullman, Compilers: Principles, Techniques and Tools, Second Edition, Pearson Education, 2011.\nT2. S. Godfrey Winster, S. Aruna Devi, R.Sujatha,”Compiler Design”, Yesdee Publishing Pvt.Ltd, 2016.\nT3. K .Muneeswaran,”CompilerDesign”, Oxford Higher Education, Fourth Edition, 2015.\nT4. David Galles, “Modern Compiler Design”, Pearson Education, Reprit 2012.\nT5. Raghavan V., “Principles of CompilerDesign”, Tata McGraw Hill Education Pvt. Ltd.,2010.",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Course Topics and Schedule",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Unit / Module\nNo.",
+          "Topic Name",
+          "No. of Hours",
+          "Method of delivery\n(Multi-Select)",
+          "Assignment(s) /\nActivities",
+          "Learning materials to\nbe referred",
+          "CO",
+          "Related\nPO"
+        ]
+      ]
+    },
+    {
+      "element_id": "global_block_5",
+      "type": "table",
+      "pages_spanned": [
+        2
+      ],
+      "raw_matrix": [
+        [
+          "1",
+          "Compilers-Phases of Compiler",
+          "1",
+          "BB/Any other pedagogy",
+          "T1, T2",
+          "CO1",
+          "PO1, PO2,\nPO5"
+        ],
+        [
+          "1",
+          "Phases of Compiler",
+          "1",
+          "BB/Any other pedagogy",
+          "T1, T2",
+          "CO1",
+          "PO1, PO2,\nPO5"
+        ],
+        [
+          "1",
+          "Cousins of the Compiler, Grouping of Phases,\nCompiler construction tools",
+          "1",
+          "BB/Any other pedagogy",
+          "T1, T2",
+          "CO1",
+          "PO1, PO2,\nPO5"
+        ],
+        [
+          "1",
+          "Lexical Analysis",
+          "1",
+          "BB/Any other pedagogy",
+          "T1, T2",
+          "CO1",
+          "PO1, PO2,\nPO5"
+        ],
+        [
+          "1",
+          "Role of Lexical Analyze",
+          "1",
+          "BB/Any other pedagogy",
+          "T1, T2",
+          "CO1",
+          "PO1, PO2,\nPO5"
+        ],
+        [
+          "1",
+          "Role of Lexical Analyze",
+          "1",
+          "BB/Any other pedagogy",
+          "T1, T2",
+          "CO1",
+          "PO1, PO2,\nPO5"
+        ],
+        [
+          "1",
+          "Input Buffering",
+          "1",
+          "BB/Any other pedagogy",
+          "T1, T2",
+          "CO1",
+          "PO1, PO2,\nPO5"
+        ],
+        [
+          "1",
+          "Specification of Tokens, LEX",
+          "1",
+          "BB/Any other pedagogy",
+          "T1, T2",
+          "CO1",
+          "PO1, PO2,\nPO5"
+        ],
+        [
+          "1",
+          "Conversion of Reg Exp to DFA by Direct Method",
+          "1",
+          "BB/Any other pedagogy",
+          "T1, T2",
+          "CO1",
+          "PO1, PO2,\nPO5"
+        ],
+        [
+          "1",
+          "Example for Conversion of Reg Exp to DFA by\nDirect Method",
+          "1",
+          "BB/Any other pedagogy",
+          "T1, T2",
+          "CO1",
+          "PO1, PO2,\nPO5"
+        ],
+        [
+          "2",
+          "Role of Parser, Error Handling",
+          "1",
+          "BB/Any other pedagogy",
+          "T1, T2",
+          "CO2",
+          "PO1, PO2,\nPO5"
+        ],
+        [
+          "2",
+          "Left Recursion- Left Factoring",
+          "1",
+          "BB/Any other pedagogy",
+          "T1, T2",
+          "CO2",
+          "PO1, PO2,\nPO5"
+        ],
+        [
+          "2",
+          "Introduction to Top Down Parsing - Recursive\nDescent Parser",
+          "1",
+          "BB/Any other pedagogy",
+          "T1, T2",
+          "CO2",
+          "PO1, PO2,\nPO5"
+        ],
+        [
+          "2",
+          "Computation of FIRST and FOLLOW",
+          "1",
+          "BB/Any other pedagogy",
+          "T1, T2",
+          "CO2",
+          "PO1, PO2,\nPO5"
+        ],
+        [
+          "2",
+          "Constructing predictive parsing table",
+          "1",
+          "BB/Any other pedagogy",
+          "T1, T2",
+          "CO2",
+          "PO1, PO2,\nPO5"
+        ],
+        [
+          "2",
+          "Predictive Parsers LL(1)",
+          "1",
+          "BB/Any other pedagogy",
+          "T1, T2",
+          "CO2",
+          "PO1, PO2,\nPO5"
+        ],
+        [
+          "3",
+          "Bottom Up Parsing-Reductions-Handle Pruning-\nLEADING, TRAILING",
+          "1",
+          "BB/Any other pedagogy",
+          "T1, T2",
+          "CO2",
+          "PO1, PO2,\nPO5"
+        ],
+        [
+          "3",
+          "Construction of SLR Parsing Table -Problems\nrelated to SLR",
+          "1",
+          "BB/Any other pedagogy",
+          "T1, T2",
+          "CO2",
+          "PO1, PO2,\nPO5"
+        ],
+        [
+          "3",
+          "Construction of Canonical LR(1)- Problems related\nto CLR",
+          "1",
+          "BB/Any other pedagogy",
+          "T1, T2",
+          "CO2",
+          "PO1, PO2,\nPO5"
+        ]
+      ]
+    },
+    {
+      "element_id": "global_block_6",
+      "type": "table",
+      "pages_spanned": [
+        3
+      ],
+      "raw_matrix": [
+        [
+          "3",
+          "LALR Parser — Problems related to LALR-YACC",
+          "1",
+          "BB/Any other pedagogy",
+          "",
+          "T1, T2",
+          "CO2",
+          "PO1, PO2,\nPO5"
+        ],
+        [
+          "4",
+          "Intermediate Code Generation- prefix – postfix\nnotation",
+          "1",
+          "BB/Any other pedagogy",
+          "",
+          "T1, T2",
+          "CO3",
+          "PO1, PO2,\nPO5"
+        ],
+        [
+          "4",
+          "Quadruple - triple - indirect triples Representation -\nSyntax tree- Evaluation of expression",
+          "1",
+          "BB/Any other pedagogy",
+          "",
+          "T1, T2",
+          "CO3",
+          "PO1, PO2,\nPO5"
+        ],
+        [
+          "4",
+          "Synthesized attributes – Inherited attributes",
+          "1",
+          "BB/Any other pedagogy",
+          "",
+          "T1, T2",
+          "CO3",
+          "PO1, PO2,\nPO5"
+        ],
+        [
+          "4",
+          "Intermediate languages – Declarations- Assignment\nStatements- Boolean Expressions- Case Statements",
+          "1",
+          "BB/Any other pedagogy",
+          "",
+          "T1, T2",
+          "CO4",
+          "PO1, PO2,\nPO4"
+        ],
+        [
+          "4",
+          "Back patching – Procedure calls- Code Generation-\nIssues in the design of code generator",
+          "1",
+          "BB/Any other pedagogy",
+          "Activity",
+          "T1, T2",
+          "CO4",
+          "PO1, PO2,\nPO4"
+        ],
+        [
+          "5",
+          "The target machine – Runtime Storage management-\nA simple Code generator-",
+          "1",
+          "BB/Any other pedagogy",
+          "",
+          "T1, T2",
+          "CO4",
+          "PO1, PO2,\nPO4"
+        ],
+        [
+          "5",
+          "Code Generation Algorithm- Register and Address\nDescriptors",
+          "1",
+          "BB/Any other pedagogy",
+          "",
+          "T1, T2",
+          "CO5",
+          "PO1, PO2,\nPO3, PO4,\nPO5"
+        ],
+        [
+          "5",
+          "Code optimization -Principal Sources of\nOptimization- Function Preserving Transformation",
+          "1",
+          "BB/Any other pedagogy",
+          "",
+          "T1, T2",
+          "CO5",
+          "PO1, PO2,\nPO3, PO4,\nPO5"
+        ],
+        [
+          "5",
+          "Loop Optimization- Peephole optimization",
+          "1",
+          "BB/Any other pedagogy",
+          "Activity",
+          "T1, T2",
+          "CO5",
+          "PO1, PO2,\nPO3, PO4,\nPO5"
+        ],
+        [
+          "Grading Criteria",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Type of\nassessments",
+          "Deadline",
+          "Weightage",
+          "Due Date (if applicable)",
+          "Component",
+          "",
+          "",
+          ""
+        ],
+        [
+          "FJ-I",
+          "Week-7",
+          "15%",
+          "26.02.26",
+          "Written Test - 1 and Completion of Lab\nExperiments and Viva",
+          "",
+          "",
+          ""
+        ],
+        [
+          "FJ-II",
+          "Week-12",
+          "15%",
+          "08.04.26",
+          "Written Test - 2 and Completion of Lab\nExperiments and Viva",
+          "",
+          "",
+          ""
+        ],
+        [
+          "FJ-III",
+          "Week-15",
+          "15%",
+          "25th April 26 – 5th May\n2026",
+          "Worksheet Assessment and Activity -\nScenario based Problems Chart\nPresentation",
+          "",
+          "",
+          ""
+        ],
+        [
+          "LLJ-I",
+          "Week-9",
+          "7%",
+          "7th March 2026 – 15th\nMarch 2026",
+          "Assessment of LAB Mid Term (Expr 4-8)",
+          "",
+          "",
+          ""
+        ]
+      ]
+    },
+    {
+      "element_id": "global_block_7",
+      "type": "table",
+      "pages_spanned": [
+        4
+      ],
+      "raw_matrix": [
+        [
+          "LLJ-II",
+          "Week-15",
+          "8%",
+          "27th April 2026 – 01st\nMay 2026",
+          "Assessment of Lab FINAL test (Expr 9-\n12)"
+        ],
+        [
+          "Continuous\nAssessment",
+          "Total",
+          "60%",
+          "",
+          ""
+        ],
+        [
+          "End Semester\nExamination",
+          "Total",
+          "40%\n100%",
+          "",
+          ""
+        ],
+        [
+          "Make-up Policy",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Assignments / Term Project",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Proper academic performance depends on students doing their work not only well, but on time. Accordingly, assignments for this course must be received on\nthe due date specified for the assignment. No Make-up will be available for assignments or term project. Late submissions will be evaluated at 25% less\nweight for that component for a delay of up to 24 hours after which no submissions will be accepted.",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Test",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Make-up test is usually not permitted, but in case of very genuine reasons as decided by the course faculty, course coordinator/audit professor special prior\nPermission is usually required to get a make-up test. It cannot be taken as a right to claim the test marks.",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Academic Integrity",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Plagiarism or cheating will result in a grade of zero for the assignment or exam. Severe cases may result in course failure.",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Contact Information",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Feel free to reach out via email for any questions regarding the course material. For urgent matters, you can visit the faculty room during office hours.",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ]
+    }
+  ]
+}

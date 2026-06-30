@@ -1,0 +1,3390 @@
+{
+  "document_id": "TMSIS_Eligibility_Layout",
+  "source_format": ".xlsx",
+  "total_pages": 22,
+  "elements": [
+    {
+      "element_id": "global_block_0",
+      "type": "table",
+      "pages_spanned": [
+        1
+      ],
+      "raw_matrix": [
+        [
+          "T-MSIS ELG (ELIGIBLE) FILE — SEGMENT INDEX",
+          "Unnamed: 1",
+          "Unnamed: 2",
+          "Unnamed: 3",
+          "Unnamed: 4",
+          "Unnamed: 5",
+          "Unnamed: 6"
+        ],
+        [
+          "Source: CMS T-MSIS DataGuide v3.38.0 | Fixed-width layout: 1000 bytes per row | ELG00019 does not exist in the T-MSIS spec",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Segment #",
+          "Segment Name",
+          "Tab Name",
+          "# Fields",
+          "Defined Bytes",
+          "Filler Bytes",
+          "Definition"
+        ],
+        [
+          "ELG00001",
+          "FILE-HEADER-RECORD-ELIGIBILITY",
+          "ELG00001-FILE-HDR",
+          "15",
+          "584",
+          "416",
+          "Metadata record identifying the file itself — creation date, reporting period, record counts. One row per file."
+        ],
+        [
+          "ELG00002",
+          "PRIMARY-DEMOGRAPHICS-ELIGIBILITY",
+          "ELG00002-PRI-DEMO",
+          "13",
+          "635",
+          "373",
+          "Parent segment capturing stable demographic information. All other segments (except ELG00007) link to this on SUBMITTING-STATE + MSIS-IDENTIFICATION-NUM."
+        ],
+        [
+          "ELG00003",
+          "VARIABLE-DEMOGRAPHICS-ELIGIBILITY",
+          "ELG00003-VAR-DEMO",
+          "26",
+          "669",
+          "333",
+          "Additional demographic information more prone to periodic changes (income, citizenship, language, Medicare IDs, etc.)."
+        ],
+        [
+          "ELG00004",
+          "ELIGIBLE-CONTACT-INFORMATION",
+          "ELG00004-CONTACT",
+          "17",
+          "842",
+          "158",
+          "Address and phone number information for the individual. One row per address type."
+        ],
+        [
+          "ELG00005",
+          "ELIGIBILITY-DETERMINANTS",
+          "ELG00005-ELIG-DET",
+          "23",
+          "612",
+          "368",
+          "Factors that influence the individual's eligibility for basic Medicaid/CHIP and various waivers/demonstrations."
+        ],
+        [
+          "ELG00006",
+          "HEALTH-HOME-SPA-PARTICIPATION-INFORMATION",
+          "ELG00006-HH-PART",
+          "10",
+          "665",
+          "335",
+          "Captures the eligible person's participation in the state's Health Home SPA initiative."
+        ],
+        [
+          "ELG00007",
+          "HEALTH-HOME-SPA-PROVIDERS",
+          "ELG00007-HH-PROV",
+          "11",
+          "677",
+          "323",
+          "Identity of the health home entity and the provider with primary responsibility for coordinating health home services. Child of ELG00006."
+        ],
+        [
+          "ELG00008",
+          "HEALTH-HOME-CHRONIC-CONDITIONS",
+          "ELG00008-HH-CC",
+          "9",
+          "608",
+          "392",
+          "Chronic conditions that qualified the eligible person for participation in the health home initiative."
+        ],
+        [
+          "ELG00009",
+          "LOCK-IN-INFORMATION",
+          "ELG00009-LOCKIN",
+          "10",
+          "575",
+          "425",
+          "Provider(s) to whom the eligible person is restricted, and the time periods during which lock-in provisions are in force."
+        ],
+        [
+          "ELG00010",
+          "MFP-INFORMATION",
+          "ELG00010-MFP",
+          "12",
+          "562",
+          "438",
+          "Information about the eligible person's participation in the Money Follows the Person (MFP) demonstration program."
+        ],
+        [
+          "ELG00011",
+          "STATE-PLAN-OPTION-PARTICIPATION",
+          "ELG00011-SPO",
+          "8",
+          "559",
+          "441",
+          "Identity of the State Plan Options in which the eligible person is enrolled. One row per option."
+        ],
+        [
+          "ELG00012",
+          "WAIVER-PARTICIPATION",
+          "ELG00012-WAIVER",
+          "9",
+          "579",
+          "421",
+          "Identity of the waivers in which the eligible person is enrolled. One row per waiver."
+        ],
+        [
+          "ELG00013",
+          "LTSS-PARTICIPATION",
+          "ELG00013-LTSS",
+          "9",
+          "570",
+          "430",
+          "Level of care the eligible person receives at various points in time while in a long-term care facility."
+        ],
+        [
+          "ELG00014",
+          "MANAGED-CARE-PARTICIPATION",
+          "ELG00014-MC",
+          "9",
+          "571",
+          "429",
+          "Information about the eligible person's enrollment in a managed care plan."
+        ],
+        [
+          "ELG00015",
+          "ETHNICITY-INFORMATION",
+          "ELG00015-ETHNIC",
+          "9",
+          "658",
+          "342",
+          "Ethnicity information for the eligible person per ACA Section 4302."
+        ],
+        [
+          "ELG00016",
+          "RACE-INFORMATION",
+          "ELG00016-RACE",
+          "10",
+          "661",
+          "339",
+          "Race information for the eligible person per ACA Section 4302."
+        ],
+        [
+          "ELG00017",
+          "DISABILITY-INFORMATION",
+          "ELG00017-DISAB",
+          "8",
+          "558",
+          "442",
+          "Disability information for the eligible person per ACA Section 4302."
+        ],
+        [
+          "ELG00018",
+          "1115A-DEMONSTRATION-INFORMATION",
+          "ELG00018-1115A",
+          "8",
+          "558",
+          "442",
+          "Eligible person's participation in a CMMI 1115A demonstration."
+        ],
+        [
+          "ELG00020",
+          "HCBS-CHRONIC-CONDITIONS-NON-HEALTH-HOME",
+          "ELG00020-HCBS-CC",
+          "8",
+          "560",
+          "440",
+          "Chronic conditions for which the eligible person is receiving home and community-based care (non-Health-Home). Note: ELG00019 does not exist in the T-MSIS spec."
+        ],
+        [
+          "ELG00021",
+          "ENROLLMENT-TIME-SPAN-SEGMENT",
+          "ELG00021-ENROLL",
+          "8",
+          "558",
+          "442",
+          "Type of enrollment and time spans of enrollment for the eligible person."
+        ],
+        [
+          "ELG00022",
+          "ELG-IDENTIFIERS",
+          "ELG00022-IDENTIF",
+          "11",
+          "606",
+          "394",
+          "Identifiers assigned to a beneficiary by various entities; critical for linking across data sources. Child of ELG00002."
+        ]
+      ]
+    },
+    {
+      "element_id": "global_block_1",
+      "type": "table",
+      "pages_spanned": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "raw_matrix": [
+        [
+          "ELG00001  ·  FILE-HEADER-RECORD-ELIGIBILITY",
+          "Unnamed: 1",
+          "Unnamed: 2",
+          "Unnamed: 3",
+          "Unnamed: 4",
+          "Unnamed: 5"
+        ],
+        [
+          "Metadata record identifying the file itself — creation date, reporting period, record counts. One row per file.",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Fixed-width record: 1000 bytes total  |  Defined fields: 584 bytes  |  Filler: 416 bytes  |  Positions are 1-based inclusive",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Field Name",
+          "Start Pos",
+          "End Pos",
+          "Length",
+          "Type",
+          "Description"
+        ],
+        [
+          "RECORD-ID",
+          "1",
+          "8",
+          "8",
+          "Alphanumeric",
+          "Segment type identifier. First 3 chars = file type (ELG); last 5 = zero-padded segment number (00001)."
+        ],
+        [
+          "DATA-DICTIONARY-VERSION",
+          "9",
+          "18",
+          "10",
+          "Alphanumeric",
+          "Version of the T-MSIS data dictionary used to build the file (e.g. 3.38.0)."
+        ],
+        [
+          "SUBMISSION-TRANSACTION-TYPE",
+          "19",
+          "19",
+          "1",
+          "Code",
+          "O=Original, R=Replacement, D=Delete."
+        ],
+        [
+          "FILE-ENCODING-SPECIFICATION",
+          "20",
+          "21",
+          "2",
+          "Code",
+          "Supported file encoding standard used to create the file (e.g. A=ASCII)."
+        ],
+        [
+          "DATA-MAPPING-DOCUMENT-VERSION",
+          "22",
+          "31",
+          "10",
+          "Alphanumeric",
+          "Version of the T-MSIS data mapping document used to build the submission file."
+        ],
+        [
+          "FILE-NAME",
+          "32",
+          "34",
+          "3",
+          "Code",
+          "Subject area code: ELG=Eligible."
+        ],
+        [
+          "SUBMITTING-STATE",
+          "35",
+          "36",
+          "2",
+          "Code",
+          "ANSI state numeric FIPS code for the submitting state/territory."
+        ],
+        [
+          "DATE-FILE-CREATED",
+          "37",
+          "44",
+          "8",
+          "Date",
+          "YYYYMMDD date the file was created."
+        ],
+        [
+          "START-OF-TIME-PERIOD",
+          "45",
+          "52",
+          "8",
+          "Date",
+          "YYYYMMDD first day of the reporting month."
+        ],
+        [
+          "END-OF-TIME-PERIOD",
+          "53",
+          "60",
+          "8",
+          "Date",
+          "YYYYMMDD last day of the reporting month."
+        ],
+        [
+          "FILE-STATUS-INDICATOR",
+          "61",
+          "61",
+          "1",
+          "Code",
+          "T=Test, P=Production."
+        ],
+        [
+          "SSN-INDICATOR",
+          "62",
+          "62",
+          "1",
+          "Flag/Indicator",
+          "N=State uses MSIS ID; Y=State uses SSN as the unique eligible identifier."
+        ],
+        [
+          "TOT-REC-CNT",
+          "63",
+          "73",
+          "11",
+          "Numeric",
+          "Count of all records in the file (excluding the file header). Transmission control total."
+        ],
+        [
+          "STATE-NOTATION",
+          "74",
+          "573",
+          "500",
+          "Text",
+          "Free-text field available to the submitting state for any purpose."
+        ],
+        [
+          "SEQUENCE-NUMBER",
+          "574",
+          "584",
+          "11",
+          "Numeric",
+          "Sequential file sequence number; starts at 1 for original Create, incremented for each Replacement/Update for same period."
+        ],
+        [
+          "FILLER",
+          "585",
+          "1000",
+          "416",
+          "Filler",
+          "Reserved/unused bytes padded with spaces to complete the 1000-byte record."
+        ],
+        [
+          "✓ Total bytes accounted: 1000 / 1000",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "ELG00002  ·  PRIMARY-DEMOGRAPHICS-ELIGIBILITY",
+          "Unnamed: 1",
+          "Unnamed: 2",
+          "Unnamed: 3",
+          "Unnamed: 4",
+          "Unnamed: 5"
+        ],
+        [
+          "Parent segment capturing stable demographic information. All other segments (except ELG00007) link to this on SUBMITTING-STATE + MSIS-IDENTIFICATION-NUM.",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Fixed-width record: 1000 bytes total  |  Defined fields: 635 bytes  |  Filler: 373 bytes  |  Positions are 1-based inclusive",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Field Name",
+          "Start Pos",
+          "End Pos",
+          "Length",
+          "Type",
+          "Description"
+        ],
+        [
+          "RECORD-ID",
+          "1",
+          "8",
+          "8",
+          "Alphanumeric",
+          "Segment type identifier (ELG00002)."
+        ],
+        [
+          "SUBMITTING-STATE",
+          "9",
+          "10",
+          "2",
+          "Code",
+          "ANSI FIPS state code for the submitting state/territory."
+        ],
+        [
+          "RECORD-NUMBER",
+          "11",
+          "21",
+          "11",
+          "Numeric",
+          "Sequential number assigned by submitter uniquely identifying each row within the submission file."
+        ],
+        [
+          "MSIS-IDENTIFICATION-NUM",
+          "22",
+          "41",
+          "20",
+          "ID/Numeric",
+          "State-assigned unique identifier for the Medicaid/CHIP enrolled individual. May be SSN, temporary SSN, or state-assigned ID."
+        ],
+        [
+          "ELIGIBLE-FIRST-NAME",
+          "42",
+          "71",
+          "30",
+          "Text",
+          "Individual's first name."
+        ],
+        [
+          "ELIGIBLE-LAST-NAME",
+          "72",
+          "101",
+          "30",
+          "Text",
+          "Individual's last name."
+        ],
+        [
+          "ELIGIBLE-MIDDLE-INIT",
+          "102",
+          "102",
+          "1",
+          "Text",
+          "Individual's middle initial."
+        ],
+        [
+          "SEX",
+          "103",
+          "103",
+          "1",
+          "Code",
+          "Biological sex assigned at birth. M=Male, F=Female, U=Unknown."
+        ],
+        [
+          "DATE-OF-BIRTH",
+          "104",
+          "111",
+          "8",
+          "Date",
+          "YYYYMMDD individual's date of birth."
+        ],
+        [
+          "DATE-OF-DEATH",
+          "112",
+          "119",
+          "8",
+          "Date",
+          "YYYYMMDD date the individual died. Blank if living."
+        ],
+        [
+          "PRIMARY-DEMOGRAPHIC-ELEMENT-EFF-DATE",
+          "120",
+          "127",
+          "8",
+          "Date",
+          "YYYYMMDD first calendar day on which all data elements in this segment were effective."
+        ],
+        [
+          "PRIMARY-DEMOGRAPHIC-ELEMENT-END-DATE",
+          "128",
+          "135",
+          "8",
+          "Date",
+          "YYYYMMDD last calendar day on which all data elements in this segment were effective."
+        ],
+        [
+          "STATE-NOTATION",
+          "136",
+          "635",
+          "500",
+          "Text",
+          "Free-text field for the submitting state."
+        ],
+        [
+          "FILLER",
+          "636",
+          "1008",
+          "373",
+          "Filler",
+          "Reserved/unused bytes padded with spaces."
+        ],
+        [
+          "✓ Total bytes accounted: 1008 / 1000",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "ELG00003  ·  VARIABLE-DEMOGRAPHICS-ELIGIBILITY",
+          "Unnamed: 1",
+          "Unnamed: 2",
+          "Unnamed: 3",
+          "Unnamed: 4",
+          "Unnamed: 5"
+        ],
+        [
+          "Additional demographic information more prone to periodic changes (income, citizenship, language, Medicare IDs, etc.).",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Fixed-width record: 1000 bytes total  |  Defined fields: 669 bytes  |  Filler: 333 bytes  |  Positions are 1-based inclusive",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Field Name",
+          "Start Pos",
+          "End Pos",
+          "Length",
+          "Type",
+          "Description"
+        ],
+        [
+          "RECORD-ID",
+          "1",
+          "8",
+          "8",
+          "Alphanumeric",
+          "Segment type identifier (ELG00003)."
+        ],
+        [
+          "SUBMITTING-STATE",
+          "9",
+          "10",
+          "2",
+          "Code",
+          "ANSI FIPS state code."
+        ],
+        [
+          "RECORD-NUMBER",
+          "11",
+          "21",
+          "11",
+          "Numeric",
+          "Sequential record number within the submission file."
+        ],
+        [
+          "MSIS-IDENTIFICATION-NUM",
+          "22",
+          "41",
+          "20",
+          "ID/Numeric",
+          "State-assigned unique identifier for the enrolled individual."
+        ],
+        [
+          "MARITAL-STATUS",
+          "42",
+          "43",
+          "2",
+          "Code",
+          "Code classifying the individual's marital/domestic-relationship status."
+        ],
+        [
+          "MARITAL-STATUS-OTHER-EXPLANATION",
+          "44",
+          "93",
+          "50",
+          "Text",
+          "Free-text description used when Marital Status = 14 (Other)."
+        ],
+        [
+          "SSN",
+          "94",
+          "102",
+          "9",
+          "ID/Numeric",
+          "Individual's Social Security Number."
+        ],
+        [
+          "SSN-VERIFICATION-FLAG",
+          "103",
+          "103",
+          "1",
+          "Flag/Indicator",
+          "Whether the state has verified the SSN with SSA."
+        ],
+        [
+          "INCOME-CODE",
+          "104",
+          "105",
+          "2",
+          "Code",
+          "Federal poverty level range in which the family income falls."
+        ],
+        [
+          "VETERAN-IND",
+          "106",
+          "106",
+          "1",
+          "Flag/Indicator",
+          "Non-citizen exempt from 5-year bar because they are a veteran or active military."
+        ],
+        [
+          "CITIZENSHIP-IND",
+          "107",
+          "107",
+          "1",
+          "Flag/Indicator",
+          "Indicates if the individual is a U.S. Citizen."
+        ],
+        [
+          "CITIZENSHIP-VERIFICATION-FLAG",
+          "108",
+          "108",
+          "1",
+          "Flag/Indicator",
+          "Enrolled pending citizenship verification."
+        ],
+        [
+          "IMMIGRATION-STATUS",
+          "109",
+          "110",
+          "2",
+          "Code",
+          "Immigration status of the individual."
+        ],
+        [
+          "IMMIGRATION-VERIFICATION-FLAG",
+          "111",
+          "111",
+          "1",
+          "Flag/Indicator",
+          "Enrolled pending immigration status verification."
+        ],
+        [
+          "IMMIGRATION-STATUS-FIVE-YEAR-BAR-END-DATE",
+          "112",
+          "119",
+          "8",
+          "Date",
+          "YYYYMMDD — date the 5-year bar on federal benefits ends (PRWORA Section 403)."
+        ],
+        [
+          "ENGL-PROF-CODE",
+          "120",
+          "120",
+          "1",
+          "Code",
+          "Level of spoken English proficiency."
+        ],
+        [
+          "PRIMARY-LANGUAGE-CODE",
+          "121",
+          "123",
+          "3",
+          "Code",
+          "Individual's preferred spoken or written language (ISO 639-2)."
+        ],
+        [
+          "HOUSEHOLD-SIZE",
+          "124",
+          "125",
+          "2",
+          "Numeric",
+          "Household size used in the Medicaid or CHIP eligibility determination."
+        ],
+        [
+          "PREGNANCY-IND",
+          "126",
+          "126",
+          "1",
+          "Flag/Indicator",
+          "Individual is pregnant at time of application (self-attested)."
+        ],
+        [
+          "MEDICARE-HIC-NUM",
+          "127",
+          "138",
+          "12",
+          "ID/Numeric",
+          "Medicare Health Insurance Claim Number (HICN) — older SSN-based Medicare identifier."
+        ],
+        [
+          "MEDICARE-BENEFICIARY-IDENTIFIER",
+          "139",
+          "149",
+          "11",
+          "ID/Numeric",
+          "Medicare Beneficiary Identifier (MBI) — randomly generated ID replacing HICN since 2020."
+        ],
+        [
+          "CHIP-CODE",
+          "150",
+          "150",
+          "1",
+          "Code",
+          "Distinguishes Medicaid, Medicaid Expansion CHIP, and Separate CHIP populations."
+        ],
+        [
+          "VARIABLE-DEMOGRAPHIC-ELEMENT-EFF-DATE",
+          "151",
+          "158",
+          "8",
+          "Date",
+          "YYYYMMDD first calendar day this segment was effective."
+        ],
+        [
+          "VARIABLE-DEMOGRAPHIC-ELEMENT-END-DATE",
+          "159",
+          "166",
+          "8",
+          "Date",
+          "YYYYMMDD last calendar day this segment was effective."
+        ],
+        [
+          "STATE-NOTATION",
+          "167",
+          "666",
+          "500",
+          "Text",
+          "Free-text field for the submitting state."
+        ],
+        [
+          "ELIGIBLE-FEDERAL-POVERTY-LEVEL-PERCENTAGE",
+          "667",
+          "669",
+          "3",
+          "Numeric",
+          "Household income as a percentage of the FPL used in the eligibility determination."
+        ],
+        [
+          "FILLER",
+          "670",
+          "1002",
+          "333",
+          "Filler",
+          "Reserved/unused bytes padded with spaces."
+        ],
+        [
+          "✓ Total bytes accounted: 1002 / 1000",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "ELG00004  ·  ELIGIBLE-CONTACT-INFORMATION",
+          "Unnamed: 1",
+          "Unnamed: 2",
+          "Unnamed: 3",
+          "Unnamed: 4",
+          "Unnamed: 5"
+        ],
+        [
+          "Address and phone number information for the individual. One row per address type.",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Fixed-width record: 1000 bytes total  |  Defined fields: 842 bytes  |  Filler: 158 bytes  |  Positions are 1-based inclusive",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Field Name",
+          "Start Pos",
+          "End Pos",
+          "Length",
+          "Type",
+          "Description"
+        ],
+        [
+          "RECORD-ID",
+          "1",
+          "8",
+          "8",
+          "Alphanumeric",
+          "Segment type identifier (ELG00004)."
+        ],
+        [
+          "SUBMITTING-STATE",
+          "9",
+          "10",
+          "2",
+          "Code",
+          "ANSI FIPS state code."
+        ],
+        [
+          "RECORD-NUMBER",
+          "11",
+          "21",
+          "11",
+          "Numeric",
+          "Sequential record number within the submission file."
+        ],
+        [
+          "MSIS-IDENTIFICATION-NUM",
+          "22",
+          "41",
+          "20",
+          "ID/Numeric",
+          "State-assigned unique identifier for the enrolled individual."
+        ],
+        [
+          "ADDR-TYPE",
+          "42",
+          "42",
+          "1",
+          "Code",
+          "Type of address/contact information: 1=Home, 2=Mailing, 3=Temporary, 4=Other."
+        ],
+        [
+          "ELIGIBLE-ADDR-LN1",
+          "43",
+          "102",
+          "60",
+          "Text",
+          "First line of the physical or mailing street address."
+        ],
+        [
+          "ELIGIBLE-ADDR-LN2",
+          "103",
+          "162",
+          "60",
+          "Text",
+          "Second line of a multi-line address."
+        ],
+        [
+          "ELIGIBLE-ADDR-LN3",
+          "163",
+          "222",
+          "60",
+          "Text",
+          "Third line of a multi-line address."
+        ],
+        [
+          "ELIGIBLE-CITY",
+          "223",
+          "252",
+          "30",
+          "Text",
+          "City component of the address."
+        ],
+        [
+          "ELIGIBLE-STATE",
+          "253",
+          "254",
+          "2",
+          "Code",
+          "ANSI state numeric code for the state of residence."
+        ],
+        [
+          "ELIGIBLE-ZIP-CODE",
+          "255",
+          "263",
+          "9",
+          "ID/Numeric",
+          "U.S. ZIP+4 code (9 digits, no hyphen)."
+        ],
+        [
+          "ELIGIBLE-COUNTY-CODE",
+          "264",
+          "266",
+          "3",
+          "Code",
+          "Standard ANSI numeric code identifying the specific U.S. County."
+        ],
+        [
+          "ELIGIBLE-PHONE-NUM",
+          "267",
+          "276",
+          "10",
+          "ID/Numeric",
+          "Phone number for the eligible individual (10 digits, no formatting)."
+        ],
+        [
+          "TYPE-OF-LIVING-ARRANGEMENT",
+          "277",
+          "326",
+          "50",
+          "Text",
+          "Free-form text describing the type of living arrangement used in eligibility determination."
+        ],
+        [
+          "ELIGIBLE-ADDR-EFF-DATE",
+          "327",
+          "334",
+          "8",
+          "Date",
+          "YYYYMMDD first calendar day this segment was effective."
+        ],
+        [
+          "ELIGIBLE-ADDR-END-DATE",
+          "335",
+          "342",
+          "8",
+          "Date",
+          "YYYYMMDD last calendar day this segment was effective."
+        ],
+        [
+          "STATE-NOTATION",
+          "343",
+          "842",
+          "500",
+          "Text",
+          "Free-text field for the submitting state."
+        ],
+        [
+          "FILLER",
+          "843",
+          "1000",
+          "158",
+          "Filler",
+          "Reserved/unused bytes padded with spaces."
+        ],
+        [
+          "✓ Total bytes accounted: 1000 / 1000",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "ELG00005  ·  ELIGIBILITY-DETERMINANTS",
+          "Unnamed: 1",
+          "Unnamed: 2",
+          "Unnamed: 3",
+          "Unnamed: 4",
+          "Unnamed: 5"
+        ],
+        [
+          "Factors that influence the individual's eligibility for basic Medicaid/CHIP and various waivers/demonstrations.",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Fixed-width record: 1000 bytes total  |  Defined fields: 612 bytes  |  Filler: 368 bytes  |  Positions are 1-based inclusive",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Field Name",
+          "Start Pos",
+          "End Pos",
+          "Length",
+          "Type",
+          "Description"
+        ],
+        [
+          "RECORD-ID",
+          "1",
+          "8",
+          "8",
+          "Alphanumeric",
+          "Segment type identifier (ELG00005)."
+        ],
+        [
+          "SUBMITTING-STATE",
+          "9",
+          "10",
+          "2",
+          "Code",
+          "ANSI FIPS state code."
+        ],
+        [
+          "RECORD-NUMBER",
+          "11",
+          "21",
+          "11",
+          "Numeric",
+          "Sequential record number within the submission file."
+        ],
+        [
+          "MSIS-IDENTIFICATION-NUM",
+          "22",
+          "41",
+          "20",
+          "ID/Numeric",
+          "State-assigned unique identifier for the enrolled individual."
+        ],
+        [
+          "MSIS-CASE-NUM",
+          "42",
+          "61",
+          "20",
+          "ID/Numeric",
+          "State-assigned number uniquely identifying the Medicaid case to which the enrollee belongs."
+        ],
+        [
+          "MEDICAID-BASIS-OF-ELIGIBILITY",
+          "62",
+          "63",
+          "2",
+          "Code",
+          "[No longer essential] Historical basis of eligibility. Retained for file integrity."
+        ],
+        [
+          "DUAL-ELIGIBLE-CODE",
+          "64",
+          "65",
+          "2",
+          "Code",
+          "Dual Medicare-Medicaid eligibility code (00–10). Indicates Medicare entitlement and Medicaid benefit level."
+        ],
+        [
+          "PRIMARY-ELIGIBILITY-GROUP-IND",
+          "66",
+          "66",
+          "1",
+          "Flag/Indicator",
+          "1=This is the primary eligibility record when multiple overlapping records exist."
+        ],
+        [
+          "ELIGIBILITY-GROUP",
+          "67",
+          "68",
+          "2",
+          "Code",
+          "Eligibility group from the eligibility determination process (ACA-aligned groups 01–60)."
+        ],
+        [
+          "LEVEL-OF-CARE-STATUS",
+          "69",
+          "70",
+          "2",
+          "Code",
+          "Level of care required to determine LTSS program eligibility."
+        ],
+        [
+          "SSDI-IND",
+          "71",
+          "71",
+          "1",
+          "Flag/Indicator",
+          "Individual is enrolled in Social Security Disability Insurance (SSDI) via SSA."
+        ],
+        [
+          "SSI-IND",
+          "72",
+          "72",
+          "1",
+          "Flag/Indicator",
+          "Individual receives Supplemental Security Income (SSI) via SSA."
+        ],
+        [
+          "SSI-STATE-SUPPLEMENT-STATUS-CODE",
+          "73",
+          "73",
+          "1",
+          "Code",
+          "Individual's State Supplemental Income status."
+        ],
+        [
+          "SSI-STATUS",
+          "74",
+          "74",
+          "1",
+          "Code",
+          "Individual's SSI status."
+        ],
+        [
+          "STATE-SPEC-ELIG-GROUP",
+          "75",
+          "89",
+          "15",
+          "Alphanumeric",
+          "Composite eligibility mapping factor (MAS+BOE pre-2014; Eligibility Group from 2014 onward)."
+        ],
+        [
+          "CONCEPTION-TO-BIRTH-IND",
+          "90",
+          "90",
+          "1",
+          "Flag/Indicator",
+          "Child eligible through the conception-to-birth option (Separate CHIP only)."
+        ],
+        [
+          "ELIGIBILITY-CHANGE-REASON",
+          "91",
+          "92",
+          "2",
+          "Code",
+          "Reason for complete loss/termination of eligibility; reported on the closing segment."
+        ],
+        [
+          "MAINTENANCE-ASSISTANCE-STATUS",
+          "93",
+          "94",
+          "2",
+          "Code",
+          "[No longer essential] Historical Maintenance Assistance Status. Retained for file integrity."
+        ],
+        [
+          "RESTRICTED-BENEFITS-CODE",
+          "95",
+          "95",
+          "1",
+          "Code",
+          "Scope of Medicaid or CHIP benefits to which the individual is entitled."
+        ],
+        [
+          "TANF-CASH-CODE",
+          "96",
+          "96",
+          "1",
+          "Code",
+          "Individual received Federal TANF benefits."
+        ],
+        [
+          "ELIGIBILITY-DETERMINANT-EFF-DATE",
+          "97",
+          "104",
+          "8",
+          "Date",
+          "YYYYMMDD first calendar day this segment was effective."
+        ],
+        [
+          "ELIGIBILITY-DETERMINANT-END-DATE",
+          "105",
+          "112",
+          "8",
+          "Date",
+          "YYYYMMDD last calendar day this segment was effective."
+        ],
+        [
+          "STATE-NOTATION",
+          "113",
+          "612",
+          "500",
+          "Text",
+          "Free-text field for the submitting state."
+        ],
+        [
+          "FILLER",
+          "613",
+          "980",
+          "368",
+          "Filler",
+          "Reserved/unused bytes padded with spaces."
+        ],
+        [
+          "✓ Total bytes accounted: 980 / 1000",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "ELG00006  ·  HEALTH-HOME-SPA-PARTICIPATION-INFORMATION",
+          "Unnamed: 1",
+          "Unnamed: 2",
+          "Unnamed: 3",
+          "Unnamed: 4",
+          "Unnamed: 5"
+        ],
+        [
+          "Captures the eligible person's participation in the state's Health Home SPA initiative.",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Fixed-width record: 1000 bytes total  |  Defined fields: 665 bytes  |  Filler: 335 bytes  |  Positions are 1-based inclusive",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Field Name",
+          "Start Pos",
+          "End Pos",
+          "Length",
+          "Type",
+          "Description"
+        ],
+        [
+          "RECORD-ID",
+          "1",
+          "8",
+          "8",
+          "Alphanumeric",
+          "Segment type identifier (ELG00006)."
+        ],
+        [
+          "SUBMITTING-STATE",
+          "9",
+          "10",
+          "2",
+          "Code",
+          "ANSI FIPS state code."
+        ],
+        [
+          "RECORD-NUMBER",
+          "11",
+          "21",
+          "11",
+          "Numeric",
+          "Sequential record number within the submission file."
+        ],
+        [
+          "MSIS-IDENTIFICATION-NUM",
+          "22",
+          "41",
+          "20",
+          "ID/Numeric",
+          "State-assigned unique identifier for the enrolled individual."
+        ],
+        [
+          "HEALTH-HOME-SPA-NAME",
+          "42",
+          "91",
+          "50",
+          "Text",
+          "Name of the health home program approved by CMS; must be consistent across all files for linking."
+        ],
+        [
+          "HEALTH-HOME-ENTITY-NAME",
+          "92",
+          "141",
+          "50",
+          "Text",
+          "Identifies the health home SPA entity in which the individual is enrolled."
+        ],
+        [
+          "HEALTH-HOME-SPA-PARTICIPATION-EFF-DATE",
+          "142",
+          "149",
+          "8",
+          "Date",
+          "YYYYMMDD first calendar day this segment was effective."
+        ],
+        [
+          "HEALTH-HOME-SPA-PARTICIPATION-END-DATE",
+          "150",
+          "157",
+          "8",
+          "Date",
+          "YYYYMMDD last calendar day this segment was effective."
+        ],
+        [
+          "HEALTH-HOME-ENTITY-EFF-DATE",
+          "158",
+          "165",
+          "8",
+          "Date",
+          "YYYYMMDD the health home entity was approved by CMS to participate in the program."
+        ],
+        [
+          "STATE-NOTATION",
+          "166",
+          "665",
+          "500",
+          "Text",
+          "Free-text field for the submitting state."
+        ],
+        [
+          "FILLER",
+          "666",
+          "1000",
+          "335",
+          "Filler",
+          "Reserved/unused bytes padded with spaces."
+        ],
+        [
+          "✓ Total bytes accounted: 1000 / 1000",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "ELG00007  ·  HEALTH-HOME-SPA-PROVIDERS",
+          "Unnamed: 1",
+          "Unnamed: 2",
+          "Unnamed: 3",
+          "Unnamed: 4",
+          "Unnamed: 5"
+        ],
+        [
+          "Identity of the health home entity and the provider with primary responsibility for coordinating health home services. Child of ELG00006.",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Fixed-width record: 1000 bytes total  |  Defined fields: 677 bytes  |  Filler: 323 bytes  |  Positions are 1-based inclusive",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Field Name",
+          "Start Pos",
+          "End Pos",
+          "Length",
+          "Type",
+          "Description"
+        ],
+        [
+          "RECORD-ID",
+          "1",
+          "8",
+          "8",
+          "Alphanumeric",
+          "Segment type identifier (ELG00007)."
+        ],
+        [
+          "SUBMITTING-STATE",
+          "9",
+          "10",
+          "2",
+          "Code",
+          "ANSI FIPS state code."
+        ],
+        [
+          "RECORD-NUMBER",
+          "11",
+          "21",
+          "11",
+          "Numeric",
+          "Sequential record number within the submission file."
+        ],
+        [
+          "MSIS-IDENTIFICATION-NUM",
+          "22",
+          "41",
+          "20",
+          "ID/Numeric",
+          "State-assigned unique identifier for the enrolled individual."
+        ],
+        [
+          "HEALTH-HOME-SPA-NAME",
+          "42",
+          "91",
+          "50",
+          "Text",
+          "Name of the health home program; must match parent ELG00006 value exactly."
+        ],
+        [
+          "HEALTH-HOME-ENTITY-NAME",
+          "92",
+          "141",
+          "50",
+          "Text",
+          "Identifies the health home SPA entity; must match parent ELG00006 value exactly."
+        ],
+        [
+          "HEALTH-HOME-PROV-NUM",
+          "142",
+          "153",
+          "12",
+          "ID/Numeric",
+          "State-specific Medicaid Provider Identifier for the health home provider in the state's MMIS."
+        ],
+        [
+          "HEALTH-HOME-SPA-PROVIDER-EFF-DATE",
+          "154",
+          "161",
+          "8",
+          "Date",
+          "YYYYMMDD first calendar day this segment was effective."
+        ],
+        [
+          "HEALTH-HOME-SPA-PROVIDER-END-DATE",
+          "162",
+          "169",
+          "8",
+          "Date",
+          "YYYYMMDD last calendar day this segment was effective."
+        ],
+        [
+          "HEALTH-HOME-ENTITY-EFF-DATE",
+          "170",
+          "177",
+          "8",
+          "Date",
+          "YYYYMMDD the health home entity was approved by CMS."
+        ],
+        [
+          "STATE-NOTATION",
+          "178",
+          "677",
+          "500",
+          "Text",
+          "Free-text field for the submitting state."
+        ],
+        [
+          "FILLER",
+          "678",
+          "1000",
+          "323",
+          "Filler",
+          "Reserved/unused bytes padded with spaces."
+        ],
+        [
+          "✓ Total bytes accounted: 1000 / 1000",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "ELG00008  ·  HEALTH-HOME-CHRONIC-CONDITIONS",
+          "Unnamed: 1",
+          "Unnamed: 2",
+          "Unnamed: 3",
+          "Unnamed: 4",
+          "Unnamed: 5"
+        ],
+        [
+          "Chronic conditions that qualified the eligible person for participation in the health home initiative.",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Fixed-width record: 1000 bytes total  |  Defined fields: 608 bytes  |  Filler: 392 bytes  |  Positions are 1-based inclusive",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Field Name",
+          "Start Pos",
+          "End Pos",
+          "Length",
+          "Type",
+          "Description"
+        ],
+        [
+          "RECORD-ID",
+          "1",
+          "8",
+          "8",
+          "Alphanumeric",
+          "Segment type identifier (ELG00008)."
+        ],
+        [
+          "SUBMITTING-STATE",
+          "9",
+          "10",
+          "2",
+          "Code",
+          "ANSI FIPS state code."
+        ],
+        [
+          "RECORD-NUMBER",
+          "11",
+          "21",
+          "11",
+          "Numeric",
+          "Sequential record number within the submission file."
+        ],
+        [
+          "MSIS-IDENTIFICATION-NUM",
+          "22",
+          "41",
+          "20",
+          "ID/Numeric",
+          "State-assigned unique identifier for the enrolled individual."
+        ],
+        [
+          "HEALTH-HOME-CHRONIC-CONDITION",
+          "42",
+          "42",
+          "1",
+          "Code",
+          "Chronic condition used to determine eligibility for the health home provision."
+        ],
+        [
+          "HEALTH-HOME-CHRONIC-CONDITION-OTHER-EXPLANATION",
+          "43",
+          "92",
+          "50",
+          "Text",
+          "Free-text description when chronic condition = H (Other)."
+        ],
+        [
+          "HEALTH-HOME-CHRONIC-CONDITION-EFF-DATE",
+          "93",
+          "100",
+          "8",
+          "Date",
+          "YYYYMMDD first calendar day this segment was effective."
+        ],
+        [
+          "HEALTH-HOME-CHRONIC-CONDITION-END-DATE",
+          "101",
+          "108",
+          "8",
+          "Date",
+          "YYYYMMDD last calendar day this segment was effective."
+        ],
+        [
+          "STATE-NOTATION",
+          "109",
+          "608",
+          "500",
+          "Text",
+          "Free-text field for the submitting state."
+        ],
+        [
+          "FILLER",
+          "609",
+          "1000",
+          "392",
+          "Filler",
+          "Reserved/unused bytes padded with spaces."
+        ],
+        [
+          "✓ Total bytes accounted: 1000 / 1000",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "ELG00009  ·  LOCK-IN-INFORMATION",
+          "Unnamed: 1",
+          "Unnamed: 2",
+          "Unnamed: 3",
+          "Unnamed: 4",
+          "Unnamed: 5"
+        ],
+        [
+          "Provider(s) to whom the eligible person is restricted, and the time periods during which lock-in provisions are in force.",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Fixed-width record: 1000 bytes total  |  Defined fields: 575 bytes  |  Filler: 425 bytes  |  Positions are 1-based inclusive",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Field Name",
+          "Start Pos",
+          "End Pos",
+          "Length",
+          "Type",
+          "Description"
+        ],
+        [
+          "RECORD-ID",
+          "1",
+          "8",
+          "8",
+          "Alphanumeric",
+          "Segment type identifier (ELG00009)."
+        ],
+        [
+          "SUBMITTING-STATE",
+          "9",
+          "10",
+          "2",
+          "Code",
+          "ANSI FIPS state code."
+        ],
+        [
+          "RECORD-NUMBER",
+          "11",
+          "21",
+          "11",
+          "Numeric",
+          "Sequential record number within the submission file."
+        ],
+        [
+          "MSIS-IDENTIFICATION-NUM",
+          "22",
+          "41",
+          "20",
+          "ID/Numeric",
+          "State-assigned unique identifier for the enrolled individual."
+        ],
+        [
+          "LOCKIN-PROV-NUM",
+          "42",
+          "53",
+          "12",
+          "ID/Numeric",
+          "State-specific Medicaid Provider Identifier for the provider to whom the beneficiary is locked in."
+        ],
+        [
+          "LOCKIN-PROV-TYPE",
+          "54",
+          "56",
+          "3",
+          "Code",
+          "Provider type classification for the lock-in provider/beneficiary relationship."
+        ],
+        [
+          "LOCKIN-EFF-DATE",
+          "57",
+          "64",
+          "8",
+          "Date",
+          "YYYYMMDD first calendar day the lock-in was effective."
+        ],
+        [
+          "LOCKIN-END-DATE",
+          "65",
+          "72",
+          "8",
+          "Date",
+          "YYYYMMDD last calendar day the lock-in was effective."
+        ],
+        [
+          "STATE-NOTATION",
+          "73",
+          "572",
+          "500",
+          "Text",
+          "Free-text field for the submitting state."
+        ],
+        [
+          "LOCKED-IN-SRVCS",
+          "573",
+          "575",
+          "3",
+          "Code",
+          "Type(s) of services that are locked in for this beneficiary."
+        ],
+        [
+          "FILLER",
+          "576",
+          "1000",
+          "425",
+          "Filler",
+          "Reserved/unused bytes padded with spaces."
+        ],
+        [
+          "✓ Total bytes accounted: 1000 / 1000",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "ELG00010  ·  MFP-INFORMATION",
+          "Unnamed: 1",
+          "Unnamed: 2",
+          "Unnamed: 3",
+          "Unnamed: 4",
+          "Unnamed: 5"
+        ],
+        [
+          "Information about the eligible person's participation in the Money Follows the Person (MFP) demonstration program.",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Fixed-width record: 1000 bytes total  |  Defined fields: 562 bytes  |  Filler: 438 bytes  |  Positions are 1-based inclusive",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Field Name",
+          "Start Pos",
+          "End Pos",
+          "Length",
+          "Type",
+          "Description"
+        ],
+        [
+          "RECORD-ID",
+          "1",
+          "8",
+          "8",
+          "Alphanumeric",
+          "Segment type identifier (ELG00010)."
+        ],
+        [
+          "SUBMITTING-STATE",
+          "9",
+          "10",
+          "2",
+          "Code",
+          "ANSI FIPS state code."
+        ],
+        [
+          "RECORD-NUMBER",
+          "11",
+          "21",
+          "11",
+          "Numeric",
+          "Sequential record number within the submission file."
+        ],
+        [
+          "MSIS-IDENTIFICATION-NUM",
+          "22",
+          "41",
+          "20",
+          "ID/Numeric",
+          "State-assigned unique identifier for the enrolled individual."
+        ],
+        [
+          "MFP-LIVES-WITH-FAMILY",
+          "42",
+          "42",
+          "1",
+          "Code",
+          "Indicates if the individual lives with family or is not an MFP participant."
+        ],
+        [
+          "MFP-QUALIFIED-INSTITUTION",
+          "43",
+          "43",
+          "1",
+          "Code",
+          "Type of qualified institution at time of community transition."
+        ],
+        [
+          "MFP-QUALIFIED-RESIDENCE",
+          "44",
+          "44",
+          "1",
+          "Code",
+          "Type of qualified residence in the MFP program."
+        ],
+        [
+          "MFP-REASON-PARTICIPATION-ENDED",
+          "45",
+          "45",
+          "1",
+          "Code",
+          "Reason the individual's participation in the MFP demonstration ended."
+        ],
+        [
+          "MFP-REINSTITUTIONALIZED-REASON",
+          "46",
+          "46",
+          "1",
+          "Code",
+          "Reason the individual was reinstitutionalized after MFP participation."
+        ],
+        [
+          "MFP-ENROLLMENT-EFF-DATE",
+          "47",
+          "54",
+          "8",
+          "Date",
+          "YYYYMMDD first calendar day this segment was effective."
+        ],
+        [
+          "MFP-ENROLLMENT-END-DATE",
+          "55",
+          "62",
+          "8",
+          "Date",
+          "YYYYMMDD last calendar day this segment was effective."
+        ],
+        [
+          "STATE-NOTATION",
+          "63",
+          "562",
+          "500",
+          "Text",
+          "Free-text field for the submitting state."
+        ],
+        [
+          "FILLER",
+          "563",
+          "1000",
+          "438",
+          "Filler",
+          "Reserved/unused bytes padded with spaces."
+        ],
+        [
+          "✓ Total bytes accounted: 1000 / 1000",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "ELG00011  ·  STATE-PLAN-OPTION-PARTICIPATION",
+          "Unnamed: 1",
+          "Unnamed: 2",
+          "Unnamed: 3",
+          "Unnamed: 4",
+          "Unnamed: 5"
+        ],
+        [
+          "Identity of the State Plan Options in which the eligible person is enrolled. One row per option.",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Fixed-width record: 1000 bytes total  |  Defined fields: 559 bytes  |  Filler: 441 bytes  |  Positions are 1-based inclusive",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Field Name",
+          "Start Pos",
+          "End Pos",
+          "Length",
+          "Type",
+          "Description"
+        ],
+        [
+          "RECORD-ID",
+          "1",
+          "8",
+          "8",
+          "Alphanumeric",
+          "Segment type identifier (ELG00011)."
+        ],
+        [
+          "SUBMITTING-STATE",
+          "9",
+          "10",
+          "2",
+          "Code",
+          "ANSI FIPS state code."
+        ],
+        [
+          "RECORD-NUMBER",
+          "11",
+          "21",
+          "11",
+          "Numeric",
+          "Sequential record number within the submission file."
+        ],
+        [
+          "MSIS-IDENTIFICATION-NUM",
+          "22",
+          "41",
+          "20",
+          "ID/Numeric",
+          "State-assigned unique identifier for the enrolled individual."
+        ],
+        [
+          "STATE-PLAN-OPTION-TYPE",
+          "42",
+          "43",
+          "2",
+          "Code",
+          "Specifies the State Plan Option in which the individual is enrolled."
+        ],
+        [
+          "STATE-PLAN-OPTION-EFF-DATE",
+          "44",
+          "51",
+          "8",
+          "Date",
+          "YYYYMMDD first calendar day this segment was effective."
+        ],
+        [
+          "STATE-PLAN-OPTION-END-DATE",
+          "52",
+          "59",
+          "8",
+          "Date",
+          "YYYYMMDD last calendar day this segment was effective."
+        ],
+        [
+          "STATE-NOTATION",
+          "60",
+          "559",
+          "500",
+          "Text",
+          "Free-text field for the submitting state."
+        ],
+        [
+          "FILLER",
+          "560",
+          "1000",
+          "441",
+          "Filler",
+          "Reserved/unused bytes padded with spaces."
+        ],
+        [
+          "✓ Total bytes accounted: 1000 / 1000",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "ELG00012  ·  WAIVER-PARTICIPATION",
+          "Unnamed: 1",
+          "Unnamed: 2",
+          "Unnamed: 3",
+          "Unnamed: 4",
+          "Unnamed: 5"
+        ],
+        [
+          "Identity of the waivers in which the eligible person is enrolled. One row per waiver.",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Fixed-width record: 1000 bytes total  |  Defined fields: 579 bytes  |  Filler: 421 bytes  |  Positions are 1-based inclusive",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Field Name",
+          "Start Pos",
+          "End Pos",
+          "Length",
+          "Type",
+          "Description"
+        ],
+        [
+          "RECORD-ID",
+          "1",
+          "8",
+          "8",
+          "Alphanumeric",
+          "Segment type identifier (ELG00012)."
+        ],
+        [
+          "SUBMITTING-STATE",
+          "9",
+          "10",
+          "2",
+          "Code",
+          "ANSI FIPS state code."
+        ],
+        [
+          "RECORD-NUMBER",
+          "11",
+          "21",
+          "11",
+          "Numeric",
+          "Sequential record number within the submission file."
+        ],
+        [
+          "MSIS-IDENTIFICATION-NUM",
+          "22",
+          "41",
+          "20",
+          "ID/Numeric",
+          "State-assigned unique identifier for the enrolled individual."
+        ],
+        [
+          "WAIVER-ID",
+          "42",
+          "61",
+          "20",
+          "ID/Numeric",
+          "Approved full federal waiver ID number (core part only, without renewal/amendment suffixes)."
+        ],
+        [
+          "WAIVER-TYPE",
+          "62",
+          "63",
+          "2",
+          "Code",
+          "Type of waiver under which the eligible individual is covered."
+        ],
+        [
+          "WAIVER-ENROLLMENT-EFF-DATE",
+          "64",
+          "71",
+          "8",
+          "Date",
+          "YYYYMMDD first calendar day this segment was effective."
+        ],
+        [
+          "WAIVER-ENROLLMENT-END-DATE",
+          "72",
+          "79",
+          "8",
+          "Date",
+          "YYYYMMDD last calendar day this segment was effective."
+        ],
+        [
+          "STATE-NOTATION",
+          "80",
+          "579",
+          "500",
+          "Text",
+          "Free-text field for the submitting state."
+        ],
+        [
+          "FILLER",
+          "580",
+          "1000",
+          "421",
+          "Filler",
+          "Reserved/unused bytes padded with spaces."
+        ],
+        [
+          "✓ Total bytes accounted: 1000 / 1000",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "ELG00013  ·  LTSS-PARTICIPATION",
+          "Unnamed: 1",
+          "Unnamed: 2",
+          "Unnamed: 3",
+          "Unnamed: 4",
+          "Unnamed: 5"
+        ],
+        [
+          "Level of care the eligible person receives at various points in time while in a long-term care facility.",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Fixed-width record: 1000 bytes total  |  Defined fields: 570 bytes  |  Filler: 430 bytes  |  Positions are 1-based inclusive",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Field Name",
+          "Start Pos",
+          "End Pos",
+          "Length",
+          "Type",
+          "Description"
+        ],
+        [
+          "RECORD-ID",
+          "1",
+          "8",
+          "8",
+          "Alphanumeric",
+          "Segment type identifier (ELG00013)."
+        ],
+        [
+          "SUBMITTING-STATE",
+          "9",
+          "10",
+          "2",
+          "Code",
+          "ANSI FIPS state code."
+        ],
+        [
+          "RECORD-NUMBER",
+          "11",
+          "21",
+          "11",
+          "Numeric",
+          "Sequential record number within the submission file."
+        ],
+        [
+          "MSIS-IDENTIFICATION-NUM",
+          "22",
+          "41",
+          "20",
+          "ID/Numeric",
+          "State-assigned unique identifier for the enrolled individual."
+        ],
+        [
+          "LTSS-LEVEL-CARE",
+          "42",
+          "42",
+          "1",
+          "Code",
+          "Level of care provided by the long-term care facility."
+        ],
+        [
+          "LTSS-PROV-NUM",
+          "43",
+          "54",
+          "12",
+          "ID/Numeric",
+          "Unique state-assigned ID for the long-term care facility furnishing services."
+        ],
+        [
+          "LTSS-ELIGIBILITY-EFF-DATE",
+          "55",
+          "62",
+          "8",
+          "Date",
+          "YYYYMMDD first calendar day this segment was effective."
+        ],
+        [
+          "LTSS-ELIGIBILITY-END-DATE",
+          "63",
+          "70",
+          "8",
+          "Date",
+          "YYYYMMDD last calendar day this segment was effective."
+        ],
+        [
+          "STATE-NOTATION",
+          "71",
+          "570",
+          "500",
+          "Text",
+          "Free-text field for the submitting state."
+        ],
+        [
+          "FILLER",
+          "571",
+          "1000",
+          "430",
+          "Filler",
+          "Reserved/unused bytes padded with spaces."
+        ],
+        [
+          "✓ Total bytes accounted: 1000 / 1000",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "ELG00014  ·  MANAGED-CARE-PARTICIPATION",
+          "Unnamed: 1",
+          "Unnamed: 2",
+          "Unnamed: 3",
+          "Unnamed: 4",
+          "Unnamed: 5"
+        ],
+        [
+          "Information about the eligible person's enrollment in a managed care plan.",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Fixed-width record: 1000 bytes total  |  Defined fields: 571 bytes  |  Filler: 429 bytes  |  Positions are 1-based inclusive",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Field Name",
+          "Start Pos",
+          "End Pos",
+          "Length",
+          "Type",
+          "Description"
+        ],
+        [
+          "RECORD-ID",
+          "1",
+          "8",
+          "8",
+          "Alphanumeric",
+          "Segment type identifier (ELG00014)."
+        ],
+        [
+          "SUBMITTING-STATE",
+          "9",
+          "10",
+          "2",
+          "Code",
+          "ANSI FIPS state code."
+        ],
+        [
+          "RECORD-NUMBER",
+          "11",
+          "21",
+          "11",
+          "Numeric",
+          "Sequential record number within the submission file."
+        ],
+        [
+          "MSIS-IDENTIFICATION-NUM",
+          "22",
+          "41",
+          "20",
+          "ID/Numeric",
+          "State-assigned unique identifier for the enrolled individual."
+        ],
+        [
+          "MANAGED-CARE-PLAN-ID",
+          "42",
+          "53",
+          "12",
+          "ID/Numeric",
+          "Managed care plan identification number under which the eligible individual is enrolled."
+        ],
+        [
+          "MANAGED-CARE-PLAN-TYPE",
+          "54",
+          "55",
+          "2",
+          "Code",
+          "Model of health care delivery (MCO, PCCM, PAHP, etc.)."
+        ],
+        [
+          "MANAGED-CARE-PLAN-ENROLLMENT-EFF-DATE",
+          "56",
+          "63",
+          "8",
+          "Date",
+          "YYYYMMDD first calendar day this segment was effective."
+        ],
+        [
+          "MANAGED-CARE-PLAN-ENROLLMENT-END-DATE",
+          "64",
+          "71",
+          "8",
+          "Date",
+          "YYYYMMDD last calendar day this segment was effective."
+        ],
+        [
+          "STATE-NOTATION",
+          "72",
+          "571",
+          "500",
+          "Text",
+          "Free-text field for the submitting state."
+        ],
+        [
+          "FILLER",
+          "572",
+          "1000",
+          "429",
+          "Filler",
+          "Reserved/unused bytes padded with spaces."
+        ],
+        [
+          "✓ Total bytes accounted: 1000 / 1000",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "ELG00015  ·  ETHNICITY-INFORMATION",
+          "Unnamed: 1",
+          "Unnamed: 2",
+          "Unnamed: 3",
+          "Unnamed: 4",
+          "Unnamed: 5"
+        ],
+        [
+          "Ethnicity information for the eligible person per ACA Section 4302.",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Fixed-width record: 1000 bytes total  |  Defined fields: 658 bytes  |  Filler: 342 bytes  |  Positions are 1-based inclusive",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Field Name",
+          "Start Pos",
+          "End Pos",
+          "Length",
+          "Type",
+          "Description"
+        ],
+        [
+          "RECORD-ID",
+          "1",
+          "8",
+          "8",
+          "Alphanumeric",
+          "Segment type identifier (ELG00015)."
+        ],
+        [
+          "SUBMITTING-STATE",
+          "9",
+          "10",
+          "2",
+          "Code",
+          "ANSI FIPS state code."
+        ],
+        [
+          "RECORD-NUMBER",
+          "11",
+          "21",
+          "11",
+          "Numeric",
+          "Sequential record number within the submission file."
+        ],
+        [
+          "MSIS-IDENTIFICATION-NUM",
+          "22",
+          "41",
+          "20",
+          "ID/Numeric",
+          "State-assigned unique identifier for the enrolled individual."
+        ],
+        [
+          "ETHNICITY-CODE",
+          "42",
+          "42",
+          "1",
+          "Code",
+          "Hispanic/Latino/Spanish ethnicity per ACA Section 4302 classifications."
+        ],
+        [
+          "ETHNICITY-DECLARATION-EFF-DATE",
+          "43",
+          "50",
+          "8",
+          "Date",
+          "YYYYMMDD first calendar day this segment was effective."
+        ],
+        [
+          "ETHNICITY-DECLARATION-END-DATE",
+          "51",
+          "58",
+          "8",
+          "Date",
+          "YYYYMMDD last calendar day this segment was effective."
+        ],
+        [
+          "STATE-NOTATION",
+          "59",
+          "558",
+          "500",
+          "Text",
+          "Free-text field for the submitting state."
+        ],
+        [
+          "ETHNICITY-OTHER",
+          "559",
+          "658",
+          "100",
+          "Text",
+          "Free-form field when beneficiary identifies as Another Hispanic, Latino, or Spanish origin (code 4)."
+        ],
+        [
+          "FILLER",
+          "659",
+          "1000",
+          "342",
+          "Filler",
+          "Reserved/unused bytes padded with spaces."
+        ],
+        [
+          "✓ Total bytes accounted: 1000 / 1000",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "ELG00016  ·  RACE-INFORMATION",
+          "Unnamed: 1",
+          "Unnamed: 2",
+          "Unnamed: 3",
+          "Unnamed: 4",
+          "Unnamed: 5"
+        ],
+        [
+          "Race information for the eligible person per ACA Section 4302.",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Fixed-width record: 1000 bytes total  |  Defined fields: 661 bytes  |  Filler: 339 bytes  |  Positions are 1-based inclusive",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Field Name",
+          "Start Pos",
+          "End Pos",
+          "Length",
+          "Type",
+          "Description"
+        ],
+        [
+          "RECORD-ID",
+          "1",
+          "8",
+          "8",
+          "Alphanumeric",
+          "Segment type identifier (ELG00016)."
+        ],
+        [
+          "SUBMITTING-STATE",
+          "9",
+          "10",
+          "2",
+          "Code",
+          "ANSI FIPS state code."
+        ],
+        [
+          "RECORD-NUMBER",
+          "11",
+          "21",
+          "11",
+          "Numeric",
+          "Sequential record number within the submission file."
+        ],
+        [
+          "MSIS-IDENTIFICATION-NUM",
+          "22",
+          "41",
+          "20",
+          "ID/Numeric",
+          "State-assigned unique identifier for the enrolled individual."
+        ],
+        [
+          "RACE",
+          "42",
+          "44",
+          "3",
+          "Code",
+          "Individual's race per ACA Section 4302 classifications (detailed sub-categories for Asian, NHPI, etc.)."
+        ],
+        [
+          "RACE-OTHER",
+          "45",
+          "144",
+          "100",
+          "Text",
+          "Free-form field when beneficiary identifies as Other Asian or Other Pacific Islander."
+        ],
+        [
+          "AMERICAN-INDIAN-ALASKA-NATIVE-INDICATOR",
+          "145",
+          "145",
+          "1",
+          "Flag/Indicator",
+          "Meets the federal definition of American Indian or Alaska Native (25 USC 1603)."
+        ],
+        [
+          "RACE-DECLARATION-EFF-DATE",
+          "146",
+          "153",
+          "8",
+          "Date",
+          "YYYYMMDD first calendar day this segment was effective."
+        ],
+        [
+          "RACE-DECLARATION-END-DATE",
+          "154",
+          "161",
+          "8",
+          "Date",
+          "YYYYMMDD last calendar day this segment was effective."
+        ],
+        [
+          "STATE-NOTATION",
+          "162",
+          "661",
+          "500",
+          "Text",
+          "Free-text field for the submitting state."
+        ],
+        [
+          "FILLER",
+          "662",
+          "1000",
+          "339",
+          "Filler",
+          "Reserved/unused bytes padded with spaces."
+        ],
+        [
+          "✓ Total bytes accounted: 1000 / 1000",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "ELG00017  ·  DISABILITY-INFORMATION",
+          "Unnamed: 1",
+          "Unnamed: 2",
+          "Unnamed: 3",
+          "Unnamed: 4",
+          "Unnamed: 5"
+        ],
+        [
+          "Disability information for the eligible person per ACA Section 4302.",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Fixed-width record: 1000 bytes total  |  Defined fields: 558 bytes  |  Filler: 442 bytes  |  Positions are 1-based inclusive",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Field Name",
+          "Start Pos",
+          "End Pos",
+          "Length",
+          "Type",
+          "Description"
+        ],
+        [
+          "RECORD-ID",
+          "1",
+          "8",
+          "8",
+          "Alphanumeric",
+          "Segment type identifier (ELG00017)."
+        ],
+        [
+          "SUBMITTING-STATE",
+          "9",
+          "10",
+          "2",
+          "Code",
+          "ANSI FIPS state code."
+        ],
+        [
+          "RECORD-NUMBER",
+          "11",
+          "21",
+          "11",
+          "Numeric",
+          "Sequential record number within the submission file."
+        ],
+        [
+          "MSIS-IDENTIFICATION-NUM",
+          "22",
+          "41",
+          "20",
+          "ID/Numeric",
+          "State-assigned unique identifier for the enrolled individual."
+        ],
+        [
+          "DISABILITY-TYPE-CODE",
+          "42",
+          "42",
+          "1",
+          "Code",
+          "Disability status per ACA Section 4302 requirements."
+        ],
+        [
+          "DISABILITY-TYPE-EFF-DATE",
+          "43",
+          "50",
+          "8",
+          "Date",
+          "YYYYMMDD first calendar day this segment was effective."
+        ],
+        [
+          "DISABILITY-TYPE-END-DATE",
+          "51",
+          "58",
+          "8",
+          "Date",
+          "YYYYMMDD last calendar day this segment was effective."
+        ],
+        [
+          "STATE-NOTATION",
+          "59",
+          "558",
+          "500",
+          "Text",
+          "Free-text field for the submitting state."
+        ],
+        [
+          "FILLER",
+          "559",
+          "1000",
+          "442",
+          "Filler",
+          "Reserved/unused bytes padded with spaces."
+        ],
+        [
+          "✓ Total bytes accounted: 1000 / 1000",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "ELG00018  ·  1115A-DEMONSTRATION-INFORMATION",
+          "Unnamed: 1",
+          "Unnamed: 2",
+          "Unnamed: 3",
+          "Unnamed: 4",
+          "Unnamed: 5"
+        ],
+        [
+          "Eligible person's participation in a CMMI 1115A demonstration.",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Fixed-width record: 1000 bytes total  |  Defined fields: 558 bytes  |  Filler: 442 bytes  |  Positions are 1-based inclusive",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Field Name",
+          "Start Pos",
+          "End Pos",
+          "Length",
+          "Type",
+          "Description"
+        ],
+        [
+          "RECORD-ID",
+          "1",
+          "8",
+          "8",
+          "Alphanumeric",
+          "Segment type identifier (ELG00018)."
+        ],
+        [
+          "SUBMITTING-STATE",
+          "9",
+          "10",
+          "2",
+          "Code",
+          "ANSI FIPS state code."
+        ],
+        [
+          "RECORD-NUMBER",
+          "11",
+          "21",
+          "11",
+          "Numeric",
+          "Sequential record number within the submission file."
+        ],
+        [
+          "MSIS-IDENTIFICATION-NUM",
+          "22",
+          "41",
+          "20",
+          "ID/Numeric",
+          "State-assigned unique identifier for the enrolled individual."
+        ],
+        [
+          "1115A-DEMONSTRATION-IND",
+          "42",
+          "42",
+          "1",
+          "Flag/Indicator",
+          "Individual participates in a CMMI 1115A demonstration."
+        ],
+        [
+          "1115A-EFF-DATE",
+          "43",
+          "50",
+          "8",
+          "Date",
+          "YYYYMMDD first calendar day this segment was effective."
+        ],
+        [
+          "1115A-END-DATE",
+          "51",
+          "58",
+          "8",
+          "Date",
+          "YYYYMMDD last calendar day this segment was effective."
+        ],
+        [
+          "STATE-NOTATION",
+          "59",
+          "558",
+          "500",
+          "Text",
+          "Free-text field for the submitting state."
+        ],
+        [
+          "FILLER",
+          "559",
+          "1000",
+          "442",
+          "Filler",
+          "Reserved/unused bytes padded with spaces."
+        ],
+        [
+          "✓ Total bytes accounted: 1000 / 1000",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "ELG00020  ·  HCBS-CHRONIC-CONDITIONS-NON-HEALTH-HOME",
+          "Unnamed: 1",
+          "Unnamed: 2",
+          "Unnamed: 3",
+          "Unnamed: 4",
+          "Unnamed: 5"
+        ],
+        [
+          "Chronic conditions for which the eligible person is receiving home and community-based care (non-Health-Home). Note: ELG00019 does not exist in the T-MSIS spec.",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Fixed-width record: 1000 bytes total  |  Defined fields: 560 bytes  |  Filler: 440 bytes  |  Positions are 1-based inclusive",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Field Name",
+          "Start Pos",
+          "End Pos",
+          "Length",
+          "Type",
+          "Description"
+        ],
+        [
+          "RECORD-ID",
+          "1",
+          "8",
+          "8",
+          "Alphanumeric",
+          "Segment type identifier (ELG00020)."
+        ],
+        [
+          "SUBMITTING-STATE",
+          "9",
+          "10",
+          "2",
+          "Code",
+          "ANSI FIPS state code."
+        ],
+        [
+          "RECORD-NUMBER",
+          "11",
+          "21",
+          "11",
+          "Numeric",
+          "Sequential record number within the submission file."
+        ],
+        [
+          "MSIS-IDENTIFICATION-NUM",
+          "22",
+          "41",
+          "20",
+          "ID/Numeric",
+          "State-assigned unique identifier for the enrolled individual."
+        ],
+        [
+          "HCBS-CHRONIC-CONDITION-NON-HEALTH-HOME-CODE",
+          "42",
+          "44",
+          "3",
+          "Code",
+          "Chronic condition for which the eligible person is receiving non-Health-Home HCBS care."
+        ],
+        [
+          "HCBS-CHRONIC-CONDITION-NON-HEALTH-HOME-EFF-DATE",
+          "45",
+          "52",
+          "8",
+          "Date",
+          "YYYYMMDD first calendar day this segment was effective."
+        ],
+        [
+          "HCBS-CHRONIC-CONDITION-NON-HEALTH-HOME-END-DATE",
+          "53",
+          "60",
+          "8",
+          "Date",
+          "YYYYMMDD last calendar day this segment was effective."
+        ],
+        [
+          "STATE-NOTATION",
+          "61",
+          "560",
+          "500",
+          "Text",
+          "Free-text field for the submitting state."
+        ],
+        [
+          "FILLER",
+          "561",
+          "1000",
+          "440",
+          "Filler",
+          "Reserved/unused bytes padded with spaces."
+        ],
+        [
+          "✓ Total bytes accounted: 1000 / 1000",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "ELG00021  ·  ENROLLMENT-TIME-SPAN-SEGMENT",
+          "Unnamed: 1",
+          "Unnamed: 2",
+          "Unnamed: 3",
+          "Unnamed: 4",
+          "Unnamed: 5"
+        ],
+        [
+          "Type of enrollment and time spans of enrollment for the eligible person.",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Fixed-width record: 1000 bytes total  |  Defined fields: 558 bytes  |  Filler: 442 bytes  |  Positions are 1-based inclusive",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Field Name",
+          "Start Pos",
+          "End Pos",
+          "Length",
+          "Type",
+          "Description"
+        ],
+        [
+          "RECORD-ID",
+          "1",
+          "8",
+          "8",
+          "Alphanumeric",
+          "Segment type identifier (ELG00021)."
+        ],
+        [
+          "SUBMITTING-STATE",
+          "9",
+          "10",
+          "2",
+          "Code",
+          "ANSI FIPS state code."
+        ],
+        [
+          "RECORD-NUMBER",
+          "11",
+          "21",
+          "11",
+          "Numeric",
+          "Sequential record number within the submission file."
+        ],
+        [
+          "MSIS-IDENTIFICATION-NUM",
+          "22",
+          "41",
+          "20",
+          "ID/Numeric",
+          "State-assigned unique identifier for the enrolled individual."
+        ],
+        [
+          "ENROLLMENT-TYPE",
+          "42",
+          "42",
+          "1",
+          "Code",
+          "Type of enrollment: 1=Medicaid/Medicaid Expansion CHIP, 2=Separate CHIP, 3=Both."
+        ],
+        [
+          "ENROLLMENT-EFF-DATE",
+          "43",
+          "50",
+          "8",
+          "Date",
+          "YYYYMMDD first calendar day this segment was effective."
+        ],
+        [
+          "ENROLLMENT-END-DATE",
+          "51",
+          "58",
+          "8",
+          "Date",
+          "YYYYMMDD last calendar day this segment was effective."
+        ],
+        [
+          "STATE-NOTATION",
+          "59",
+          "558",
+          "500",
+          "Text",
+          "Free-text field for the submitting state."
+        ],
+        [
+          "FILLER",
+          "559",
+          "1000",
+          "442",
+          "Filler",
+          "Reserved/unused bytes padded with spaces."
+        ],
+        [
+          "✓ Total bytes accounted: 1000 / 1000",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "ELG00022  ·  ELG-IDENTIFIERS",
+          "Unnamed: 1",
+          "Unnamed: 2",
+          "Unnamed: 3",
+          "Unnamed: 4",
+          "Unnamed: 5"
+        ],
+        [
+          "Identifiers assigned to a beneficiary by various entities; critical for linking across data sources. Child of ELG00002.",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Fixed-width record: 1000 bytes total  |  Defined fields: 606 bytes  |  Filler: 394 bytes  |  Positions are 1-based inclusive",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "Field Name",
+          "Start Pos",
+          "End Pos",
+          "Length",
+          "Type",
+          "Description"
+        ],
+        [
+          "RECORD-ID",
+          "1",
+          "8",
+          "8",
+          "Alphanumeric",
+          "Segment type identifier (ELG00022)."
+        ],
+        [
+          "SUBMITTING-STATE",
+          "9",
+          "10",
+          "2",
+          "Code",
+          "ANSI FIPS state code."
+        ],
+        [
+          "RECORD-NUMBER",
+          "11",
+          "21",
+          "11",
+          "Numeric",
+          "Sequential record number within the submission file."
+        ],
+        [
+          "MSIS-IDENTIFICATION-NUM",
+          "22",
+          "41",
+          "20",
+          "ID/Numeric",
+          "State-assigned unique identifier for the enrolled individual."
+        ],
+        [
+          "ELG-IDENTIFIER-TYPE",
+          "42",
+          "42",
+          "1",
+          "Code",
+          "Kind of eligible identifier captured in the ELG-IDENTIFIER element (1=Medicaid Card ID, 2=Old MSIS ID, etc.)."
+        ],
+        [
+          "ELG-IDENTIFIER-ISSUING-ENTITY-ID",
+          "43",
+          "60",
+          "18",
+          "ID/Numeric",
+          "Reserved for future use — identifies the entity issuing the identifier."
+        ],
+        [
+          "ELG-IDENTIFIER-EFF-DATE",
+          "61",
+          "68",
+          "8",
+          "Date",
+          "YYYYMMDD first calendar day this segment was effective."
+        ],
+        [
+          "ELG-IDENTIFIER-END-DATE",
+          "69",
+          "76",
+          "8",
+          "Date",
+          "YYYYMMDD last calendar day this segment was effective."
+        ],
+        [
+          "ELG-IDENTIFIER",
+          "77",
+          "96",
+          "20",
+          "ID/Numeric",
+          "The actual identifier value; type indicated by ELG-IDENTIFIER-TYPE."
+        ],
+        [
+          "REASON-FOR-CHANGE",
+          "97",
+          "106",
+          "10",
+          "Code",
+          "Why the MSIS ID changed (MERGE, UNMERGE, LSE, TCAM). Required when ELG-IDENTIFIER-TYPE = 2."
+        ],
+        [
+          "STATE-NOTATION",
+          "107",
+          "606",
+          "500",
+          "Text",
+          "Free-text field for the submitting state."
+        ],
+        [
+          "FILLER",
+          "607",
+          "1000",
+          "394",
+          "Filler",
+          "Reserved/unused bytes padded with spaces."
+        ],
+        [
+          "✓ Total bytes accounted: 1000 / 1000",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ]
+    }
+  ]
+}

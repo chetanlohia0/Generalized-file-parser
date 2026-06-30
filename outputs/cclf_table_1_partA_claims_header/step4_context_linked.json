@@ -1,0 +1,401 @@
+{
+  "document_id": "cclf_table_1_partA_claims_header",
+  "source_format": ".csv",
+  "total_pages": 1,
+  "global_metadata": [],
+  "schema_clusters": [
+    {
+      "element_id": "context_group_0",
+      "type": "schema_cluster",
+      "pages_spanned": [
+        1
+      ],
+      "introductory_context": [],
+      "table": {
+        "headers": [
+          "Element#",
+          "Claim Field Label",
+          "Claim Field Name",
+          "Start Position",
+          "End Position",
+          "Data Length",
+          "Format",
+          "Claim Field Description"
+        ],
+        "matrix": [
+          [
+            "1",
+            "CUR_CLM_UNIQ_ID",
+            "Current Claim Unique Identifier",
+            "1",
+            "13",
+            "13",
+            "9(13)",
+            "A unique identification number assigned to the claim. I H"
+          ],
+          [
+            "2",
+            "PRVDR_OSCAR_NUM",
+            "Provider OSCAR Number",
+            "14",
+            "19",
+            "6",
+            "X(06)",
+            "A facility’s Medicare/Medicaid identification number (Medicare/Medicaid Provider Number or CCN). H"
+          ],
+          [
+            "3",
+            "BENE_MBI_ID",
+            "Medicare Beneficiary Identifier",
+            "20",
+            "30",
+            "11",
+            "X(11)",
+            "A Medicare Beneficiary Identifier assigned to a beneficiary. I H"
+          ],
+          [
+            "4",
+            "BENE_HIC_NUM",
+            "Beneficiary HIC Number",
+            "31",
+            "41",
+            "11",
+            "X(11)",
+            "Legacy Beneficiary HICN field; blank in CCLFs effective Jan 1, 2020 onwards. I H"
+          ],
+          [
+            "5",
+            "CLM_TYPE_CD",
+            "Claim Type Code",
+            "42",
+            "43",
+            "2",
+            "9(02)",
+            "Signifies the type of claim being submitted; codes include 10=HHA,20=Non swing bed SNF,30=Swing bed SNF,40=Outpatient,50=Hospice,60=Inpatient,61=Inpatient Full-Encounter. H"
+          ],
+          [
+            "6",
+            "CLM_FROM_DT",
+            "Claim From Date",
+            "44",
+            "53",
+            "10",
+            "YYYY-MM-DD",
+            "The first day on the billing statement that covers services rendered to the beneficiary (Statement Covers From Date). H"
+          ],
+          [
+            "7",
+            "CLM_THRU_DT",
+            "Claim Thru Date",
+            "54",
+            "63",
+            "10",
+            "YYYY-MM-DD",
+            "The last day on the billing statement that covers services rendered to the beneficiary (Statement Covers Through Date). H"
+          ],
+          [
+            "8",
+            "CLM_BILL_FAC_TYPE_CD",
+            "Claim Bill Facility Type Code",
+            "64",
+            "64",
+            "1",
+            "X(01)",
+            "The first digit of the type of bill identifies facility type; codes include 1=Hospital,2=SNF,3=HHA,4=Religious non-medical hospital,5=Religious non-medical extended care,6=Intermediate care,7=Clinic or hospital-based renal dialysis facility,8=Specialty facility or ASC,9=Reserved. H"
+          ],
+          [
+            "9",
+            "CLM_BILL_CLSFCTN_CD",
+            "Claim Bill Classification Code",
+            "65",
+            "65",
+            "1",
+            "X(01)",
+            "The second digit of the type of bill indicates where the service was provided (department within facility). H"
+          ],
+          [
+            "10",
+            "PRNCPL_DGNS_CD",
+            "Principal Diagnosis Code",
+            "66",
+            "72",
+            "7",
+            "X(07)",
+            "The ICD-9/10 diagnosis code identifying the beneficiary’s principal illness or disability. H"
+          ],
+          [
+            "11",
+            "ADMTG_DGNS_CD",
+            "Admitting Diagnosis Code",
+            "73",
+            "79",
+            "7",
+            "X(07)",
+            "The ICD-9/10 diagnosis code identifying the illness or disability for which the beneficiary was admitted. H"
+          ],
+          [
+            "12",
+            "CLM_MDCR_NPMT_RSN_CD",
+            "Claim Medicare Non-Payment Reason Code",
+            "80",
+            "81",
+            "2",
+            "X(02)",
+            "Indicates the reason payment on an institutional claim is denied. See ResDAC for codes."
+          ],
+          [
+            "13",
+            "CLM_PMT_AMT",
+            "Claim Payment Amount",
+            "82",
+            "98",
+            "17",
+            "-9(13).99",
+            "Amount that Medicare paid on the claim. H"
+          ],
+          [
+            "14",
+            "CLM_NCH_PRMRY_PYR_CD",
+            "Claim NCH Primary Payer Code",
+            "99",
+            "99",
+            "1",
+            "X(01)",
+            "Indicates the primary payer if other than Medicare; blank means Medicare is primary. See ResDAC for codes. H"
+          ],
+          [
+            "15",
+            "PRVDR_FAC_FIPS_ST_CD",
+            "Federal Information Processing Standards (FIPS) State Code",
+            "100",
+            "101",
+            "2",
+            "X(02)",
+            "Identifies the state where the facility providing services is located."
+          ],
+          [
+            "16",
+            "BENE_PTNT_STUS_CD",
+            "Beneficiary Patient Status Code",
+            "102",
+            "103",
+            "2",
+            "X(02)",
+            "Indicates the patient’s discharge status as of the Claim Through Date (e.g., discharged to home, another facility, against medical advice, death). I H"
+          ],
+          [
+            "17",
+            "DGNS_DRG_CD",
+            "Diagnosis Related Group Code",
+            "104",
+            "107",
+            "4",
+            "X(04)",
+            "Indicates the diagnostic related group for prospective payment purposes. I H"
+          ],
+          [
+            "18",
+            "CLM_OP_SRVC_TYPE_CD",
+            "Claim Outpatient Service Type Code",
+            "108",
+            "108",
+            "1",
+            "X(01)",
+            "Code reported by provider indicating specific type of claim; values include 0=Blank,1=Emergency,2=Urgent,3=Elective,5-8=Reserved,9=Unknown. I H"
+          ],
+          [
+            "19",
+            "FAC_PRVDR_NPI_NUM",
+            "Facility Provider NPI Number",
+            "109",
+            "118",
+            "10",
+            "X(10)",
+            "Identifies the facility associated with the claim; each facility has a unique NPI."
+          ],
+          [
+            "20",
+            "OPRTG_PRVDR_NPI_NUM",
+            "Operating Provider NPI Number",
+            "119",
+            "128",
+            "10",
+            "X(10)",
+            "Identifies the operating provider associated with the claim; each provider has a unique NPI."
+          ],
+          [
+            "21",
+            "ATNDG_PRVDR_NPI_NUM",
+            "Attending Provider NPI Number",
+            "129",
+            "138",
+            "10",
+            "X(10)",
+            "Identifies the attending provider associated with the claim; each provider has a unique NPI."
+          ],
+          [
+            "22",
+            "OTHR_PRVDR_NPI_NUM",
+            "Other Provider NPI Number",
+            "139",
+            "148",
+            "10",
+            "X(10)",
+            "Identifies other providers associated with the claim; each provider has a unique NPI."
+          ],
+          [
+            "23",
+            "CLM_ADJSMT_TYPE_CD",
+            "Claim Adjustment Type Code",
+            "149",
+            "150",
+            "2",
+            "X(02)",
+            "Indicates whether the claim is original, cancellation, or adjustment; 0=Original,1=Cancellation,2=Adjustment."
+          ],
+          [
+            "24",
+            "CLM_EFCTV_DT",
+            "Claim Effective Date",
+            "151",
+            "160",
+            "10",
+            "YYYY-MM-DD",
+            "Date the claim was processed and added to the NCH (NCH Weekly Processing Date). H"
+          ],
+          [
+            "25",
+            "CLM_IDR_LD_DT",
+            "Claim IDR Load Date",
+            "161",
+            "170",
+            "10",
+            "YYYY-MM-DD",
+            "Date when the claim was loaded into the IDR."
+          ],
+          [
+            "26",
+            "BENE_EQTBL_BIC_HICN_NUM",
+            "Beneficiary Equitable BIC HICN Number",
+            "171",
+            "181",
+            "11",
+            "X(11)",
+            "Legacy Beneficiary Equitable BIC HICN Number; blank in CCLFs effective Jan 1, 2020 onwards."
+          ],
+          [
+            "27",
+            "CLM_ADMSN_TYPE_CD",
+            "Claim Admission Type Code",
+            "182",
+            "183",
+            "2",
+            "X(2)",
+            "Indicates type and priority of inpatient services; codes include 0=Blank,1=Emergency,2=Urgent,3=Elective,4=Newborn,5=Trauma Center,6-8=Reserved,9=Unknown. I H"
+          ],
+          [
+            "28",
+            "CLM_ADMSN_SRC_CD",
+            "Claim Admission Source Code",
+            "184",
+            "185",
+            "2",
+            "X(2)",
+            "Indicates source of referral for admission or visit; see ResDAC for codes."
+          ],
+          [
+            "29",
+            "CLM_BILL_FREQ_CD",
+            "Claim Bill Frequency Code",
+            "186",
+            "186",
+            "1",
+            "X(1)",
+            "The third digit of the type of bill (TOB3) indicating sequence of claim in episode of care; see ResDAC for codes."
+          ],
+          [
+            "30",
+            "CLM_QUERY_CD",
+            "Claim Query Code",
+            "187",
+            "187",
+            "1",
+            "X(1)",
+            "Indicates type of claim record being processed with respect to payment; codes include 0=Credit adjustment,1=Interim bill,2=HHA benefits exhausted,3=Final bill,4=Discharge notice,5=Debit adjustment."
+          ],
+          [
+            "31",
+            "DGNS_PRCDR_ICD_IND",
+            "ICD Version Indicator",
+            "188",
+            "188",
+            "1",
+            "X(1)",
+            "ICD version indicator: 9=ICD-9,0=ICD-10,U=other."
+          ],
+          [
+            "32",
+            "CLM_MDCR_INSTNL_TOT_CHRG_AMT",
+            "Total Claim Charge Amount",
+            "189",
+            "203",
+            "15",
+            "-9(11).99",
+            "Total charges for all services on the institutional claim; redundant with revenue center code 0001/total charges."
+          ],
+          [
+            "33",
+            "CLM_MDCR_IP_PPS_CPTL_IME_AMT",
+            "Claim Capital Indirect Medical Education Amount",
+            "204",
+            "218",
+            "15",
+            "-9(11).99",
+            "Amount of IME portion of PPS payment for capital (teaching hospitals only); applicable for claim type 60; total calculated based on debit/credit methodology."
+          ],
+          [
+            "34",
+            "CLM_OPRTNL_IME_AMT",
+            "Claim Operational Indirect Medical Education Amount",
+            "219",
+            "240",
+            "22",
+            "-9(18).99",
+            "Indirect medical education amount applicable to the bill (exclude PPS capital IME); applicable for claim type 60; total calculated based on debit/credit methodology."
+          ],
+          [
+            "35",
+            "CLM_MDCR_IP_PPS_DSPRPRTNT_AMT",
+            "Claim Capital Disproportionate Amount",
+            "241",
+            "255",
+            "15",
+            "-9(11).99",
+            "Amount of disproportionate share portion of PPS payment for capital; effective 3/2/92; applicable for claim type 60; total calculated based on debit/credit methodology."
+          ],
+          [
+            "36",
+            "CLM_HIPPS_UNCOMPD_CARE_AMT",
+            "Claim Health Insurance Prospective Payment System Uncompensated Care Amount",
+            "256",
+            "270",
+            "15",
+            "-9(11).99",
+            "Payment for DSH hospitals representing uncompensated care amount; applicable for claim types 10,20,30,40,50,60; total calculated based on debit/credit methodology."
+          ],
+          [
+            "37",
+            "CLM_OPRTNL_DSPRPRTNT_AMT",
+            "Claim Operational Disproportionate Amount",
+            "271",
+            "292",
+            "22",
+            "-9(18).99",
+            "Disproportionate share amount applicable to the bill (use PRICER amount; exclude PPS capital DSH adjustment); applicable for claim type 60; total calculated based on debit/credit methodology."
+          ]
+        ]
+      },
+      "footer_context": []
+    }
+  ]
+}

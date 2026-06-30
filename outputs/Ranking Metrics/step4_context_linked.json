@@ -1,0 +1,118 @@
+{
+  "document_id": "Ranking Metrics",
+  "source_format": ".pdf",
+  "total_pages": 3,
+  "global_metadata": [],
+  "schema_clusters": [
+    {
+      "element_id": "context_group_0",
+      "type": "schema_cluster",
+      "pages_spanned": [
+        1
+      ],
+      "introductory_context": [
+        "METRICS FOR EVALUATION OF STUDENTS FOR PLACEMENT",
+        "RANKING"
+      ],
+      "table": {
+        "headers": [
+          "METRIC",
+          "ALLOTTED\nMARKS",
+          "SPLIT UP",
+          "EVALUATION"
+        ],
+        "matrix": [
+          [
+            "10th Percentage",
+            "2.5",
+            "96 to 100% - 2.5 Marks\n91 to 95% - 2 Marks\n86 to 90% - 1.5 Marks\n75 to 85% - 1 Mark\nBelow 75% - 0.5 Mark",
+            ""
+          ],
+          [
+            "12th Percentage",
+            "2.5",
+            "96 to 100% - 2.5 Marks\n91 to 95% - 2 Marks\n86 to 90% - 1.5 Marks\n75 to 85% - 1 Mark\nBelow 75% - 0.5 Mark",
+            ""
+          ],
+          [
+            "CGPA",
+            "5",
+            "> 9.5 CGPA – 5 Marks\n9.1 to 9.5 CGPA - 4 Marks\n8.6 to 9.0 CGPA - 3 Marks\n7.5 to 8.5 CGPA - 2 Marks\nBelow 7.5% CGPA - 1 Mark",
+            ""
+          ],
+          [
+            "Github Profile",
+            "15\n(5 + 2 + 3 + 5)",
+            "Number of Contributions /\nRepositories in last 1 Year\n(5Marks)\nMore than 20 – 5 Marks\n16 to 20 – 4 Marks\n11 to 15 – 3 Marks\n6 to 10 – 2 Marks\n1 to 5 – 1 Mark\nNo Contribution – 0 Mark\nFrequency of Contributions /\nRepositories on Monthly Basis\n(2 Marks)\n2 per Month – 2 Marks\n1 per Month – 1 Mark\nNo Contribution – 0 Mark\nProjects Done for Community.\nMaximum of 2 Projects to be\nConsidered)(3 Marks)\nEach Project – 2 Marks\nNo of Collaborations.\nMaximum of 3 Collaborations\nto be considered (5 Marks)\nFor each collaboration – 2\nMarks",
+            ""
+          ]
+        ]
+      },
+      "footer_context": []
+    },
+    {
+      "element_id": "context_group_1",
+      "type": "schema_cluster",
+      "pages_spanned": [
+        2,
+        3
+      ],
+      "introductory_context": [],
+      "table": {
+        "headers": [
+          "Coding Practice\nPlatform",
+          "10 (5 + 5)",
+          "No of Badges / Recognitions\nEarned (5 Marks)\n25 and greater than 25 – 5\nMarks\n20 Badges – 4 Marks\n15 Badges – 3 Marks\n10 Badges – 2 Marks\n5 Badge – 1 Mark\nLess than 5 / No Badges /\nRecognitions – 0 Mark\nNo of Medium and Difficult\nQuestions Solved (5 Marks)\nMore than 200 – 5 Marks\n150 to 200 – 4 Marks\n100 to 150 – 3 Marks\n50 to 100 – 2 Marks\n25 to 50 – 1 Mark\nLess than 25 / No Questions\nSolved – 0 Marks"
+        ],
+        "matrix": [
+          [
+            "Internship Experience",
+            "10",
+            "(Minimum duration for\ninternship – 3 Months)\nIIT, NIT Internships – 5 Marks\nPlaced in Internship through\nSRM Placement Process – 5\nMarks\nFortune 500 Companies – 4\nMarks\nSmall Companies – 3 Marks\nInternship with Duration less\nthan 3 Months – 2 Marks\nPaid Internship – 1 Mark\nNo Internship – 0 Marks"
+          ],
+          [
+            "Skillset &Standard\nCertifications\nCompleted",
+            "15",
+            "(Maximum of 5 Courses to be\nConsidered)\nCISCO, CCNA, CCNP, MCNA,\nMCNP, Matlab, Redhat, IBM –\n5 Marks\nNPTEL – 3 Marks\nCoursera – 2 Mark\nProgramming Certifications (C,\nC++, Java, Python, etc) – 1\nMark\nUdemy - 0.5 Mark"
+          ],
+          [
+            "Projects Done",
+            "5",
+            "(Maximum of 3 Projects to be\nConsidered)\nIIT, NIT, DRDO Projects – 5\nMarks\nOther Government Projects\n(each) – 4 Marks\nMobile Application, Web\nApplication (each) – 3 Marks\nMini Project (each) – 1 or 2\nMarks based on the project\nquality\nNo Projects Done – 0 Marks"
+          ],
+          [
+            "Full Stack Developer\nExperience",
+            "5",
+            "(Maximum of 1 FSD Project to\nbe considered)\nOne FSD Project – 5 Marks\nNo FSD Projects – 0 Marks"
+          ],
+          [
+            "Coding Competition\n&Hackathons Won",
+            "10",
+            "(Maximum of 4 Hackathons /\nCoding Competitions to be\nConsidered)\nFirst Prize– 5 Marks\nSecond Prize – 4 Marks\nThird Prize – 3 Marks\nParticipated – 1 Marks\nNo Competitions participated –\n0 Marks"
+          ],
+          [
+            "Inhouse Projects Done",
+            "8",
+            "(Must have worked in projects\nunder any faculty of SRMIST or\nfaculty of any other University.\n2Maximum of 1 Project to be\nconsidered)\nFor each project – 4 Marks"
+          ],
+          [
+            "Membership of\nProfessional Bodies",
+            "2",
+            "No Membership – 0 Marks\nAt least one Membership in\nIEEE, IET, ACM, IET, CSI,\nISTE or any recognized body\n(Valid Certificate is Must) – 2\nMarks"
+          ],
+          [
+            "SHL Assessment /\nTalent Discovery\nAssessment /N.C.E.T\n(National Competence &\nEmployability Test)",
+            "10",
+            "90 to 100 Marks – 10\n80 to 89 Marks – 09\n70 to 79 Marks – 08\n65 to 69 Marks – 07\n60 to 64 Marks – 06\n55 to 59 Marks – 05\n50 to 54 Marks – 04\n40 to 49 Marks – 03\n30 to 39 Marks – 02\n25 to 29 Marks - 01\nLess than 25 Marks - 0"
+          ],
+          [
+            "Total",
+            "100",
+            ""
+          ]
+        ]
+      },
+      "footer_context": []
+    }
+  ]
+}

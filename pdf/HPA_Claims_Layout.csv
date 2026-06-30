@@ -1,0 +1,92 @@
+﻿Data element,Name,Type,Max. length ,Required?,Description/valid values,Error threshold
+MC001 ,Payer type,Text ,1,Yes,See lookup table MC001,0%
+MC003,Product code,Text,3,Yes,See lookup table MC003,0%
+MC004 ,Claim ID,Text,80,Yes,Payer’s unique claim identifier,0%
+MC005 ,Service line counter,Numeric,4,Yes,Increments of 1 for each claim line,0%
+MC010,Member ID,Text,30,Yes,Plan-specific unique member identifier,0%
+MC017,Payment date,Date,8,Yes,CCYYMMDD (example: 20090624). Blanks allowed for denied claims only.,0%
+MC018,Admission date,Date,8,Yes,CCYYMMDD (example: 20090603). Required only for institutional claims.,1.20%
+MC023,Discharge status,Text,2,Yes,See lookup table MC023. Required only for institutional claims.,1.20%
+MC024,Rendering provider ID,Text,30,Yes,Identifier for the rendering provider as assigned by the reporting entity,1.20%
+MC036,Type of bill,Numeric,3,Situational,See lookup table MC 036. Required only for institutional claims.,1.20%
+MC037,Place of service,Text,2,Situational,See lookup table MC 037. Required only for professional claims.,1.20%
+MC038,Claim status,Text,1,Yes,"Was claim paid, denied, CCO encounter, or MCO encounter only? Valid values: P (paid), D (denied), C (CCO encounter), E (other managed care encounter)",0%
+MC038A,COB status,Text,1,Yes,"Was claim a COB claim? Valid values: Y (yes), N (no)",1.20%
+MC041,Principal diagnosis,Text,8,Yes,ICD-10 diagnosis code for dates of service beginning 10/01/2014. Include all characters (example: E10.359). ICD-9 diagnosis code for dates of service before 10/01/2015 If ICD-9 include all digits and exclude decimal point (example: 01220),1.20%
+MC041P,POA flag 1,Text,1,Yes,Present on admission flag for principal diagnosis. See look-up table MC041P. Required only for institutional claims.,1.20%
+MC042,Diagnosis 2,Text,8,Yes,ICD-10 diagnosis code for dates of service beginning 10/01/2014. Include all characters (example: E10.359). ICD-9 diagnosis code for dates of service before 10/01/2015. If ICD-9 include all digits and exclude decimal point (example: 01220),1.20%
+MC042P,POA flag 2,Text,1,Situational,Present on admission flag for diagnosis 2. Required if MC042 is populated. See look-up table MC041P. Required only for institutional claims.,1.20%
+MC043,Diagnosis 3,Text,8,Yes,ICD-10 diagnosis code for dates of service beginning 10/01/2014. Include all characters (example: E10.359). ICD-9 diagnosis code for dates of service before 10/01/2015. If ICD-9 include all digits and exclude decimal point (example: 01220),1.20%
+MC043P,POA flag 3,Text,1,Situational,Present on admission flag for diagnosis 3. Required if MC043 is populated. See look-up table MC041P. Required only for institutional claims.,1.20%
+MC044,Diagnosis 4,Text,8,Yes,ICD-10 diagnosis code for dates of service beginning 10/01/2014. Include all characters (example: E10.359). ICD-9 diagnosis code for dates of service before 10/01/2015. If ICD-9 include all digits and exclude decimal point (example: 01220),1.20%
+MC044P,POA flag 4,Text,1,Situational,Present on admission flag for diagnosis 4. Required if MC044 is populated. See look-up table MC041P. Required only for institutional claims.,1.20%
+MC045,Diagnosis 5,Text,8,Yes,ICD-10 diagnosis code for dates of service beginning 10/01/2014. Include all characters (example: E10.359). ICD-9 diagnosis code for dates of service before 10/01/2015. If ICD-9 include all digits and exclude decimal point (example: 01220),1.20%
+MC045P,POA flag 5,Text,1,Situational,Present on admission flag for diagnosis 5. Required if MC045 is populated. See look-up table MC041P. Required only for institutional claims.,1.20%
+MC046,Diagnosis 6,Text,8,Yes,ICD-10 diagnosis code for dates of service beginning 10/01/2014. Include all characters (example: E10.359). ICD-9 diagnosis code for dates of service before 10/01/2015. If ICD-9 include all digits and exclude decimal point (example: 01220),1.20%
+MC046P,POA flag 6,Text,1,Situational,Present on admission flag for diagnosis 6. Required if MC046 is populated. See look-up table MC041P. Required only for institutional claims.,1.20%
+MC047,Diagnosis 7,Text,8,Yes,ICD-10 diagnosis code for dates of service beginning 10/01/2014. Include all characters (example: E10.359). ICD-9 diagnosis code for dates of service before 10/01/2015. If ICD-9 include all digits and exclude decimal point (example: 01220),1.20%
+MC047P,POA flag 7,Text,1,Situational,Present on admission flag for diagnosis 7. Required if MC047 is populated. See look-up table MC041P. Required only for institutional claims.,1.20%
+MC048,Diagnosis 8,Text,8,Yes,ICD-10 diagnosis code for dates of service beginning 10/01/2014. Include all characters (example: E10.359). ICD-9 diagnosis code for dates of service before 10/01/2015. If ICD-9 include all digits and exclude decimal point (example: 01220),1.20%
+MC048P,POA flag 8,Text,1,Situational,Present on admission flag for diagnosis 8. Required if MC048 is populated. See look-up table MC041P. Required only for institutional claims.,1.20%
+MC049,Diagnosis 9,Text,8,Yes,ICD-10 diagnosis code for dates of service beginning 10/01/2014. Include all characters (example: E10.359). ICD-9 diagnosis code for dates of service before 10/01/2015. If ICD-9 include all digits and exclude decimal point (example: 01220),1.20%
+MC049P,POA flag 9,Text,1,Situational,Present on admission flag for diagnosis 9. Required if MC049 is populated. See look-up table MC041P. Required only for institutional claims.,1.20%
+MC050,Diagnosis 10,Text,8,Yes,ICD-10 diagnosis code for dates of service beginning 10/01/2014. Include all characters (example: E10.359). ICD-9 diagnosis code for dates of service before 10/01/2015. If ICD-9 include all digits and exclude decimal point (example: 01220),1.20%
+MC050P,POA flag 10,Text,1,Situational,Present on admission flag for diagnosis 10. Required if MC050 is populated. See look-up table MC041P. Required only for institutional claims.,1.20%
+MC051,Diagnosis 11,Text,8,Yes,ICD-10 diagnosis code for dates of service beginning 10/01/2014. Include all characters (example: E10.359). ICD-9 diagnosis code for dates of service before 10/01/2015. If ICD-9 include all digits and exclude decimal point (example: 01220),1.20%
+MC051P,POA flag 11,Text,1,Situational,Present on admission flag for diagnosis 11 Required if MC051 is populated. See look-up table MC041P. Required only for institutional claims.,1.20%
+MC052,Diagnosis 12,Text,8,Yes,ICD-10 diagnosis code for dates of service beginning 10/01/2014. Include all characters (example: E10.359). ICD-9 diagnosis code for dates of service before 10/01/2015. If ICD-9 include all digits and exclude decimal point (example: 01220),1.20%
+MC052P,POA flag 12,Text,1,Situational,Present on admission flag for diagnosis 12 Required if MC052 is populated. See look-up table MC041P. Required only for institutional claims.,1.20%
+MC053,Diagnosis 13,Text,8,Yes,ICD-10 diagnosis code for dates of service beginning 10/01/2014. Include all characters (example: E10.359). ICD-9 diagnosis code for dates of service before 10/01/2015. If ICD-9 include all digits and exclude decimal point (example: 01220),1.20%
+MC053P,POA flag 13,Text,1,Situational,Present on admission flag for diagnosis 13 Required if MC053 is populated. See look-up table MC041P. Required only for institutional claims.,1.20%
+MC054,Revenue code,Text,4,Yes,Include all digits (example: 0320). Required only for institutional claims.,1.20%
+MC055,CPT/CPT II/HCPCS procedure code,Text,5,Yes,"CPT, CPT II or HCPCS code. Include all digits (examples: 29870 or G0289)",1.20%
+MC056,Procedure modifier 1,Text,2,Yes,CPT or HCPCS modifier. Include all digits (examples: 50 or AA),1.20%
+MC057,Procedure modifier 2,Text,2,Yes,CPT or HCPCS modifier. Include all digits (examples: 50 or AA),1.20%
+MC057A,Procedure modifier 3,Text,2,Yes,CPT or HCPCS modifier. Include all digits (examples: 50 or AA),1.20%
+MC057B,Procedure modifier 4,Text,2,Yes,CPT or HCPCS modifier. Include all digits (examples: 50 or AA),1.20%
+MC058,Principal inpatient procedure code,Text,8,Yes,"ICD-10 procedure code for dates of service after 10/01/2014. Include all characters, (example: B245ZZ3). ICD-9 procedure code for dates of service before 10/01/2015. If ICD-9 include all digits and exclude decimal point (example: 0085). Required only for institutional claims.",1.20%
+MC058A,Inpatient procedure code 2,Text,8,Yes,"ICD-10 procedure code for dates of service after 10/01/2014. Include all characters, (example: B245ZZ3). ICD-9 procedure code for dates of service before 10/01/2015. If ICD-9 include all digits and exclude decimal point (example: 0085). Required only for institutional claims.",1.20%
+MC058B,Inpatient procedure code 3,Text,8,Yes,"ICD-10 procedure code for dates of service after 10/01/2014. Include all characters, (example: B245ZZ3). ICD-9 procedure code for dates of service before 10/01/2015. If ICD-9 include all digits and exclude decimal point (example: 0085). Required only for institutional claims.",1.20%
+MC058C,Inpatient procedure code 4 ,Text,8,Yes,"ICD-10 procedure code for dates of service after 10/01/2014. Include all characters, (example: B245ZZ3). ICD-9 procedure code for dates of service before 10/01/2015. If ICD-9 include all digits and exclude decimal point (example: 0085). Required only for institutional claims.",1.20%
+MC058D,Inpatient procedure code 5,Text,8,Yes,"ICD-10 procedure code for dates of service after 10/01/2014. Include all characters, (example: B245ZZ3). ICD-9 procedure code for dates of service before 10/01/2015. If ICD-9 include all digits and exclude decimal point (example: 0085). Required only for institutional claims.",1.20%
+MC058E,Inpatient procedure code 6,Text,8,Yes,"ICD-10 procedure code for dates of service after 10/01/2014. Include all characters, (example: B245ZZ3). ICD-9 procedure code for dates of service before 10/01/2015. If ICD-9 include all digits and exclude decimal point (example: 0085). Required only for institutional claims.",1.20%
+MC058F,Inpatient procedure code 7,Text,8,Yes,"ICD-10 procedure code for dates of service after 10/01/2014. Include all characters, (example: B245ZZ3). ICD-9 procedure code for dates of service before 10/01/2015. If ICD-9 include all digits and exclude decimal point (example: 0085). Required only for institutional claims.",1.20%
+MC058G,Inpatient procedure code 8,Text,8,Yes,"ICD-10 procedure code for dates of service after 10/01/2014. Include all characters, (example: B245ZZ3). ICD-9 procedure code for dates of service before 10/01/2015. If ICD-9 include all digits and exclude decimal point (example: 0085). Required only for institutional claims.",1.20%
+MC058H,Inpatient procedure code 9,Text,8,Yes,"ICD-10 procedure code for dates of service after 10/01/2014. Include all characters, (example: B245ZZ3). ICD-9 procedure code for dates of service before 10/01/2015. If ICD-9 include all digits and exclude decimal point (example: 0085). Required only for institutional claims.",1.20%
+MC058J,Inpatient procedure code 10,Text,8,Yes,"ICD-10 procedure code for dates of service after 10/01/2014. Include all characters, (example: B245ZZ3). ICD-9 procedure code for dates of service before 10/01/2015. If ICD-9 include all digits and exclude decimal point (example: 0085). Required only for institutional claims.",1.20%
+MC058K,Inpatient procedure code 11,Text,8,Yes,"ICD-10 procedure code for dates of service after 10/01/2014. Include all characters, (example: B245ZZ3). ICD-9 procedure code for dates of service before 10/01/2015. If ICD-9 include all digits and exclude decimal point (example: 0085). Required only for institutional claims.",1.20%
+MC058L,Inpatient procedure code 12,Text,8,Yes,"ICD-10 procedure code for dates of service after 10/01/2014. Include all characters, (example: B245ZZ3). ICD-9 procedure code for dates of service before 10/01/2015. If ICD-9 include all digits and exclude decimal point (example: 0085). Required only for institutional claims.",1.20%
+MC058M,Inpatient procedure code 13,Text,8,Yes,"ICD-10 procedure code for dates of service after 10/01/2014. Include all characters, (example: B245ZZ3). ICD-9 procedure code for dates of service before 10/01/2015. If ICD-9 include all digits and exclude decimal point (example: 0085). Required only for institutional claims.",1.20%
+MC059,Date of service – From,Date,8,Yes,CCYYMMDD (example: 20090603),0%
+MC060,Date of service – Thru,Date,8,Yes,CCYYMMDD (example: 20090603),0%
+MC061,Quantity,Numeric,11,Yes,Count of units sent on claim line.,0%
+MC062,Charges,Numeric,12,Yes,Two explicit decimal places. Enter 0 if amount equals zero. Leave blank if missing. Example: 15102.00,0%
+MC062A,Allowed amount,Numeric,12,Yes,Two explicit decimal places. Enter 0 if amount equals zero. Leave blank if missing. Example: 15102.00,0%
+MC063,Payment,Numeric,12,Yes,Two explicit decimal places. Enter 0 if amount equals zero. Leave blank if missing. Example: 15102.00,0%
+MC064,Prepaid amount,Numeric,12,Yes,Two explicit decimal places. Enter 0 if amount equals zero. Leave blank if missing. Example: 15102.00,0%
+MC065,Co-payment,Numeric,12,Yes,Two explicit decimal places. Enter 0 if amount equals zero. Leave blank if missing. Example: 15102.00,0%
+MC066,Co-insurance,Numeric,12,Yes,Two explicit decimal places. Enter 0 if amount equals zero. Leave blank if missing. Example: 15102.00,0%
+MC067,Deductible,Numeric,12,Yes,Two explicit decimal places. Enter 0 if amount equals zero. Leave blank if missing. Example: 15102.00,0%
+MC067A,Patient pay amount,Numeric,12,Situational,"Required if any of MC065, MC066, or MC067 are missing. Two explicit decimal places. Enter 0 if amount equals zero. Leave blank if missing. Example: 15102.00",0%
+MC070,Discharge date,Date,8,Situational,Required only for institutional claims. Use 99991231 if patient has not discharged. CCYYMMDD (example: 20090605). Required only for institutional claims.,1.20%
+MC076,Billing provider ID,Text,30,Yes,Identifier for the billing provider as assigned by the reporting entity,1.20%
+QC05,Prior version claim number,Text,80,Situational,Required for participants in Q-Corp initiative.,N/A
+QC06,Claim received date,Date,8,Situational,Required for participants in Q-Corp initiative. CCYYMMDD,N/A
+QC22,DRG,Text,3,Situational,DRG paid by payer. If not available send billed DRG. Required for participants in Q-Corp initiative. Example: 061,N/A
+QC23,DRG type,Text,1,Situational,Required for participants in Q-Corp initiative. Valid values: C (CMS v.24) or M (MS-DRG),N/A
+QC37,,,,,Do not populate as of 01/01/2017.,N/A
+QC38,,,,,Do not populate as of 01/01/2017.,N/A
+QC39,,,,,Do not populate as of 01/01/2017.,N/A
+OHLC1,,,,,Do not populate as of 01/01/2017.,N/A
+OHLC2,,,,,Do not populate as of 01/01/2017.,N/A
+MC008,Plan specific contract number,Text,30,Yes,Plan specific contract number (aka group number),0%
+MC201,ICD version code,Text,2,Yes,Specifies the claim’s ICD version. Valid values: 9 (ICD-9) or 10 (ICD-10),0%
+MC202,Network,Text,1,Yes,See lookup table MC202,0%
+MC203,Admission Type,Text,1,Situational,"Required for inpatient claims. Populate this field only if claim is inpatient. Valid values: 1 (Emergency), 2 (Urgent), 3 (Elective), 4 (Newborn), 5 (Trauma Center), 9 (Information Not Available)",1.20%
+MC204,Admission Source,Text,1,Situational,Required for inpatient claims. Populate this field only if claim is inpatient. See lookup table MC204,1.20%
+MC205,Admitting Diagnosis,Text,8,Situational,Required for inpatient claims. ICD-10 diagnosis code for dates of service beginning 10/01/2014. Include all characters (example: E10.359). ICD-9 diagnosis code for dates of service before 10/01/2014. If ICD-9 include all digits and exclude decimal point (example: 01220). Populate this field only if claim is inpatient.,1.20%
+MC206,Pay to Patient Flag,Text,1,Yes,"Valid values: Y (patient was directly reimbursed), N (patient was not directly reimbursed). If unknown, default to N.",0%
+MC207,Empty field,,,,For future implementation,N/A
+MC208,Empty field,,,,For future implementation,N/A
+MC209,Empty field,,,,For future implementation,N/A
+MC210,Empty field,,,,For future implementation,N/A

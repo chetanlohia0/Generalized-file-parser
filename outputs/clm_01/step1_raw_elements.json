@@ -1,0 +1,1394 @@
+{
+  "document_id": "clm_01",
+  "source_format": ".pdf",
+  "total_pages": 1,
+  "pages": [
+    {
+      "page_number": 1,
+      "page_height": 792.0,
+      "page_width": 612.0,
+      "elements": [
+        {
+          "type": "text_line",
+          "bbox": [
+            52.8,
+            57.0,
+            162.81168,
+            68.03999999999996
+          ],
+          "vertical_position_ratio": 0.072,
+          "text": "S.N. COLUMN NAME",
+          "element_id": "p1_e0"
+        },
+        {
+          "type": "text_line",
+          "bbox": [
+            204.0,
+            57.0,
+            333.32064,
+            68.03999999999996
+          ],
+          "vertical_position_ratio": 0.072,
+          "text": "DATA TYPE DATA LENGTH",
+          "element_id": "p1_e1"
+        },
+        {
+          "type": "text_line",
+          "bbox": [
+            80.4,
+            71.39999999999998,
+            126.56736,
+            82.43999999999994
+          ],
+          "vertical_position_ratio": 0.0902,
+          "text": "1 SOURCE",
+          "element_id": "p1_e2"
+        },
+        {
+          "type": "text_line",
+          "bbox": [
+            204.0,
+            71.39999999999998,
+            253.70208000000002,
+            82.43999999999994
+          ],
+          "vertical_position_ratio": 0.0902,
+          "text": "VARCHAR2",
+          "element_id": "p1_e3"
+        },
+        {
+          "type": "text_line",
+          "bbox": [
+            336.48,
+            71.39999999999998,
+            347.59728,
+            82.43999999999994
+          ],
+          "vertical_position_ratio": 0.0902,
+          "text": "20",
+          "element_id": "p1_e4"
+        },
+        {
+          "type": "text_line",
+          "bbox": [
+            80.4,
+            85.80000000000007,
+            101.93712000000001,
+            96.84000000000003
+          ],
+          "vertical_position_ratio": 0.1083,
+          "text": "2 SN",
+          "element_id": "p1_e5"
+        },
+        {
+          "type": "text_line",
+          "bbox": [
+            204.0,
+            85.80000000000007,
+            245.0136,
+            96.84000000000003
+          ],
+          "vertical_position_ratio": 0.1083,
+          "text": "NUMBER",
+          "element_id": "p1_e6"
+        },
+        {
+          "type": "text_line",
+          "bbox": [
+            336.48,
+            85.80000000000007,
+            347.59728,
+            96.84000000000003
+          ],
+          "vertical_position_ratio": 0.1083,
+          "text": "10",
+          "element_id": "p1_e7"
+        },
+        {
+          "type": "text_line",
+          "bbox": [
+            80.4,
+            114.60000000000002,
+            133.4784,
+            125.63999999999999
+          ],
+          "vertical_position_ratio": 0.1447,
+          "text": "3 CLMNUM",
+          "element_id": "p1_e8"
+        },
+        {
+          "type": "text_line",
+          "bbox": [
+            204.0,
+            114.60000000000002,
+            253.70208000000002,
+            125.63999999999999
+          ],
+          "vertical_position_ratio": 0.1447,
+          "text": "VARCHAR2",
+          "element_id": "p1_e9"
+        },
+        {
+          "type": "text_line",
+          "bbox": [
+            336.48,
+            114.60000000000002,
+            347.59728,
+            125.63999999999999
+          ],
+          "vertical_position_ratio": 0.1447,
+          "text": "50",
+          "element_id": "p1_e10"
+        },
+        {
+          "type": "text_line",
+          "bbox": [
+            80.4,
+            129.0,
+            245.0136,
+            140.03999999999996
+          ],
+          "vertical_position_ratio": 0.1629,
+          "text": "4 CLAIMLINENUMBER NUMBER",
+          "element_id": "p1_e11"
+        },
+        {
+          "type": "text_line",
+          "bbox": [
+            342.0,
+            129.0,
+            347.59728,
+            140.03999999999996
+          ],
+          "vertical_position_ratio": 0.1629,
+          "text": "4",
+          "element_id": "p1_e12"
+        },
+        {
+          "type": "text_line",
+          "bbox": [
+            80.4,
+            143.39999999999998,
+            131.36975999999999,
+            154.43999999999994
+          ],
+          "vertical_position_ratio": 0.1811,
+          "text": "5 CLMTYPE",
+          "element_id": "p1_e13"
+        },
+        {
+          "type": "text_line",
+          "bbox": [
+            204.0,
+            143.39999999999998,
+            253.70208000000002,
+            154.43999999999994
+          ],
+          "vertical_position_ratio": 0.1811,
+          "text": "VARCHAR2",
+          "element_id": "p1_e14"
+        },
+        {
+          "type": "text_line",
+          "bbox": [
+            336.48,
+            143.39999999999998,
+            347.59728,
+            154.43999999999994
+          ],
+          "vertical_position_ratio": 0.1811,
+          "text": "20",
+          "element_id": "p1_e15"
+        },
+        {
+          "type": "text_line",
+          "bbox": [
+            80.4,
+            157.80000000000007,
+            154.18944,
+            168.84000000000003
+          ],
+          "vertical_position_ratio": 0.1992,
+          "text": "6 CLMTYPEDESC",
+          "element_id": "p1_e16"
+        },
+        {
+          "type": "text_line",
+          "bbox": [
+            204.0,
+            157.80000000000007,
+            253.70208000000002,
+            168.84000000000003
+          ],
+          "vertical_position_ratio": 0.1992,
+          "text": "VARCHAR2",
+          "element_id": "p1_e17"
+        },
+        {
+          "type": "text_line",
+          "bbox": [
+            336.48,
+            157.80000000000007,
+            347.59728,
+            168.84000000000003
+          ],
+          "vertical_position_ratio": 0.1992,
+          "text": "50",
+          "element_id": "p1_e18"
+        },
+        {
+          "type": "text_line",
+          "bbox": [
+            80.4,
+            215.39999999999998,
+            158.208,
+            226.43999999999994
+          ],
+          "vertical_position_ratio": 0.272,
+          "text": "7 CLMCATEGORY",
+          "element_id": "p1_e19"
+        },
+        {
+          "type": "text_line",
+          "bbox": [
+            204.0,
+            215.39999999999998,
+            253.70208000000002,
+            226.43999999999994
+          ],
+          "vertical_position_ratio": 0.272,
+          "text": "VARCHAR2",
+          "element_id": "p1_e20"
+        },
+        {
+          "type": "text_line",
+          "bbox": [
+            336.48,
+            215.39999999999998,
+            347.59728,
+            226.43999999999994
+          ],
+          "vertical_position_ratio": 0.272,
+          "text": "20",
+          "element_id": "p1_e21"
+        },
+        {
+          "type": "text_line",
+          "bbox": [
+            80.4,
+            229.80000000000007,
+            123.432,
+            240.84000000000003
+          ],
+          "vertical_position_ratio": 0.2902,
+          "text": "8 MEMID",
+          "element_id": "p1_e22"
+        },
+        {
+          "type": "text_line",
+          "bbox": [
+            204.0,
+            229.80000000000007,
+            253.70208000000002,
+            240.84000000000003
+          ],
+          "vertical_position_ratio": 0.2902,
+          "text": "VARCHAR2",
+          "element_id": "p1_e23"
+        },
+        {
+          "type": "text_line",
+          "bbox": [
+            336.48,
+            229.80000000000007,
+            347.59728,
+            240.84000000000003
+          ],
+          "vertical_position_ratio": 0.2902,
+          "text": "50",
+          "element_id": "p1_e24"
+        },
+        {
+          "type": "text_line",
+          "bbox": [
+            80.4,
+            244.20000000000005,
+            117.90096,
+            255.24
+          ],
+          "vertical_position_ratio": 0.3083,
+          "text": "9 ENRID",
+          "element_id": "p1_e25"
+        },
+        {
+          "type": "text_line",
+          "bbox": [
+            204.0,
+            244.20000000000005,
+            253.70208000000002,
+            255.24
+          ],
+          "vertical_position_ratio": 0.3083,
+          "text": "VARCHAR2",
+          "element_id": "p1_e26"
+        },
+        {
+          "type": "text_line",
+          "bbox": [
+            336.48,
+            244.20000000000005,
+            347.59728,
+            255.24
+          ],
+          "vertical_position_ratio": 0.3083,
+          "text": "20",
+          "element_id": "p1_e27"
+        },
+        {
+          "type": "text_line",
+          "bbox": [
+            74.88,
+            258.6,
+            128.64288,
+            269.64
+          ],
+          "vertical_position_ratio": 0.3265,
+          "text": "10 RELFLAG",
+          "element_id": "p1_e28"
+        },
+        {
+          "type": "text_line",
+          "bbox": [
+            204.0,
+            258.6,
+            253.70208000000002,
+            269.64
+          ],
+          "vertical_position_ratio": 0.3265,
+          "text": "VARCHAR2",
+          "element_id": "p1_e29"
+        },
+        {
+          "type": "text_line",
+          "bbox": [
+            342.0,
+            258.6,
+            347.59728,
+            269.64
+          ],
+          "vertical_position_ratio": 0.3265,
+          "text": "3",
+          "element_id": "p1_e30"
+        },
+        {
+          "type": "text_line",
+          "bbox": [
+            74.88,
+            273.0,
+            253.70208000000002,
+            284.03999999999996
+          ],
+          "vertical_position_ratio": 0.3447,
+          "text": "11 MEMFIRSTNAME VARCHAR2",
+          "element_id": "p1_e31"
+        },
+        {
+          "type": "text_line",
+          "bbox": [
+            336.48,
+            273.0,
+            347.59728,
+            284.03999999999996
+          ],
+          "vertical_position_ratio": 0.3447,
+          "text": "30",
+          "element_id": "p1_e32"
+        },
+        {
+          "type": "text_line",
+          "bbox": [
+            74.88,
+            287.40000000000003,
+            163.54032,
+            298.44
+          ],
+          "vertical_position_ratio": 0.3629,
+          "text": "12 MEMLASTNAME",
+          "element_id": "p1_e33"
+        },
+        {
+          "type": "text_line",
+          "bbox": [
+            204.0,
+            287.40000000000003,
+            253.70208000000002,
+            298.44
+          ],
+          "vertical_position_ratio": 0.3629,
+          "text": "VARCHAR2",
+          "element_id": "p1_e34"
+        },
+        {
+          "type": "text_line",
+          "bbox": [
+            336.48,
+            287.40000000000003,
+            347.59728,
+            298.44
+          ],
+          "vertical_position_ratio": 0.3629,
+          "text": "50",
+          "element_id": "p1_e35"
+        },
+        {
+          "type": "text_line",
+          "bbox": [
+            74.88,
+            301.8,
+            127.1856,
+            312.84
+          ],
+          "vertical_position_ratio": 0.3811,
+          "text": "13 GENDER",
+          "element_id": "p1_e36"
+        },
+        {
+          "type": "text_line",
+          "bbox": [
+            204.0,
+            301.8,
+            253.70208000000002,
+            312.84
+          ],
+          "vertical_position_ratio": 0.3811,
+          "text": "VARCHAR2",
+          "element_id": "p1_e37"
+        },
+        {
+          "type": "text_line",
+          "bbox": [
+            342.0,
+            301.8,
+            347.59728,
+            312.84
+          ],
+          "vertical_position_ratio": 0.3811,
+          "text": "1",
+          "element_id": "p1_e38"
+        },
+        {
+          "type": "text_line",
+          "bbox": [
+            74.88,
+            316.20000000000005,
+            109.6872,
+            327.24
+          ],
+          "vertical_position_ratio": 0.3992,
+          "text": "14 DOB",
+          "element_id": "p1_e39"
+        },
+        {
+          "type": "text_line",
+          "bbox": [
+            204.0,
+            316.20000000000005,
+            227.86848,
+            327.24
+          ],
+          "vertical_position_ratio": 0.3992,
+          "text": "DATE",
+          "element_id": "p1_e40"
+        },
+        {
+          "type": "text_line",
+          "bbox": [
+            74.88,
+            330.6,
+            121.25712,
+            341.64
+          ],
+          "vertical_position_ratio": 0.4174,
+          "text": "15 ADDR1",
+          "element_id": "p1_e41"
+        },
+        {
+          "type": "text_line",
+          "bbox": [
+            204.0,
+            330.6,
+            253.70208000000002,
+            341.64
+          ],
+          "vertical_position_ratio": 0.4174,
+          "text": "VARCHAR2",
+          "element_id": "p1_e42"
+        },
+        {
+          "type": "text_line",
+          "bbox": [
+            336.48,
+            330.6,
+            347.59728,
+            341.64
+          ],
+          "vertical_position_ratio": 0.4174,
+          "text": "50",
+          "element_id": "p1_e43"
+        },
+        {
+          "type": "text_line",
+          "bbox": [
+            74.88,
+            345.0,
+            121.25712,
+            356.03999999999996
+          ],
+          "vertical_position_ratio": 0.4356,
+          "text": "16 ADDR2",
+          "element_id": "p1_e44"
+        },
+        {
+          "type": "text_line",
+          "bbox": [
+            204.0,
+            345.0,
+            253.70208000000002,
+            356.03999999999996
+          ],
+          "vertical_position_ratio": 0.4356,
+          "text": "VARCHAR2",
+          "element_id": "p1_e45"
+        },
+        {
+          "type": "text_line",
+          "bbox": [
+            336.48,
+            345.0,
+            347.59728,
+            356.03999999999996
+          ],
+          "vertical_position_ratio": 0.4356,
+          "text": "50",
+          "element_id": "p1_e46"
+        },
+        {
+          "type": "text_line",
+          "bbox": [
+            74.88,
+            359.40000000000003,
+            109.27872,
+            370.44
+          ],
+          "vertical_position_ratio": 0.4538,
+          "text": "17 CITY",
+          "element_id": "p1_e47"
+        },
+        {
+          "type": "text_line",
+          "bbox": [
+            204.0,
+            359.40000000000003,
+            253.70208000000002,
+            370.44
+          ],
+          "vertical_position_ratio": 0.4538,
+          "text": "VARCHAR2",
+          "element_id": "p1_e48"
+        },
+        {
+          "type": "text_line",
+          "bbox": [
+            336.48,
+            359.40000000000003,
+            347.59728,
+            370.44
+          ],
+          "vertical_position_ratio": 0.4538,
+          "text": "50",
+          "element_id": "p1_e49"
+        },
+        {
+          "type": "text_line",
+          "bbox": [
+            74.88,
+            373.8,
+            117.22752,
+            384.84
+          ],
+          "vertical_position_ratio": 0.472,
+          "text": "18 STATE",
+          "element_id": "p1_e50"
+        },
+        {
+          "type": "text_line",
+          "bbox": [
+            204.0,
+            373.8,
+            253.70208000000002,
+            384.84
+          ],
+          "vertical_position_ratio": 0.472,
+          "text": "VARCHAR2",
+          "element_id": "p1_e51"
+        },
+        {
+          "type": "text_line",
+          "bbox": [
+            342.0,
+            373.8,
+            347.59728,
+            384.84
+          ],
+          "vertical_position_ratio": 0.472,
+          "text": "2",
+          "element_id": "p1_e52"
+        },
+        {
+          "type": "text_line",
+          "bbox": [
+            74.88,
+            388.20000000000005,
+            103.6152,
+            399.24
+          ],
+          "vertical_position_ratio": 0.4902,
+          "text": "19 ZIP",
+          "element_id": "p1_e53"
+        },
+        {
+          "type": "text_line",
+          "bbox": [
+            204.0,
+            388.20000000000005,
+            253.70208000000002,
+            399.24
+          ],
+          "vertical_position_ratio": 0.4902,
+          "text": "VARCHAR2",
+          "element_id": "p1_e54"
+        },
+        {
+          "type": "text_line",
+          "bbox": [
+            336.48,
+            388.20000000000005,
+            347.59728,
+            399.24
+          ],
+          "vertical_position_ratio": 0.4902,
+          "text": "15",
+          "element_id": "p1_e55"
+        },
+        {
+          "type": "text_line",
+          "bbox": [
+            74.88,
+            402.6,
+            151.00992,
+            413.64
+          ],
+          "vertical_position_ratio": 0.5083,
+          "text": "20 HOMEPHONE",
+          "element_id": "p1_e56"
+        },
+        {
+          "type": "text_line",
+          "bbox": [
+            204.0,
+            402.6,
+            253.70208000000002,
+            413.64
+          ],
+          "vertical_position_ratio": 0.5083,
+          "text": "VARCHAR2",
+          "element_id": "p1_e57"
+        },
+        {
+          "type": "text_line",
+          "bbox": [
+            336.48,
+            402.6,
+            347.59728,
+            413.64
+          ],
+          "vertical_position_ratio": 0.5083,
+          "text": "20",
+          "element_id": "p1_e58"
+        },
+        {
+          "type": "text_line",
+          "bbox": [
+            74.88,
+            417.0,
+            150.99887999999999,
+            428.03999999999996
+          ],
+          "vertical_position_ratio": 0.5265,
+          "text": "21 WORKPHONE",
+          "element_id": "p1_e59"
+        },
+        {
+          "type": "text_line",
+          "bbox": [
+            204.0,
+            417.0,
+            253.70208000000002,
+            428.03999999999996
+          ],
+          "vertical_position_ratio": 0.5265,
+          "text": "VARCHAR2",
+          "element_id": "p1_e60"
+        },
+        {
+          "type": "text_line",
+          "bbox": [
+            336.48,
+            417.0,
+            347.59728,
+            428.03999999999996
+          ],
+          "vertical_position_ratio": 0.5265,
+          "text": "20",
+          "element_id": "p1_e61"
+        },
+        {
+          "type": "text_line",
+          "bbox": [
+            74.88,
+            431.40000000000003,
+            141.22848,
+            442.44
+          ],
+          "vertical_position_ratio": 0.5447,
+          "text": "22 FROMDATE",
+          "element_id": "p1_e62"
+        },
+        {
+          "type": "text_line",
+          "bbox": [
+            204.0,
+            431.40000000000003,
+            227.86848,
+            442.44
+          ],
+          "vertical_position_ratio": 0.5447,
+          "text": "DATE",
+          "element_id": "p1_e63"
+        },
+        {
+          "type": "text_line",
+          "bbox": [
+            74.88,
+            445.8,
+            126.10367999999998,
+            456.84
+          ],
+          "vertical_position_ratio": 0.5629,
+          "text": "23 TODATE",
+          "element_id": "p1_e64"
+        },
+        {
+          "type": "text_line",
+          "bbox": [
+            204.0,
+            445.8,
+            227.86848,
+            456.84
+          ],
+          "vertical_position_ratio": 0.5629,
+          "text": "DATE",
+          "element_id": "p1_e65"
+        },
+        {
+          "type": "text_line",
+          "bbox": [
+            74.88,
+            460.20000000000005,
+            150.32544000000001,
+            471.24
+          ],
+          "vertical_position_ratio": 0.5811,
+          "text": "24 SERVICEDATE",
+          "element_id": "p1_e66"
+        },
+        {
+          "type": "text_line",
+          "bbox": [
+            204.0,
+            460.20000000000005,
+            227.86848,
+            471.24
+          ],
+          "vertical_position_ratio": 0.5811,
+          "text": "DATE",
+          "element_id": "p1_e67"
+        },
+        {
+          "type": "text_line",
+          "bbox": [
+            74.88,
+            474.6,
+            131.84448,
+            485.64
+          ],
+          "vertical_position_ratio": 0.5992,
+          "text": "25 RCVDATE",
+          "element_id": "p1_e68"
+        },
+        {
+          "type": "text_line",
+          "bbox": [
+            204.0,
+            474.6,
+            227.86848,
+            485.64
+          ],
+          "vertical_position_ratio": 0.5992,
+          "text": "DATE",
+          "element_id": "p1_e69"
+        },
+        {
+          "type": "text_line",
+          "bbox": [
+            74.88,
+            489.0,
+            135.43248,
+            500.03999999999996
+          ],
+          "vertical_position_ratio": 0.6174,
+          "text": "26 PAIDDATE",
+          "element_id": "p1_e70"
+        },
+        {
+          "type": "text_line",
+          "bbox": [
+            204.0,
+            489.0,
+            227.86848,
+            500.03999999999996
+          ],
+          "vertical_position_ratio": 0.6174,
+          "text": "DATE",
+          "element_id": "p1_e71"
+        },
+        {
+          "type": "text_line",
+          "bbox": [
+            74.88,
+            503.40000000000003,
+            129.4488,
+            514.44
+          ],
+          "vertical_position_ratio": 0.6356,
+          "text": "27 BILLTYPE",
+          "element_id": "p1_e72"
+        },
+        {
+          "type": "text_line",
+          "bbox": [
+            204.0,
+            503.40000000000003,
+            253.70208000000002,
+            514.44
+          ],
+          "vertical_position_ratio": 0.6356,
+          "text": "VARCHAR2",
+          "element_id": "p1_e73"
+        },
+        {
+          "type": "text_line",
+          "bbox": [
+            336.48,
+            503.40000000000003,
+            347.59728,
+            514.44
+          ],
+          "vertical_position_ratio": 0.6356,
+          "text": "20",
+          "element_id": "p1_e74"
+        },
+        {
+          "type": "text_line",
+          "bbox": [
+            74.88,
+            517.8,
+            133.04784,
+            528.8399999999999
+          ],
+          "vertical_position_ratio": 0.6538,
+          "text": "28 POSCODE",
+          "element_id": "p1_e75"
+        },
+        {
+          "type": "text_line",
+          "bbox": [
+            204.0,
+            517.8,
+            253.70208000000002,
+            528.8399999999999
+          ],
+          "vertical_position_ratio": 0.6538,
+          "text": "VARCHAR2",
+          "element_id": "p1_e76"
+        },
+        {
+          "type": "text_line",
+          "bbox": [
+            336.48,
+            517.8,
+            347.59728,
+            528.8399999999999
+          ],
+          "vertical_position_ratio": 0.6538,
+          "text": "20",
+          "element_id": "p1_e77"
+        },
+        {
+          "type": "text_line",
+          "bbox": [
+            74.88,
+            532.2,
+            130.68528,
+            543.24
+          ],
+          "vertical_position_ratio": 0.672,
+          "text": "29 POSDESC",
+          "element_id": "p1_e78"
+        },
+        {
+          "type": "text_line",
+          "bbox": [
+            204.0,
+            532.2,
+            253.70208000000002,
+            543.24
+          ],
+          "vertical_position_ratio": 0.672,
+          "text": "VARCHAR2",
+          "element_id": "p1_e79"
+        },
+        {
+          "type": "text_line",
+          "bbox": [
+            336.48,
+            532.2,
+            347.59728,
+            543.24
+          ],
+          "vertical_position_ratio": 0.672,
+          "text": "70",
+          "element_id": "p1_e80"
+        },
+        {
+          "type": "text_line",
+          "bbox": [
+            74.88,
+            546.6,
+            137.09951999999998,
+            557.64
+          ],
+          "vertical_position_ratio": 0.6902,
+          "text": "30 SPECCODE",
+          "element_id": "p1_e81"
+        },
+        {
+          "type": "text_line",
+          "bbox": [
+            204.0,
+            546.6,
+            253.70208000000002,
+            557.64
+          ],
+          "vertical_position_ratio": 0.6902,
+          "text": "VARCHAR2",
+          "element_id": "p1_e82"
+        },
+        {
+          "type": "text_line",
+          "bbox": [
+            336.48,
+            546.6,
+            347.59728,
+            557.64
+          ],
+          "vertical_position_ratio": 0.6902,
+          "text": "20",
+          "element_id": "p1_e83"
+        },
+        {
+          "type": "text_line",
+          "bbox": [
+            74.88,
+            561.0,
+            134.748,
+            572.04
+          ],
+          "vertical_position_ratio": 0.7083,
+          "text": "31 SPECDESC",
+          "element_id": "p1_e84"
+        },
+        {
+          "type": "text_line",
+          "bbox": [
+            204.0,
+            561.0,
+            253.70208000000002,
+            572.04
+          ],
+          "vertical_position_ratio": 0.7083,
+          "text": "VARCHAR2",
+          "element_id": "p1_e85"
+        },
+        {
+          "type": "text_line",
+          "bbox": [
+            336.48,
+            561.0,
+            347.59728,
+            572.04
+          ],
+          "vertical_position_ratio": 0.7083,
+          "text": "70",
+          "element_id": "p1_e86"
+        },
+        {
+          "type": "text_line",
+          "bbox": [
+            74.88,
+            575.4,
+            138.07103999999998,
+            586.44
+          ],
+          "vertical_position_ratio": 0.7265,
+          "text": "32 DIAGCODE",
+          "element_id": "p1_e87"
+        },
+        {
+          "type": "text_line",
+          "bbox": [
+            204.0,
+            575.4,
+            253.70208000000002,
+            586.44
+          ],
+          "vertical_position_ratio": 0.7265,
+          "text": "VARCHAR2",
+          "element_id": "p1_e88"
+        },
+        {
+          "type": "text_line",
+          "bbox": [
+            336.48,
+            575.4,
+            347.59728,
+            586.44
+          ],
+          "vertical_position_ratio": 0.7265,
+          "text": "20",
+          "element_id": "p1_e89"
+        },
+        {
+          "type": "text_line",
+          "bbox": [
+            74.88,
+            589.8,
+            135.70848,
+            600.84
+          ],
+          "vertical_position_ratio": 0.7447,
+          "text": "33 DIAGDESC",
+          "element_id": "p1_e90"
+        },
+        {
+          "type": "text_line",
+          "bbox": [
+            204.0,
+            589.8,
+            253.70208000000002,
+            600.84
+          ],
+          "vertical_position_ratio": 0.7447,
+          "text": "VARCHAR2",
+          "element_id": "p1_e91"
+        },
+        {
+          "type": "text_line",
+          "bbox": [
+            330.96,
+            589.8,
+            347.59728,
+            600.84
+          ],
+          "vertical_position_ratio": 0.7447,
+          "text": "120",
+          "element_id": "p1_e92"
+        },
+        {
+          "type": "text_line",
+          "bbox": [
+            74.88,
+            604.2,
+            162.2928,
+            615.24
+          ],
+          "vertical_position_ratio": 0.7629,
+          "text": "34 FIRSTDIAGCODE",
+          "element_id": "p1_e93"
+        },
+        {
+          "type": "text_line",
+          "bbox": [
+            204.0,
+            604.2,
+            253.70208000000002,
+            615.24
+          ],
+          "vertical_position_ratio": 0.7629,
+          "text": "VARCHAR2",
+          "element_id": "p1_e94"
+        },
+        {
+          "type": "text_line",
+          "bbox": [
+            336.48,
+            604.2,
+            347.59728,
+            615.24
+          ],
+          "vertical_position_ratio": 0.7629,
+          "text": "20",
+          "element_id": "p1_e95"
+        },
+        {
+          "type": "text_line",
+          "bbox": [
+            74.88,
+            618.6,
+            159.94128,
+            629.64
+          ],
+          "vertical_position_ratio": 0.7811,
+          "text": "35 FIRSTDIAGDESC",
+          "element_id": "p1_e96"
+        },
+        {
+          "type": "text_line",
+          "bbox": [
+            204.0,
+            618.6,
+            253.70208000000002,
+            629.64
+          ],
+          "vertical_position_ratio": 0.7811,
+          "text": "VARCHAR2",
+          "element_id": "p1_e97"
+        },
+        {
+          "type": "text_line",
+          "bbox": [
+            330.96,
+            618.6,
+            347.59728,
+            629.64
+          ],
+          "vertical_position_ratio": 0.7811,
+          "text": "250",
+          "element_id": "p1_e98"
+        },
+        {
+          "type": "text_line",
+          "bbox": [
+            74.88,
+            633.0,
+            253.70208000000002,
+            644.04
+          ],
+          "vertical_position_ratio": 0.7992,
+          "text": "36 SECONDDIAGCODE VARCHAR2",
+          "element_id": "p1_e99"
+        },
+        {
+          "type": "text_line",
+          "bbox": [
+            336.48,
+            633.0,
+            347.59728,
+            644.04
+          ],
+          "vertical_position_ratio": 0.7992,
+          "text": "20",
+          "element_id": "p1_e100"
+        },
+        {
+          "type": "text_line",
+          "bbox": [
+            74.88,
+            647.4,
+            253.70208000000002,
+            658.44
+          ],
+          "vertical_position_ratio": 0.8174,
+          "text": "37 SECONDDIAGDESC VARCHAR2",
+          "element_id": "p1_e101"
+        },
+        {
+          "type": "text_line",
+          "bbox": [
+            330.96,
+            647.4,
+            347.59728,
+            658.44
+          ],
+          "vertical_position_ratio": 0.8174,
+          "text": "250",
+          "element_id": "p1_e102"
+        },
+        {
+          "type": "text_line",
+          "bbox": [
+            74.88,
+            661.8,
+            253.70208000000002,
+            672.84
+          ],
+          "vertical_position_ratio": 0.8356,
+          "text": "38 THIRDDIAGCODE VARCHAR2",
+          "element_id": "p1_e103"
+        },
+        {
+          "type": "text_line",
+          "bbox": [
+            336.48,
+            661.8,
+            347.59728,
+            672.84
+          ],
+          "vertical_position_ratio": 0.8356,
+          "text": "20",
+          "element_id": "p1_e104"
+        },
+        {
+          "type": "text_line",
+          "bbox": [
+            74.88,
+            676.2,
+            163.51824,
+            687.24
+          ],
+          "vertical_position_ratio": 0.8538,
+          "text": "39 THIRDDIAGDESC",
+          "element_id": "p1_e105"
+        },
+        {
+          "type": "text_line",
+          "bbox": [
+            204.0,
+            676.2,
+            253.70208000000002,
+            687.24
+          ],
+          "vertical_position_ratio": 0.8538,
+          "text": "VARCHAR2",
+          "element_id": "p1_e106"
+        },
+        {
+          "type": "text_line",
+          "bbox": [
+            330.96,
+            676.2,
+            347.59728,
+            687.24
+          ],
+          "vertical_position_ratio": 0.8538,
+          "text": "250",
+          "element_id": "p1_e107"
+        },
+        {
+          "type": "text_line",
+          "bbox": [
+            74.88,
+            690.6,
+            253.70208000000002,
+            701.64
+          ],
+          "vertical_position_ratio": 0.872,
+          "text": "40 FOURTHDIAGCODE VARCHAR2",
+          "element_id": "p1_e108"
+        },
+        {
+          "type": "text_line",
+          "bbox": [
+            336.48,
+            690.6,
+            347.59728,
+            701.64
+          ],
+          "vertical_position_ratio": 0.872,
+          "text": "20",
+          "element_id": "p1_e109"
+        },
+        {
+          "type": "text_line",
+          "bbox": [
+            74.88,
+            705.0,
+            253.70208000000002,
+            716.04
+          ],
+          "vertical_position_ratio": 0.8902,
+          "text": "41 FOURTHDIAGDESC VARCHAR2",
+          "element_id": "p1_e110"
+        },
+        {
+          "type": "text_line",
+          "bbox": [
+            330.96,
+            705.0,
+            347.59728,
+            716.04
+          ],
+          "vertical_position_ratio": 0.8902,
+          "text": "250",
+          "element_id": "p1_e111"
+        },
+        {
+          "type": "text_line",
+          "bbox": [
+            74.88,
+            719.4,
+            163.25328,
+            730.44
+          ],
+          "vertical_position_ratio": 0.9083,
+          "text": "42 FIFTHDIAGCODE",
+          "element_id": "p1_e112"
+        },
+        {
+          "type": "text_line",
+          "bbox": [
+            204.0,
+            719.4,
+            253.70208000000002,
+            730.44
+          ],
+          "vertical_position_ratio": 0.9083,
+          "text": "VARCHAR2",
+          "element_id": "p1_e113"
+        },
+        {
+          "type": "text_line",
+          "bbox": [
+            336.48,
+            719.4,
+            347.59728,
+            730.44
+          ],
+          "vertical_position_ratio": 0.9083,
+          "text": "20",
+          "element_id": "p1_e114"
+        }
+      ]
+    }
+  ]
+}

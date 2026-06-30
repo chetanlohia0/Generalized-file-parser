@@ -1,0 +1,189 @@
+{
+  "document_id": "SDL_Med_Claims_2",
+  "source_format": ".pdf",
+  "total_pages": 1,
+  "global_metadata": [],
+  "schema_clusters": [
+    {
+      "element_id": "context_group_0",
+      "type": "schema_cluster",
+      "pages_spanned": [
+        1
+      ],
+      "introductory_context": [],
+      "table": {
+        "headers": [
+          "S.N.",
+          "COLUMN NAME",
+          "DATA TYPE",
+          "DATA LENGTH",
+          "DESCRIPTION"
+        ],
+        "matrix": [
+          [
+            "1",
+            "CLAIM_NUMBER",
+            "VARCHAR2",
+            "50",
+            "Medical claim number. It is unique identifier for a claim, and it generally applied\nfrom Claim Header Num, Claim Line Num, etc."
+          ],
+          [
+            "2",
+            "CLAIM_LINE_NUMBER",
+            "NUMBER",
+            "4",
+            "Claim line number"
+          ],
+          [
+            "3",
+            "CLAIM_TYPE",
+            "VARCHAR2",
+            "20",
+            "Claim type like 'MED', 'DEN', 'VIS', 'STD', 'RX-MED' etc."
+          ],
+          [
+            "4",
+            "PATIENT_ID",
+            "VARCHAR2",
+            "50",
+            "Member identification number"
+          ],
+          [
+            "5",
+            "SUBSCRIBER_ID",
+            "VARCHAR2",
+            "20",
+            "Enrollee identification number"
+          ],
+          [
+            "6",
+            "ADMISSION_START_DATE",
+            "DATE",
+            "",
+            "Date of service starts (Admission date for admissions)"
+          ],
+          [
+            "7",
+            "ADMISSION_END_DATE",
+            "DATE",
+            "",
+            "Date of service ends (Discharge date for admissions)"
+          ],
+          [
+            "8",
+            "DATE_OF_SERVICE",
+            "DATE",
+            "",
+            "Date of service"
+          ],
+          [
+            "9",
+            "DATE_OF_CLAIM_PAYMENT",
+            "DATE",
+            "",
+            "Date claim paid"
+          ],
+          [
+            "10",
+            "PLACE_OF_SERVICE",
+            "VARCHAR2",
+            "20",
+            "Place of service code (HCFA-compatible)"
+          ],
+          [
+            "11",
+            "DIAGNOSIS_CODE",
+            "VARCHAR2",
+            "20",
+            "Diagnosis or International Classification of Diseases (ICD-9) code"
+          ],
+          [
+            "12",
+            "PROCEDURE_CODE",
+            "VARCHAR2",
+            "20",
+            "Primary procedure code could be any CPT, HCPCS, ICDOPROC, REV or DRG."
+          ],
+          [
+            "13",
+            "REVENUE_CODE",
+            "VARCHAR2",
+            "20",
+            "Revenue codes"
+          ],
+          [
+            "14",
+            "DRG_CODE",
+            "VARCHAR2",
+            "20",
+            "Diagnosis-related group (DRG) codes Indicates the diagnostic related group to\nwhich a hospital claim belongs for prospective payment purposes. For CMS data,"
+          ],
+          [
+            "15",
+            "TYPE_OF_BILL",
+            "VARCHAR2",
+            "3",
+            "Type of Bill (TOB) Information (UB04/CMS), three characters long\n- First digit (character) as 'Type of facility',\n- Second digit (character) as 'Bill Classification'\n- Third digit (character) as 'Frequency'.\nExample - 110 (Hospital, Inpatient Non Payment/ Zero claim)"
+          ],
+          [
+            "16",
+            "CLAIM_STATUS",
+            "VARCHAR2",
+            "1",
+            "Claims denied or not Y/N"
+          ],
+          [
+            "17",
+            "SERVICE_PROVIDER_ID",
+            "VARCHAR2",
+            "6",
+            "Provider identification number such as client specific number or NPI"
+          ],
+          [
+            "18",
+            "SERVICE_PROVIDER_NAME",
+            "VARCHAR2",
+            "70",
+            "Name of provider"
+          ],
+          [
+            "19",
+            "SERVICE_PROVIDER_NPI",
+            "VARCHAR2",
+            "10",
+            "National Provider Identifier (NPI) number"
+          ],
+          [
+            "20",
+            "SERVICE_QUANTITY",
+            "NUMBER",
+            "10",
+            "Number of units of service rendered"
+          ],
+          [
+            "21",
+            "NET_AMOUNT_PAID",
+            "NUMBER",
+            "22",
+            "Amount paid"
+          ],
+          [
+            "22",
+            "TOTAL_AMOUNT_BILLED",
+            "NUMBER",
+            "22",
+            "Amount billed"
+          ],
+          [
+            "23",
+            "AMOUNT_ALLOWED",
+            "NUMBER",
+            "22",
+            "Amount allowed under contract"
+          ]
+        ]
+      },
+      "footer_context": []
+    }
+  ]
+}

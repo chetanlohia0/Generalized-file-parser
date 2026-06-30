@@ -1,0 +1,4196 @@
+{
+  "document_id": "cclf",
+  "source_format": ".pdf",
+  "total_pages": 70,
+  "elements": [
+    {
+      "element_id": "global_block_0",
+      "type": "paragraph",
+      "text": "Medicare Shared Savings Program"
+    },
+    {
+      "element_id": "global_block_1",
+      "type": "paragraph",
+      "text": "CLAIM AND CLAIM LINE FEED"
+    },
+    {
+      "element_id": "global_block_2",
+      "type": "paragraph",
+      "text": "FILE DATA ELEMENTS"
+    },
+    {
+      "element_id": "global_block_3",
+      "type": "paragraph",
+      "text": "Resource"
+    },
+    {
+      "element_id": "global_block_4",
+      "type": "paragraph",
+      "text": "April 2021 Version #2"
+    },
+    {
+      "element_id": "global_block_5",
+      "type": "paragraph",
+      "text": "Disclaimer: This communication material was prepared as a service to the public and is not intended to grant rights or impose obligations. It may contain references or links to statutes, regulations, or other policy materials. The information provided is only intended to be a general summary. It is not intended to take the place of either the written law or regulations. We encourage readers to review the specific statutes, regulations, and other interpretive materials for a full and accurate statement of its contents. This document is published, produced, and disseminated at U.S. taxpayer expense."
+    },
+    {
+      "element_id": "global_block_6",
+      "type": "paragraph",
+      "text": "Revision History"
+    },
+    {
+      "element_id": "global_block_7",
+      "type": "paragraph",
+      "text": "(From Version 1 to Version 2)"
+    },
+    {
+      "element_id": "global_block_8",
+      "type": "table",
+      "pages_spanned": [
+        2
+      ],
+      "raw_matrix": [
+        [
+          "",
+          "VERSION",
+          "",
+          "DATE",
+          "",
+          "REVISION/CHANGE DESCRIPTION",
+          "",
+          "AFFECTED AREA"
+        ],
+        [
+          "2",
+          "2",
+          "April 2021",
+          "April 2021",
+          "",
+          "Updated the Part A and Part B Claims Benefit\nEnhancement and Demonstration Codes Files with\nCare Management Home Visits benefit enhancement.",
+          "Table 10, Table 11",
+          "Table 10, Table 11"
+        ],
+        [
+          "2",
+          "",
+          "April 2021",
+          "",
+          "Updated the description of Claim Outpatient Service\nType Code.",
+          "",
+          "All",
+          ""
+        ],
+        [
+          "2",
+          "",
+          "April 2021",
+          "",
+          "",
+          "Added filename convention for Shared Savings\nProgram run-out CCLFs.",
+          "All",
+          ""
+        ],
+        [
+          "2",
+          "2",
+          "April 2021",
+          "April 2021",
+          "Updated the NGACO Suppression process from\nQuarterly to Monthly.",
+          "Updated NGACO and VTAPM run-out file names.",
+          "All",
+          "All"
+        ],
+        [
+          "2",
+          "",
+          "April 2021",
+          "",
+          "Added Note to Executive Summary: “To comply with\nthe Medicare Access and CHIP Reauthorization Act\n(MACRA) of 2015, after the end of the New Medicare\nCard Transition Period in December 2019, only the\nMBI will be accepted on claims, and the Health\nInformation Claim Number (HICN) value will no longer\nbe displayed. CMS will include blanks for the HICN,\nBeneficiary Equitable Beneficiary Identification Code\n(BIC) HICN, and Beneficiary Railroad Board Number\n(RRB) fields in CCLFs generated effective January 1,\n2020 onwards.”",
+          "",
+          "All",
+          ""
+        ]
+      ]
+    },
+    {
+      "element_id": "global_block_9",
+      "type": "paragraph",
+      "text": "i"
+    },
+    {
+      "element_id": "global_block_10",
+      "type": "paragraph",
+      "text": "Table of Contents"
+    },
+    {
+      "element_id": "global_block_11",
+      "type": "paragraph",
+      "text": "1 Executive Summary ........................................................................................... 1"
+    },
+    {
+      "element_id": "global_block_12",
+      "type": "paragraph",
+      "text": "2 CCLF File Layouts .............................................................................................. 2"
+    },
+    {
+      "element_id": "global_block_13",
+      "type": "paragraph",
+      "text": "Table 1. Part A Claims Header File (CCLF1)........................................................ 2"
+    },
+    {
+      "element_id": "global_block_14",
+      "type": "paragraph",
+      "text": "Table 2. Part A Claims Revenue Center Detail File (CCLF2) ............................. 12"
+    },
+    {
+      "element_id": "global_block_15",
+      "type": "paragraph",
+      "text": "Table 3. Part A Procedure Code File (CCLF3) ................................................... 17"
+    },
+    {
+      "element_id": "global_block_16",
+      "type": "paragraph",
+      "text": "Table 4. Part A Diagnosis Code File (CCLF4) .................................................... 20"
+    },
+    {
+      "element_id": "global_block_17",
+      "type": "paragraph",
+      "text": "Table 5. Part B Physicians File (CCLF5) ............................................................ 24"
+    },
+    {
+      "element_id": "global_block_18",
+      "type": "paragraph",
+      "text": "Table 6. Part B DME File (CCLF6) ..................................................................... 35"
+    },
+    {
+      "element_id": "global_block_19",
+      "type": "paragraph",
+      "text": "Table 7. Part D File (CCLF7) .............................................................................. 41"
+    },
+    {
+      "element_id": "global_block_20",
+      "type": "paragraph",
+      "text": "Table 8. Beneficiary Demographics File (CCLF8) .............................................. 47"
+    },
+    {
+      "element_id": "global_block_21",
+      "type": "paragraph",
+      "text": "Table 9. Beneficiary XREF File (CCLF9) ............................................................ 52"
+    },
+    {
+      "element_id": "global_block_22",
+      "type": "paragraph",
+      "text": "Table 10. Part A Claims Benefit Enhancement and Demonstration Code File (CCLFA) ............................................................................................................. 54"
+    },
+    {
+      "element_id": "global_block_23",
+      "type": "paragraph",
+      "text": "Table 11. Part B Claims Benefit Enhancement and Demonstration Code File (CCLFB) ............................................................................................................. 59"
+    },
+    {
+      "element_id": "global_block_24",
+      "type": "paragraph",
+      "text": "Table 12. Summary Statistics Header Record (CCLF0) ..................................... 64"
+    },
+    {
+      "element_id": "global_block_25",
+      "type": "paragraph",
+      "text": "Table 13. Summary Statistics Detail Records..................................................... 65"
+    },
+    {
+      "element_id": "global_block_26",
+      "type": "paragraph",
+      "text": "ii"
+    },
+    {
+      "element_id": "global_block_27",
+      "type": "paragraph",
+      "text": "1 Executive Summary Purpose:"
+    },
+    {
+      "element_id": "global_block_28",
+      "type": "paragraph",
+      "text": "The following is the list of data elements present on the Claim and Claim Line Feed (CCLF) files as referred to in 42 CFR § 425 Subpart H. Please note that these are subject to change. These tables are maintained as part of an appendix in the CCLF Information Packet (IP) that can be found in the Program Resources section of the Knowledge Library tab in the ACO Management System (ACO-MS)."
+    },
+    {
+      "element_id": "global_block_29",
+      "type": "paragraph",
+      "text": "Notes:"
+    },
+    {
+      "element_id": "global_block_30",
+      "type": "paragraph",
+      "text": "Where applicable in the file layouts, a minus “-” in the beginning of the format description indicates that if the value is negative, the first character will display as “-”. For all other values, a blank will display as the first character."
+    },
+    {
+      "element_id": "global_block_31",
+      "type": "paragraph",
+      "text": "Fields where data are not available from the data source will be left blank."
+    },
+    {
+      "element_id": "global_block_32",
+      "type": "paragraph",
+      "text": "Data Fields marked with an I contain Personally Identifiable Information (PII). Data Fields marked with an H contain Protected Health Information (PHI)."
+    },
+    {
+      "element_id": "global_block_33",
+      "type": "paragraph",
+      "text": "To comply with the Medicare Access and CHIP Reauthorization Act (MACRA) of 2015, after the end of the New Medicare Card Transition Period in December 2019, only the MBI will be accepted on claims, and the Health Information Claim Number (HICN) value will no longer be displayed. CMS will include blanks for the HICN, Beneficiary Equitable Beneficiary Identification Code (BIC) HICN, and Beneficiary Railroad Board Number (RRB) fields in CCLFs generated effective January 1, 2020 onwards."
+    },
+    {
+      "element_id": "global_block_34",
+      "type": "paragraph",
+      "text": "2 CCLF File Layouts The filename convention for the Medicare Shared Savings Program in Table 1 is:"
+    },
+    {
+      "element_id": "global_block_35",
+      "type": "paragraph",
+      "text": " For regular CCLFs: P.A****.ACO.ZC1Y**.Dyymmdd.Thhmmsst."
+    },
+    {
+      "element_id": "global_block_36",
+      "type": "paragraph",
+      "text": " For run-out CCLFs: P.A****.ACO.ZC1R**.Dyymmdd.Thhmmsst, “R” instead of “Y” indicating run-out."
+    },
+    {
+      "element_id": "global_block_37",
+      "type": "paragraph",
+      "text": "Table 1. Part A Claims Header File (CCLF1)"
+    },
+    {
+      "element_id": "global_block_38",
+      "type": "table",
+      "pages_spanned": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "raw_matrix": [
+        [
+          "ELEMENT",
+          "CLAIM FIELD LABEL",
+          "CLAIM FIELD",
+          "START",
+          "END",
+          "DATA",
+          "FORMAT",
+          "CLAIM FIELD DESCRIPTION"
+        ],
+        [
+          "#",
+          "",
+          "NAME",
+          "POSITION",
+          "POSITION",
+          "LENGTH",
+          "",
+          ""
+        ],
+        [
+          "1",
+          "CUR_CLM_UNIQ_ID",
+          "Current Claim\nUnique Identifier",
+          "1",
+          "13",
+          "13",
+          "9(13)",
+          "A unique identification number assigned\nto the claim. I H"
+        ],
+        [
+          "2",
+          "PRVDR_OSCAR_NUM",
+          "Provider OSCAR\nNumber",
+          "14",
+          "19",
+          "6",
+          "X(06)",
+          "A facility’s Medicare/Medicaid\nidentification number. It is also known as a\nMedicare/Medicaid Provider Number, or\nCCN. This number verifies that a provider\nhas been Medicare certified for a\nparticular type of service. H"
+        ],
+        [
+          "3",
+          "BENE_MBI_ID",
+          "Medicare\nBeneficiary\nIdentifier",
+          "20",
+          "30",
+          "11",
+          "X(11)",
+          "A Medicare Beneficiary Identifier assigned\nto a beneficiary. I H"
+        ],
+        [
+          "4",
+          "BENE_HIC_NUM",
+          "Beneficiary HIC\nNumber",
+          "31",
+          "41",
+          "11",
+          "X(11)",
+          "ILegacy Beneficiary HICN field.\nNote: To comply with MACRA of 2015,\nafter the end of the New Medicare Card\nTransition Period in December 2019, only\nthe MBI will be accepted on claims, and\nthe HICN value will no longer be\ndisplayed. The Beneficiary HIC Number\nwill be blank in CCLFs generated effective\nJanuary 1, 2020 onwards."
+        ],
+        [
+          "#",
+          "",
+          "NAME",
+          "POSITION",
+          "POSITION",
+          "LENGTH",
+          "",
+          ""
+        ],
+        [
+          "5",
+          "CLM_TYPE_CD",
+          "Claim Type Code",
+          "42",
+          "43",
+          "2",
+          "9(02)",
+          "Signifies the type of claim being submitted\nthrough the Medicare or Medicaid\nprograms. H\nClaim type code include:\n10 = HHA claim\n20 = Non swing bed SNF claim\n30 = Swing bed SNF claim\n40 = Outpatient claim\n50 = Hospice claim\n60 = Inpatient claim\n61 = Inpatient “Full-Encounter” claim"
+        ],
+        [
+          "6",
+          "CLM_FROM_DT",
+          "Claim From Date",
+          "44",
+          "53",
+          "10",
+          "YYYY-\nMM-DD",
+          "The first day on the billing statement that\ncovers services rendered to the\nbeneficiary. H\nAlso known as “Statement Covers From\nDate.”"
+        ],
+        [
+          "7",
+          "CLM_THRU_DT",
+          "Claim Thru Date",
+          "54",
+          "63",
+          "10",
+          "YYYY-\nMM-DD",
+          "The last day on the billing statement that\ncovers services rendered to the\nbeneficiary. H\nAlso known as the “Statement Covers\nThrough Date.”"
+        ],
+        [
+          "#",
+          "",
+          "NAME",
+          "POSITION",
+          "POSITION",
+          "LENGTH",
+          "",
+          ""
+        ],
+        [
+          "8",
+          "CLM_BILL_FAC_TYPE_CD",
+          "Claim Bill Facility\nType Code",
+          "64",
+          "64",
+          "1",
+          "X(01)",
+          "The first digit of the type of bill (TOB1) is\nused to identify the type of facility that\nprovided care to the beneficiary (e.g.,\nhospital or SNF). H\nClaim Facility Type Code include:\n1 = Hospital\n2 = SNF\n3 = HHA\n4 = Religious non-medical (hospital)\n5 = Religious non-medical (extended\ncare)\n6 = Intermediate care\n7 = Clinic or hospital-based renal dialysis\nfacility\n8 = Specialty facility or Ambulatory\nSurgical Center (ASC) surgery\n9 = Reserved"
+        ],
+        [
+          "9",
+          "CLM_BILL_CLSFCTN_CD",
+          "Claim Bill\nClassification\nCode",
+          "65",
+          "65",
+          "1",
+          "X(01)",
+          "The second digit of the type of bill (TOB2)\nis used to indicate with greater specificity\nwhere the service was provided (e.g., a\ndepartment within a hospital).H\nFind Claim Service Classification Code at\nthe ResDAC website."
+        ],
+        [
+          "10",
+          "PRNCPL_DGNS_CD",
+          "Principal\nDiagnosis Code",
+          "66",
+          "72",
+          "7",
+          "X(07)",
+          "The ICD-9/10 diagnosis code identifies\nthe beneficiary’s principal illness or\ndisability. H"
+        ],
+        [
+          "11",
+          "ADMTG_DGNS_CD",
+          "Admitting\nDiagnosis Code",
+          "73",
+          "79",
+          "7",
+          "X(07)",
+          "The ICD-9/10 diagnosis code identifies\nthe illness or disability for which the\nbeneficiary was admitted. H"
+        ],
+        [
+          "#",
+          "",
+          "NAME",
+          "POSITION",
+          "POSITION",
+          "LENGTH",
+          "",
+          ""
+        ],
+        [
+          "12",
+          "CLM_MDCR_NPMT_RSN_\nCD",
+          "Claim Medicare\nNon-Payment\nReason Code",
+          "80",
+          "81",
+          "2",
+          "X(02)",
+          "Indicates the reason payment on an\ninstitutional claim is denied.\nFind Medicare Non-Payment Reason\nCode at the ResDAC website."
+        ],
+        [
+          "13",
+          "CLM_PMT_AMT",
+          "Claim Payment\nAmount",
+          "82",
+          "98",
+          "17",
+          "-9(13).99",
+          "Amount that Medicare paid on the claim. H"
+        ],
+        [
+          "14",
+          "CLM_NCH_PRMRY_PYR_\nCD",
+          "Claim NCH\nPrimary Payer\nCode",
+          "99",
+          "99",
+          "1",
+          "X(01)",
+          "If a payer other than Medicare has\nprimary responsibility for payment of the\nbeneficiary’s health insurance bills, this\ncode indicates the responsible primary\npayer. H\nIf this field is blank, Medicare is the\nprimary payer for the beneficiary.\nFind NCH Primary Payer Code at the\nResDAC website."
+        ],
+        [
+          "15",
+          "PRVDR_FAC_FIPS_ST_C\nD",
+          "Federal\nInformation\nProcessing\nStandards (FIPS)\nState Code",
+          "100",
+          "101",
+          "2",
+          "X(02)",
+          "Identifies the state where the facility\nproviding services is located."
+        ],
+        [
+          "16",
+          "BENE_PTNT_STUS_CD",
+          "Beneficiary\nPatient Status\nCode",
+          "102",
+          "103",
+          "2",
+          "X(02)",
+          "Indicates the patient’s discharge status as\nof the Claim Through Date. For example,\nit may indicate where a patient was\ndischarged to (e.g., home, another\nfacility) or the circumstances of a\ndischarge (e.g., against medical advice,\nor patient death). I H\nFind Patient Discharge Status Code at\nthe ResDAC website."
+        ],
+        [
+          "#",
+          "",
+          "NAME",
+          "POSITION",
+          "POSITION",
+          "LENGTH",
+          "",
+          ""
+        ],
+        [
+          "17",
+          "DGNS_DRG_CD",
+          "Diagnosis Related\nGroup Code",
+          "104",
+          "107",
+          "4",
+          "X(04)",
+          "Indicates the diagnostic related group to\nwhich a hospital claim belongs for\nprospective payment purposes. I H"
+        ],
+        [
+          "18",
+          "CLM_OP_SRVC_TYPE_CD",
+          "Claim Outpatient\nService Type\nCode",
+          "108",
+          "108",
+          "1",
+          "X(01)",
+          "A code reported by the provider that\nindicates the specific type of claim\n(Inpatient, Outpatient, etc.). I H\nClaim Outpatient Service Type Code\ninclude:\n0 = Blank\n1 = Emergency (The patient required\nimmediate medical intervention because\nof severe life threatening or potentially\ndisabling conditions. Generally, the patient\nwas admitted through the emergency\nroom)\n2 = Urgent (The patient required\nimmediate attention for the care and\ntreatment of a physical or mental disorder.\nGenerally, the patient was admitted to the\navailable and suitable accommodation)\n3 = Elective (The patient’s condition\npermitted adequate time to schedule the\navailability of suitable accommodations)\n5 = Reserved\n6 = Reserved\n7 = Reserved\n8 = Reserved\n9 = Unknown (Information not available)"
+        ],
+        [
+          "#",
+          "",
+          "NAME",
+          "POSITION",
+          "POSITION",
+          "LENGTH",
+          "",
+          ""
+        ],
+        [
+          "19",
+          "FAC_PRVDR_NPI_NUM",
+          "Facility Provider\nNPI Number",
+          "109",
+          "118",
+          "10",
+          "X(10)",
+          "Identifies the facility associated with the\nclaim. Each facility is assigned its own\nunique NPI."
+        ],
+        [
+          "20",
+          "OPRTG_PRVDR_NPI_NU\nM",
+          "Operating\nProvider NPI\nNumber",
+          "119",
+          "128",
+          "10",
+          "X(10)",
+          "Identifies the operating provider\nassociated with the claim. Each provider\nis assigned its own unique NPI."
+        ],
+        [
+          "21",
+          "ATNDG_PRVDR_NPI_NUM",
+          "Attending\nProvider NPI\nNumber",
+          "129",
+          "138",
+          "10",
+          "X(10)",
+          "Identifies the attending provider\nassociated with the claim. Each provider\nis assigned its own unique NPI."
+        ],
+        [
+          "22",
+          "OTHR_PRVDR_NPI_NUM",
+          "Other Provider\nNPI Number",
+          "139",
+          "148",
+          "10",
+          "X(10)",
+          "Identifies the other providers associated\nwith the claim. Each provider is assigned\nits own unique NPI."
+        ],
+        [
+          "23",
+          "CLM_ADJSMT_TYPE_CD",
+          "Claim Adjustment\nType Code",
+          "149",
+          "150",
+          "2",
+          "X(02)",
+          "Indicates whether the claim is an original,\ncancellation, or adjustment claim.\nClaim Adjustment Type Code include:\n0 = Original Claim\n1 = Cancellation Claim\n2 = Adjustment Claim"
+        ],
+        [
+          "24",
+          "CLM_EFCTV_DT",
+          "Claim Effective\nDate",
+          "151",
+          "160",
+          "10",
+          "YYYY-\nMM-DD",
+          "Date the claim was processed and added\nto the NCH. Also referred to as the NCH\nWeekly Processing Date. H"
+        ],
+        [
+          "25",
+          "CLM_IDR_LD_DT",
+          "Claim IDR Load\nDate",
+          "161",
+          "170",
+          "10",
+          "YYYY-\nMM-DD",
+          "When the claim was loaded into the IDR."
+        ],
+        [
+          "#",
+          "",
+          "NAME",
+          "POSITION",
+          "POSITION",
+          "LENGTH",
+          "",
+          ""
+        ],
+        [
+          "26",
+          "BENE_EQTBL_BIC_HICN_\nNUM",
+          "Beneficiary\nEquitable BIC\nHICN Number",
+          "171",
+          "181",
+          "11",
+          "X(11)",
+          "Legacy Beneficiary Equitable BIC HICN\nNumber.\nNote: To comply with MACRA of 2015,\nafter the end of the New Medicare Card\nTransition Period in December 2019, MBI\nwill be accepted on claims, and the HICN\nvalue/ Beneficiary Equitable BIC HICN\nNumber will no longer be displayed. The\nBeneficiary Equitable BIC HICN Number\nwill be blank in CCLFs generated effective\nJanuary 1, 2020 onwards."
+        ],
+        [
+          "27",
+          "CLM_ADMSN_TYPE_CD",
+          "Claim Admission\nType Code",
+          "182",
+          "183",
+          "2",
+          "X(2)",
+          "Indicates the type and priority of inpatient\nservices. I H\nClaim Admission Type Code include:\n0 = Blank\n1 = Emergency\n2 = Urgent\n3 = Elective\n4 = Newborn\n5 = Trauma Center\n6-8 = Reserved\n9 = Unknown"
+        ],
+        [
+          "28",
+          "CLM_ADMSN_SRC_CD",
+          "Claim Admission\nSource Code",
+          "184",
+          "185",
+          "2",
+          "X(2)",
+          "Indicates the source of the beneficiary’s\nreferral for admission or visit (e.g., a\nphysician or another facility).\nFind Admission Source Code at the\nResDAC website."
+        ],
+        [
+          "#",
+          "",
+          "NAME",
+          "POSITION",
+          "POSITION",
+          "LENGTH",
+          "",
+          ""
+        ],
+        [
+          "29",
+          "CLM_BILL_FREQ_CD",
+          "Claim Bill\nFrequency Code",
+          "186",
+          "186",
+          "1",
+          "X(1)",
+          "The third digit of the type of bill (TOB3)\ncode. It indicates the sequence of the\nclaim in the beneficiary's current episode\nof care (e.g., interim or voided).\nFind Claim Frequency Code at the\nResDAC website."
+        ],
+        [
+          "30",
+          "CLM_QUERY_CD",
+          "Claim Query\nCode",
+          "187",
+          "187",
+          "1",
+          "X(1)",
+          "Indicates the type of claim record being\nprocessed with respect to payment (e.g.,\ndebit/credit indicator or interim/final\nindicator).\nClaim Query Code include:\n0 = Credit adjustment\n1 = Interim bill\n2 = HHA benefits exhausted\n3 = Final bill\n4 = Discharge notice\n5 = Debit adjustment"
+        ],
+        [
+          "31",
+          "DGNS_PRCDR_ICD_IND",
+          "ICD Version\nIndicator",
+          "188",
+          "188",
+          "1",
+          "X(1)",
+          "9 = ICD-9\n0 = ICD-10\nU = any value other than “9” or “0” in the\nsource data."
+        ],
+        [
+          "32",
+          "CLM_MDCR_INSTNL_TOT\n_CHRG_AMT",
+          "Total Claim\nCharge Amount",
+          "189",
+          "203",
+          "15",
+          "-9(11).99",
+          "Effective with NCH Version G, the total\ncharges for all services included on the\ninstitutional claim. This field is redundant\nwith revenue center code 0001/total\ncharges."
+        ],
+        [
+          "#",
+          "",
+          "NAME",
+          "POSITION",
+          "POSITION",
+          "LENGTH",
+          "",
+          ""
+        ],
+        [
+          "33",
+          "CLM_MDCR_IP_PPS_CPT\nL_IME_AMT",
+          "Claim Capital\nIndirect Medical\nEducation\nAmount",
+          "204",
+          "218",
+          "15",
+          "-9(11).99",
+          "The amount of the indirect medical\neducation (IME) (reimbursable amount for\nteaching hospitals only; an added amount\npassed by Congress to augment normal\nProspective Payment System [PPS]\npayments for teaching hospitals to\ncompensate them for higher patient costs\nresulting from medical education\nprograms for interns and residents)\nportion of the PPS payment for capital.\nNote: Applicable for claim type = 60 and\ntotal calculated based on debit credit\nmethodology."
+        ],
+        [
+          "34",
+          "CLM_OPRTNL_IME_AMT",
+          "Claim Operational\nIndirect Medical\nEducation\nAmount",
+          "219",
+          "240",
+          "22",
+          "-9(18).99",
+          "The indirect medical education amount\napplicable to the bill. (Do not include PPS\ncapital IME adjustment in this entry).\nNote: Applicable for claim type = 60 and\ntotal calculated based on debit credit\nmethodology."
+        ],
+        [
+          "35",
+          "CLM_MDCR_IP_PPS_DSP\nRPRTNT_AMT",
+          "Claim Capital\nDisproportionate\nAmount",
+          "241",
+          "255",
+          "15",
+          "-9(11).99",
+          "Effective 3/2/92, the amount of\ndisproportionate share (rate reflecting\nindigent population served) portion of the\nPPS payment for capital. [NCH]\nNote: Applicable for claim type = 60 and\ntotal calculated based on debit credit\nmethodology."
+        ],
+        [
+          "36",
+          "CLM_HIPPS_UNCOMPD_\nCARE_AMT",
+          "Claim Health\nInsurance\nProspective\nPayment System\nUncompensated\nCare Amount",
+          "256",
+          "270",
+          "15",
+          "-9(11).99",
+          "This is a payment for DSH hospitals as\npart of Section 3133 of ACA. It represents\nthe uncompensated care amount of the\npayment.\nNote: Applicable for claim types = (10, 20,\n30, 40, 50, 60) and total calculated based\non debit credit methodology."
+        ],
+        [
+          "#",
+          "",
+          "NAME",
+          "POSITION",
+          "POSITION",
+          "LENGTH",
+          "",
+          ""
+        ],
+        [
+          "37",
+          "CLM_OPRTNL_DSPRPRT\nNT_AMT",
+          "Claim Operational\nDisproportionate\nAmount",
+          "271",
+          "292",
+          "22",
+          "-9(18).99",
+          "The disproportionate share amount\napplicable to the bill. Use the amount\nprovided by the disproportionate share\nfield in PRICER. (Do not include any PPS\ncapital DSH adjustment in this entry).\nNote: Applicable for claim type = 60 and\ntotal calculated based on debit credit\nmethodology."
+        ]
+      ]
+    },
+    {
+      "element_id": "global_block_39",
+      "type": "paragraph",
+      "text": "The filename convention for the Medicare Shared Savings Program in Table 2 is:"
+    },
+    {
+      "element_id": "global_block_40",
+      "type": "paragraph",
+      "text": " For regular CCLFs: P.A****.ACO.ZC2Y**.Dyymmdd.Thhmmsst."
+    },
+    {
+      "element_id": "global_block_41",
+      "type": "paragraph",
+      "text": " For run-out CCLFs: P.A****.ACO.ZC2R**.Dyymmdd.Thhmmsst, “R” instead of “Y” indicating run-out."
+    },
+    {
+      "element_id": "global_block_42",
+      "type": "paragraph",
+      "text": "Table 2. Part A Claims Revenue Center Detail File (CCLF2)"
+    },
+    {
+      "element_id": "global_block_43",
+      "type": "table",
+      "pages_spanned": [
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "raw_matrix": [
+        [
+          "ELEMENT",
+          "CLAIM FIELD LABEL",
+          "CLAIM FIELD",
+          "START",
+          "END",
+          "DATA",
+          "FORMAT",
+          "CLAIM FIELD DESCRIPTION"
+        ],
+        [
+          "#",
+          "",
+          "NAME",
+          "POSITION",
+          "POSITION",
+          "LENGTH",
+          "",
+          ""
+        ],
+        [
+          "1",
+          "CUR_CLM_UNIQ_ID",
+          "Current Claim\nUnique Identifier",
+          "1",
+          "13",
+          "13",
+          "9(13)",
+          "A unique identification number assigned\nto the claim. I H"
+        ],
+        [
+          "2",
+          "CLM_LINE_NUM",
+          "Claim Line\nNumber",
+          "14",
+          "23",
+          "10",
+          "9(10)",
+          "A sequential number that identifies a\nspecific claim line."
+        ],
+        [
+          "3",
+          "BENE_MBI_ID",
+          "Medicare\nBeneficiary\nIdentifier",
+          "24",
+          "34",
+          "11",
+          "X(11)",
+          "A Medicare Beneficiary Identifier assigned\nto a beneficiary. I H"
+        ],
+        [
+          "4",
+          "BENE_HIC_NUM",
+          "Beneficiary HIC\nNumber",
+          "35",
+          "45",
+          "11",
+          "X(11)",
+          "Legacy Beneficiary HICN field.\nNote: To comply with MACRA of 2015,\nafter the end of the New Medicare Card\nTransition Period in December 2019, only\nthe MBI will be accepted on claims and\nthe HICN value will no longer be\ndisplayed. The Beneficiary HIC Number\nwill be blank in CCLFs generated effective\nJanuary 1, 2020 onwards."
+        ],
+        [
+          "#",
+          "",
+          "NAME",
+          "POSITION",
+          "POSITION",
+          "LENGTH",
+          "",
+          ""
+        ],
+        [
+          "5",
+          "CLM_TYPE_CD",
+          "Claim Type Code",
+          "46",
+          "47",
+          "2",
+          "9(02)",
+          "Signifies the type of claim being submitted\nthrough the Medicare or Medicaid\nprograms. H\nClaim type code include:\n10 = HHA claim\n20 = Non swing bed SNF claim\n30 = Swing bed SNF claim\n40 = Outpatient claim\n50 = Hospice claim\n60 = Inpatient claim\n61 = Inpatient “Full-Encounter” claim"
+        ],
+        [
+          "6",
+          "CLM_LINE_FROM_DT",
+          "Claim Line From\nDate",
+          "48",
+          "57",
+          "10",
+          "YYYY-MM-\nDD",
+          "The date the service associated with the\nline item began. H"
+        ],
+        [
+          "7",
+          "CLM_LINE_THRU_DT",
+          "Claim Line Thru\nDate",
+          "58",
+          "67",
+          "10",
+          "YYYY-MM-\nDD",
+          "The date the service associated with the\nline item ended. H"
+        ],
+        [
+          "8",
+          "CLM_LINE_PROD_REV_C\nTR_CD",
+          "Product Revenue\nCenter Code",
+          "68",
+          "71",
+          "4",
+          "X(04)",
+          "The number a provider assigns to the cost\ncenter to which a particular charge is\nbilled (e.g., accommodations or supplies).\nA cost center is a division or unit within a\nhospital (e.g., radiology, emergency room,\npathology).\nFind Revenue Center Code at the\nResDAC website.\nRevenue center code 0001 represents the\ntotal of all revenue centers included on the\nclaim."
+        ],
+        [
+          "#",
+          "",
+          "NAME",
+          "POSITION",
+          "POSITION",
+          "LENGTH",
+          "",
+          ""
+        ],
+        [
+          "9",
+          "CLM_LINE_INSTNL_REV_\nCTR_DT",
+          "Claim Line\nInstitutional\nRevenue Center\nDate",
+          "72",
+          "81",
+          "10",
+          "YYYY-MM-\nDD",
+          "The date that applies to the service\nassociated with the Revenue Center code."
+        ],
+        [
+          "10",
+          "CLM_LINE_HCPCS_CD",
+          "HCPCS Code",
+          "82",
+          "86",
+          "5",
+          "X(05)",
+          "The HCPCS code representing the\nprocedure, supply, product, and/or service\nprovided to the beneficiary.\nNote: Health Insurance Prospective\nPayment System (HIPPS) code may be\navailable when the Product Revenue\nCenter Code is “0022” (SNF Prospective\nPayment System)."
+        ],
+        [
+          "11",
+          "BENE_EQTBL_BIC_HICN_\nNUM",
+          "Beneficiary\nEquitable BIC\nHICN Number",
+          "87",
+          "97",
+          "11",
+          "X(11)",
+          "Legacy Beneficiary Equitable BIC HICN\nNumber.\nNote: To comply with MACRA of 2015,\nafter the end of the New Medicare Card\nTransition Period in December 2019, only\nthe MBI will be accepted on claims, and\nthe HICN value/ Beneficiary Equitable BIC\nHICN Number will no longer be displayed.\nThe Beneficiary Equitable BIC HICN\nNumber will be blank in CCLFs generated\neffective January 1, 2020 onwards."
+        ],
+        [
+          "12",
+          "PRVDR_OSCAR_NUM",
+          "Provider OSCAR\nNumber",
+          "98",
+          "103",
+          "6",
+          "X(6)",
+          "A facility’s Medicare/Medicaid\nidentification number, also known as a\nMedicare/Medicaid Provider Number, or\nCCN. This number verifies that a provider\nhas been Medicare certified for a\nparticular type of services. H"
+        ],
+        [
+          "#",
+          "",
+          "NAME",
+          "POSITION",
+          "POSITION",
+          "LENGTH",
+          "",
+          ""
+        ],
+        [
+          "13",
+          "CLM_FROM_DT",
+          "Claim From Date",
+          "104",
+          "113",
+          "10",
+          "YYYY-MM-\nDD",
+          "The first day on the billing statement that\ncovers services rendered to the\nbeneficiary. H\nAlso known as the “Statement Covers\nFrom Date.”"
+        ],
+        [
+          "14",
+          "CLM_THRU_DT",
+          "Claim Thru Date",
+          "114",
+          "123",
+          "10",
+          "YYYY-MM-\nDD",
+          "The last day on the billing statement that\ncovers services rendered to the\nbeneficiary. H\nAlso known as the “Statement Covers\nThrough Date.”"
+        ],
+        [
+          "15",
+          "CLM_LINE_SRVC_UNIT_Q\nTY",
+          "Claim Line\nService Unit\nQuantity",
+          "124",
+          "147",
+          "24",
+          "-9(18).9999",
+          "Count of total units, at the line-item level,\nassociated with services needing unit\nreporting (e.g., anesthesia time units and\nblood units). H"
+        ],
+        [
+          "16",
+          "CLM_LINE_CVRD_PD_AM\nT",
+          "Claim Line\nCovered Paid\nAmount",
+          "148",
+          "164",
+          "17",
+          "-9(13).99",
+          "The amount Medicare reimbursed the\nprovider for covered services associated\nwith the claim-line. H"
+        ],
+        [
+          "17",
+          "HCPCS_1_MDFR_CD",
+          "HCPCS First\nModifier Code",
+          "165",
+          "166",
+          "2",
+          "X(2)",
+          "The first code to modify the HCPCS\nprocedure code associated with the claim-\nline. This provides more specific\nprocedure identification for the line item\nservice. H"
+        ],
+        [
+          "18",
+          "HCPCS_2_MDFR_CD",
+          "HCPCS Second\nModifier Code",
+          "167",
+          "168",
+          "2",
+          "X(2)",
+          "The second code to modify the HCPCS\nprocedure code associated with the claim-\nline. This provides more specific\nprocedure identification for the line item\nservice. H"
+        ],
+        [
+          "19",
+          "HCPCS_3_MDFR_CD",
+          "HCPCS Third\nModifier Code",
+          "169",
+          "170",
+          "2",
+          "X(2)",
+          "The third code to modify the HCPCS\nprocedure code associated with the claim-\nline. This provides more specific\nprocedure identification for the line item\nservice. H"
+        ],
+        [
+          "#",
+          "",
+          "NAME",
+          "POSITION",
+          "POSITION",
+          "LENGTH",
+          "",
+          ""
+        ],
+        [
+          "20",
+          "HCPCS_4_MDFR_CD",
+          "HCPCS Fourth\nModifier Code",
+          "171",
+          "172",
+          "2",
+          "X(2)",
+          "The fourth code to modify the HCPCS\nprocedure code associated with the claim-\nline. This provides more specific\nprocedure identification for the line item\nservice. H"
+        ],
+        [
+          "21",
+          "HCPCS_5_MDFR_CD",
+          "HCPCS Fifth\nModifier Code",
+          "173",
+          "174",
+          "2",
+          "X(2)",
+          "The fifth code to modify the HCPCS\nprocedure code associated with the claim-\nline. This provides more specific\nprocedure identification for the line item\nservice. H"
+        ],
+        [
+          "22",
+          "CLM_REV_APC_HIPPS_C\nD",
+          "Claim Revenue\nAPC HIPPS Code",
+          "175",
+          "179",
+          "5",
+          "X(5)",
+          "APC group for outpatient claim type."
+        ]
+      ]
+    },
+    {
+      "element_id": "global_block_44",
+      "type": "paragraph",
+      "text": "The filename convention for the Medicare Shared Savings Program in Table 3 is:"
+    },
+    {
+      "element_id": "global_block_45",
+      "type": "paragraph",
+      "text": " For regular CCLFs: P.A****.ACO.ZC3Y**.Dyymmdd.Thhmmsst."
+    },
+    {
+      "element_id": "global_block_46",
+      "type": "paragraph",
+      "text": " For run-out CCLFs: P.A****.ACO.ZC3R**.Dyymmdd.Thhmmsst, “R” instead of “Y” indicating run-out."
+    },
+    {
+      "element_id": "global_block_47",
+      "type": "paragraph",
+      "text": "Table 3. Part A Procedure Code File (CCLF3)"
+    },
+    {
+      "element_id": "global_block_48",
+      "type": "table",
+      "pages_spanned": [
+        20,
+        21,
+        22
+      ],
+      "raw_matrix": [
+        [
+          "ELEMENT",
+          "CLAIM FIELD LABEL",
+          "CLAIM FIELD",
+          "START",
+          "END",
+          "DATA",
+          "FORMAT",
+          "CLAIM FIELD DESCRIPTION"
+        ],
+        [
+          "#",
+          "",
+          "NAME",
+          "POSITION",
+          "POSITION",
+          "LENGTH",
+          "",
+          ""
+        ],
+        [
+          "1",
+          "CUR_CLM_UNIQ_ID",
+          "Current Claim\nUnique Identifier",
+          "1",
+          "13",
+          "13",
+          "9(13)",
+          "A unique identification number assigned\nto the claim. I H"
+        ],
+        [
+          "2",
+          "BENE_MBI_ID",
+          "Medicare\nBeneficiary\nIdentifier",
+          "14",
+          "24",
+          "11",
+          "X(11)",
+          "A Medicare Beneficiary Identifier assigned\nto a beneficiary. I H"
+        ],
+        [
+          "3",
+          "BENE_HIC_NUM",
+          "Beneficiary HIC\nNumber",
+          "25",
+          "35",
+          "11",
+          "X(11)",
+          "Legacy Beneficiary HICN field.\nNote: To comply with MACRA of 2015,\nafter the end of the New Medicare Card\nTransition Period in December 2019, only\nthe MBI will be accepted on claims, and\nthe HICN value will no longer be\ndisplayed. The Beneficiary HIC Number\nwill be blank in CCLFs generated effective\nJanuary 1, 2020 onwards."
+        ],
+        [
+          "#",
+          "",
+          "NAME",
+          "POSITION",
+          "POSITION",
+          "LENGTH",
+          "",
+          ""
+        ],
+        [
+          "4",
+          "CLM_TYPE_CD",
+          "Claim Type Code",
+          "36",
+          "37",
+          "2",
+          "9(02)",
+          "Signifies the type of claim being submitted\nthrough the Medicare or Medicaid\nprograms. H\nClaim type codes are:\n10 = HHA claim\n20 = Non swing bed SNF claim\n30 = Swing bed SNF claim\n40 = Outpatient claim\n50 = Hospice claim\n60 = Inpatient claim\n61 = Inpatient “Full-Encounter” claim"
+        ],
+        [
+          "5",
+          "CLM_VAL_SQNC_NUM",
+          "Claim Value\nSequence\nNumber",
+          "38",
+          "39",
+          "2",
+          "9(2)",
+          "An arbitrary sequential number that\nuniquely identifies a procedure code\nrecord within the claim."
+        ],
+        [
+          "6",
+          "CLM_PRCDR_CD",
+          "Procedure Code",
+          "40",
+          "46",
+          "7",
+          "X(07)",
+          "The ICD-9/10 code that indicates the\nprocedure performed during the period\ncovered by the claim. H"
+        ],
+        [
+          "7",
+          "CLM_PRCDR_PRFRM_DT",
+          "Procedure\nPerformed Date",
+          "47",
+          "56",
+          "10",
+          "YYYY-\nMM-DD",
+          "The date the indicated procedure was\nperformed. H"
+        ],
+        [
+          "#",
+          "",
+          "NAME",
+          "POSITION",
+          "POSITION",
+          "LENGTH",
+          "",
+          ""
+        ],
+        [
+          "8",
+          "BENE_EQTBL_BIC_HICN_\nNUM",
+          "Beneficiary\nEquitable BIC\nHICN Number",
+          "57",
+          "67",
+          "11",
+          "X(11)",
+          "Legacy Beneficiary Equitable BIC HICN\nNumber.\nNote: To comply with MACRA of 2015,\nafter the end of the New Medicare Card\nTransition Period in December 2019, only\nthe MBI will be accepted on claims, and\nthe HICN value/ Beneficiary Equitable BIC\nHICN Number will no longer be displayed.\nThe Beneficiary Equitable BIC HICN\nNumber will be blank in CCLFs generated\neffective January 1, 2020 onwards."
+        ],
+        [
+          "9",
+          "PRVDR_OSCAR_NUM",
+          "Provider OSCAR\nNumber",
+          "68",
+          "73",
+          "6",
+          "X(6)",
+          "A facility’s Medicare/Medicaid\nidentification number. It is also known as a\nMedicare/Medicaid Provider Number, or\nCCN. This number verifies that a provider\nhas been Medicare certified for a\nparticular type of services. H"
+        ],
+        [
+          "10",
+          "CLM_FROM_DT",
+          "Claim From Date",
+          "74",
+          "83",
+          "10",
+          "YYYY-\nMM-DD",
+          "The first day on the billing statement that\ncovers services rendered to the\nbeneficiary. H\nAlso known as “Statement Covers From\nDate.”"
+        ],
+        [
+          "11",
+          "CLM_THRU_DT",
+          "Claim Thru Date",
+          "84",
+          "93",
+          "10",
+          "YYYY-\nMM-DD",
+          "The last day on the billing statement that\ncovers services rendered to the\nbeneficiary. H\nAlso known as the “Statement Covers\nThrough Date.”"
+        ],
+        [
+          "12",
+          "DGNS_PRCDR_ICD_IND",
+          "ICD Version\nIndicator",
+          "94",
+          "94",
+          "1",
+          "X(1)",
+          "9 = ICD-9\n0 = ICD-10\nU = any value other than “9” or “0” in the\nsource data."
+        ]
+      ]
+    },
+    {
+      "element_id": "global_block_49",
+      "type": "paragraph",
+      "text": "The filename convention for the Medicare Shared Savings Program in Table 4 is:"
+    },
+    {
+      "element_id": "global_block_50",
+      "type": "paragraph",
+      "text": " For regular CCLFs: P.A****.ACO.ZC4Y**.Dyymmdd.Thhmmsst."
+    },
+    {
+      "element_id": "global_block_51",
+      "type": "paragraph",
+      "text": " For run-out CCLFs: P.A****.ACO.ZC4R**.Dyymmdd.Thhmmsst, “R” instead of “Y” indicating run-out."
+    },
+    {
+      "element_id": "global_block_52",
+      "type": "paragraph",
+      "text": "Table 4. Part A Diagnosis Code File (CCLF4)"
+    },
+    {
+      "element_id": "global_block_53",
+      "type": "table",
+      "pages_spanned": [
+        23,
+        24,
+        25,
+        26
+      ],
+      "raw_matrix": [
+        [
+          "ELEMENT",
+          "ELEMENT NAME",
+          "DATA",
+          "START",
+          "END",
+          "DATA",
+          "FORMAT",
+          "COMMENTS"
+        ],
+        [
+          "#",
+          "",
+          "DESCRIPTION",
+          "POSITION",
+          "POSITION",
+          "LENGTH",
+          "",
+          ""
+        ],
+        [
+          "1",
+          "CUR_CLM_UNIQ_ID",
+          "Current Claim\nUnique Identifier",
+          "1",
+          "13",
+          "13",
+          "9(13)",
+          "A unique identification number assigned\nto the claim. I H"
+        ],
+        [
+          "2",
+          "BENE_MBI_ID",
+          "Medicare\nBeneficiary\nIdentifier",
+          "14",
+          "24",
+          "11",
+          "X(11)",
+          "A Medicare Beneficiary Identifier assigned\nto a beneficiary. I H"
+        ],
+        [
+          "3",
+          "BENE_HIC_NUM",
+          "Beneficiary HIC\nNumber",
+          "25",
+          "35",
+          "11",
+          "X(11)",
+          "Legacy Beneficiary HICN field.\nNote: To comply with MACRA of 2015,\nafter the end of the New Medicare Card\nTransition Period in December 2019, only\nthe MBI will be accepted on claims, and\nthe HICN value will no longer be\ndisplayed. The Beneficiary HIC Number\nwill be blank in CCLFs generated effective\nJanuary 1, 2020 onwards."
+        ],
+        [
+          "#",
+          "",
+          "DESCRIPTION",
+          "POSITION",
+          "POSITION",
+          "LENGTH",
+          "",
+          ""
+        ],
+        [
+          "4",
+          "CLM_TYPE_CD",
+          "Claim Type Code",
+          "36",
+          "37",
+          "2",
+          "9(02)",
+          "Signifies the type of claim being submitted\nthrough the Medicare or Medicaid\nprograms. H\nClaim type code include:\n10 = HHA claim\n20 = Non swing bed SNF claim\n30 = Swing bed SNF claim\n40 = Outpatient claim\n50 = Hospice claim\n60 = Inpatient claim\n61 = Inpatient “Full-Encounter” claim"
+        ],
+        [
+          "5",
+          "CLM_PROD_TYPE_CD",
+          "Claim Product\nType Code",
+          "38",
+          "38",
+          "1",
+          "X(01)",
+          "Code classifying the diagnosis category. H\nCategory code include:\nE = Accident diagnosis code\n1 = First diagnosis E code\nD = Other diagnosis code"
+        ],
+        [
+          "6",
+          "CLM_VAL_SQNC_NUM",
+          "Claim Value\nSequence\nNumber",
+          "39",
+          "40",
+          "2",
+          "9(2)",
+          "An arbitrary sequential number that\nuniquely identifies a procedure code\nrecord within the claim."
+        ],
+        [
+          "7",
+          "CLM_DGNS_CD",
+          "Diagnosis Code",
+          "41",
+          "47",
+          "7",
+          "X(07)",
+          "The ICD-9/10 diagnosis code identifying\nthe beneficiary’s illness or disability. I H"
+        ],
+        [
+          "#",
+          "",
+          "DESCRIPTION",
+          "POSITION",
+          "POSITION",
+          "LENGTH",
+          "",
+          ""
+        ],
+        [
+          "8",
+          "BENE_EQTBL_BIC_HICN_\nNUM",
+          "Beneficiary\nEquitable BIC\nHICN Number",
+          "48",
+          "58",
+          "11",
+          "X(11)",
+          "Legacy Beneficiary Equitable BIC HICN\nNumber.\nNote: To comply with MACRA of 2015,\nafter the end of the New Medicare Card\nTransition Period in December 2019, only\nthe MBI will be accepted on claims and\nthe HICN value/ Beneficiary Equitable BIC\nHICN Number will no longer be displayed.\nThe Beneficiary Equitable BIC HICN\nNumber will be blank effective January 1,\n2020."
+        ],
+        [
+          "9",
+          "PRVDR_OSCAR_NUM",
+          "Provider OSCAR\nNumber",
+          "59",
+          "64",
+          "6",
+          "X(6)",
+          "The OSCAR is a facility’s\nMedicare/Medicaid identification number.\nIt is also known as a Medicare/Medicaid\nProvider Number, or CCN. This number\nverifies that a provider has been Medicare\ncertified for a particular type of services. H"
+        ],
+        [
+          "10",
+          "CLM_FROM_DT",
+          "Claim From Date",
+          "65",
+          "74",
+          "10",
+          "YYYY-\nMM-DD",
+          "The first day on the billing statement that\ncovers services rendered to the\nbeneficiary. H\nAlso known as the “Statement Covers\nFrom Date.”"
+        ],
+        [
+          "11",
+          "CLM_THRU_DT",
+          "Claim Thru Date",
+          "75",
+          "84",
+          "10",
+          "YYYY-\nMM-DD",
+          "The last day on the billing statement that\ncovers services rendered to the\nbeneficiary. H\nAlso known as the “Statement Covers\nThrough Date.”"
+        ],
+        [
+          "12",
+          "CLM_POA_IND",
+          "Claim Present-on-\nAdmission\nIndicator",
+          "85",
+          "91",
+          "7",
+          "X(7)",
+          "Indicates whether a patient had the\ncondition listed on the claim line at the\ntime of admission to the facility. I H\nFind Present-on-Admission values at the\nResDAC website."
+        ],
+        [
+          "#",
+          "",
+          "DESCRIPTION",
+          "POSITION",
+          "POSITION",
+          "LENGTH",
+          "",
+          ""
+        ],
+        [
+          "13",
+          "DGNS_PRCDR_ICD_IND",
+          "ICD Version\nIndicator",
+          "92",
+          "92",
+          "1",
+          "X(1)",
+          "9 = ICD-9\n0 = ICD-10\nU = any value other than “9” or “0” in the\nsource data."
+        ]
+      ]
+    },
+    {
+      "element_id": "global_block_54",
+      "type": "paragraph",
+      "text": "The filename convention for the Medicare Shared Savings Program in Table 5 is:"
+    },
+    {
+      "element_id": "global_block_55",
+      "type": "paragraph",
+      "text": " For regular CCLFs: P.A****.ACO.ZC5Y**.Dyymmdd.Thhmmsst."
+    },
+    {
+      "element_id": "global_block_56",
+      "type": "paragraph",
+      "text": " For run-out CCLFs: P.A****.ACO.ZC5R**.Dyymmdd.Thhmmsst, “R” instead of “Y” indicating run-out."
+    },
+    {
+      "element_id": "global_block_57",
+      "type": "paragraph",
+      "text": "Table 5. Part B Physicians File (CCLF5)"
+    },
+    {
+      "element_id": "global_block_58",
+      "type": "table",
+      "pages_spanned": [
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37
+      ],
+      "raw_matrix": [
+        [
+          "ELEMENT",
+          "CLAIM FIELD LABEL",
+          "CLAIM FIELD",
+          "START",
+          "END",
+          "DATA",
+          "FORMAT",
+          "CLAIM FIELD DESCRIPTION"
+        ],
+        [
+          "#",
+          "",
+          "NAME",
+          "POSITION",
+          "POSITION",
+          "LENGTH",
+          "",
+          ""
+        ],
+        [
+          "1",
+          "CUR_CLM_UNIQ_ID",
+          "Current Claim\nUnique Identifier",
+          "1",
+          "13",
+          "13",
+          "9(13)",
+          "A unique identification number assigned\nto the claim. I H"
+        ],
+        [
+          "2",
+          "CLM_LINE_NUM",
+          "Claim Line\nNumber",
+          "14",
+          "23",
+          "10",
+          "9(10)",
+          "A sequential number that identifies a\nspecific claim line within a given claim."
+        ],
+        [
+          "3",
+          "BENE_MBI_ID",
+          "Medicare\nBeneficiary\nIdentifier",
+          "24",
+          "34",
+          "11",
+          "X(11)",
+          "A Medicare Beneficiary Identifier assigned\nto a beneficiary. I H"
+        ],
+        [
+          "4",
+          "BENE_HIC_NUM",
+          "Beneficiary HIC\nNumber",
+          "35",
+          "45",
+          "11",
+          "X(11)",
+          "Legacy Beneficiary HICN field.\nNote: To comply with MACRA of 2015,\nafter the end of the New Medicare Card\nTransition Period in December 2019, only\nthe MBI will be accepted on claims, and\nthe HICN value will no longer be\ndisplayed. The HICN field will be blank\neffective January 1, 2020."
+        ],
+        [
+          "5",
+          "CLM_TYPE_CD",
+          "Claim Type Code",
+          "46",
+          "47",
+          "2",
+          "9(02)",
+          "Signifies the type of claim being submitted\nthrough the Medicare or Medicaid\nprograms. H\nClaim type code include:\n71 = RIC O local carrier non-DMEPOS\nclaim\n72 = RIC O local carrier DMEPOS claim"
+        ],
+        [
+          "#",
+          "",
+          "NAME",
+          "POSITION",
+          "POSITION",
+          "LENGTH",
+          "",
+          ""
+        ],
+        [
+          "6",
+          "CLM_FROM_DT",
+          "Claim From Date",
+          "48",
+          "57",
+          "10",
+          "YYYY-MM-\nDD",
+          "The first day on the billing statement that\ncovers services rendered to the\nbeneficiary. H\nAlso known as the “Statement Covers\nFrom Date.”"
+        ],
+        [
+          "7",
+          "CLM_THRU_DT",
+          "Claim Thru Date",
+          "58",
+          "67",
+          "10",
+          "YYYY-MM-\nDD",
+          "The last day on the billing statement that\ncovers services rendered to the\nbeneficiary. H\nAlso known as the “Statement Covers\nThrough Date.”"
+        ],
+        [
+          "#",
+          "",
+          "NAME",
+          "POSITION",
+          "POSITION",
+          "LENGTH",
+          "",
+          ""
+        ],
+        [
+          "8",
+          "RNDRG_PRVDR_TYPE_C\nD",
+          "Rendering\nProvider Type\nCode",
+          "68",
+          "70",
+          "3",
+          "X(03)",
+          "Indicates the type of provider who\nprovided the service associated with this\nline item on the claim.\nProvider Type Code include:\n0=Clinics, groups, associations,\npartnerships, or other entities\n1 = Physicians or suppliers reporting as\nsolo practitioners\n2 = Suppliers (other than sole\nproprietorship)\n3 = Institutional provider\n4 = Independent laboratories\n5 = Clinics (multiple specialties)\n6 = Groups (single specialty)\n7 = Other entities\n8 = Family Practice\nUI = UPIN Identification\nN2 = National Council for Prescription\nDrug Programs\nD = National Supplier Clearinghouse\nBP = PIN Individual\nBG = PIN Group\nA = Online Survey, Certification and\nReporting"
+        ],
+        [
+          "9",
+          "RNDRG_PRVDR_FIPS_ST\n_CD",
+          "Rendering\nProvider FIPS\nState Code",
+          "71",
+          "72",
+          "2",
+          "X(02)",
+          "Identifies the state that the provider\nproviding the service is located in."
+        ],
+        [
+          "#",
+          "",
+          "NAME",
+          "POSITION",
+          "POSITION",
+          "LENGTH",
+          "",
+          ""
+        ],
+        [
+          "10",
+          "CLM_PRVDR_SPCLTY_CD",
+          "Claim-Line\nProvider Specialty\nCode",
+          "73",
+          "74",
+          "2",
+          "X(02)",
+          "Indicates the CMS specialty code\nassociated with the provider of services.\nCMS used this number to price the\nservice on the line-item.\nFind Provider Specialty Code at CMS.gov\nor the Research Data Assistance Center."
+        ],
+        [
+          "11",
+          "CLM_FED_TYPE_SRVC_C\nD",
+          "Claim Federal\nType Service\nCode",
+          "75",
+          "75",
+          "1",
+          "X(01)",
+          "Indicates the type of service (e.g.,\nconsultation, surgery) provided to the\nbeneficiary. Types of Service Code are\ndefined in the Medicare Carrier Manual.\nFind Types of Service Code at the\nResDAC website."
+        ],
+        [
+          "12",
+          "CLM_POS_CD",
+          "Claim Place of\nService Code",
+          "76",
+          "77",
+          "2",
+          "X(02)",
+          "Indicates the place where the indicated\nservice was provided (e.g., ambulance,\nschool). Places of service are defined in\nthe Medicare Carrier Manual.\nFind Place of Service Code at the\nResDAC website."
+        ],
+        [
+          "13",
+          "CLM_LINE_FROM_DT",
+          "Claim Line From\nDate",
+          "78",
+          "87",
+          "10",
+          "YYYY-MM-\nDD",
+          "The date the service associated with the\nline item began."
+        ],
+        [
+          "14",
+          "CLM_LINE_THRU_DT",
+          "Claim Line Thru\nDate",
+          "88",
+          "97",
+          "10",
+          "YYYY-MM-\nDD",
+          "The date the service associated with the\nline item ended."
+        ],
+        [
+          "15",
+          "CLM_LINE_HCPCS_CD",
+          "HCPCS Code",
+          "98",
+          "102",
+          "5",
+          "X(05)",
+          "The HCPCS code representing the\nprocedure, supply, product, and/or service\nprovided to the beneficiary. I H"
+        ],
+        [
+          "16",
+          "CLM_LINE_CVRD_PD_AM\nT",
+          "Claim Line NCH\nPayment Amount",
+          "103",
+          "117",
+          "15",
+          "X(15)",
+          "The amount of payment made by\nMedicare on behalf of the beneficiary for\nthe indicated service after deductible and\ncoinsurance amounts have been paid."
+        ],
+        [
+          "#",
+          "",
+          "NAME",
+          "POSITION",
+          "POSITION",
+          "LENGTH",
+          "",
+          ""
+        ],
+        [
+          "17",
+          "CLM_LINE_PRMRY_PYR_\nCD",
+          "Claim Primary\nPayer Code",
+          "118",
+          "118",
+          "1",
+          "X(01)",
+          "If a payer other than Medicare has\nprimary responsibility for payment of the\nservice indicated on the claim line, this\ncode indicates the primary payer. This\nfield is also known as the Line Beneficiary\nPrimary Payer Code. I H\nIf this field is blank, Medicare is the\nprimary payer for the beneficiary.\nFind Primary Payer Code at the ResDAC\nwebsite."
+        ],
+        [
+          "18",
+          "CLM_LINE_DGNS_CD",
+          "Diagnosis Code",
+          "119",
+          "125",
+          "7",
+          "X(07)",
+          "The ICD-9/10 diagnosis code identifying\nthe beneficiary’s principal illness or\ndisability. I H"
+        ],
+        [
+          "19",
+          "CLM_RNDRG_PRVDR_TA\nX_NUM",
+          "Claim Provider\nTax Number",
+          "126",
+          "135",
+          "10",
+          "X(10)",
+          "The SSN or Employee Identification\nNumber (EIN) of the provider of the\nindicated service. This number identifies\nwho receives payment for the indicated\nservice. I"
+        ],
+        [
+          "20",
+          "RNDRG_PRVDR_NPI_NU\nM",
+          "Rendering\nProvider NPI\nNumber",
+          "136",
+          "145",
+          "10",
+          "X(10)",
+          "A number that identifies the provider\nrendering the indicated service on the\nclaim line. Each provider is assigned its\nown unique NPI."
+        ],
+        [
+          "#",
+          "",
+          "NAME",
+          "POSITION",
+          "POSITION",
+          "LENGTH",
+          "",
+          ""
+        ],
+        [
+          "21",
+          "CLM_CARR_PMT_DNL_C\nD",
+          "Claim Carrier\nPayment Denial\nCode",
+          "146",
+          "147",
+          "2",
+          "X(02)",
+          "Indicates to whom payment was made\n(e.g., physician, beneficiary), or if the\nclaim was denied.\nFind Carrier Payment Denial Code in the\nCMS Manual System, Publication 100-04\nMedicare Claims Processing.\nAdditionally, the following code may be\navailable:\nG = MSP Cost Avoided - Secondary\nClaims Investigation\nH = MSP Cost Avoided - Self Reports\nJ = MSP Cost Avoided - 411.25\nT = MSP Cost Avoided - IEQ contractor\n(eff. 7/96)\nX = MSP Cost Avoided - generic\nY = MSP Cost Avoided - IRS/SSA data\nmatch project"
+        ],
+        [
+          "#",
+          "",
+          "NAME",
+          "POSITION",
+          "POSITION",
+          "LENGTH",
+          "",
+          ""
+        ],
+        [
+          "22",
+          "CLM_PRCSG_IND_CD",
+          "Claim-Line\nProcessing\nIndicator Code",
+          "148",
+          "149",
+          "2",
+          "X(02)",
+          "Indicates whether the service indicated on\nthe claim line was allowed or the reason it\nwas denied.\nFind Processing Indicator Code at the\nResDAC website.\nAdditionally, the following code may be\navailable:\nG = MSP Cost Avoided - Secondary\nClaims Investigation\nH = MSP Cost Avoided - Self Reports\nJ = MSP Cost Avoided - 411.25\n19 = MSP Cost Avoided - Worker's\nCompensation Set Aside\n41 = MSP Cost Avoided - Next\nGeneration Desktop"
+        ],
+        [
+          "23",
+          "CLM_ADJSMT_TYPE_CD",
+          "Claim Adjustment\nType Code",
+          "150",
+          "151",
+          "2",
+          "X(02)",
+          "Indicates whether the claim is an original,\ncancellation, or adjustment claim.\nClaim Adjustment Type Code include:\n0 = Original Claim\n1 = Cancellation Claim\n2 = Adjustment claim"
+        ],
+        [
+          "24",
+          "CLM_EFCTV_DT",
+          "Claim Effective\nDate",
+          "152",
+          "161",
+          "10",
+          "YYYY-MM-\nDD",
+          "The date the claim was processed and\nadded to the NCH. This is also referred to\nas the NCH Weekly Processing Date."
+        ],
+        [
+          "25",
+          "CLM_IDR_LD_DT",
+          "Claim IDR Load\nDate",
+          "162",
+          "171",
+          "10",
+          "YYYY-MM-\nDD",
+          "When the claim was loaded into the IDR."
+        ],
+        [
+          "#",
+          "",
+          "NAME",
+          "POSITION",
+          "POSITION",
+          "LENGTH",
+          "",
+          ""
+        ],
+        [
+          "26",
+          "CLM_CNTL_NUM",
+          "Claim Control\nNumber",
+          "172",
+          "211",
+          "40",
+          "X(40)",
+          "A unique number assigned to a claim by\nthe Medicare carrier.\nThis number allows CMS to associate\neach line item with its respective claim."
+        ],
+        [
+          "27",
+          "BENE_EQTBL_BIC_HICN_\nNUM",
+          "Beneficiary\nEquitable BIC\nHICN Number",
+          "212",
+          "222",
+          "11",
+          "X(11)",
+          "Legacy Beneficiary Equitable BIC HICN\nNumber.\nNote: To comply with MACRA of 2015,\nafter the end of the New Medicare Card\nTransition Period in December 2019, only\nthe MBI will be accepted on claims, and\nthe HICN value/ Beneficiary Equitable BIC\nHICN Number will no longer be displayed.\nThe Beneficiary Equitable BIC HICN\nNumber will be blank effective January 1,\n2020."
+        ],
+        [
+          "28",
+          "CLM_LINE_ALOWD_CHRG\n_AMT",
+          "Claim Line\nAllowed Charges\nAmount",
+          "223",
+          "239",
+          "17",
+          "X(17)",
+          "The amount Medicare approved for\npayment to the provider."
+        ],
+        [
+          "29",
+          "CLM_LINE_SRVC_UNIT_Q\nTY",
+          "Claim Line\nService Unit\nQuantity",
+          "240",
+          "263",
+          "24",
+          "-9(18).9999",
+          "Count of total units, at the line-item level,\nassociated with services needing unit\nreporting (e.g., anesthesia time units and\nblood units)."
+        ],
+        [
+          "30",
+          "HCPCS_1_MDFR_CD",
+          "HCPCS First\nModifier Code",
+          "264",
+          "265",
+          "2",
+          "X(2)",
+          "The first code to modify the HCPCS\nprocedure code associated with the claim-\nline. This provides more specific\nprocedure identification for the line item\nservice. H"
+        ],
+        [
+          "31",
+          "HCPCS_2_MDFR_CD",
+          "HCPCS Second\nModifier Code",
+          "266",
+          "267",
+          "2",
+          "X(2)",
+          "The second code to modify the HCPCS\nprocedure code associated with the claim-\nline. This provides more specific\nprocedure identification for the line item\nservice. H"
+        ],
+        [
+          "#",
+          "",
+          "NAME",
+          "POSITION",
+          "POSITION",
+          "LENGTH",
+          "",
+          ""
+        ],
+        [
+          "32",
+          "HCPCS_3_MDFR_CD",
+          "HCPCS Third\nModifier Code",
+          "268",
+          "269",
+          "2",
+          "X(2)",
+          "The third code to modify the HCPCS\nprocedure code associated with the claim-\nline. This provides more specific\nprocedure identification for the line item\nservice. H"
+        ],
+        [
+          "33",
+          "HCPCS_4_MDFR_CD",
+          "HCPCS Fourth\nModifier Code",
+          "270",
+          "271",
+          "2",
+          "X(2)",
+          "The fourth code to modify the HCPCS\nprocedure code associated with the claim-\nline. This provides more specific\nprocedure identification for the line item\nservice. H"
+        ],
+        [
+          "34",
+          "HCPCS_5_MDFR_CD",
+          "HCPCS Fifth\nModifier Code",
+          "272",
+          "273",
+          "2",
+          "X(2)",
+          "The fifth code to modify the HCPCS\nprocedure code associated with the claim-\nline. This provides more specific\nprocedure identification for the line item\nservice. H"
+        ],
+        [
+          "35",
+          "CLM_DISP_CD",
+          "Claim Disposition\nCode",
+          "274",
+          "275",
+          "2",
+          "X(2)",
+          "Information regarding payment actions on\nthe claim.\nClaim Disposition Code include:\n01 = Debit accepted\n02 = Debit accepted (automatic\nadjustment)\n03 = Cancel accepted"
+        ],
+        [
+          "36",
+          "CLM_DGNS_1_CD",
+          "Claim Diagnosis\nFirst Code",
+          "276",
+          "282",
+          "7",
+          "X(7)",
+          "The first of 12 allowable ICD-9/10\ndiagnosis code identifying the\nbeneficiary’s illness or disability. I H"
+        ],
+        [
+          "37",
+          "CLM_DGNS_2_CD",
+          "Claim Diagnosis\nSecond Code",
+          "283",
+          "289",
+          "7",
+          "X(7)",
+          "The second of 12 allowable ICD-9/10\ndiagnosis code identifying the\nbeneficiary’s illness or disability. I H"
+        ],
+        [
+          "#",
+          "",
+          "NAME",
+          "POSITION",
+          "POSITION",
+          "LENGTH",
+          "",
+          ""
+        ],
+        [
+          "38",
+          "CLM_DGNS_3_CD",
+          "Claim Diagnosis\nThird Code",
+          "290",
+          "296",
+          "7",
+          "X(7)",
+          "The third of 12 allowable ICD-9/10\ndiagnosis code identifying the\nbeneficiary’s illness or disability. I H"
+        ],
+        [
+          "39",
+          "CLM_DGNS_4_CD",
+          "Claim Diagnosis\nFourth Code",
+          "297",
+          "303",
+          "7",
+          "X(7)",
+          "The fourth of 12 allowable ICD-9/10\ndiagnosis code identifying the\nbeneficiary’s illness or disability. I H"
+        ],
+        [
+          "40",
+          "CLM_DGNS_5_CD",
+          "Claim Diagnosis\nFifth Code",
+          "304",
+          "310",
+          "7",
+          "X(7)",
+          "The fifth of 12 allowable ICD-9/10\ndiagnosis code identifying the\nbeneficiary’s illness or disability. I H"
+        ],
+        [
+          "41",
+          "CLM_DGNS_6_CD",
+          "Claim Diagnosis\nSixth Code",
+          "311",
+          "317",
+          "7",
+          "X(7)",
+          "The sixth of 12 allowable ICD-9/10\ndiagnosis code identifying the\nbeneficiary’s illness or disability. I H"
+        ],
+        [
+          "42",
+          "CLM_DGNS_7_CD",
+          "Claim Diagnosis\nSeventh Code",
+          "318",
+          "324",
+          "7",
+          "X(7)",
+          "The seventh of 12 allowable ICD-9/10\ndiagnosis code identifying the\nbeneficiary’s illness or disability. I H"
+        ],
+        [
+          "43",
+          "CLM_DGNS_8_CD",
+          "Claim Diagnosis\nEighth Code",
+          "325",
+          "331",
+          "7",
+          "X(7)",
+          "The eighth of 12 allowable ICD-9/10\ndiagnosis code identifying the\nbeneficiary’s illness or disability. I H"
+        ],
+        [
+          "44",
+          "DGNS_PRCDR_ICD_IND",
+          "ICD Version\nIndicator",
+          "332",
+          "332",
+          "1",
+          "X(1)",
+          "9 = ICD-9\n0 = ICD-10\nU = any value other than “9” or “0” in the\nsource data."
+        ],
+        [
+          "45",
+          "CLM_DGNS_9_CD",
+          "Claim Diagnosis\nNinth Code",
+          "333",
+          "339",
+          "7",
+          "X(7)",
+          "The ninth of 12 allowable ICD-9/10\ndiagnosis code identifying the\nbeneficiary’s illness or disability. I H"
+        ],
+        [
+          "46",
+          "CLM_DGNS_10_CD",
+          "Claim Diagnosis\nTenth Code",
+          "340",
+          "346",
+          "7",
+          "X(7)",
+          "The tenth of 12 allowable ICD-9/10\ndiagnosis code identifying the\nbeneficiary’s illness or disability. I H"
+        ],
+        [
+          "#",
+          "",
+          "NAME",
+          "POSITION",
+          "POSITION",
+          "LENGTH",
+          "",
+          ""
+        ],
+        [
+          "47",
+          "CLM_DGNS_11_CD",
+          "Claim Diagnosis\nEleventh Code",
+          "347",
+          "353",
+          "7",
+          "X(7)",
+          "The eleventh of 12 allowable ICD-9/10\ndiagnosis code identifying the\nbeneficiary’s illness or\ndisability. I H"
+        ],
+        [
+          "48",
+          "CLM_DGNS_12_CD",
+          "Claim Diagnosis\nTwelfth Code",
+          "354",
+          "360",
+          "7",
+          "X(7)",
+          "The twelfth of 12 allowable ICD-9/10\ndiagnosis code identifying the\nbeneficiary’s illness or disability. I H"
+        ],
+        [
+          "49",
+          "HCPCS_BETOS_CD",
+          "HCPCS BETOS\nCode",
+          "361",
+          "363",
+          "3",
+          "X(3)",
+          "A code representing a clinical category.\nThe Berenson-Eggers Type of Service\n(BETOS) code."
+        ]
+      ]
+    },
+    {
+      "element_id": "global_block_59",
+      "type": "paragraph",
+      "text": "The filename convention for the Medicare Shared Savings Program in Table 6 is:"
+    },
+    {
+      "element_id": "global_block_60",
+      "type": "paragraph",
+      "text": " For regular CCLFs: P.A****.ACO.ZC6Y**.Dyymmdd.Thhmmsst."
+    },
+    {
+      "element_id": "global_block_61",
+      "type": "paragraph",
+      "text": " For run-out CCLFs: P.A****.ACO.ZC6R**.Dyymmdd.Thhmmsst, “R” instead of “Y” indicating run-out."
+    },
+    {
+      "element_id": "global_block_62",
+      "type": "paragraph",
+      "text": "Table 6. Part B DME File (CCLF6)"
+    },
+    {
+      "element_id": "global_block_63",
+      "type": "table",
+      "pages_spanned": [
+        38,
+        39,
+        40,
+        41,
+        42,
+        43
+      ],
+      "raw_matrix": [
+        [
+          "ELEMENT",
+          "CLAIM FIELD LABEL",
+          "CLAIM FIELD",
+          "START",
+          "END",
+          "DATA",
+          "FORMAT",
+          "CLAIM FIELD DESCRIPTION"
+        ],
+        [
+          "#",
+          "",
+          "NAME",
+          "POSITION",
+          "POSITION",
+          "LENGTH",
+          "",
+          ""
+        ],
+        [
+          "1",
+          "CUR_CLM_UNIQ_ID",
+          "Current Claim\nUnique Identifier",
+          "1",
+          "13",
+          "13",
+          "9(13)",
+          "A unique identification number assigned\nto the claim. I H"
+        ],
+        [
+          "2",
+          "CLM_LINE_NUM",
+          "Claim Line\nNumber",
+          "14",
+          "23",
+          "10",
+          "9(10)",
+          "A sequential number that identifies a\nspecific claim line."
+        ],
+        [
+          "3",
+          "BENE_MBI_ID",
+          "Medicare\nBeneficiary\nIdentifier",
+          "24",
+          "34",
+          "11",
+          "X(11)",
+          "A Medicare Beneficiary Identifier assigned\nto a beneficiary. I H"
+        ],
+        [
+          "4",
+          "BENE_HIC_NUM",
+          "Beneficiary HIC\nNumber",
+          "35",
+          "45",
+          "11",
+          "X(11)",
+          "Legacy Beneficiary HICN field.\nNote: To comply with MACRA of 2015,\nafter the end of the New Medicare Card\nTransition Period in December 2019, only\nthe MBI will be accepted on claims, and\nthe HICN value will no longer be\ndisplayed. The Beneficiary HIC Number\nwill be blank in CCLFs generated effective\nJanuary 1, 2020 onwards."
+        ],
+        [
+          "5",
+          "CLM_TYPE_CD",
+          "Claim Type Code",
+          "46",
+          "47",
+          "2",
+          "9(02)",
+          "Signifies the type of claim being submitted\nthrough the Medicare or Medicaid\nprograms. H\nClaim type code include:\n81 = RIC M DMERC non-DMEPOS claim\n82 = RIC M DMERC DMEPOS\nclaim"
+        ],
+        [
+          "#",
+          "",
+          "NAME",
+          "POSITION",
+          "POSITION",
+          "LENGTH",
+          "",
+          ""
+        ],
+        [
+          "6",
+          "CLM_FROM_DT",
+          "Claim From Date",
+          "48",
+          "57",
+          "10",
+          "YYYY-\nMM-DD",
+          "The first day on the billing statement that\ncovers services rendered to the\nbeneficiary. H\nAlso known as the “Statement Covers\nFrom Date.”"
+        ],
+        [
+          "7",
+          "CLM_THRU_DT",
+          "Claim Thru Date",
+          "58",
+          "67",
+          "10",
+          "YYYY-\nMM-DD",
+          "The last day on the billing statement that\ncovers services rendered to the\nbeneficiary. H\nAlso known as the “Statement Covers\nThrough Date.”"
+        ],
+        [
+          "8",
+          "CLM_FED_TYPE_SRVC_C\nD",
+          "Claim Federal\nType Service\nCode",
+          "68",
+          "68",
+          "1",
+          "X(01)",
+          "Indicates the type of service (e.g.,\nconsultation, surgery), provided to the\nbeneficiary. Types of Service Code are\ndefined in the Medicare Carrier Manual. H\nFind Types of Service Code at the\nResDAC website."
+        ],
+        [
+          "9",
+          "CLM_POS_CD",
+          "Claim Place of\nService Code",
+          "69",
+          "70",
+          "2",
+          "X(02)",
+          "Indicates place where the indicated\nservice was provided (e.g., ambulance,\nschool). H\nFind Place of Service Code at the\nResDAC website."
+        ],
+        [
+          "10",
+          "CLM_LINE_FROM_DT",
+          "Claim Line From\nDate",
+          "71",
+          "80",
+          "10",
+          "YYYY-\nMM-DD",
+          "The date the service associated with the\nline item began. H"
+        ],
+        [
+          "11",
+          "CLM_LINE_THRU_DT",
+          "Claim Line Thru\nDate",
+          "81",
+          "90",
+          "10",
+          "YYYY-\nMM-DD",
+          "The date the service associated with the\nline item ended. H"
+        ],
+        [
+          "12",
+          "CLM_LINE_HCPCS_CD",
+          "HCPCS Code",
+          "91",
+          "95",
+          "5",
+          "X(05)",
+          "The HCPCS code representing the\nprocedure, supply, product, and/or service\nprovided to the beneficiary. H"
+        ],
+        [
+          "#",
+          "",
+          "NAME",
+          "POSITION",
+          "POSITION",
+          "LENGTH",
+          "",
+          ""
+        ],
+        [
+          "13",
+          "CLM_LINE_CVRD_PD_AM\nT",
+          "Claim Line NCH\nPayment Amount",
+          "96",
+          "110",
+          "15",
+          "-9(11).99",
+          "The amount of payment made by\nMedicare on behalf of the beneficiary for\nthe indicated service after deductible and\ncoinsurance amounts have been paid. H"
+        ],
+        [
+          "14",
+          "CLM_PRMRY_PYR_CD",
+          "Claim Primary\nPayer Code",
+          "111",
+          "111",
+          "1",
+          "X(01)",
+          "If a payer other than Medicare has\nprimary responsibility for payment of the\nservice indicated on the claim line, this\ncode indicates the primary payer. This\nfield is also known as the Line Beneficiary\nPrimary Payer Code.\nIf this field is blank, Medicare is the\nprimary payer for the beneficiary.\nFind Primary Payer Code at the ResDAC\nwebsite."
+        ],
+        [
+          "15",
+          "PAYTO_PRVDR_NPI_NUM",
+          "Pay-to Provider\nNPI Number",
+          "112",
+          "121",
+          "10",
+          "X(10)",
+          "A number that identifies the provider\nbilling for the indicated service on the\nclaim line. Each provider is assigned its\nown unique NPI."
+        ],
+        [
+          "16",
+          "ORDRG_PRVDR_NPI_NU\nM",
+          "Ordering Provider\nNPI Number",
+          "122",
+          "131",
+          "10",
+          "X(10)",
+          "A number that identifies the provider\nordering the indicated service on the claim\nline. Each provider is assigned its own\nunique NPI."
+        ],
+        [
+          "#",
+          "",
+          "NAME",
+          "POSITION",
+          "POSITION",
+          "LENGTH",
+          "",
+          ""
+        ],
+        [
+          "17",
+          "CLM_CARR_PMT_DNL_C\nD",
+          "Claim Carrier\nPayment Denial\nCode",
+          "132",
+          "133",
+          "2",
+          "X(02)",
+          "Indicates to whom payment was made\n(e.g., physician, beneficiary) or if the claim\nwas denied.\nFind Carrier Payment Denial Code at the\nResDAC website.\nAdditionally, the following code may be\navailable:\nG = Secondary Claims Investigation\nH = Self Reports\nJ = 411.25\nT = MSP Cost Avoided - IEQ contractor\n(eff. 7/96)\nX = MSP Cost Avoided - generic\nY = MSP Cost Avoided - IRS/SSA data\nmatch project"
+        ],
+        [
+          "#",
+          "",
+          "NAME",
+          "POSITION",
+          "POSITION",
+          "LENGTH",
+          "",
+          ""
+        ],
+        [
+          "18",
+          "CLM_PRCSG_IND_CD",
+          "Claim Processing\nIndicator Code",
+          "134",
+          "135",
+          "2",
+          "X(02)",
+          "Indicates whether the service indicated on\nthe claim line was allowed or the reason it\nwas denied.\nFind Processing Indicator Code at the\nResDAC website.\nAdditionally, the following code may be\navailable:\nG = MSP Cost Avoided - Secondary\nClaims Investigation\nH = MSP Cost Avoided - Self Reports\nJ = MSP Cost Avoided - 411.25\n19 = MSP Cost Avoided - Worker's\nCompensation Set Aside\n41 = MSP Cost Avoided - Next\nGeneration Desktop"
+        ],
+        [
+          "19",
+          "CLM_ADJSMT_TYPE_CD",
+          "Claim Adjustment\nType Code",
+          "136",
+          "137",
+          "2",
+          "X(02)",
+          "Indicates whether the claim an original,\ncancellation, or adjustment claim.\nClaim Adjustment Type Code include:\n0 = Original Claim\n1 = Cancellation Claim\n2 = Adjustment claim"
+        ],
+        [
+          "20",
+          "CLM_EFCTV_DT",
+          "Claim Effective\nDate",
+          "138",
+          "147",
+          "10",
+          "YYYY-\nMM-DD",
+          "The date the claim was processed and\nadded to the NCH. This is also referred to\nas the NCH Weekly Processing Date. H"
+        ],
+        [
+          "21",
+          "CLM_IDR_LD_DT",
+          "Claim IDR Load\nDate",
+          "148",
+          "157",
+          "10",
+          "YYYY-\nMM-DD",
+          "When the claim was loaded into the IDR."
+        ],
+        [
+          "#",
+          "",
+          "NAME",
+          "POSITION",
+          "POSITION",
+          "LENGTH",
+          "",
+          ""
+        ],
+        [
+          "22",
+          "CLM_CNTL_NUM",
+          "Claim Control\nNumber",
+          "158",
+          "197",
+          "40",
+          "X(40)",
+          "A unique number assigned to a claim by\nthe Medicare carrier.\nThis number allows CMS to associate\neach line item with its respective claim."
+        ],
+        [
+          "23",
+          "BENE_EQTBL_BIC_HICN_\nNUM",
+          "Beneficiary\nEquitable BIC\nHICN Number",
+          "198",
+          "208",
+          "11",
+          "X(11)",
+          "Legacy Beneficiary Equitable BIC HICN\nNumber.\nNote: To comply with MACRA of 2015,\nafter the end of the New Medicare Card\nTransition Period in December 2019, only\nthe MBI will be accepted on claims, and\nthe HICN value/ Beneficiary Equitable BIC\nHICN Number will no longer be displayed.\nThe Beneficiary Equitable BIC HICN\nNumber will be blank in CCLFs generated\neffective January 1, 2020 onwards."
+        ],
+        [
+          "24",
+          "CLM_LINE_ALOWD_CHR\nG_AMT",
+          "Claim Line\nAllowed Charges\nAmount",
+          "209",
+          "225",
+          "17",
+          "-9(14).99",
+          "The amount Medicare approved for\npayment to the provider."
+        ],
+        [
+          "25",
+          "CLM_DISP_CD",
+          "Claim Disposition\nCode",
+          "226",
+          "227",
+          "2",
+          "X(2)",
+          "Contains information regarding payment\nactions on the claim.\nClaim Disposition Code include:\n01 = Debit accepted\n02 = Debit accepted (automatic\nadjustment)\n03 = Cancel accepted"
+        ]
+      ]
+    },
+    {
+      "element_id": "global_block_64",
+      "type": "paragraph",
+      "text": "The filename convention for the Medicare Shared Savings Program in Table 7 is:"
+    },
+    {
+      "element_id": "global_block_65",
+      "type": "paragraph",
+      "text": " For regular CCLFs: P.A****.ACO.ZC7Y**.Dyymmdd.Thhmmsst."
+    },
+    {
+      "element_id": "global_block_66",
+      "type": "paragraph",
+      "text": " For run-out CCLFs: P.A****.ACO.ZC7R**.Dyymmdd.Thhmmsst, “R” instead of “Y” indicating run-out"
+    },
+    {
+      "element_id": "global_block_67",
+      "type": "paragraph",
+      "text": "Table 7. Part D File (CCLF7)"
+    },
+    {
+      "element_id": "global_block_68",
+      "type": "table",
+      "pages_spanned": [
+        44,
+        45,
+        46,
+        47,
+        48,
+        49
+      ],
+      "raw_matrix": [
+        [
+          "ELEMENT",
+          "CLAIM FIELD LABEL",
+          "CLAIM FIELD",
+          "START",
+          "END",
+          "DATA",
+          "FORMAT",
+          "CLAIM FIELD DESCRIPTION"
+        ],
+        [
+          "#",
+          "",
+          "NAME",
+          "POSITION",
+          "POSITION",
+          "LENGTH",
+          "",
+          ""
+        ],
+        [
+          "1",
+          "CUR_CLM_UNIQ_ID",
+          "Current Claim\nUnique Identifier",
+          "1",
+          "13",
+          "13",
+          "9(13)",
+          "A unique identification number assigned\nto the claim. I H"
+        ],
+        [
+          "2",
+          "BENE_MBI_ID",
+          "Medicare\nBeneficiary\nIdentifier",
+          "14",
+          "24",
+          "11",
+          "X(11)",
+          "A Medicare Beneficiary Identifier assigned\nto a beneficiary. I H"
+        ],
+        [
+          "3",
+          "BENE_HIC_NUM",
+          "Beneficiary HIC\nNumber",
+          "25",
+          "35",
+          "11",
+          "X(11)",
+          "Legacy Beneficiary HICN field.\nNote: To comply with MACRA of 2015,\nafter the end of the New Medicare Card\nTransition Period in December 2019, only\nthe MBI will be accepted on claims, and\nthe HICN value will no longer be\ndisplayed. The Beneficiary HIC Number\nwill be blank in CCLFs generated effective\nJanuary 1, 2020 onwards."
+        ],
+        [
+          "4",
+          "CLM_LINE_NDC_ CD",
+          "NDC Code",
+          "36",
+          "46",
+          "11",
+          "X(11)",
+          "A universal unique product identifier for\nhuman drugs. H"
+        ],
+        [
+          "#",
+          "",
+          "NAME",
+          "POSITION",
+          "POSITION",
+          "LENGTH",
+          "",
+          ""
+        ],
+        [
+          "5",
+          "CLM_TYPE_CD",
+          "Claim Type Code",
+          "47",
+          "48",
+          "2",
+          "9(02)",
+          "Signifies the type of claim being submitted\nthrough the Medicare or Medicaid\nprograms. H\nClaim type code include:\n01 = Part D - Original without resubmitted\nPDE\n02 = Part D - Adjusted PDE\n03 = Part D - Deleted Claims\n04 = Part D - Resubmitted PDE"
+        ],
+        [
+          "6",
+          "CLM_LINE_FROM_DT",
+          "Claim Line From\nDate",
+          "49",
+          "58",
+          "10",
+          "YYYY-MM-\nDD",
+          "The date the service associated with the\nline item began (i.e., the date upon which\nthe prescription was filled)."
+        ],
+        [
+          "7",
+          "PRVDR_SRVC_ID_QLFYR\n_CD",
+          "Provider Service\nIdentifier Qualifier\nCode",
+          "59",
+          "60",
+          "2",
+          "X(02)",
+          "Indicates the type of number used to\nidentify the pharmacy providing the\nservices:\n01 = NPI Number\n06 = Unique Physician Identification\nNumber (UPIN)\n07 = National Council for Prescription\nDrug Programs (NCPDP) Number\n08 = State License Number\n11 = TIN\n99 = Other mandatory for Standard Data\nFormat"
+        ],
+        [
+          "8",
+          "CLM_SRVC_PRVDR_GNR\nC_ID_NUM",
+          "Claim Service\nProvider Generic\nID Number",
+          "61",
+          "80",
+          "20",
+          "X(20)",
+          "The number associated with the indicated\ncode in the Provider Service Identification\nQualifier Code field."
+        ],
+        [
+          "#",
+          "",
+          "NAME",
+          "POSITION",
+          "POSITION",
+          "LENGTH",
+          "",
+          ""
+        ],
+        [
+          "9",
+          "CLM_DSPNSNG_STUS_C\nD",
+          "Claim Dispensing\nStatus Code",
+          "81",
+          "81",
+          "1",
+          "X(01)",
+          "Indicates the status of prescription\nfulfillment.\nDispensing Code include:\nP = Partially filled\nC = Completely filled"
+        ],
+        [
+          "10",
+          "CLM_DAW_PROD_SLCTN\n_CD",
+          "Claim Dispense\nas Written (DAW)\nProduct Selection\nCode",
+          "82",
+          "82",
+          "1",
+          "X(01)",
+          "Indicates the prescriber's instructions\nregarding generic substitution or how\nthose instructions were followed.\nDAW Product Selection Code include:\n0 = No product selection indicated\n1 = Substitution not allowed by prescriber\n2 = Substitution allowed – Patient\nrequested that brand be dispensed\n3 = Substitution allowed – Pharmacist\nselected product dispensed\n4 = Substitution allowed – Generic not in\nstock\n5 = Substitution allowed – Brand drug\ndispensed as generic\n6 = Override\n7 = Substitution not allowed – Brand drug\nmandated by law\n8 = Substitution allowed – Generic drug\nnot available in marketplace\n9 = Other"
+        ],
+        [
+          "#",
+          "",
+          "NAME",
+          "POSITION",
+          "POSITION",
+          "LENGTH",
+          "",
+          ""
+        ],
+        [
+          "11",
+          "CLM_LINE_SRVC_UNIT_Q\nTY",
+          "Claim Line\nService Unit\nQuantity",
+          "83",
+          "106",
+          "24",
+          "-9(18).9999",
+          "Count of total units, at the line-item level,\nassociated with services needing unit\nreporting (e.g., anesthesia time units and\nblood units)."
+        ],
+        [
+          "12",
+          "CLM_LINE_DAYS_SUPLY_\nQTY",
+          "Claim Line Days’\nSupply Quantity",
+          "107",
+          "115",
+          "9",
+          "9(09)",
+          "The number of days the supply of\nmedication dispensed by the pharmacy\nwill cover."
+        ],
+        [
+          "13",
+          "PRVDR_PRSBNG_ID_QLF\nYR_CD",
+          "Provider\nPrescribing ID\nQualifier Code",
+          "116",
+          "117",
+          "2",
+          "X(02)",
+          "Indicates the type of number used to\nidentify the prescribing provider:\n01 = NPI Number\n06 = UPIN\n07 = NCPDP Number\n08 = State License Number\n11 = TIN\n12 = DEA\n99 = Other mandatory for Standard Data\nFormat"
+        ],
+        [
+          "14",
+          "CLM_PRSBNG_PRVDR_G\nNRC_ID_NUM",
+          "Claim Prescribing\nProvider Generic\nID Number",
+          "118",
+          "137",
+          "20",
+          "X(20)",
+          "The number associated with the indicated\ncode in the Provider Prescribing Service\nIdentification Qualifier Code field."
+        ],
+        [
+          "15",
+          "CLM_LINE_BENE_PMT_A\nMT",
+          "Claim Line\nBeneficiary\nPayment Amount",
+          "138",
+          "150",
+          "13",
+          "-9(9).99",
+          "The dollar amount paid by the beneficiary\nthat is not reimbursed by a third party\n(e.g., copayments, coinsurance,\ndeductible, or other patient pay\namounts). H"
+        ],
+        [
+          "#",
+          "",
+          "NAME",
+          "POSITION",
+          "POSITION",
+          "LENGTH",
+          "",
+          ""
+        ],
+        [
+          "16",
+          "CLM_ADJSMT_TYPE_CD",
+          "Claim Adjustment\nType Code",
+          "151",
+          "152",
+          "2",
+          "X(02)",
+          "Indicates whether the claim is an original,\ncancellation, or adjustment claim.\nClaim Adjustment Type Code include:\n0 = Original Claim\n1 = Cancellation Claim\n2 = Adjustment claim"
+        ],
+        [
+          "17",
+          "CLM_EFCTV_DT",
+          "Claim Effective\nDate",
+          "153",
+          "162",
+          "10",
+          "YYYY-MM-\nDD",
+          "The date the claim was processed and\nadded to the NCH. This is also referred to\nas the NCH Weekly Processing Date. H"
+        ],
+        [
+          "18",
+          "CLM_IDR_LD_DT",
+          "Claim IDR Load\nDate",
+          "163",
+          "172",
+          "10",
+          "YYYY-MM-\nDD",
+          "When the claim was loaded into the IDR."
+        ],
+        [
+          "19",
+          "CLM_LINE_RX_SRVC_RF\nRNC_NUM",
+          "Claim Line\nPrescription\nService\nReference\nNumber",
+          "173",
+          "184",
+          "12",
+          "9(12)",
+          "Identifies a prescription dispensed by a\nparticular service provider on a particular\nservice date."
+        ],
+        [
+          "20",
+          "CLM_LINE_RX_FILL_NUM",
+          "Claim Line\nPrescription Fill\nNumber",
+          "185",
+          "193",
+          "9",
+          "X(09)",
+          "Assigned to the current dispensed supply\nby the pharmacy. It designates the\nsequential order of the original fill or\nsubsequent refills of a prescription."
+        ],
+        [
+          "#",
+          "",
+          "NAME",
+          "POSITION",
+          "POSITION",
+          "LENGTH",
+          "",
+          ""
+        ],
+        [
+          "21",
+          "CLM_PHRMCY_SRVC_TY\nPE_CD",
+          "Claim Pharmacy\nService Type\nCode",
+          "194",
+          "195",
+          "2",
+          "X(02)",
+          "A unique identifier of a type of service\nbeing performed by a pharmacy when\ndifferent contractual terms exist between a\npayer and the pharmacy or when benefits\nare based upon the type of service\nperformed.\n1 = Community/Retail Pharmacy Services\n2 = Compounding Pharmacy Services\n3 = Home Infusion Therapy Provider\nServices\n4 = Institutional Pharmacy Services\n5 = Long Term Care Pharmacy Services\n6 = Mail Order Pharmacy Services\n7 = Managed Care Organization\nPharmacy Services\n8 = Specialty Care Pharmacy Services\n99 = Other"
+        ]
+      ]
+    },
+    {
+      "element_id": "global_block_69",
+      "type": "paragraph",
+      "text": "The filename convention for the Medicare Shared Savings Program in Table 8 is:"
+    },
+    {
+      "element_id": "global_block_70",
+      "type": "paragraph",
+      "text": " For regular CCLFs: P.A****.ACO.ZC8Y**.Dyymmdd.Thhmmsst."
+    },
+    {
+      "element_id": "global_block_71",
+      "type": "paragraph",
+      "text": " For run-out CCLFs: P.A****.ACO.ZC8R**.Dyymmdd.Thhmmsst, “R” instead of “Y” indicating run-out."
+    },
+    {
+      "element_id": "global_block_72",
+      "type": "paragraph",
+      "text": "Table 8. Beneficiary Demographics File (CCLF8)"
+    },
+    {
+      "element_id": "global_block_73",
+      "type": "table",
+      "pages_spanned": [
+        50,
+        51,
+        52,
+        53,
+        54
+      ],
+      "raw_matrix": [
+        [
+          "ELEMENT",
+          "BENEFICIARY FIELD",
+          "BENEFICIARY",
+          "START",
+          "END",
+          "DATA",
+          "FORMAT",
+          "BENEFICIARY FIELD DESCRIPTION"
+        ],
+        [
+          "#",
+          "LABEL",
+          "FIELD NAME",
+          "POSITION",
+          "POSITION",
+          "LENGTH",
+          "",
+          ""
+        ],
+        [
+          "1",
+          "BENE_MBI_ID",
+          "Medicare\nBeneficiary\nIdentifier",
+          "1",
+          "11",
+          "11",
+          "X(11)",
+          "A Medicare Beneficiary Identifier assigned\nto a beneficiary. I H"
+        ],
+        [
+          "2",
+          "BENE_HIC_NUM",
+          "Beneficiary HIC\nNumber",
+          "12",
+          "22",
+          "11",
+          "X(11)",
+          "Legacy Beneficiary HICN field.\nNote: To comply with MACRA of 2015,\nafter the end of the New Medicare Card\nTransition Period in December 2019, only\nthe MBI will be accepted on claims, and\nthe HICN value will no longer be\ndisplayed. The Beneficiary HIC Number\nwill be blank in CCLFs generated effective\nJanuary 1, 2020 onwards."
+        ],
+        [
+          "3",
+          "BENE_FIPS_STATE_CD",
+          "Beneficiary FIPS\nState Code",
+          "23",
+          "24",
+          "2",
+          "9(02)",
+          "Identifies the state where the beneficiary\nreceiving services resides. I H"
+        ],
+        [
+          "4",
+          "BENE_FIPS_CNTY_CD",
+          "Beneficiary FIPS\nCounty Code",
+          "25",
+          "27",
+          "3",
+          "9(03)",
+          "Identifies the county where the beneficiary\nreceiving services resides. I H"
+        ],
+        [
+          "5",
+          "BENE_ZIP_CD",
+          "Beneficiary ZIP\nCode",
+          "28",
+          "32",
+          "5",
+          "X(05)",
+          "The beneficiary’s ZIP code as indicated in\ntheir Medicare enrollment record. I H"
+        ],
+        [
+          "6",
+          "BENE_DOB",
+          "Beneficiary Date of\nBirth",
+          "33",
+          "42",
+          "10",
+          "YYYY-\nMM-DD",
+          "The month, day, and year of the\nbeneficiary’s birth. I H"
+        ],
+        [
+          "#",
+          "LABEL",
+          "FIELD NAME",
+          "POSITION",
+          "POSITION",
+          "LENGTH",
+          "",
+          ""
+        ],
+        [
+          "7",
+          "BENE_SEX_CD",
+          "Beneficiary Sex\nCode",
+          "43",
+          "43",
+          "1",
+          "X(01)",
+          "The beneficiary’s sex. I H\nCode include:\n1 = Male\n2 = Female\n0 = Unknown"
+        ],
+        [
+          "8",
+          "BENE_RACE_CD",
+          "Beneficiary Race\nCode",
+          "44",
+          "44",
+          "1",
+          "X(01)",
+          "The beneficiary's race. I H\nCode include:\n0 = Unknown\n1 = White\n2 = Black\n3 = Other\n4 = Asian\n5 = Hispanic\n6 = North American Native"
+        ],
+        [
+          "9",
+          "BENE_AGE",
+          "Beneficiary Age",
+          "45",
+          "47",
+          "3",
+          "9(03)",
+          "The beneficiary’s current age, as\ncalculated by subtracting the beneficiary’s\ndate of birth from the current date. I H"
+        ],
+        [
+          "#",
+          "LABEL",
+          "FIELD NAME",
+          "POSITION",
+          "POSITION",
+          "LENGTH",
+          "",
+          ""
+        ],
+        [
+          "10",
+          "BENE_MDCR_STUS_CD",
+          "Beneficiary\nMedicare Status\nCode",
+          "48",
+          "49",
+          "2",
+          "X(02)",
+          "Indicates the reason for a beneficiary's\nentitlement to Medicare benefits as of a\nparticular date, broken down by the\nfollowing categories: I H\nOld Age & Survivors Insurance (OASI),\nDisabled, and ESRD, and by appropriate\ncombinations of these categories:\n10 = Aged without ESRD\n11 = Aged with ESRD\n20 = Disabled without ESRD\n21 = Disabled with ESRD\n31 = ESRD only"
+        ],
+        [
+          "11",
+          "BENE_DUAL_STUS_CD",
+          "Beneficiary Dual\nStatus Code",
+          "50",
+          "51",
+          "2",
+          "X(02)",
+          "Identifies the most recent entitlement\nstatus of beneficiaries eligible for a\nprogram(s) in addition to Medicare (e.g.,\nMedicaid). I H\nFind Dual Status Code at the ResDAC\nwebsite."
+        ],
+        [
+          "12",
+          "BENE_DEATH_DT",
+          "Beneficiary Death\nDate",
+          "52",
+          "61",
+          "10",
+          "YYYY-\nMM-DD",
+          "The month, day, and year of a\nbeneficiary’s death. I H"
+        ],
+        [
+          "13",
+          "BENE_RNG_BGN_DT",
+          "Date beneficiary\nenrolled in Hospice",
+          "62",
+          "71",
+          "10",
+          "YYYY-\nMM-DD",
+          "The date the beneficiary enrolled in\nhospice. I H"
+        ],
+        [
+          "14",
+          "BENE_RNG_END_DT",
+          "Date beneficiary\nended Hospice",
+          "72",
+          "81",
+          "10",
+          "YYYY-\nMM-DD",
+          "The date the beneficiary is enrolled in\nhospice. I H"
+        ],
+        [
+          "15",
+          "BENE_1ST_NAME",
+          "Beneficiary First\nName",
+          "82",
+          "111",
+          "30",
+          "X(30)",
+          "The first name of the beneficiary. I H"
+        ],
+        [
+          "16",
+          "BENE_MIDL_NAME",
+          "Beneficiary Middle\nName",
+          "112",
+          "126",
+          "15",
+          "X(15)",
+          "The middle name of the beneficiary. I H"
+        ],
+        [
+          "#",
+          "LABEL",
+          "FIELD NAME",
+          "POSITION",
+          "POSITION",
+          "LENGTH",
+          "",
+          ""
+        ],
+        [
+          "17",
+          "BENE_LAST_NAME",
+          "Beneficiary Last\nName",
+          "127",
+          "166",
+          "40",
+          "X(40)",
+          "The last name of the\nbeneficiary. I H"
+        ],
+        [
+          "18",
+          "BENE_ORGNL_ENTLMT_\nRSN_CD",
+          "Beneficiary\nOriginal\nEntitlement\nReason Code",
+          "167",
+          "167",
+          "1",
+          "X(01)",
+          "The reason for the beneficiary's original\nentitlement to Medicare benefits. I H\n0 = Old Age and Survivors Insurance\n(OASI)\n1 = Disability Insurance Benefits (DIB)\n2 = ESRD\n3 = Both DIB and ESRD\n4 = Unknown"
+        ],
+        [
+          "19",
+          "BENE_ENTLMT_\nBUYIN_IND",
+          "Beneficiary\nEntitlement Buy-in\nIndicator",
+          "168",
+          "168",
+          "1",
+          "X(01)",
+          "Indicates for each month of the\ndenominator reference year, the\nentitlement of the beneficiary to Medicare\nPart A, Medicare Part B, or Medicare\nParts A and B both, as well as whether or\nnot the beneficiary’s state of residence\nwas liable and paid for the beneficiary’s\nMedicare Part B monthly\npremiums. I H\n0 = Not Entitled\n1 = Part A Only\n2 = Part B Only\n3 = Part A and Part B\nA = Part A, State Buy-In\nB = Part B, State Buy-In\nC = Parts A and B, State Buy-In"
+        ],
+        [
+          "20",
+          "BENE_PART_A_ENRLMT_\nBGN_DT",
+          "Bene Entitlement\nPart A Begin Date",
+          "169",
+          "178",
+          "10",
+          "YYYY-\nMM-DD",
+          "The date that a beneficiary is entitled for\nMedicare Part A benefits."
+        ],
+        [
+          "#",
+          "LABEL",
+          "FIELD NAME",
+          "POSITION",
+          "POSITION",
+          "LENGTH",
+          "",
+          ""
+        ],
+        [
+          "21",
+          "BENE_PART_B_ENRLMT_\nBGN_DT",
+          "Bene Entitlement\nPart B Begin Date",
+          "179",
+          "188",
+          "10",
+          "YYYY-\nMM-DD",
+          "The date that a beneficiary is entitled for\nMedicare Part B benefits."
+        ],
+        [
+          "22",
+          "BENE_LINE_1_ADR",
+          "Beneficiary\nDerived Mailing\nLine One Address",
+          "189",
+          "233",
+          "45",
+          "X(45)",
+          "The first line of the street address. I"
+        ],
+        [
+          "23",
+          "BENE_LINE_2_ADR",
+          "Beneficiary\nDerived Mailing\nLine Two Address",
+          "234",
+          "278",
+          "45",
+          "X(45)",
+          "The second line of the street address. I"
+        ],
+        [
+          "24",
+          "BENE_LINE_3_ADR",
+          "Beneficiary\nDerived Mailing\nLine Three\nAddress",
+          "279",
+          "318",
+          "40",
+          "X(40)",
+          "The third line of the street address. I"
+        ],
+        [
+          "25",
+          "BENE_LINE_4_ADR",
+          "Beneficiary\nDerived Mailing\nLine Four Address",
+          "319",
+          "358",
+          "40",
+          "X(40)",
+          "The fourth line of the street address. I"
+        ],
+        [
+          "26",
+          "BENE_LINE_5_ADR",
+          "Beneficiary\nDerived Mailing\nLine Five Address",
+          "359",
+          "398",
+          "40",
+          "X(40)",
+          "The fifth line of the street address. I"
+        ],
+        [
+          "27",
+          "BENE_LINE_6_ADR",
+          "Beneficiary\nDerived Mailing\nLine Six Address",
+          "399",
+          "438",
+          "40",
+          "X(40)",
+          "The sixth line of the street address. I"
+        ],
+        [
+          "28",
+          "GEO_ZIP_PLC_NAME",
+          "Beneficiary City",
+          "439",
+          "538",
+          "100",
+          "X(100)",
+          "The name of the city. I"
+        ],
+        [
+          "29",
+          "GEO_USPS_STATE_CD",
+          "Beneficiary State",
+          "539",
+          "540",
+          "2",
+          "X(2)",
+          "State code used by the United States\nPostal Service to identify a state. I"
+        ],
+        [
+          "30",
+          "GEO_ZIP5_CD",
+          "Beneficiary Zip\nCode",
+          "541",
+          "545",
+          "5",
+          "X(5)",
+          "The US Postal Service code that is\nassociated with a geographical area. I"
+        ],
+        [
+          "31",
+          "GEO_ZIP4_CD",
+          "Beneficiary Zip\nCode Ext.",
+          "546",
+          "549",
+          "4",
+          "X(4)",
+          "A four-digit extension to a ZIP Code that\nrepresents a subdivision for mailing\npurposes of the ZIP Code. I"
+        ]
+      ]
+    },
+    {
+      "element_id": "global_block_74",
+      "type": "paragraph",
+      "text": "The filename convention for the Medicare Shared Savings Program in Table 9 is:"
+    },
+    {
+      "element_id": "global_block_75",
+      "type": "paragraph",
+      "text": " For regular CCLFs: P.A****.ACO.ZC9Y**.Dyymmdd.Thhmmsst."
+    },
+    {
+      "element_id": "global_block_76",
+      "type": "paragraph",
+      "text": " For run-out CCLFs: P.A****.ACO.ZC9R**.Dyymmdd.Thhmmsst, “R” instead of “Y” indicating run-out."
+    },
+    {
+      "element_id": "global_block_77",
+      "type": "paragraph",
+      "text": "Table 9. Beneficiary XREF File (CCLF9)"
+    },
+    {
+      "element_id": "global_block_78",
+      "type": "table",
+      "pages_spanned": [
+        55,
+        56
+      ],
+      "raw_matrix": [
+        [
+          "ELEMENT",
+          "BENEFICIARY FIELD LABEL",
+          "BENEFICIARY",
+          "START",
+          "END",
+          "DATA",
+          "FORMAT",
+          "BENEFICIARY FIELD"
+        ],
+        [
+          "#",
+          "",
+          "FIELD NAME",
+          "POSITION",
+          "POSITION",
+          "LENGTH",
+          "",
+          "DESCRIPTION"
+        ],
+        [
+          "…",
+          "HICN_MBI_XREF_IND…",
+          "HICN/MBI\nXREF\nIndicator…",
+          "…",
+          "…",
+          "…",
+          "X(1)…",
+          "M = MBI\nNote: To comply with MACRA of\n2015, after the end of the New\nMedicare Card Transition Period in\nDecember 2019, only the MBI will\nbe accepted on claims, and the\nHICN value will no longer be\ndisplayed. The Beneficiary HIC\nNumber will be blank in CCLFs\ngenerated effective January 1, 2020\nonwards."
+        ],
+        [
+          "2",
+          "CRNT_NUM",
+          "Current\nBeneficiary\nIdentifier",
+          "2",
+          "12",
+          "11",
+          "X(11)",
+          "Current Beneficiary MBI will denote\nthe MBI.\nNote: To comply with MACRA of\n2015, after the end of the New\nMedicare Card Transition Period in\nDecember 2019, only the MBI will\nbe accepted on claims, and the\nHICN value will no longer be\ndisplayed.\nThe Beneficiary HIC Number will be\nblank in CCLFs generated effective\nJanuary 1, 2020 onwards."
+        ],
+        [
+          "#",
+          "",
+          "FIELD NAME",
+          "POSITION",
+          "POSITION",
+          "LENGTH",
+          "",
+          "DESCRIPTION"
+        ],
+        [
+          "3",
+          "PRVS_NUM",
+          "Previous\nBeneficiary\nIdentifier",
+          "13",
+          "23",
+          "11",
+          "X(11)",
+          "Previous Beneficiary MBI.\nNote: To comply with MACRA of\n2015, after the end of the New\nMedicare Card Transition Period in\nDecember 2019, only the MBI will\nbe accepted on claims, and the\nHICN value will no longer be\ndisplayed.\nThe HICN field will be blank in\nCCLFs generated effective January\n1, 2020 onwards."
+        ],
+        [
+          "4",
+          "PRVS_ID_EFCTV_DT",
+          "Previous\nIdentifier\nEffective Date",
+          "24",
+          "33",
+          "10",
+          "YYYY- MM-\nDD",
+          "The date the previous identifier\nbecame active."
+        ],
+        [
+          "5",
+          "PRVS_ID_OBSLT_DT",
+          "Previous\nIdentifier\nObsolete Date",
+          "34",
+          "43",
+          "10",
+          "YYYY- MM-\nDD",
+          "The date the previous identifier\nceased to be active."
+        ],
+        [
+          "6",
+          "BENE_RRB_NUM",
+          "Beneficiary\nRailroad Board\nNumber",
+          "44",
+          "55",
+          "12",
+          "X(12)",
+          "Legacy RRB number.\nNote: To comply with MACRA of\n2015, after the end of the New\nMedicare Card Transition Period in\nDecember 2019, only the Medicare\nBeneficiary Identifier (MBI) will be\naccepted on claims, and the HICN\nand RRB will no longer be\ndisplayed. These fields will be blank\neffective January 1, 2020 in CCLF\nfiles."
+        ]
+      ]
+    },
+    {
+      "element_id": "global_block_79",
+      "type": "paragraph",
+      "text": "The filename convention for the Medicare Shared Savings Program in Table 10 is:"
+    },
+    {
+      "element_id": "global_block_80",
+      "type": "paragraph",
+      "text": " For regular CCLFs: P.A****.ACO.ZCAY**.Dyymmdd.Thhmmsst."
+    },
+    {
+      "element_id": "global_block_81",
+      "type": "paragraph",
+      "text": " For run-out CCLFs: P.A****.ACO.ZCAR**.Dyymmdd.Thhmmsst, “R” instead of “Y” indicating run-out."
+    },
+    {
+      "element_id": "global_block_82",
+      "type": "paragraph",
+      "text": "Table 10. Part A Claims Benefit Enhancement and Demonstration Code File (CCLFA)"
+    },
+    {
+      "element_id": "global_block_83",
+      "type": "table",
+      "pages_spanned": [
+        57,
+        58,
+        59,
+        60,
+        61
+      ],
+      "raw_matrix": [
+        [
+          "ELEMENT",
+          "CLAIM FIELD LABEL",
+          "CLAIM FIELD",
+          "START",
+          "END",
+          "DATA",
+          "FORMAT",
+          "CLAIM FIELD DESCRIPTION"
+        ],
+        [
+          "#",
+          "",
+          "NAME",
+          "POSITION",
+          "POSITION",
+          "LENGTH",
+          "",
+          ""
+        ],
+        [
+          "1",
+          "CUR_CLM_UNIQ_ID",
+          "Current Claim\nUnique\nIdentifier",
+          "1",
+          "13",
+          "13",
+          "9(13)",
+          "A unique identification number\nassigned to the claim. I H"
+        ],
+        [
+          "2",
+          "BENE_MBI_ID",
+          "Medicare\nBeneficiary\nIdentifier",
+          "14",
+          "24",
+          "11",
+          "X(11)",
+          "A Medicare Beneficiary Identifier\nassigned to a beneficiary. I H"
+        ],
+        [
+          "3",
+          "BENE_HIC_NUM",
+          "Beneficiary\nHIC Number",
+          "25",
+          "35",
+          "11",
+          "X(11)",
+          "Legacy Beneficiary HICN field.\nNote: To comply with MACRA of\n2015, after the end of the New\nMedicare Card Transition Period in\nDecember 2019, only the MBI will\nbe accepted on claims, and the\nHICN value will no longer be\ndisplayed. The Beneficiary HIC\nNumber will be blank in CCLFs\ngenerated effective January 1, 2020\nonwards."
+        ],
+        [
+          "#",
+          "",
+          "NAME",
+          "POSITION",
+          "POSITION",
+          "LENGTH",
+          "",
+          ""
+        ],
+        [
+          "4",
+          "CLM_TYPE_CD",
+          "Claim Type\nCode",
+          "36",
+          "37",
+          "2",
+          "9(02)",
+          "Signifies the type of claim being\nsubmitted through the Medicare or\nMedicaid programs. H\nClaim type code include:\n10 = HHA claim\n20 = Non swing bed SNF claim\n30 = Swing bed SNF claim\n40 = Outpatient claim\n50 = Hospice claim\n60 = Inpatient claim\n61 = Inpatient “Full-Encounter” claim"
+        ],
+        [
+          "5",
+          "CLM_ACTV_CARE_FROM_DT",
+          "Claim\nAdmission\nDate",
+          "38",
+          "47",
+          "10",
+          "YYYY-MM-\nDD",
+          "On an institutional claim, the date\nthe beneficiary was admitted to the\nhospital, skilled nursing facility, or\nChristian science sanatorium. I H"
+        ],
+        [
+          "6",
+          "CLM_NGACO_PBPMT_SW",
+          "PBP Benefit\nEnhancement\nIndicator",
+          "48",
+          "48",
+          "1",
+          "X(1)",
+          "A single character code of “Y” or “N”\nthat indicates whether a particular\nclaim is tied to a PBP benefit\nenhancement. Blank if no data are\navailable.\nNote: This field will be used for both\nNGACO and VT APM models."
+        ],
+        [
+          "7",
+          "CLM_NGACO_PDSCHRG_HCBS\n_SW",
+          "Post Discharge\nHome Visit\nBenefit\nEnhancement\nIndicator",
+          "49",
+          "49",
+          "1",
+          "X(1)",
+          "A single character code of “Y” or “N”\nthat indicates whether a particular\nclaim is tied to a Post Discharge\nHome Visit benefit enhancement.\nBlank if no data are available.\nNote: This field will be used for both\nNGACO and VT APM models."
+        ],
+        [
+          "#",
+          "",
+          "NAME",
+          "POSITION",
+          "POSITION",
+          "LENGTH",
+          "",
+          ""
+        ],
+        [
+          "8",
+          "CLM_NGACO_SNF_WVR_SW",
+          "SNF 3-Day\nWaiver Benefit\nEnhancement\nIndicator",
+          "50",
+          "50",
+          "1",
+          "X(1)",
+          "A single character code of “Y” or “N”\nthat indicates whether a particular\nclaim is tied to a SNF 3-Day Waiver\nbenefit enhancement. Blank if no\ndata are available.\nNote: This field will be used for both\nNGACO and VT APM models."
+        ],
+        [
+          "9",
+          "CLM_NGACO_TLHLTH_SW",
+          "Telehealth\nBenefit\nEnhancement\nIndicator",
+          "51",
+          "51",
+          "1",
+          "X(1)",
+          "A single character code of “Y” or “N”\nthat indicates whether a particular\nclaim is tied to a Telehealth benefit\nenhancement. Blank if no data are\navailable.\nNote: This field will be used for both\nNGACO and VT APM models."
+        ],
+        [
+          "10",
+          "CLM_NGACO_CPTATN_SW",
+          "AIPBP Benefit\nEnhancement\nIndicator",
+          "52",
+          "52",
+          "1",
+          "X(1)",
+          "A single character code of “Y” or “N”\nthat indicates whether a particular\nclaim is tied to an AIPBP benefit\nenhancement. Blank if no data are\navailable.\nNote: This field will be used for both\nNGACO and VT APM models."
+        ],
+        [
+          "11",
+          "CLM_DEMO_1ST_NUM",
+          "First Program\nDemonstration\nNumber",
+          "53",
+          "54",
+          "2",
+          "X(2)",
+          "Medicare Demonstration Special\nProcessing Number (SPN).\nThis is a first demonstration number.\nThis field will be used to hold the 2-\nbyte number for future use with the\nBundled Payments for Care\nImprovement initiative."
+        ],
+        [
+          "#",
+          "",
+          "NAME",
+          "POSITION",
+          "POSITION",
+          "LENGTH",
+          "",
+          ""
+        ],
+        [
+          "12",
+          "CLM_DEMO_2ND_NUM",
+          "Second\nProgram\nDemonstration\nNumber",
+          "55",
+          "56",
+          "2",
+          "X(2)",
+          "Medicare Demonstration Special\nProcessing Number (SPN).\nThis is a second demonstration\nnumber.\nThis field will be used to hold the 2-\nbyte number for future use with the\nBundled Payments for Care\nImprovement initiative."
+        ],
+        [
+          "13",
+          "CLM_DEMO_3RD_NUM",
+          "Third Program\nDemonstration\nNumber",
+          "57",
+          "58",
+          "2",
+          "X(2)",
+          "Medicare Demonstration Special\nProcessing Number (SPN).\nThis is a third demonstration\nnumber.\nThis field will be used to hold the 2-\nbyte number for future use with the\nBundled Payments for Care\nImprovement initiative."
+        ],
+        [
+          "14",
+          "CLM_DEMO_4TH_NUM",
+          "Fourth\nProgram\nDemonstration\nNumber",
+          "59",
+          "60",
+          "2",
+          "X(2)",
+          "Medicare Demonstration Special\nProcessing Number (SPN).\nThis is a fourth demonstration\nnumber.\nThis field will be used to hold the 2-\nbyte number for future use with the\nBundled Payments for Care\nImprovement initiative."
+        ],
+        [
+          "15",
+          "CLM_DEMO_5TH_NUM",
+          "Fifth Program\nDemonstration\nNumber",
+          "61",
+          "62",
+          "2",
+          "X(2)",
+          "Medicare Demonstration Special\nProcessing Number (SPN).\nThis is a fifth demonstration number.\nThis field will be used to hold the 2-\nbyte number for future use with the\nBundled Payments for Care\nImprovement initiative."
+        ],
+        [
+          "#",
+          "",
+          "NAME",
+          "POSITION",
+          "POSITION",
+          "LENGTH",
+          "",
+          ""
+        ],
+        [
+          "16",
+          "CLM_PBP_INCLSN_AMT",
+          "PBP/AIPBP\nInclusion\nAmount",
+          "63",
+          "81",
+          "19",
+          "-9(15).99",
+          "The amount that would have been\npaid in the absence of PBP/AIPBP\nReduction.\nThe value for the PBP/AIPBP\nInclusion Amount is derived from the\ntable and column called\n“CMS_VIEW_CLM_PRD.CLM_VAL\n_AMT” when the value code within\nthe field called “CLM_VAL_CD”\nequals “Q0.”"
+        ],
+        [
+          "17",
+          "CLM_PBP_RDCTN_AMT",
+          "PBP/AIPBP\nReduction\nAmount",
+          "82",
+          "100",
+          "19",
+          "-9(15).99",
+          "The PBP/AIPBP Reduction Amount\nwithheld from payment to the\nProvider.\nThe value for the PBP/AIPBP\nReduction Amount is derived from\nthe table and column called\n“CMS_VIEW_CLM_PRD.CLM_VAL\n_AMT” when the value code within\nthe field called “CLM_VAL_CD”\nequals “Q1.”"
+        ],
+        [
+          "18",
+          "CLM_NGACO_CMG_WVR_SW",
+          "Care\nManagement\nHome Visits",
+          "101",
+          "101",
+          "1",
+          "X(1)",
+          "A single character code of “Y” or “N”\nthat indicates whether a particular\nclaim is tied to a Care Management\nHome Visits benefit enhancement.\nBlank if no data are available.\nNote: This field will be used for both\nNGACO and VT APM models."
+        ]
+      ]
+    },
+    {
+      "element_id": "global_block_84",
+      "type": "paragraph",
+      "text": "The filename convention for the Medicare Shared Savings Program in Table 11 is:"
+    },
+    {
+      "element_id": "global_block_85",
+      "type": "paragraph",
+      "text": " For regular CCLFs: P.A****.ACO.ZCBY**.Dyymmdd.Thhmmsst."
+    },
+    {
+      "element_id": "global_block_86",
+      "type": "paragraph",
+      "text": " For run-out CCLFs: P.A****.ACO.ZCBR**.Dyymmdd.Thhmmsst, “R” instead of “Y” indicating run-out."
+    },
+    {
+      "element_id": "global_block_87",
+      "type": "paragraph",
+      "text": "Table 11. Part B Claims Benefit Enhancement and Demonstration Code File (CCLFB)"
+    },
+    {
+      "element_id": "global_block_88",
+      "type": "table",
+      "pages_spanned": [
+        62,
+        63,
+        64,
+        65,
+        66
+      ],
+      "raw_matrix": [
+        [
+          "ELEMENT",
+          "CLAIM FIELD LABEL",
+          "CLAIM FIELD",
+          "START",
+          "END",
+          "DATA",
+          "FORMAT",
+          "CLAIM FIELD DESCRIPTION"
+        ],
+        [
+          "#",
+          "",
+          "NAME",
+          "POSITION",
+          "POSITION",
+          "LENGTH",
+          "",
+          ""
+        ],
+        [
+          "1",
+          "CUR_CLM_UNIQ_ID",
+          "Current Claim\nUnique\nIdentifier",
+          "1",
+          "13",
+          "13",
+          "9(13)",
+          "A unique identification number\nassigned to the claim. I H"
+        ],
+        [
+          "2",
+          "CLM_LINE_NUM",
+          "Claim Line\nNumber",
+          "14",
+          "23",
+          "10",
+          "9(10)",
+          "A sequential number that identifies a\nspecific claim line within a given\nclaim."
+        ],
+        [
+          "3",
+          "BENE_MBI_ID",
+          "Medicare\nBeneficiary\nIdentifier",
+          "24",
+          "34",
+          "11",
+          "X(11)",
+          "A Medicare Beneficiary Identifier\nassigned to a beneficiary. I H"
+        ],
+        [
+          "4",
+          "BENE_HIC_NUM",
+          "Beneficiary\nHIC Number",
+          "35",
+          "45",
+          "11",
+          "X(11)",
+          "Legacy Beneficiary HICN field.\nNote: To comply with MACRA of\n2015, after the end of the New\nMedicare Card Transition Period in\nDecember 2019, only the MBI will\nbe accepted on claims, and the\nHICN value will no longer be\ndisplayed. The Beneficiary HIC\nNumber will be blank in CCLFs\ngenerated effective January 1, 2020\nonwards."
+        ],
+        [
+          "#",
+          "",
+          "NAME",
+          "POSITION",
+          "POSITION",
+          "LENGTH",
+          "",
+          ""
+        ],
+        [
+          "5",
+          "CLM_TYPE_CD",
+          "Claim Type\nCode",
+          "46",
+          "47",
+          "2",
+          "9(02)",
+          "Signifies the type of claim being\nsubmitted through the Medicare or\nMedicaid programs\nClaim type code include:\n71 = RIC O local carrier non-\nDMEPOS claim\n72 = RIC O local carrier DMEPOS\nclaim"
+        ],
+        [
+          "6",
+          "CLM_LINE_NGACO_PBPMT_SW",
+          "PBP Benefit\nEnhancement\nIndicator",
+          "48",
+          "48",
+          "1",
+          "X(1)",
+          "A single character code of “Y” or “N”\nthat indicates whether a particular\nclaim line is tied to a PBP benefit\nenhancement. Blank if no data are\navailable.\nNote: This field will be used for both\nNGACO and VT APM models."
+        ],
+        [
+          "7",
+          "CLM_LINE_NGACO_PDSCHRG_\nHCBS_SW",
+          "Post Discharge\nHome Visit\nBenefit\nEnhancement\nIndicator",
+          "49",
+          "49",
+          "1",
+          "X(1)",
+          "A single character code of “Y” or “N”\nthat indicates whether a particular\nclaim line is tied to a Post Discharge\nHome Visit benefit enhancement.\nBlank if no data are available.\nNote: This field will be used for both\nNGACO and VT APM models."
+        ],
+        [
+          "8",
+          "CLM_LINE_NGACO_SNF_WVR_\nSW",
+          "SNF 3-Day\nWaiver Benefit\nEnhancement\nIndicator",
+          "50",
+          "50",
+          "1",
+          "X(1)",
+          "A single character code of “Y” or “N”\nthat indicates whether a particular\nclaim line is tied to a SNF 3-Day\nWaiver benefit enhancement. Blank\nif no data are available.\nNote: This field will be used for both\nNGACO and VT APM models."
+        ],
+        [
+          "#",
+          "",
+          "NAME",
+          "POSITION",
+          "POSITION",
+          "LENGTH",
+          "",
+          ""
+        ],
+        [
+          "9",
+          "CLM_LINE_NGACO_TLHLTH_S\nW",
+          "Telehealth\nBenefit\nEnhancement\nIndicator",
+          "51",
+          "51",
+          "1",
+          "X(1)",
+          "A single character code of “Y” or “N”\nthat indicates whether a particular\nclaim line is tied to a Telehealth\nbenefit enhancement. Blank if no\ndata are available.\nNote: This field will be used for both\nNGACO and VT APM models."
+        ],
+        [
+          "10",
+          "CLM_LINE_NGACO_CPTATN_S\nW",
+          "AIPBP Benefit\nEnhancement\nIndicator",
+          "52",
+          "52",
+          "1",
+          "X(1)",
+          "A single character code of “Y” or “N”\nthat indicates whether a particular\nclaim line is tied to an AIPBP benefit\nenhancement. Blank if no data are\navailable.\nNote: This field will be used for both\nNGACO and VT APM models."
+        ],
+        [
+          "11",
+          "CLM_DEMO_1ST_NUM",
+          "First Program\nDemonstration\nNumber",
+          "53",
+          "54",
+          "2",
+          "X(2)",
+          "Medicare Demonstration Special\nProcessing Number (SPN).\nThis is a first demonstration number.\nThis field will be used to hold the 2-\nbyte number for future use with the\nBundled Payments for Care\nImprovement initiative."
+        ],
+        [
+          "12",
+          "CLM_DEMO_2ND_NUM",
+          "Second\nProgram\nDemonstration\nNumber",
+          "55",
+          "56",
+          "2",
+          "X(2)",
+          "Medicare Demonstration Special\nProcessing Number (SPN).\nThis is a second demonstration\nnumber.\nThis field will be used to hold the 2-\nbyte number for future use with the\nBundled Payments for Care\nImprovement initiative."
+        ],
+        [
+          "#",
+          "",
+          "NAME",
+          "POSITION",
+          "POSITION",
+          "LENGTH",
+          "",
+          ""
+        ],
+        [
+          "13",
+          "CLM_DEMO_3RD_NUM",
+          "Third Program\nDemonstration\nNumber",
+          "57",
+          "58",
+          "2",
+          "X(2)",
+          "Medicare Demonstration Special\nProcessing Number (SPN).\nThis is a third demonstration\nnumber.\nThis field will be used to hold the 2-\nbyte number for future use with the\nBundled Payments for Care\nImprovement initiative."
+        ],
+        [
+          "14",
+          "CLM_DEMO_4TH_NUM",
+          "Fourth\nProgram\nDemonstration\nNumber",
+          "59",
+          "60",
+          "2",
+          "X(2)",
+          "Medicare Demonstration Special\nProcessing Number (SPN).\nThis is a fourth demonstration\nnumber.\nThis field will be used to hold the 2-\nbyte number for future use with the\nBundled Payments for Care\nImprovement initiative."
+        ],
+        [
+          "15",
+          "CLM_DEMO_5TH_NUM",
+          "Fifth Program\nDemonstration\nNumber",
+          "61",
+          "62",
+          "2",
+          "X(2)",
+          "Medicare Demonstration Special\nProcessing Number (SPN).\nThis is a fifth demonstration number.\nThis field will be used to hold the 2-\nbyte number for future use with the\nBundled Payments for Care\nImprovement initiative."
+        ],
+        [
+          "#",
+          "",
+          "NAME",
+          "POSITION",
+          "POSITION",
+          "LENGTH",
+          "",
+          ""
+        ],
+        [
+          "16",
+          "CLM_PBP_INCLSN_AMT",
+          "PBP/AIPBP\nInclusion\nAmount",
+          "63",
+          "77",
+          "15",
+          "-9(11).99",
+          "The amount that would have been\npaid in the absence of PBP/AIPBP\nReduction.\nThe value for the PBP/AIPBP\nInclusion Amount is derived from the\ntable and column called\n“CMS_VIEW_CLM_PRD.CLM_LINE\n_OTHR_APLD_AMT” when the\nvalue code within the field called\n“CLM_LINE_OTHR_APLD_CD”\nequals “J.”"
+        ],
+        [
+          "17",
+          "CLM_PBP_RDCTN_AMT",
+          "PBP/AIPBP\nReduction\nAmount",
+          "78",
+          "92",
+          "15",
+          "-9(11).99",
+          "The PBP/AIPBP Reduction Amount\nwithheld from payment to the\nProvider.\nThe value for the PBP/AIPBP\nReduction Amount is derived from\nthe table and column called\n“CMS_VIEW_CLM_PRD.CLM_LINE\n_OTHR_APLD_AMT” when the\nvalue code within the field called\n“CLM_LINE_OTHR_APLD_CD”\nequals “L.”"
+        ],
+        [
+          "18",
+          "CLM_NGACO_CMG_WVR_SW",
+          "Care\nManagement\nHome Visits",
+          "93",
+          "93",
+          "1",
+          "X(1)",
+          "A single character code of “Y” or “N”\nthat indicates whether a particular\nclaim is tied to a Care Management\nHome Visits benefit enhancement.\nBlank if no data are available.\nNote: This field will be used for both\nNGACO and VT APM models."
+        ]
+      ]
+    },
+    {
+      "element_id": "global_block_89",
+      "type": "paragraph",
+      "text": "The filename convention for the Medicare Shared Savings Program in Table 12 and Table 13 is:"
+    },
+    {
+      "element_id": "global_block_90",
+      "type": "paragraph",
+      "text": " For regular CCLFs: P.A****.ZC0Y**.Dyymmdd.Thhmmsst."
+    },
+    {
+      "element_id": "global_block_91",
+      "type": "paragraph",
+      "text": " For run-out CCLFs: P.A****.ACO.ZC0R**.Dyymmdd.Thhmmsst, “R” instead of “Y” indicating run-out."
+    },
+    {
+      "element_id": "global_block_92",
+      "type": "paragraph",
+      "text": "Table 12. Summary Statistics Header Record (CCLF0)"
+    },
+    {
+      "element_id": "global_block_93",
+      "type": "table",
+      "pages_spanned": [
+        67
+      ],
+      "raw_matrix": [
+        [
+          "ELEMENT",
+          "ELEMENT NAME",
+          "DATA",
+          "START",
+          "END",
+          "DATA",
+          "FORMAT",
+          "COMMENTS"
+        ],
+        [
+          "#",
+          "",
+          "DESCRIPTION",
+          "POSITION",
+          "POSITION",
+          "LENGTH",
+          "",
+          ""
+        ],
+        [
+          "1",
+          "File Number Label",
+          "Title",
+          "1",
+          "13",
+          "13",
+          "X(13)",
+          "“File Number”\nThis field will be left-justified and\nright-padded with spaces."
+        ],
+        [
+          "2",
+          "Delimiter",
+          "Delimiter",
+          "14",
+          "14",
+          "1",
+          "X(1)",
+          "“|”"
+        ],
+        [
+          "3",
+          "File Description Label",
+          "Title",
+          "15",
+          "34",
+          "20",
+          "X(20)",
+          "“File Description”\nThis field will be left-justified and\nright-padded with spaces."
+        ],
+        [
+          "4",
+          "Delimiter",
+          "Delimiter",
+          "35",
+          "35",
+          "1",
+          "X(1)",
+          "“|”"
+        ],
+        [
+          "5",
+          "Total Records Count Label",
+          "Title",
+          "36",
+          "55",
+          "20",
+          "X(20)",
+          "“Total Records Count”\nThis field will be left-justified and\nright-padded with spaces."
+        ],
+        [
+          "6",
+          "Delimiter",
+          "Delimiter",
+          "56",
+          "56",
+          "1",
+          "X(1)",
+          "“|”"
+        ],
+        [
+          "7",
+          "Record Length Label",
+          "Title",
+          "57",
+          "69",
+          "13",
+          "X(13)",
+          "“Record Length”\nThis field will be left-justified and\nright-padded with spaces."
+        ]
+      ]
+    },
+    {
+      "element_id": "global_block_94",
+      "type": "paragraph",
+      "text": "Table 13. Summary Statistics Detail Records"
+    },
+    {
+      "element_id": "global_block_95",
+      "type": "table",
+      "pages_spanned": [
+        68
+      ],
+      "raw_matrix": [
+        [
+          "ELEMENT",
+          "ELEMENT NAME",
+          "DATA",
+          "START",
+          "END",
+          "DATA",
+          "FORMAT",
+          "COMMENTS"
+        ],
+        [
+          "#",
+          "",
+          "DESCRIPTION",
+          "POSITION",
+          "POSITION",
+          "LENGTH",
+          "",
+          ""
+        ],
+        [
+          "1",
+          "File Type",
+          "Type of CCLF\nfile",
+          "1",
+          "7",
+          "7",
+          "X(7)",
+          "Field will contain either “CCLF1”,\n“CCLF2”, “CCLF3”, “CCLF4”,\n“CCLF5”, “CCLF6”, “CCLF7”,\n“CCLF8”, “CCLF9”, “CCLFA”, or\n“CCLFB”.\nThis field will be left-justified and\nright-padded with spaces."
+        ],
+        [
+          "2",
+          "Delimiter",
+          "Delimiter",
+          "8",
+          "8",
+          "1",
+          "X(1)",
+          "“|”"
+        ]
+      ]
+    },
+    {
+      "element_id": "global_block_96",
+      "type": "table",
+      "pages_spanned": [
+        69
+      ],
+      "raw_matrix": [
+        [
+          "ELEMENT",
+          "ELEMENT NAME",
+          "DATA",
+          "START",
+          "END",
+          "DATA",
+          "FORMAT",
+          "COMMENTS",
+          ""
+        ],
+        [
+          "#",
+          "",
+          "DESCRIPTION",
+          "POSITION",
+          "POSITION",
+          "LENGTH",
+          "",
+          "",
+          ""
+        ],
+        [
+          "3",
+          "File Name",
+          "Name of\nCCLF file",
+          "9",
+          "51",
+          "43",
+          "X(43)",
+          "",
+          "For file CCLF1, this field will\ncontain “Part A Claims Header\nFile”.\nFor file CCLF2, this field will\ncontain “Part A Claims Revenue\nCenter Detail File”.\nFor file CCLF3, this field will\ncontain “Part A Procedure Code\nFile”.\nFor file CCLF4, this field will\ncontain “Part A Diagnosis Code\nFile”.\nFor file CCLF5, this field will\ncontain “Part B Physicians File”.\nFor file CCLF6, this field will\ncontain “Part B DME File”.\nFor file CCLF7, this field will\ncontain “Part D File”.\nFor file CCLF8, this field will\ncontain “Beneficiary Demographics\nFile”.\nFor file CCLF9, this field will\ncontain “BENE XREF File”.\nFor file CCLFA, this field will\ncontain “Part A BE and Demo\nCodes File”.\nFor file CCLFB, this field will\ncontain “Part B BE and Demo\nCodes File”.\nThis field will be left-justified and\nright-padded with spaces."
+        ]
+      ]
+    },
+    {
+      "element_id": "global_block_97",
+      "type": "table",
+      "pages_spanned": [
+        69
+      ],
+      "raw_matrix": [
+        [
+          "Name of"
+        ],
+        [
+          "CCLF file"
+        ]
+      ]
+    },
+    {
+      "element_id": "global_block_98",
+      "type": "table",
+      "pages_spanned": [
+        70
+      ],
+      "raw_matrix": [
+        [
+          "ELEMENT",
+          "ELEMENT NAME",
+          "DATA",
+          "",
+          "START",
+          "END",
+          "DATA",
+          "FORMAT",
+          "COMMENTS"
+        ],
+        [
+          "#",
+          "",
+          "DESCRIPTION",
+          "",
+          "POSITION",
+          "POSITION",
+          "LENGTH",
+          "",
+          ""
+        ],
+        [
+          "4",
+          "Delimiter",
+          "Delimiter",
+          "",
+          "52",
+          "52",
+          "1",
+          "X(1)",
+          "“|”"
+        ],
+        [
+          "5",
+          "Number of records",
+          "",
+          "Contains the\nnumber of\nrecords in the\nfile",
+          "53",
+          "63",
+          "11",
+          "X(11)",
+          "This field will be right-justified and\nleft-padded with spaces."
+        ],
+        [
+          "6",
+          "Delimiter",
+          "Delimiter",
+          "",
+          "64",
+          "64",
+          "1",
+          "X(1)",
+          "“|”"
+        ],
+        [
+          "7",
+          "Length of record",
+          "",
+          "Contains the\nlength of the\nrecord in the\nfile.",
+          "65",
+          "69",
+          "5",
+          "X(5)",
+          "This field will be right-justified and\nleft-padded with spaces."
+        ],
+        [
+          "8",
+          "Filler",
+          "Filler",
+          "",
+          "70",
+          "70",
+          "1",
+          "X(1)",
+          "Blank"
+        ]
+      ]
+    },
+    {
+      "element_id": "global_block_99",
+      "type": "table",
+      "pages_spanned": [
+        70,
+        70
+      ],
+      "raw_matrix": [
+        [
+          "This field will be right-justified and"
+        ],
+        [
+          "left-padded with spaces."
+        ],
+        [
+          "left-padded with spaces."
+        ]
+      ]
+    }
+  ]
+}

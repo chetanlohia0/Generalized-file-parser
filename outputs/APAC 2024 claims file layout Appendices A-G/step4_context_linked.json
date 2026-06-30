@@ -1,0 +1,5549 @@
+{
+  "document_id": "APAC 2024 claims file layout Appendices A-G",
+  "source_format": ".pdf",
+  "total_pages": 43,
+  "global_metadata": [
+    "Lookup Table RE1",
+    "Lookup Table RE2",
+    "File naming convention is",
+    "File naming convention is",
+    "b. Claims file control totals example",
+    "Example when only some file types are submitted",
+    "c. File naming convention is:",
+    "For medical and pharmacy: <payer abbreviation>_<submitter abbreviation>_totals_<quarter>_<file created date_timestamp>.dat",
+    "Example: OMIP_OMIP_totals_2015Q2_20150521_010101.dat",
+    "b. Member months control totals example",
+    "c. File naming convention is",
+    "For medical and pharmacy:",
+    "<payer abbreviation>_<submitter abbreviation>_membership_<quarter>_<file created date_timestamp>.dat",
+    "Example: OMIP_OMIP_membership_2015Q2_20150521_010101.dat",
+    "For dental:",
+    "<payer abbreviation>_<submitter abbreviation>_dental_membership__<quarter>_<file created date_timestamp>.dat",
+    "Note: There is a double underscore between ‘dental_membership’ and <quarter>.",
+    "Example: OMIP_OMIP_dental_membership__2015Q2_20150521_010101.dat"
+  ],
+  "schema_clusters": [
+    {
+      "element_id": "context_group_0",
+      "type": "schema_cluster",
+      "pages_spanned": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "introductory_context": [
+        "Claims data files must include data for all claims where the subscriber’s residence is in Oregon or the subscriber is enrolled in a plan for which the State of Oregon is the payer. OAR 409-025-0120",
+        "Appendix A: Enrollment",
+        "All Mandatory Reporters must submit this file. OHA acts as the data submitter for CCOs by contract."
+      ],
+      "table": {
+        "headers": [
+          "",
+          "Data\nelement",
+          "Name",
+          "Type",
+          "",
+          "Max.\nlength",
+          "Required?",
+          "Description/valid values",
+          "",
+          "Error\nthreshold"
+        ],
+        "matrix": [
+          [
+            "ME001",
+            "",
+            "Payer type",
+            "Text",
+            "1",
+            "",
+            "Yes",
+            "See lookup table ME001",
+            "0.0%",
+            ""
+          ],
+          [
+            "ME003",
+            "",
+            "Product code",
+            "Text",
+            "4",
+            "",
+            "Yes",
+            "See lookup table ME003",
+            "0.0%",
+            ""
+          ],
+          [
+            "ME004A",
+            "",
+            "Eligibility date",
+            "Date",
+            "8",
+            "",
+            "Yes",
+            "CCYYMMDD (example 20200501) Dates before\nthe submission date range are not valid. See\nSchedule A for submission date range",
+            "0.0%",
+            ""
+          ],
+          [
+            "ME005A",
+            "",
+            "Termination date",
+            "Date",
+            "8",
+            "",
+            "Yes",
+            "CCYYMMDD\nUse 99991231 if termination date is open-ended",
+            "0.0%",
+            ""
+          ],
+          [
+            "ME007",
+            "",
+            "Subscriber ID",
+            "Text",
+            "30",
+            "",
+            "Yes",
+            "Plan-specific unique identifier for subscriber; this\nidentifier value should be consistent between files\nand over time",
+            "1.2%",
+            ""
+          ],
+          [
+            "ME009",
+            "",
+            "Plan specific contract\nnumber",
+            "Text",
+            "30",
+            "",
+            "Yes",
+            "Plan specific contract number, AKA group number",
+            "1.2%",
+            ""
+          ],
+          [
+            "ME009A",
+            "",
+            "PEBB flag",
+            "Numeric",
+            "1",
+            "",
+            "Yes",
+            "Public Employees Benefits Board\nValid values: 1 (PEBB group) 0 (otherwise)",
+            "0.0%",
+            ""
+          ],
+          [
+            "ME009B",
+            "",
+            "OEBB flag",
+            "Numeric",
+            "1",
+            "",
+            "Yes",
+            "Oregon Educators Benefits Board\nValid values: 1 (OEBB group) 0 (otherwise)",
+            "0.0%",
+            ""
+          ],
+          [
+            "ME009C",
+            "",
+            "Medical home flag",
+            "Numeric",
+            "1",
+            "",
+            "Situational",
+            "Valid values: 1 (Medical home plan) 0 (otherwise)\nNot required when ME001 = E (Dental)",
+            "0.0%",
+            ""
+          ],
+          [
+            "ME010",
+            "",
+            "Member ID",
+            "Text",
+            "30",
+            "",
+            "Yes",
+            "Plan-specific unique identifier for member; this\nidentifier value should be consistent between files\nand over time",
+            "0.0%",
+            ""
+          ],
+          [
+            "ME012",
+            "",
+            "Relationship code",
+            "Numeric",
+            "2",
+            "",
+            "Yes",
+            "See lookup table ME012",
+            "1.2%",
+            ""
+          ],
+          [
+            "ME013",
+            "",
+            "Member sex",
+            "Text",
+            "1",
+            "",
+            "Yes",
+            "Valid values: M (male) F (female) and U\n(unknown)",
+            "1.2%",
+            ""
+          ],
+          [
+            "ME014",
+            "",
+            "Member date of birth",
+            "Date",
+            "8",
+            "",
+            "Yes",
+            "CCYYMMDD (example: 19570402) Leave blank if\nunavailable",
+            "1.2%",
+            ""
+          ],
+          [
+            "ME015A",
+            "",
+            "Member’s street address",
+            "Text",
+            "50",
+            "",
+            "Yes",
+            "Member’s primary street address. If member’s\naddress is missing, default to subscriber’s\naddress. Format: street number pre-directional\nstreet name street designator post-directional\nExample: 123 N Main Street",
+            "1.2%",
+            ""
+          ],
+          [
+            "ME015",
+            "",
+            "Member city",
+            "Text",
+            "30",
+            "",
+            "Yes",
+            "Example: Grants Pass",
+            "1.2%",
+            ""
+          ],
+          [
+            "ME016",
+            "",
+            "Member state",
+            "Text",
+            "4",
+            "",
+            "Yes",
+            "Example: OR",
+            "1.2%",
+            ""
+          ],
+          [
+            "ME017",
+            "",
+            "Member ZIP",
+            "Text",
+            "10",
+            "",
+            "Yes",
+            "Example: 97209-1234 or 97209",
+            "1.2%",
+            ""
+          ],
+          [
+            "ME018",
+            "",
+            "Medical coverage flag",
+            "Text",
+            "1",
+            "",
+            "Situational",
+            "Valid values: Y (yes) or N (no). Not required when\nME001 = E.",
+            "0.0%",
+            ""
+          ],
+          [
+            "ME019",
+            "",
+            "Prescription drug\ncoverage flag",
+            "Text",
+            "1",
+            "",
+            "Situational",
+            "Valid values: Y (yes) or N (no). Not required when\nME001 = E.",
+            "0.0%",
+            ""
+          ],
+          [
+            "ME101",
+            "",
+            "Subscriber last name",
+            "Text",
+            "35",
+            "",
+            "Yes",
+            "",
+            "1.2%",
+            ""
+          ],
+          [
+            "ME102",
+            "",
+            "Subscriber first name",
+            "Text",
+            "25",
+            "",
+            "Yes",
+            "",
+            "1.2%",
+            ""
+          ],
+          [
+            "ME103",
+            "",
+            "Subscriber middle name",
+            "Text",
+            "25",
+            "",
+            "Situational",
+            "Populate if available.",
+            "N/A",
+            ""
+          ],
+          [
+            "ME104",
+            "",
+            "Member last name",
+            "Text",
+            "35",
+            "",
+            "Yes",
+            "",
+            "1.2%",
+            ""
+          ],
+          [
+            "ME105",
+            "",
+            "Member first name",
+            "Text",
+            "25",
+            "",
+            "Yes",
+            "",
+            "1.2%",
+            ""
+          ],
+          [
+            "ME106",
+            "",
+            "Member middle name",
+            "Text",
+            "25",
+            "",
+            "Situational",
+            "Populate if available.",
+            "N/A",
+            ""
+          ],
+          [
+            "QC013",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "Do not populate; blank/null required.",
+            "0.0%",
+            ""
+          ],
+          [
+            "QC014",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "Do not populate; blank/null required.",
+            "0.0%",
+            ""
+          ],
+          [
+            "QC015",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "Do not populate; blank/null required.",
+            "0.0%",
+            ""
+          ],
+          [
+            "QC016",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "Do not populate; blank/null required.",
+            "0.0%",
+            ""
+          ],
+          [
+            "QC017",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "Do not populate; blank/null required.",
+            "0.0%",
+            ""
+          ],
+          [
+            "QC018",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "Do not populate; blank/null required.",
+            "0.0%",
+            ""
+          ],
+          [
+            "QC019",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "Do not populate; blank/null required.",
+            "0.0%",
+            ""
+          ],
+          [
+            "QC020",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "Do not populate; blank/null required.",
+            "0.0%",
+            ""
+          ],
+          [
+            "RE1",
+            "",
+            "Member race",
+            "Text",
+            "1",
+            "",
+            "Yes",
+            "See lookup table RE1.",
+            "1.2%",
+            ""
+          ],
+          [
+            "RE2",
+            "",
+            "Member ethnicity",
+            "Text",
+            "1",
+            "",
+            "Yes",
+            "See lookup table RE2.",
+            "1.2%",
+            ""
+          ],
+          [
+            "RE3",
+            "",
+            "Primary spoken language",
+            "Text",
+            "3",
+            "",
+            "Yes",
+            "See lookup table RE3.",
+            "1.2%",
+            ""
+          ],
+          [
+            "OHLC3",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "Do not populate; blank/null required.",
+            "0.0%",
+            ""
+          ],
+          [
+            "OHLC4",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "Do not populate; blank/null required.",
+            "0.0%",
+            ""
+          ],
+          [
+            "OHLC5",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "Do not populate; blank/null required.",
+            "0.0%",
+            ""
+          ],
+          [
+            "OHLC6",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "Do not populate; blank/null required.",
+            "0.0%",
+            ""
+          ],
+          [
+            "OHLC7",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "Do not populate; blank/null required.",
+            "0.0%",
+            ""
+          ],
+          [
+            "ME009D",
+            "",
+            "OMIP flag",
+            "Numeric",
+            "1",
+            "",
+            "Yes",
+            "Valid values: 1 (OMIP member), 0 (otherwise)",
+            "1.2%",
+            ""
+          ],
+          [
+            "ME009E",
+            "",
+            "HKC flag",
+            "Numeric",
+            "1",
+            "",
+            "Yes",
+            "Valid values: 1 (Healthy Kids Connect plan), 0\n(otherwise)",
+            "1.2%",
+            ""
+          ],
+          [
+            "ME201",
+            "",
+            "Medicare coverage flag",
+            "Text",
+            "2",
+            "",
+            "Situational",
+            "Type of Medicare coverage. Valid values: A (Part\nA), B (Part B), AB (Parts A and B), C (Part C\nonly), D (Part D only), CD (Parts C and D), X\n(other), Z (none). Not required when ME001 = E.",
+            "1.2%",
+            ""
+          ],
+          [
+            "ME202",
+            "",
+            "Market segment",
+            "Text",
+            "2",
+            "",
+            "Yes",
+            "See lookup table ME202.",
+            "0.0%",
+            ""
+          ],
+          [
+            "ME203",
+            "",
+            "Metal Tier",
+            "Text",
+            "1",
+            "",
+            "Situational",
+            "Health benefit plan metal tier for qualified health\nplans (QHPs) and catastrophic plans as defined in\nthe Patient Protection and Affordable Care Act,\nPublic Law 111-148, Section 1302: Essential\nHealth Benefits Requirements. Valid values: 0\n(Not a QHP or catastrophic plan), 1\n(Catastrophic), 2 (Bronze), 3 (Silver), 4 (Gold), 5\n(Platinum). Not required when ME001 = E.",
+            "0.0%",
+            ""
+          ],
+          [
+            "ME204",
+            "",
+            "HIOS Plan ID",
+            "Text",
+            "14",
+            "",
+            "Situational",
+            "Health Insurance Oversight System ID. Required\nfor qualified health plans (QHPs) as defined in the\nPatient Protection and Affordable Care Act (ACA).\nIf plan is not a QHP under the ACA, enter\n99999999999999. Not required when ME001 = E.",
+            "0.0%",
+            ""
+          ],
+          [
+            "ME205",
+            "",
+            "High Deductible Health\nPlan Flag",
+            "Text",
+            "1",
+            "",
+            "Yes",
+            "Valid values: Y (policy meets IRS definition of\nHDHP), N (policy does not meet IRS definition of\nHDHP)",
+            "1.2%",
+            ""
+          ],
+          [
+            "ME206",
+            "",
+            "Primary Insurance\nIndicator",
+            "Text",
+            "1",
+            "",
+            "Yes",
+            "Valid values: Y (primary insurance), N (secondary\nor tertiary insurance). If unknown, default to Y.",
+            "0.0%",
+            ""
+          ],
+          [
+            "ME207",
+            "",
+            "Dental Coverage Flag",
+            "Text",
+            "1",
+            "",
+            "Situational",
+            "Valid values: Y (member had dental coverage in\nthis period), N (member did not have dental\ncoverage in this period). Blank unless ME001 = E.",
+            "1.2%",
+            ""
+          ],
+          [
+            "ME208",
+            "",
+            "Additional member\nidentifier",
+            "Text",
+            "30",
+            "",
+            "Yes",
+            "Member level unique identifier received from\ncontracting organization for the member; If\ncoverage is associated with Medicare, value\nshould be the Medicare Beneficiary Identification;\nfor Third Party Administrators and Pharmacy\nBenefit Managers contracting with insurer or\nemployer, value should be unique member\nidentifier received from insurer or employer",
+            "5.0%",
+            ""
+          ],
+          [
+            "ME209",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "For future implementation",
+            "NA",
+            ""
+          ],
+          [
+            "ME210",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "For future implementation",
+            "NA",
+            ""
+          ]
+        ]
+      },
+      "footer_context": [
+        "File naming convention is",
+        "For medical and pharmacy:",
+        "<payer abbreviation>_<submitter abbreviation>_enrollment_<quarter>_<file created date_timestamp>.dat",
+        "Example: OMIP_OMIP_enrollment_2015Q2_20150521_010101.dat",
+        "For dental:",
+        "<payer abbreviation>_<submitter abbreviation>_dental_enrollment__<quarter>_<file created date_timestamp>.dat",
+        "Note: There is a double underscore between ‘dental_enrollment’ and <quarter>.",
+        "Example: OMIP_OMIP_dental_enrollment__2015Q2_20150521_010101.dat",
+        "Lookup Table ME001: Payer Type",
+        "This field contains a single letter identifying the payer type."
+      ]
+    },
+    {
+      "element_id": "context_group_1",
+      "type": "schema_cluster",
+      "pages_spanned": [
+        5
+      ],
+      "introductory_context": [
+        "<payer abbreviation>_<submitter abbreviation>_enrollment_<quarter>_<file created date_timestamp>.dat",
+        "Example: OMIP_OMIP_enrollment_2015Q2_20150521_010101.dat",
+        "For dental:",
+        "<payer abbreviation>_<submitter abbreviation>_dental_enrollment__<quarter>_<file created date_timestamp>.dat",
+        "Note: There is a double underscore between ‘dental_enrollment’ and <quarter>.",
+        "Example: OMIP_OMIP_dental_enrollment__2015Q2_20150521_010101.dat",
+        "Lookup Table ME001: Payer Type",
+        "This field contains a single letter identifying the payer type."
+      ],
+      "table": {
+        "headers": [
+          "Code",
+          "Value"
+        ],
+        "matrix": [
+          [
+            "C",
+            "Carrier"
+          ],
+          [
+            "D",
+            "Medicaid"
+          ],
+          [
+            "G",
+            "Other government agency"
+          ],
+          [
+            "P",
+            "Pharmacy benefits manager"
+          ],
+          [
+            "T",
+            "Third party administrator"
+          ],
+          [
+            "U",
+            "Unlicensed entity"
+          ],
+          [
+            "E",
+            "Dental"
+          ]
+        ]
+      },
+      "footer_context": []
+    },
+    {
+      "element_id": "context_group_2",
+      "type": "schema_cluster",
+      "pages_spanned": [
+        6
+      ],
+      "introductory_context": [
+        "Lookup Table ME003: Product Code",
+        "This field contain the insurance type or product code that indicates the type of insurance coverage the individual has."
+      ],
+      "table": {
+        "headers": [
+          "Code",
+          "Value"
+        ],
+        "matrix": [
+          [
+            "MDE",
+            "Medicaid dual eligible HMO"
+          ],
+          [
+            "MD",
+            "Medicaid disabled HMO"
+          ],
+          [
+            "MLI",
+            "Medicaid low-income HMO"
+          ],
+          [
+            "MRB",
+            "Medicaid restricted benefit HMO"
+          ],
+          [
+            "MR",
+            "Medicare Advantage HMO"
+          ],
+          [
+            "MP",
+            "Medicare Advantage PPO"
+          ],
+          [
+            "MPD",
+            "Medicare Part D only*"
+          ],
+          [
+            "MC",
+            "Medicare Cost"
+          ],
+          [
+            "PPO",
+            "Commercial PPO"
+          ],
+          [
+            "POS",
+            "Commercial POS"
+          ],
+          [
+            "HMO",
+            "Commercial HMO"
+          ],
+          [
+            "SN1",
+            "Special needs plan – chronic condition"
+          ],
+          [
+            "SN2",
+            "Special needs plan – institutionalized"
+          ],
+          [
+            "SN3",
+            "Special needs plan – dual eligible"
+          ],
+          [
+            "CHP",
+            "Special Children’s Health Insurance program (SCHIP)"
+          ],
+          [
+            "MDF",
+            "Medicaid fee-for-service"
+          ],
+          [
+            "SIP",
+            "Self-insured PPO"
+          ],
+          [
+            "SIF",
+            "Self-insured POS"
+          ],
+          [
+            "SIH",
+            "Self-insured HMO"
+          ],
+          [
+            "PH",
+            "Pharmacy benefits only*"
+          ],
+          [
+            "IN",
+            "Commercial Indemnity"
+          ],
+          [
+            "EPO",
+            "Commercial EPO"
+          ],
+          [
+            "SL",
+            "Commercial stop loss"
+          ],
+          [
+            "DPPO",
+            "Dental PPO"
+          ],
+          [
+            "DPOS",
+            "Dental POS"
+          ],
+          [
+            "DHMO",
+            "Dental HMO"
+          ],
+          [
+            "DSIP",
+            "Dental self-insured PPO"
+          ],
+          [
+            "DSIF",
+            "Dental self-insured POS"
+          ],
+          [
+            "DSIH",
+            "Dental self-insured HMO"
+          ]
+        ]
+      },
+      "footer_context": [
+        "* Please note that codes ‘PH’ and ‘MPD’ must be used in conjunction with the appropriate lines of business. ‘PH’ should be used for Commercial lines of business only, while ‘MPD’ should be used for Medicare membership only."
+      ]
+    },
+    {
+      "element_id": "context_group_3",
+      "type": "schema_cluster",
+      "pages_spanned": [
+        7
+      ],
+      "introductory_context": [
+        "* Please note that codes ‘PH’ and ‘MPD’ must be used in conjunction with the appropriate lines of business. ‘PH’ should be used for Commercial lines of business only, while ‘MPD’ should be used for Medicare membership only.",
+        "Lookup Table ME012: Relationship code",
+        "This field contains the member’s relationship to the subscriber or the insured."
+      ],
+      "table": {
+        "headers": [
+          "Code",
+          "Value"
+        ],
+        "matrix": [
+          [
+            "1",
+            "Spouse"
+          ],
+          [
+            "4",
+            "Grandfather or Grandmother"
+          ],
+          [
+            "5",
+            "Grandson or Granddaughter"
+          ],
+          [
+            "7",
+            "Nephew or Niece"
+          ],
+          [
+            "10",
+            "Foster Child"
+          ],
+          [
+            "15",
+            "Ward"
+          ],
+          [
+            "17",
+            "Stepson or Stepdaughter"
+          ],
+          [
+            "18",
+            "Self"
+          ],
+          [
+            "19",
+            "Child"
+          ],
+          [
+            "20",
+            "Employee"
+          ],
+          [
+            "21",
+            "Unknown"
+          ],
+          [
+            "22",
+            "Handicapped Dependent"
+          ],
+          [
+            "23",
+            "Sponsored Dependent"
+          ],
+          [
+            "24",
+            "Dependent of a Minor Dependent"
+          ],
+          [
+            "29",
+            "Significant Other"
+          ],
+          [
+            "32",
+            "Mother"
+          ],
+          [
+            "33",
+            "Father"
+          ],
+          [
+            "36",
+            "Emancipated Minor"
+          ],
+          [
+            "39",
+            "Organ Donor"
+          ],
+          [
+            "40",
+            "Cadaver Donor"
+          ],
+          [
+            "41",
+            "Injured Plaintiff"
+          ],
+          [
+            "43",
+            "Child Where Insured Has No Financial Responsibility"
+          ],
+          [
+            "53",
+            "Life Partner"
+          ]
+        ]
+      },
+      "footer_context": []
+    },
+    {
+      "element_id": "context_group_4",
+      "type": "schema_cluster",
+      "pages_spanned": [
+        8
+      ],
+      "introductory_context": [
+        "This field contains a single letter identifying the member’s race."
+      ],
+      "table": {
+        "headers": [
+          "Code",
+          "Value"
+        ],
+        "matrix": [
+          [
+            "A",
+            "Asian"
+          ],
+          [
+            "B",
+            "Black or African American"
+          ],
+          [
+            "I",
+            "American Indian or Alaska Native"
+          ],
+          [
+            "P",
+            "Native Hawaiian or Pacific Islander"
+          ],
+          [
+            "W",
+            "White"
+          ],
+          [
+            "O",
+            "Other (or multiple races)"
+          ],
+          [
+            "R",
+            "Refused"
+          ],
+          [
+            "U",
+            "Unknown"
+          ]
+        ]
+      },
+      "footer_context": []
+    },
+    {
+      "element_id": "context_group_5",
+      "type": "schema_cluster",
+      "pages_spanned": [
+        8
+      ],
+      "introductory_context": [
+        "This field contains a single letter identifying the member’s ethnicity."
+      ],
+      "table": {
+        "headers": [
+          "Code",
+          "Value"
+        ],
+        "matrix": [
+          [
+            "H",
+            "Hispanic"
+          ],
+          [
+            "O",
+            "Not Hispanic"
+          ],
+          [
+            "R",
+            "Refused"
+          ],
+          [
+            "U",
+            "Unknown"
+          ]
+        ]
+      },
+      "footer_context": [
+        "Lookup Table RE3",
+        "This field contains the ANSI/NISO three-character string identifying the member’s primary spoken language. Please refer to most recent version of ANSI/NISO Z39.53 (Codes for the Representation of Languages for Information Interchange); the 2001 version is freely available here: https://groups.niso.org/apps/group_public/download.php/6541/."
+      ]
+    },
+    {
+      "element_id": "context_group_6",
+      "type": "schema_cluster",
+      "pages_spanned": [
+        9
+      ],
+      "introductory_context": [
+        "Lookup Table RE3",
+        "This field contains the ANSI/NISO three-character string identifying the member’s primary spoken language. Please refer to most recent version of ANSI/NISO Z39.53 (Codes for the Representation of Languages for Information Interchange); the 2001 version is freely available here: https://groups.niso.org/apps/group_public/download.php/6541/.",
+        "Lookup Table ME202",
+        "This field contains an integer indicating the market segment."
+      ],
+      "table": {
+        "headers": [
+          "Code",
+          "Value"
+        ],
+        "matrix": [
+          [
+            "1",
+            "Policies sold and issued directly to individuals (non-group) inside exchange"
+          ],
+          [
+            "2",
+            "Policies sold and issued directly to individuals (non-group) outside exchange"
+          ],
+          [
+            "3",
+            "Policies sold and issued directly to employers having 50 or fewer employees inside\nexchange"
+          ],
+          [
+            "4",
+            "Policies sold and issued directly to employers having 50 or fewer employees outside\nthe exchange"
+          ],
+          [
+            "5",
+            "Policies sold and issued directly to employers having 51 to 100 employees inside\nexchange"
+          ],
+          [
+            "6",
+            "Policies sold and issued directly to employers having 51 to 100 employees outside\nthe exchange"
+          ],
+          [
+            "7",
+            "Policies sold and issued directly to employers having 100 or more employees"
+          ],
+          [
+            "8",
+            "Self-funded plans administered by a TPA, or a carrier acting as a TPA, where the\nemployer has purchased stop-loss or group excess insurance coverage"
+          ],
+          [
+            "9",
+            "Self-funded plans administered by a TPA, or a carrier acting as a TPA, where the\nemployer has not purchased stop-loss or group excess insurance coverage"
+          ],
+          [
+            "10",
+            "Associations/Trusts and Multiple Employer Welfare Arrangements (MEWAs)"
+          ],
+          [
+            "11",
+            "Other"
+          ]
+        ]
+      },
+      "footer_context": []
+    },
+    {
+      "element_id": "context_group_7",
+      "type": "schema_cluster",
+      "pages_spanned": [
+        10,
+        11,
+        12,
+        13
+      ],
+      "introductory_context": [
+        "Appendix B: Medical Claims file layout and dictionary"
+      ],
+      "table": {
+        "headers": [
+          "",
+          "Data\nelement",
+          "Name",
+          "Type",
+          "",
+          "Max.\nlength",
+          "Required?",
+          "Description/valid values",
+          "",
+          "Error\nthreshold"
+        ],
+        "matrix": [
+          [
+            "MC001",
+            "",
+            "Payer type",
+            "Text",
+            "1",
+            "",
+            "Yes",
+            "See lookup table ME001 (in Eligibility file)",
+            "0.0%",
+            ""
+          ],
+          [
+            "MC003",
+            "",
+            "Product code",
+            "Text",
+            "4",
+            "",
+            "Yes",
+            "See lookup table ME003 (in Eligibility file)",
+            "0.0%",
+            ""
+          ],
+          [
+            "MC004",
+            "",
+            "Claim ID",
+            "Text",
+            "80",
+            "",
+            "Yes",
+            "Payer’s unique claim identifier",
+            "0.0%",
+            ""
+          ],
+          [
+            "MC005",
+            "",
+            "Service line counter",
+            "Numeric",
+            "4",
+            "",
+            "Yes",
+            "Increments of 1 for each claim line",
+            "0.0%",
+            ""
+          ],
+          [
+            "MC010",
+            "",
+            "Member ID",
+            "Text",
+            "30",
+            "",
+            "Yes",
+            "Plan-specific unique member identifier; this identifier\nvalue should be consistent between files and over\ntime",
+            "0.0%",
+            ""
+          ],
+          [
+            "MC017",
+            "",
+            "Payment date",
+            "Date",
+            "8",
+            "",
+            "Situational",
+            "CCYYMMDD (example: 20090624). Blanks allowed\nfor denied claims only",
+            "0.0%",
+            ""
+          ],
+          [
+            "MC018",
+            "",
+            "Admission date",
+            "Date",
+            "8",
+            "",
+            "Situational",
+            "CCYYMMDD (example: 20090624). Required only for\ninstitutional claims",
+            "1.2%",
+            ""
+          ],
+          [
+            "MC023",
+            "",
+            "Discharge status",
+            "Text",
+            "2",
+            "",
+            "Situational",
+            "See lookup table MC023. Required only for\ninstitutional claims",
+            "1.2%",
+            ""
+          ],
+          [
+            "MC024",
+            "",
+            "Rendering provider\nID",
+            "Text",
+            "30",
+            "",
+            "Yes",
+            "Identifier for the rendering provider as assigned by\nthe reporting entity",
+            "1.2%",
+            ""
+          ],
+          [
+            "MC036",
+            "",
+            "Type of bill",
+            "Numeric",
+            "3",
+            "",
+            "Situational",
+            "See lookup table MC036. Required only for\ninstitutional claims",
+            "1.2%",
+            ""
+          ],
+          [
+            "MC037",
+            "",
+            "Place of service",
+            "Text",
+            "2",
+            "",
+            "Situational",
+            "See lookup table MC037. Required only for\nprofessional claims",
+            "1.2%",
+            ""
+          ],
+          [
+            "MC038",
+            "",
+            "Claim status",
+            "Text",
+            "1",
+            "",
+            "Yes",
+            "Was claim paid, denied, CCO encounter, or MCO\nencounter only? Valid values: P (paid), D (denied), C\n(CCO encounter), E (other managed care encounter)",
+            "0.0%",
+            ""
+          ],
+          [
+            "MC038A",
+            "",
+            "COB status",
+            "Text",
+            "1",
+            "",
+            "Yes",
+            "Was claim a COB claim? Valid values: Y (yes), N (no)",
+            "1.2%",
+            ""
+          ],
+          [
+            "MC041",
+            "",
+            "Principal diagnosis",
+            "Text",
+            "8",
+            "",
+            "Yes",
+            "ICD-10 diagnosis code. Include all characters\n(example: E10.359).",
+            "1.2%",
+            ""
+          ],
+          [
+            "MC041P",
+            "",
+            "POA flag 1",
+            "Text",
+            "1",
+            "",
+            "Situational",
+            "Present on admission flag for principal diagnosis. See\nlookup table MC041P. Required only for inpatient\nclaims.",
+            "1.2%",
+            ""
+          ],
+          [
+            "MC042",
+            "",
+            "Diagnosis 2",
+            "Text",
+            "8",
+            "",
+            "Yes",
+            "ICD-10 diagnosis code. Include all characters\n(example: E10.359).",
+            "1.2%",
+            ""
+          ],
+          [
+            "MC042P",
+            "",
+            "POA flag 2",
+            "Text",
+            "1",
+            "",
+            "Situational",
+            "Present on admission flag for diagnosis 2. Required if\nMC042 is populated. See lookup table MC041P.\nRequired only for inpatient claims.",
+            "1.2%",
+            ""
+          ],
+          [
+            "MC043",
+            "",
+            "Diagnosis 3",
+            "Text",
+            "8",
+            "",
+            "Yes",
+            "ICD-10 diagnosis code. Include all characters\n(example: E10.359).",
+            "1.2%",
+            ""
+          ],
+          [
+            "MC043P",
+            "",
+            "POA flag 3",
+            "Text",
+            "1",
+            "",
+            "Situational",
+            "Present on admission flag for diagnosis 2. Required if\nMC042 is populated. See lookup table MC041P.\nRequired only for inpatient claims.",
+            "1.2%",
+            ""
+          ],
+          [
+            "MC044",
+            "",
+            "Diagnosis 4",
+            "Text",
+            "8",
+            "",
+            "Yes",
+            "ICD-10 diagnosis code. Include all characters\n(example: E10.359).",
+            "1.2%",
+            ""
+          ],
+          [
+            "MC044P",
+            "",
+            "POA flag 4",
+            "Text",
+            "1",
+            "",
+            "Situational",
+            "Present on admission flag for diagnosis 2. Required if\nMC042 is populated. See lookup table MC041P.\nRequired only for inpatient claims.",
+            "1.2%",
+            ""
+          ],
+          [
+            "MC045",
+            "",
+            "Diagnosis 5",
+            "Text",
+            "8",
+            "",
+            "Yes",
+            "ICD-10 diagnosis code. Include all characters\n(example: E10.359).",
+            "1.2%",
+            ""
+          ],
+          [
+            "MC045P",
+            "",
+            "POA flag 5",
+            "Text",
+            "1",
+            "",
+            "Situational",
+            "Present on admission flag for diagnosis 2. Required if\nMC042 is populated. See lookup table MC041P.\nRequired only for inpatient claims.",
+            "1.2%",
+            ""
+          ],
+          [
+            "MC046",
+            "",
+            "Diagnosis 6",
+            "Text",
+            "8",
+            "",
+            "Yes",
+            "ICD-10 diagnosis code. Include all characters\n(example: E10.359).",
+            "1.2%",
+            ""
+          ],
+          [
+            "MC046P",
+            "",
+            "POA flag 6",
+            "Text",
+            "1",
+            "",
+            "Situational",
+            "Present on admission flag for diagnosis 2. Required if\nMC042 is populated. See lookup table MC041P.\nRequired only for inpatient claims.",
+            "1.2%",
+            ""
+          ],
+          [
+            "MC047",
+            "",
+            "Diagnosis 7",
+            "Text",
+            "8",
+            "",
+            "Yes",
+            "ICD-10 diagnosis code. Include all characters\n(example: E10.359).",
+            "1.2%",
+            ""
+          ],
+          [
+            "MC047P",
+            "",
+            "POA flag 7",
+            "Text",
+            "1",
+            "",
+            "Situational",
+            "Present on admission flag for diagnosis 2. Required if\nMC042 is populated. See lookup table MC041P.\nRequired only for inpatient claims.",
+            "1.2%",
+            ""
+          ],
+          [
+            "MC048",
+            "",
+            "Diagnosis 8",
+            "Text",
+            "8",
+            "",
+            "Yes",
+            "ICD-10 diagnosis code. Include all characters\n(example: E10.359).",
+            "1.2%",
+            ""
+          ],
+          [
+            "MC048P",
+            "",
+            "POA flag 8",
+            "Text",
+            "1",
+            "",
+            "Situational",
+            "Present on admission flag for diagnosis 2. Required if\nMC042 is populated. See lookup table MC041P.\nRequired only for inpatient claims.",
+            "1.2%",
+            ""
+          ],
+          [
+            "MC049",
+            "",
+            "Diagnosis 9",
+            "Text",
+            "8",
+            "",
+            "Yes",
+            "ICD-10 diagnosis code. Include all characters\n(example: E10.359).",
+            "1.2%",
+            ""
+          ],
+          [
+            "MC049P",
+            "",
+            "POA flag 9",
+            "Text",
+            "1",
+            "",
+            "Situational",
+            "Present on admission flag for diagnosis 2. Required if\nMC042 is populated. See lookup table MC041P.\nRequired only for inpatient claims.",
+            "1.2%",
+            ""
+          ],
+          [
+            "MC050",
+            "",
+            "Diagnosis 10",
+            "Text",
+            "8",
+            "",
+            "Yes",
+            "ICD-10 diagnosis code. Include all characters\n(example: E10.359).",
+            "1.2%",
+            ""
+          ],
+          [
+            "MC050P",
+            "",
+            "POA flag 10",
+            "Text",
+            "1",
+            "",
+            "Situational",
+            "Present on admission flag for diagnosis 2. Required if\nMC042 is populated. See lookup table MC041P.\nRequired only for inpatient claims.",
+            "1.2%",
+            ""
+          ],
+          [
+            "MC051",
+            "",
+            "Diagnosis 11",
+            "Text",
+            "8",
+            "",
+            "Yes",
+            "ICD-10 diagnosis code. Include all characters\n(example: E10.359).",
+            "1.2%",
+            ""
+          ],
+          [
+            "MC051P",
+            "",
+            "POA flag 11",
+            "Text",
+            "1",
+            "",
+            "Situational",
+            "Present on admission flag for diagnosis 2. Required if\nMC042 is populated. See lookup table MC041P.\nRequired only for inpatient claims.",
+            "1.2%",
+            ""
+          ],
+          [
+            "MC052",
+            "",
+            "Diagnosis 12",
+            "Text",
+            "8",
+            "",
+            "Yes",
+            "ICD-10 diagnosis code. Include all characters\n(example: E10.359).",
+            "1.2%",
+            ""
+          ],
+          [
+            "MC052P",
+            "",
+            "POA flag 12",
+            "Text",
+            "1",
+            "",
+            "Situational",
+            "Present on admission flag for diagnosis 2. Required if\nMC042 is populated. See lookup table MC041P.\nRequired only for inpatient claims.",
+            "1.2%",
+            ""
+          ],
+          [
+            "MC053",
+            "",
+            "Diagnosis 13",
+            "Text",
+            "8",
+            "",
+            "Yes",
+            "ICD-10 diagnosis code. Include all characters\n(example: E10.359).",
+            "1.2%",
+            ""
+          ],
+          [
+            "MC053P",
+            "",
+            "POA flag 13",
+            "Text",
+            "1",
+            "",
+            "Situational",
+            "Present on admission flag for diagnosis 2. Required if\nMC042 is populated. See lookup table MC041P.\nRequired only for inpatient claims.",
+            "1.2%",
+            ""
+          ],
+          [
+            "MC054",
+            "",
+            "Revenue code",
+            "Text",
+            "4",
+            "",
+            "Situational",
+            "Include all digits (example:0320). Required only for\ninstitutional claims.",
+            "1.2%",
+            ""
+          ],
+          [
+            "MC055",
+            "",
+            "CPT/CPT\nII/HCPCS/ HIPPS\nProcedure code",
+            "Text",
+            "5",
+            "",
+            "Yes",
+            "CPT. CPT II, HCPCS or HIPPS code. Include all\ndigits (examples: 29870 or G0289)",
+            "1.2%",
+            ""
+          ],
+          [
+            "MC056",
+            "",
+            "Procedure modifier\n1",
+            "Text",
+            "2",
+            "",
+            "Yes",
+            "CPT or HCPCS code. Include all digits (examples: 50\nor AA)",
+            "1.2%",
+            ""
+          ],
+          [
+            "MC057",
+            "",
+            "Procedure modifier\n2",
+            "Text",
+            "2",
+            "",
+            "Yes",
+            "CPT or HCPCS code. Include all digits (examples: 50\nor AA)",
+            "1.2%",
+            ""
+          ],
+          [
+            "MC057A",
+            "",
+            "Procedure modifier\n3",
+            "Text",
+            "2",
+            "",
+            "Yes",
+            "CPT or HCPCS code. Include all digits (examples: 50\nor AA)",
+            "1.2%",
+            ""
+          ],
+          [
+            "MC057B",
+            "",
+            "Procedure modifier\n4",
+            "Text",
+            "2",
+            "",
+            "Yes",
+            "CPT or HCPCS code. Include all digits (examples: 50\nor AA)",
+            "1.2%",
+            ""
+          ],
+          [
+            "MC058",
+            "",
+            "Principal inpatient\nprocedure code",
+            "Text",
+            "8",
+            "",
+            "Situational",
+            "ICD-10 procedure code. Include all characters,\n(example: B245ZZ3). Required only if populated on\ninstitutional claims.",
+            "1.2%",
+            ""
+          ],
+          [
+            "MC058A",
+            "",
+            "Inpatient procedure\ncode 2",
+            "Text",
+            "8",
+            "",
+            "Situational",
+            "ICD-10 procedure code. Include all characters,\n(example: B245ZZ3). Required only if populated on\ninstitutional claims.",
+            "1.2%",
+            ""
+          ],
+          [
+            "MC058B",
+            "",
+            "Inpatient procedure\ncode 3",
+            "Text",
+            "8",
+            "",
+            "Situational",
+            "ICD-10 procedure code. Include all characters,\n(example: B245ZZ3). Required only if populated on\ninstitutional claims.",
+            "1.2%",
+            ""
+          ],
+          [
+            "MC058C",
+            "",
+            "Inpatient procedure\ncode 4",
+            "Text",
+            "8",
+            "",
+            "Situational",
+            "ICD-10 procedure code. Include all characters,\n(example: B245ZZ3). Required only if populated on\ninstitutional claims.",
+            "1.2%",
+            ""
+          ],
+          [
+            "MC058D",
+            "",
+            "Inpatient procedure\ncode 5",
+            "Text",
+            "8",
+            "",
+            "Situational",
+            "ICD-10 procedure code. Include all characters,\n(example: B245ZZ3). Required only if populated on\ninstitutional claims.",
+            "1.2%",
+            ""
+          ]
+        ]
+      },
+      "footer_context": []
+    },
+    {
+      "element_id": "context_group_8",
+      "type": "schema_cluster",
+      "pages_spanned": [
+        14
+      ],
+      "introductory_context": [],
+      "table": {
+        "headers": [
+          "Data\nelement",
+          "Name",
+          "Type",
+          "Max.\nlength",
+          "Required?",
+          "Description/valid values",
+          "Error\nthreshold"
+        ],
+        "matrix": [
+          [
+            "MC058E",
+            "Inpatient procedure\ncode 6",
+            "Text",
+            "8",
+            "Situational",
+            "ICD-10 procedure code. Include all characters,\n(example: B245ZZ3). Required only if populated on\ninstitutional claims.",
+            "1.2%"
+          ],
+          [
+            "MC058F",
+            "Inpatient procedure\ncode 7",
+            "Text",
+            "8",
+            "Situational",
+            "ICD-10 procedure code. Include all characters,\n(example: B245ZZ3). Required only if populated on\ninstitutional claims.",
+            "1.2%"
+          ],
+          [
+            "MC058G",
+            "Inpatient procedure\ncode 8",
+            "Text",
+            "8",
+            "Situational",
+            "ICD-10 procedure code. Include all characters,\n(example: B245ZZ3). Required only if populated on\ninstitutional claims.",
+            "1.2%"
+          ],
+          [
+            "MC058H",
+            "Inpatient procedure\ncode 9",
+            "Text",
+            "8",
+            "Situational",
+            "ICD-10 procedure code. Include all characters,\n(example: B245ZZ3). Required only if populated on\ninstitutional claims.",
+            "1.2%"
+          ],
+          [
+            "MC058J",
+            "Inpatient procedure\ncode 10",
+            "Text",
+            "8",
+            "Situational",
+            "ICD-10 procedure code. Include all characters,\n(example: B245ZZ3). Required only if populated on\ninstitutional claims.",
+            "1.2%"
+          ],
+          [
+            "MC058K",
+            "Inpatient procedure\ncode 11",
+            "Text",
+            "8",
+            "Situational",
+            "ICD-10 procedure code. Include all characters,\n(example: B245ZZ3). Required only if populated on\ninstitutional claims.",
+            "1.2%"
+          ],
+          [
+            "MC058L",
+            "Inpatient procedure\ncode 12",
+            "Text",
+            "8",
+            "Situational",
+            "ICD-10 procedure code. Include all characters,\n(example: B245ZZ3). Required only if populated on\ninstitutional claims.",
+            "1.2%"
+          ],
+          [
+            "MC058M",
+            "Inpatient procedure\ncode 13",
+            "Text",
+            "8",
+            "Situational",
+            "ICD-10 procedure code. Include all characters,\n(example: B245ZZ3). Required only if populated on\ninstitutional claims.",
+            "1.2%"
+          ],
+          [
+            "MC059",
+            "Date of service –\nFrom",
+            "Date",
+            "8",
+            "Yes",
+            "CCYYMMDD (example: 20090603)",
+            "0.0%"
+          ],
+          [
+            "MC060",
+            "Date of service -\nThru",
+            "Date",
+            "8",
+            "Yes",
+            "CCYYMMDD (example: 20090603)",
+            "0.0%"
+          ],
+          [
+            "MC061",
+            "Quantity",
+            "Numeric",
+            "11",
+            "Yes",
+            "Count of units sent on claim line",
+            "0.0%"
+          ]
+        ]
+      },
+      "footer_context": []
+    },
+    {
+      "element_id": "context_group_9",
+      "type": "schema_cluster",
+      "pages_spanned": [
+        14,
+        14,
+        14
+      ],
+      "introductory_context": [],
+      "table": {
+        "headers": [
+          "Data"
+        ],
+        "matrix": [
+          [
+            "element"
+          ],
+          [
+            "Max."
+          ],
+          [
+            "length"
+          ],
+          [
+            "Error"
+          ],
+          [
+            "threshold"
+          ]
+        ]
+      },
+      "footer_context": []
+    },
+    {
+      "element_id": "context_group_10",
+      "type": "schema_cluster",
+      "pages_spanned": [
+        15,
+        16,
+        17
+      ],
+      "introductory_context": [],
+      "table": {
+        "headers": [
+          "",
+          "Data\nelement",
+          "Name",
+          "Type",
+          "",
+          "Max.\nlength",
+          "Required?",
+          "Description/valid values",
+          "",
+          "Error\nthreshold"
+        ],
+        "matrix": [
+          [
+            "MC062",
+            "",
+            "Charges",
+            "Numeric",
+            "12",
+            "",
+            "Yes",
+            "Two explicit decimal places. Enter 0 if amount equals\nzero. Leave blank if missing. Example: 15102.00",
+            "0.0%",
+            ""
+          ],
+          [
+            "MC062A",
+            "",
+            "Allowed amount",
+            "Numeric",
+            "12",
+            "",
+            "Yes",
+            "Two explicit decimal places. Enter 0 if amount equals\nzero. Leave blank if missing. Example: 15102.00",
+            "0.0%",
+            ""
+          ],
+          [
+            "MC063",
+            "",
+            "Payment",
+            "Numeric",
+            "12",
+            "",
+            "Yes",
+            "Two explicit decimal places. Enter 0 if amount equals\nzero. Leave blank if missing. Example: 15102.00",
+            "0.0%",
+            ""
+          ],
+          [
+            "MC064",
+            "",
+            "Prepaid amount",
+            "Numeric",
+            "12",
+            "",
+            "Yes",
+            "Two explicit decimal places. Enter 0 if amount equals\nzero. Leave blank if missing. Example: 15102.00",
+            "0.0%",
+            ""
+          ],
+          [
+            "MC065",
+            "",
+            "Co-payment\napplied",
+            "Numeric",
+            "12",
+            "",
+            "Yes",
+            "Two explicit decimal places. Enter 0 if amount equals\nzero. Leave blank if missing. Example: 15102.00",
+            "0.0%",
+            ""
+          ],
+          [
+            "MC066",
+            "",
+            "Co-insurance\napplied",
+            "Numeric",
+            "12",
+            "",
+            "Yes",
+            "Two explicit decimal places. Enter 0 if amount equals\nzero. Leave blank if missing. Example: 15102.00",
+            "0.0%",
+            ""
+          ],
+          [
+            "MC067",
+            "",
+            "Deductible applied",
+            "Numeric",
+            "12",
+            "",
+            "Yes",
+            "Two explicit decimal places. Enter 0 if amount equals\nzero. Leave blank if missing. Example: 15102.00",
+            "0.0%",
+            ""
+          ],
+          [
+            "MC067A",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "Do not populate; blank/null required",
+            "0.0%\nstarting\n2024",
+            ""
+          ],
+          [
+            "MC070",
+            "",
+            "Discharge date",
+            "Date",
+            "8",
+            "",
+            "Situational",
+            "Required only for institutional claims. Use 99991231 if\npatient has not discharged. CCYYMMDD (example:\n20090605). Required only for institutional claims.",
+            "1.2%",
+            ""
+          ],
+          [
+            "MC076",
+            "",
+            "Billing provider ID",
+            "Text",
+            "30",
+            "",
+            "Yes",
+            "Identifier for the billing provider as assigned by the\nreporting entity.",
+            "1.2%",
+            ""
+          ],
+          [
+            "QC05",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "Do not populate; blank/null required",
+            "0.0%",
+            ""
+          ],
+          [
+            "QC06",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "Do not populate; blank/null required",
+            "0.0%",
+            ""
+          ],
+          [
+            "QC22",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "Do not populate; blank/null required",
+            "0.0%",
+            ""
+          ],
+          [
+            "QC23",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "Do not populate; blank/null required",
+            "0.0%",
+            ""
+          ],
+          [
+            "QC37",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "Do not populate; blank/null required",
+            "0.0%",
+            ""
+          ],
+          [
+            "QC38",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "Do not populate; blank/null required",
+            "0.0%",
+            ""
+          ],
+          [
+            "QC39",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "Do not populate; blank/null required",
+            "0.0%",
+            ""
+          ],
+          [
+            "OHLC1",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "Do not populate; blank/null required",
+            "0.0%",
+            ""
+          ],
+          [
+            "OHLC2",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "Do not populate; blank/null required",
+            "0.0%",
+            ""
+          ],
+          [
+            "MC008",
+            "",
+            "Plan specific\ncontract number",
+            "Text",
+            "30",
+            "",
+            "Yes",
+            "Plan specific contract number (aka group number)",
+            "0.0%",
+            ""
+          ],
+          [
+            "MC201",
+            "",
+            "ICD version code",
+            "Text",
+            "2",
+            "",
+            "Yes",
+            "Specifies the claim’s ICD version. Valid values: 9\n(ICD-9) or 10 (ICD-10)",
+            "0.0%",
+            ""
+          ],
+          [
+            "MC202",
+            "",
+            "Network",
+            "Text",
+            "1",
+            "",
+            "Yes",
+            "See lookup table MC202",
+            "0.0%",
+            ""
+          ],
+          [
+            "MC203",
+            "",
+            "Admission Type",
+            "Text",
+            "1",
+            "",
+            "Situational",
+            "Required for inpatient claims. Populate this field only\nif claim is inpatient. Valid values: 1 (Emergency), 2\n(Urgent), 3 (Elective), 4 (Newborn), 5 (Trauma\nCenter), 9 (Information Not Available)",
+            "1.2%",
+            ""
+          ],
+          [
+            "MC204",
+            "",
+            "Admission Source",
+            "Text",
+            "1",
+            "",
+            "Situational",
+            "Required for inpatient claims. Populate this field only\nif claim is inpatient. See lookup table MC204",
+            "1.2%",
+            ""
+          ],
+          [
+            "MC205",
+            "",
+            "Admitting Diagnosis",
+            "Text",
+            "8",
+            "",
+            "Situational",
+            "Required for inpatient claims. ICD-10 diagnosis code\nfor dates of service beginning 10/01/2015. Include all\ncharacters (example: E10.359), ICD-9 diagnosis code\nfrom dates of service before 10/01/2015. If ICD-9\ninclude all digits and exclude decimal point (example:\n01220). Required only for inpatient claims.",
+            "1.2%",
+            ""
+          ],
+          [
+            "MC206",
+            "",
+            "Pay to Patient Flag",
+            "Text",
+            "1",
+            "",
+            "Yes",
+            "Valid values: Y (patient was directly reimbursed), N\n(patient was not directly reimbursed). If unknown,\ndefault to N.",
+            "0.0%",
+            ""
+          ],
+          [
+            "MC207",
+            "",
+            "Payment type",
+            "Text",
+            "2",
+            "",
+            "Yes",
+            "Indicates the payment methodology. Valid codes are:\n01=Capitation; 02=Fee for Service; 07=Other See\nlookup table MC207 for definitions.",
+            "1.2%",
+            ""
+          ],
+          [
+            "MC208",
+            "",
+            "NDC",
+            "Text",
+            "11",
+            "",
+            "Situational",
+            "Required if MC055, MC058 or MC058A-MC058M\nstarts with ‘J’; accepted for any procedure including\ndrugs; follow instructions in Appendix C, PC026",
+            "N/A",
+            ""
+          ],
+          [
+            "MC209",
+            "",
+            "Flagged as SUD",
+            "Text",
+            "1",
+            "",
+            "No",
+            "Optional for reporters who receive claims flagged as\nsubstance use disorder (SUD) from billing provider or\nflag internally 1 = Yes 0 = No Blanks accepted",
+            "N/A",
+            ""
+          ],
+          [
+            "MC210",
+            "",
+            "Empty field",
+            "",
+            "",
+            "",
+            "",
+            "For future implementation",
+            "N/A",
+            ""
+          ]
+        ]
+      },
+      "footer_context": []
+    },
+    {
+      "element_id": "context_group_11",
+      "type": "schema_cluster",
+      "pages_spanned": [
+        18
+      ],
+      "introductory_context": [
+        "<payer abbreviation>_<submitter abbreviation>_medical_<quarter>_<file created date_timestamp>.dat",
+        "Example: OMIP_OMIP_medical_2015Q2_20150521_010101.dat",
+        "Lookup Table MC023: Discharge status",
+        "This field contains the status for the patient discharged from the hospital."
+      ],
+      "table": {
+        "headers": [
+          "Code",
+          "Value"
+        ],
+        "matrix": [
+          [
+            "01",
+            "Discharged to home or self-care"
+          ],
+          [
+            "02",
+            "Discharged/transferred to another short-term general hospital for inpatient care"
+          ],
+          [
+            "03",
+            "Discharged/transferred to skilled nursing facility (SNF)"
+          ],
+          [
+            "04",
+            "Discharged/transferred to nursing facility (NF)"
+          ],
+          [
+            "05",
+            "Discharged/transferred to a designated cancer center or children’s hospital"
+          ],
+          [
+            "06",
+            "Discharged/transferred to home under care of organized home health service\norganization"
+          ],
+          [
+            "07",
+            "Left against medical advice or discontinued care"
+          ],
+          [
+            "08",
+            "Discharged/transferred to home under care of a Home IV provider"
+          ],
+          [
+            "09",
+            "Admitted as an inpatient to the hospital"
+          ],
+          [
+            "20",
+            "Expired"
+          ],
+          [
+            "21",
+            "Discharged/transferred to court/law enforcement"
+          ],
+          [
+            "30",
+            "Still patient or expected to return for outpatient services"
+          ],
+          [
+            "40",
+            "Expired at home"
+          ],
+          [
+            "41",
+            "Expired in a medical facility"
+          ],
+          [
+            "42",
+            "Expired place unknown"
+          ],
+          [
+            "43",
+            "Discharged/transferred to a Federal hospital"
+          ],
+          [
+            "50",
+            "Hospice – home"
+          ],
+          [
+            "51",
+            "Hospice – medical facility"
+          ],
+          [
+            "61",
+            "Discharged/transferred within this institution to a hospital-based Medicare-approved\nswing bed"
+          ],
+          [
+            "62",
+            "Discharged/transferred to an inpatient rehabilitation facility including distinct parts of\na hospital"
+          ],
+          [
+            "63",
+            "Discharged/transferred to a long-term care hospital"
+          ],
+          [
+            "64",
+            "Discharged/transferred to a nursing facility certified under Medicaid but not certified\nunder Medicare"
+          ],
+          [
+            "65",
+            "Discharged/transferred to a psychiatric hospital or psychiatric distinct part unit of a\nhospital"
+          ],
+          [
+            "66",
+            "Discharged/transferred to a critical access hospital (CAH)"
+          ],
+          [
+            "70",
+            "Discharged/transferred to another type of health care institution not defined\nelsewhere in this code list"
+          ]
+        ]
+      },
+      "footer_context": [
+        "Lookup Table MC036: Type of Service",
+        "This field is required for institutional claims and must not be populated for professional claims. The values of the second digit are situational depending on the value of the first digit."
+      ]
+    },
+    {
+      "element_id": "context_group_12",
+      "type": "schema_cluster",
+      "pages_spanned": [
+        19
+      ],
+      "introductory_context": [
+        "First digit: type of facility"
+      ],
+      "table": {
+        "headers": [
+          "Code",
+          "Value"
+        ],
+        "matrix": [
+          [
+            "1",
+            "Hospital"
+          ],
+          [
+            "2",
+            "Skilled Nursing"
+          ],
+          [
+            "3",
+            "Home Health"
+          ],
+          [
+            "4",
+            "Christian Science Hospital"
+          ],
+          [
+            "5",
+            "Christian Science Extended Care"
+          ],
+          [
+            "6",
+            "Intermediate Care"
+          ],
+          [
+            "7",
+            "Clinic"
+          ],
+          [
+            "8",
+            "Special Facility"
+          ]
+        ]
+      },
+      "footer_context": []
+    },
+    {
+      "element_id": "context_group_13",
+      "type": "schema_cluster",
+      "pages_spanned": [
+        19
+      ],
+      "introductory_context": [
+        "Second Digit if First Digit = 1 – 6"
+      ],
+      "table": {
+        "headers": [
+          "Code",
+          "Value"
+        ],
+        "matrix": [
+          [
+            "1",
+            "Inpatient (including Medicare Part A)"
+          ],
+          [
+            "2",
+            "Inpatient (Medicare Part B only)"
+          ],
+          [
+            "3",
+            "Outpatient"
+          ],
+          [
+            "4",
+            "Other (for hospital referenced diagnostic services or home health not under a plan of\ntreatment)"
+          ],
+          [
+            "5",
+            "Nursing Facility Level I"
+          ],
+          [
+            "6",
+            "Nursing Facility Level II"
+          ],
+          [
+            "7",
+            "Intermediate Care – Level III Nursing Facility"
+          ],
+          [
+            "8",
+            "Swing Beds"
+          ]
+        ]
+      },
+      "footer_context": []
+    },
+    {
+      "element_id": "context_group_14",
+      "type": "schema_cluster",
+      "pages_spanned": [
+        19
+      ],
+      "introductory_context": [
+        "Second Digit if First Digit = 7"
+      ],
+      "table": {
+        "headers": [
+          "Code",
+          "Value"
+        ],
+        "matrix": [
+          [
+            "1",
+            "Rural Health"
+          ],
+          [
+            "2",
+            "Hospital Based or Independent Renal Dialysis Center"
+          ],
+          [
+            "3",
+            "Free Standing Outpatient Rehabilitation Facility (ORF)"
+          ],
+          [
+            "5",
+            "Comprehensive Outpatient Rehabilitation Facility (CORF)"
+          ],
+          [
+            "6",
+            "Nursing Facility Level II"
+          ],
+          [
+            "7",
+            "Community Mental Health Center"
+          ],
+          [
+            "9",
+            "Other"
+          ]
+        ]
+      },
+      "footer_context": []
+    },
+    {
+      "element_id": "context_group_15",
+      "type": "schema_cluster",
+      "pages_spanned": [
+        20
+      ],
+      "introductory_context": [
+        "Second Digit if First Digit = 8"
+      ],
+      "table": {
+        "headers": [
+          "Code",
+          "Value"
+        ],
+        "matrix": [
+          [
+            "1",
+            "Hospice (Non-Hospital Based)"
+          ],
+          [
+            "2",
+            "Hospice (Hospital-Based)"
+          ],
+          [
+            "3",
+            "Ambulatory Surgical Center"
+          ],
+          [
+            "4",
+            "Free standing Birthing Center"
+          ],
+          [
+            "5",
+            "Critical Access Hospital"
+          ],
+          [
+            "6",
+            "Residential Facility"
+          ],
+          [
+            "9",
+            "Other"
+          ]
+        ]
+      },
+      "footer_context": []
+    },
+    {
+      "element_id": "context_group_16",
+      "type": "schema_cluster",
+      "pages_spanned": [
+        20
+      ],
+      "introductory_context": [
+        "Third Digit: claim frequency"
+      ],
+      "table": {
+        "headers": [
+          "Code",
+          "Value"
+        ],
+        "matrix": [
+          [
+            "1",
+            "Admit Through Discharge"
+          ],
+          [
+            "2",
+            "Interim – First Claim"
+          ],
+          [
+            "3",
+            "Interim – Continuing Claims"
+          ],
+          [
+            "4",
+            "Interim – Last Claim"
+          ],
+          [
+            "5",
+            "Late Charge Only"
+          ],
+          [
+            "7",
+            "Replacement of Prior Claim"
+          ],
+          [
+            "8",
+            "Void/Cancel of a Prior Claim"
+          ],
+          [
+            "9",
+            "Final Claim for a Home Health Encounter"
+          ]
+        ]
+      },
+      "footer_context": [
+        "Lookup Table MC037: Place of Service",
+        "For professional claims, this field records the type of facility where the service was performed. This field should not be populated for institutional claims. Resource table at https://www.cms.gov/Medicare/Coding/place-of-service-codes/Place_of_Service_Code_Set",
+        "Lookup Table MC041P: POA flag",
+        "This field contains the inpatient present on admission (POA) flag as reported by the provider. Do not populate if not reported by the provider."
+      ]
+    },
+    {
+      "element_id": "context_group_17",
+      "type": "schema_cluster",
+      "pages_spanned": [
+        21
+      ],
+      "introductory_context": [
+        "For professional claims, this field records the type of facility where the service was performed. This field should not be populated for institutional claims. Resource table at https://www.cms.gov/Medicare/Coding/place-of-service-codes/Place_of_Service_Code_Set",
+        "Lookup Table MC041P: POA flag",
+        "This field contains the inpatient present on admission (POA) flag as reported by the provider. Do not populate if not reported by the provider."
+      ],
+      "table": {
+        "headers": [
+          "Code",
+          "Value"
+        ],
+        "matrix": [
+          [
+            "Y",
+            "Yes"
+          ],
+          [
+            "N",
+            "No"
+          ],
+          [
+            "W",
+            "Clinically undetermined"
+          ],
+          [
+            "U",
+            "Information not in record"
+          ],
+          [
+            "1",
+            "Diagnosis exempt from POA reporting"
+          ]
+        ]
+      },
+      "footer_context": [
+        "Lookup Table MC202: Network",
+        "This field contains a single digit indicating whether the provider was paid under a network contract."
+      ]
+    },
+    {
+      "element_id": "context_group_18",
+      "type": "schema_cluster",
+      "pages_spanned": [
+        21
+      ],
+      "introductory_context": [
+        "This field contains a single digit indicating whether the provider was paid under a network contract."
+      ],
+      "table": {
+        "headers": [
+          "Code",
+          "Value"
+        ],
+        "matrix": [
+          [
+            "1",
+            "In-network: The plan has a direct contract with the provider that made the claim."
+          ],
+          [
+            "2",
+            "National network: The plan does not have a direct contract with the provider that\nmade the claim but paid a contracted rate through participation in a national network\nor reciprocal agreement with a plan operating in another state."
+          ],
+          [
+            "3",
+            "Out-of-network: The plan did not pay the provider a contracted rate."
+          ]
+        ]
+      },
+      "footer_context": [
+        "Lookup Table MC204: Admission Source",
+        "This field contains a single character indicating source of referral for an inpatient admission. Populate this field only for institutional claims. Do not populate this field for professional claims. Use codes on the next page if MC203=4."
+      ]
+    },
+    {
+      "element_id": "context_group_19",
+      "type": "schema_cluster",
+      "pages_spanned": [
+        22,
+        23
+      ],
+      "introductory_context": [
+        "This field contains a single character indicating source of referral for an inpatient admission. Populate this field only for institutional claims. Do not populate this field for professional claims. Use codes on the next page if MC203=4."
+      ],
+      "table": {
+        "headers": [
+          "Code",
+          "Value if MC203 <> 4"
+        ],
+        "matrix": [
+          [
+            "0",
+            "ANOMALY: invalid value, if present, translate to ‘9’"
+          ],
+          [
+            "1",
+            "Non-Health Care Facility Point of Origin (Physician Referral): The patient was admitted to\nthis facility upon an order of a physician."
+          ],
+          [
+            "2",
+            "Clinic referral: The patient was admitted upon the recommendation of this facility’s clinic\nphysician."
+          ],
+          [
+            "3",
+            "HMO referral: Reserved for National Assignment. Prior to 3/08, HMO referral: The patient\nwas admitted upon the recommendation of a health maintenance organization (HMO)\nphysician."
+          ],
+          [
+            "4",
+            "Transfer from a hospital (different facility): The patient was admitted to this facility as a\nhospital transfer from an acute care facility where he or she was an inpatient."
+          ],
+          [
+            "5",
+            "Transfer from a skilled nursing facility (SNF) or Intermediate Care Facility (ICF): The\npatient was admitted to this facility as a transfer from a SNF or ICF where he or she was a\nresident."
+          ],
+          [
+            "6",
+            "Transfer from another health care facility: The patient was admitted to this facility as a\ntransfer from another type of health care facility not defined elsewhere in this code list\nwhere he or she was an inpatient."
+          ],
+          [
+            "7",
+            "Emergency room: The patient was admitted to this facility after receiving services in this\nfacility’s emergency room."
+          ],
+          [
+            "8",
+            "Court/law enforcement: The patient was admitted upon the direction of a court of law or\nupon the request of a law enforcement agency’s representative."
+          ],
+          [
+            "9",
+            "Information not available: The means by which the patient was admitted is not known."
+          ],
+          [
+            "A",
+            "Reserved for National Assignment. (eff. 3/08) Prior to 3/08 defined as: Transfer from a\nCritical Access Hospital: patient was admitted/referred to this facility as a transfer from a\nCritical Access Hospital."
+          ],
+          [
+            "B",
+            "Transfer from Another Home Health Agency: The patient was admitted to this home health\nagency as a transfer from another home health agency. (Discontinued July 1, 2010 – See\nCondition Code 47)"
+          ],
+          [
+            "C",
+            "Readmission to Same Home Health Agency: The patient was readmitted to this home\nhealth agency within the same home health episode period. (Discontinued July 1, 2010)"
+          ],
+          [
+            "D",
+            "Transfer from hospital inpatient in the same facility resulting in a separate claim to the\npayer. The patient was admitted to this facility as a transfer from hospital inpatient within\nthe facility resulting in a separate claim to the payer."
+          ],
+          [
+            "E",
+            "Transfer from Ambulatory Surgical Center"
+          ],
+          [
+            "F",
+            "Transfer from hospice and is under a hospice plan of care or enrolled in hospice program"
+          ],
+          [
+            "Code",
+            "Value if MC203 = 4"
+          ],
+          [
+            "1",
+            "Normal delivery – A baby delivered without complications. Invalid for discharges after\n12/31/2011."
+          ],
+          [
+            "2",
+            "Premature delivery – A baby delivered with time and/or weight factors qualifying it for\npremature status. Invalid for discharges after 12/31/2011."
+          ],
+          [
+            "3",
+            "Sick baby – A baby delivered with medical complications, other than those relating to\npremature status. Invalid for discharges after 12/31/2011."
+          ],
+          [
+            "4",
+            "Extramural birth – A baby delivered in a non-sterile environment. Invalid for discharges\nafter 12/31/2011."
+          ],
+          [
+            "5",
+            "Born inside this hospital."
+          ],
+          [
+            "6",
+            "Born outside this hospital."
+          ],
+          [
+            "7-8",
+            "Reserved for national assignment."
+          ],
+          [
+            "9",
+            "Information not available."
+          ]
+        ]
+      },
+      "footer_context": []
+    },
+    {
+      "element_id": "context_group_20",
+      "type": "schema_cluster",
+      "pages_spanned": [
+        23
+      ],
+      "introductory_context": [
+        "Lookup Table MC207 – Payment type"
+      ],
+      "table": {
+        "headers": [
+          "Code",
+          "Value"
+        ],
+        "matrix": [
+          [
+            "01",
+            "Capitation is a healthcare payment in which a provider or facility is paid a fixed amount\nper patient for a list of services per unit of time regardless of services provided within that\ntime"
+          ],
+          [
+            "02",
+            "Fee for service is payment based on the service received by the member. Payment may\nbe the full billed amount or less."
+          ],
+          [
+            "07",
+            "Other will include payment types not known to be capitation or fee for service"
+          ]
+        ]
+      },
+      "footer_context": []
+    },
+    {
+      "element_id": "context_group_21",
+      "type": "schema_cluster",
+      "pages_spanned": [
+        24,
+        25,
+        26
+      ],
+      "introductory_context": [
+        "Appendix C: Pharmacy Claims file layout and dictionary",
+        "Note: This layout intends to maintain consistency with Version 1.0 of the NCPDP Uniform Healthcare Payer Data Implementation Guide."
+      ],
+      "table": {
+        "headers": [
+          "",
+          "Data\nelement",
+          "Name",
+          "",
+          "Max.\nlength",
+          "Type",
+          "Required?",
+          "",
+          "NCPDP\nField",
+          "",
+          "NCPDP\nSource",
+          "Description/valid values",
+          "",
+          "Error\nthreshold"
+        ],
+        "matrix": [
+          [
+            "PC001",
+            "",
+            "Payer type",
+            "1",
+            "",
+            "Text",
+            "Yes",
+            "N/A",
+            "",
+            "N/A",
+            "",
+            "See lookup table ME001 (in Eligibility\nfile)",
+            "0.0%",
+            ""
+          ],
+          [
+            "PC008",
+            "",
+            "Plan-specific\ncontract number",
+            "30",
+            "",
+            "Text",
+            "Yes",
+            "246",
+            "",
+            "P",
+            "",
+            "Plan-specific contract number (aka\ngroup number)",
+            "1.2%",
+            ""
+          ],
+          [
+            "PC010",
+            "",
+            "Member ID",
+            "30",
+            "",
+            "Text",
+            "Yes",
+            "332-CY",
+            "",
+            "P",
+            "",
+            "Unique identifier for member; this\nidentifier value should be consistent\nbetween files and over time",
+            "0.0%",
+            ""
+          ],
+          [
+            "PC003",
+            "",
+            "Insurance type/\nproduct code",
+            "4",
+            "",
+            "Text",
+            "Yes",
+            "New",
+            "",
+            "P",
+            "",
+            "See lookup table ME003 (in Eligibility\nFile)",
+            "1.2%",
+            ""
+          ],
+          [
+            "PC021",
+            "",
+            "Pharmacy NPI",
+            "15",
+            "",
+            "Text",
+            "Yes",
+            "201-B1",
+            "",
+            "C/P",
+            "",
+            "The pharmacy’s National Provider\nIdentifier (NPI)",
+            "1.2%",
+            ""
+          ],
+          [
+            "PC021A",
+            "",
+            "Pharmacy\nalternate\nidentifier",
+            "15",
+            "",
+            "Text",
+            "Situational",
+            "201-B1",
+            "",
+            "P",
+            "",
+            "The pharmacy’s alternate identifier as\nassigned by the payer; required if NPI\nis not available",
+            "N/A",
+            ""
+          ],
+          [
+            "PC020",
+            "",
+            "Pharmacy Name",
+            "35",
+            "",
+            "Text",
+            "Yes",
+            "833-5P",
+            "",
+            "P",
+            "",
+            "",
+            "1.2%",
+            ""
+          ],
+          [
+            "PC022",
+            "",
+            "Pharmacy city",
+            "30",
+            "",
+            "Text",
+            "Yes",
+            "728",
+            "",
+            "P",
+            "",
+            "",
+            "1.2%",
+            ""
+          ],
+          [
+            "PC023",
+            "",
+            "Pharmacy state",
+            "2",
+            "",
+            "Text",
+            "Yes",
+            "729",
+            "",
+            "P",
+            "",
+            "",
+            "1.2%",
+            ""
+          ],
+          [
+            "PC024",
+            "",
+            "Pharmacy ZIP",
+            "15",
+            "",
+            "Text",
+            "Yes",
+            "730",
+            "",
+            "P",
+            "",
+            "",
+            "1.2%",
+            ""
+          ],
+          [
+            "PC048",
+            "",
+            "Prescribing\nprovider NPI",
+            "15",
+            "",
+            "Text",
+            "Yes",
+            "411-DB",
+            "",
+            "C",
+            "",
+            "Identifier for provider who prescribed\nthe medication as assigned by the\nreporting entity",
+            "1.2%",
+            ""
+          ],
+          [
+            "PC047",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "Do not populate; null/blank required",
+            "0.0%",
+            ""
+          ],
+          [
+            "PC025",
+            "",
+            "Claim status",
+            "3",
+            "",
+            "Text",
+            "Yes",
+            "399",
+            "",
+            "P",
+            "",
+            "Was claim paid, denied, CCO, or\nencounter only? Valid values: P (paid),\nD (denied), C (CCO encounter), E\n(other managed care encounter)",
+            "0.0%",
+            ""
+          ],
+          [
+            "PC026",
+            "",
+            "NDC",
+            "11",
+            "",
+            "Text",
+            "Yes",
+            "407-D7",
+            "",
+            "C",
+            "",
+            "National Drug Code (NDC)",
+            "1.2%",
+            ""
+          ],
+          [
+            "PC032",
+            "",
+            "Date filled",
+            "8",
+            "",
+            "Date",
+            "Yes",
+            "401-D1",
+            "",
+            "C",
+            "",
+            "Date the prescription was filled.\nCCYYMMDD (example: 20090624)",
+            "0.0%",
+            ""
+          ],
+          [
+            "PC017",
+            "",
+            "Payment date",
+            "8",
+            "",
+            "Date",
+            "Situational",
+            "216",
+            "",
+            "P",
+            "",
+            "CCYYMMDD (example: 20090624).\nBlanks allowed for denied claims only.",
+            "0.0%",
+            ""
+          ],
+          [
+            "PC033",
+            "",
+            "Quantity\ndispensed",
+            "10",
+            "",
+            "Numeric",
+            "Yes",
+            "442-E7",
+            "",
+            "C",
+            "",
+            "",
+            "1.2%",
+            ""
+          ],
+          [
+            "PC028A",
+            "",
+            "Alternate refill\nnumber",
+            "2",
+            "",
+            "Numeric",
+            "Situational",
+            "403-D3",
+            "",
+            "C",
+            "",
+            "Required if PC028 (calculated refill\nnumber) is not available",
+            "N/A",
+            ""
+          ],
+          [
+            "PC034",
+            "",
+            "Days supply",
+            "4",
+            "",
+            "Numeric",
+            "Yes",
+            "405-D5",
+            "",
+            "C",
+            "",
+            "Days supply of the prescription",
+            "1.2%",
+            ""
+          ],
+          [
+            "PC030",
+            "",
+            "Dispense as\nwritten code",
+            "1",
+            "",
+            "Text",
+            "Yes",
+            "408-D8",
+            "",
+            "C",
+            "",
+            "See look-up table PC030",
+            "1.2%",
+            ""
+          ],
+          [
+            "PC028",
+            "",
+            "Calculated refill\nnumber",
+            "2",
+            "",
+            "Numeric",
+            "Yes",
+            "254",
+            "",
+            "P",
+            "",
+            "Processor’s calculated refill number. If\nthe processor is not able to calculate,\nthe alternate refill number (PC028A) is\nto be used.",
+            "1.2%",
+            ""
+          ],
+          [
+            "PC031",
+            "",
+            "Compound drug\nindicator",
+            "1",
+            "",
+            "Numeric",
+            "Yes",
+            "406-D6",
+            "",
+            "C",
+            "",
+            "Indicates if this is a compound drug.\nValid values: 1 (no), 2 (yes)",
+            "1.2%",
+            ""
+          ],
+          [
+            "PC004",
+            "",
+            "Claim ID",
+            "30",
+            "",
+            "Text",
+            "Yes",
+            "993-A7",
+            "",
+            "P",
+            "",
+            "Payer’s unique claim control number",
+            "0.0%",
+            ""
+          ],
+          [
+            "PC036",
+            "",
+            "Payment",
+            "12",
+            "",
+            "Numeric",
+            "Yes",
+            "281",
+            "",
+            "P",
+            "",
+            "Two explicit decimal places. Enter 0 if\namount equals zero. Leave blank if\nmissing. Example: 15102.00",
+            "0.0%",
+            ""
+          ],
+          [
+            "PC035",
+            "",
+            "Charges",
+            "12",
+            "",
+            "Numeric",
+            "Yes",
+            "430-DU",
+            "",
+            "P",
+            "",
+            "Two explicit decimal places. Enter 0 if\namount equals zero. Leave blank if\nmissing. Example: 15102.00",
+            "0.0%",
+            ""
+          ],
+          [
+            "PC037",
+            "",
+            "Ingredient\ncost/list price",
+            "12",
+            "",
+            "Numeric",
+            "Yes",
+            "506-F6",
+            "",
+            "C",
+            "",
+            "Two explicit decimal places. Enter 0 if\namount equals zero. Leave blank if\nmissing. Example: 15102.00",
+            "0.0%",
+            ""
+          ],
+          [
+            "PC039",
+            "",
+            "Dispensing fee\npaid",
+            "12",
+            "",
+            "Numeric",
+            "Yes",
+            "506-F7",
+            "",
+            "C",
+            "",
+            "Two explicit decimal places. Enter 0 if\namount equals zero. Leave blank if\nmissing. Example: 15102.00",
+            "0.0%",
+            ""
+          ],
+          [
+            "PC040",
+            "",
+            "Co-pay applied",
+            "12",
+            "",
+            "Numeric",
+            "Yes",
+            "518-F1",
+            "",
+            "C",
+            "",
+            "Two explicit decimal places. Enter 0 if\namount equals zero. Leave blank if\nmissing. Example: 15102.00",
+            "0.0%",
+            ""
+          ],
+          [
+            "PC041",
+            "",
+            "Coinsurance\napplied",
+            "12",
+            "",
+            "Numeric",
+            "Yes",
+            "572-4U",
+            "",
+            "C",
+            "",
+            "Two explicit decimal places. Enter 0 if\namount equals zero. Leave blank if\nmissing. Example: 15102.00",
+            "0.0%",
+            ""
+          ],
+          [
+            "PC042",
+            "",
+            "Deductible\napplied",
+            "12",
+            "",
+            "Numeric",
+            "Yes",
+            "517-FH",
+            "",
+            "C",
+            "",
+            "Two explicit decimal places. Enter 0 if\namount equals zero. Leave blank if\nmissing. Example: 15102.00",
+            "0.0%",
+            ""
+          ],
+          [
+            "PC043",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "Do not populate; leave blank/null",
+            "0.0%\nstarting\n2024",
+            ""
+          ],
+          [
+            "PC201",
+            "",
+            "COB status",
+            "1",
+            "",
+            "Text",
+            "Yes",
+            "337-4C",
+            "",
+            "",
+            "",
+            "Coordination of benefits (COB) claim;\ncount of other payment occurrences\nValid values: 0, 1, 2, 3",
+            "N/A",
+            ""
+          ],
+          [
+            "PC202",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "For future implementation",
+            "N/A",
+            ""
+          ],
+          [
+            "PC203",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "For future implementation",
+            "N/A",
+            ""
+          ],
+          [
+            "PC204",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "For future implementation",
+            "N/A",
+            ""
+          ],
+          [
+            "PC205",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "For future implementation",
+            "N/A",
+            ""
+          ],
+          [
+            "PC206",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "For future implementation",
+            "N/A",
+            ""
+          ],
+          [
+            "PC207",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "For future implementation",
+            "N/A",
+            ""
+          ],
+          [
+            "PC208",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "For future implementation",
+            "N/A",
+            ""
+          ],
+          [
+            "PC209",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "For future implementation",
+            "N/A",
+            ""
+          ],
+          [
+            "PC210",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "For future implementation",
+            "N/A",
+            ""
+          ]
+        ]
+      },
+      "footer_context": []
+    },
+    {
+      "element_id": "context_group_22",
+      "type": "schema_cluster",
+      "pages_spanned": [
+        27
+      ],
+      "introductory_context": [
+        "<payer abbreviation>_<submitter abbreviation>_pharmacy_<quarter>_<file created date_timestamp>.dat",
+        "Example: OMIP_OMIP_pharmacy_2015Q2_20150521_010101.dat",
+        "Look-up Table PC-030: Dispense as Written Code",
+        "This field contains the NCPDP Dispense as Written Code."
+      ],
+      "table": {
+        "headers": [
+          "Code",
+          "Value"
+        ],
+        "matrix": [
+          [
+            "0",
+            "No product selection indicated"
+          ],
+          [
+            "1",
+            "Substitution not allowed by provider"
+          ],
+          [
+            "2",
+            "Substitution allowed – patient requested product dispensed"
+          ],
+          [
+            "3",
+            "Substitution allowed – pharmacist selected product dispensed"
+          ],
+          [
+            "4",
+            "Substitution allowed – generic drug not in stock"
+          ],
+          [
+            "5",
+            "Substitution allowed – brand drug dispensed as generic"
+          ],
+          [
+            "6",
+            "Override"
+          ],
+          [
+            "7",
+            "Substitution not allowed – brand drug mandated by law"
+          ],
+          [
+            "8",
+            "Substitution allowed – generic drug not available in marketplace"
+          ],
+          [
+            "9",
+            "Other"
+          ]
+        ]
+      },
+      "footer_context": []
+    },
+    {
+      "element_id": "context_group_23",
+      "type": "schema_cluster",
+      "pages_spanned": [
+        28,
+        29,
+        30,
+        31,
+        32,
+        33
+      ],
+      "introductory_context": [
+        "Appendix D: Dental Claims file layout and dictionary"
+      ],
+      "table": {
+        "headers": [
+          "",
+          "Data\nelement",
+          "Name",
+          "Type",
+          "",
+          "Max.\nlength",
+          "Required?",
+          "Description/valid values",
+          "",
+          "Error\nthreshold"
+        ],
+        "matrix": [
+          [
+            "DC001",
+            "",
+            "Payer type",
+            "Text",
+            "1",
+            "",
+            "Yes",
+            "See lookup table ME001 (in Eligibility file)",
+            "0.0%",
+            ""
+          ],
+          [
+            "DC003",
+            "",
+            "Insurance Type/\nProduct code",
+            "Text",
+            "4",
+            "",
+            "Yes",
+            "See lookup table ME003 (in Eligibility file)",
+            "0.0%",
+            ""
+          ],
+          [
+            "DC004",
+            "",
+            "Claim ID",
+            "Text",
+            "80",
+            "",
+            "Yes",
+            "Payer’s unique claim identifier (i.e., claim control\nnumber) used to internally track the claim",
+            "0.0%",
+            ""
+          ],
+          [
+            "DC005",
+            "",
+            "Service line counter",
+            "Numeric",
+            "4",
+            "",
+            "Yes",
+            "Increments of 1 for each claim line",
+            "0.0%",
+            ""
+          ],
+          [
+            "DC008",
+            "",
+            "Plan specific contract\nnumber",
+            "Text",
+            "30",
+            "",
+            "Yes",
+            "Plan specific contract number (aka group number)",
+            "0.0%",
+            ""
+          ],
+          [
+            "DC010",
+            "",
+            "Member ID",
+            "Text",
+            "30",
+            "",
+            "Yes",
+            "Plan-specific unique member identifier; this\nidentifier value should be consistent between files\nand over time",
+            "0.0%",
+            ""
+          ],
+          [
+            "DC017",
+            "",
+            "Payment date",
+            "Text",
+            "8",
+            "",
+            "Situational",
+            "CCYYMMDD (example: 20090624). Blanks\nallowed for denied claims only.",
+            "0.0%",
+            ""
+          ],
+          [
+            "DC024",
+            "",
+            "Rendering provider ID",
+            "Text",
+            "30",
+            "",
+            "Yes",
+            "Identifier for the rendering provider as assigned by\nthe reporting entity",
+            "1.2%",
+            ""
+          ],
+          [
+            "DC037",
+            "",
+            "Place of service",
+            "Text",
+            "2",
+            "",
+            "Situational",
+            "See lookup table MC 037. Required only for\nprofessional claims.",
+            "1.2%",
+            ""
+          ],
+          [
+            "DC038",
+            "",
+            "Claim status",
+            "Text",
+            "1",
+            "",
+            "Yes",
+            "Was claim paid, denied, CCO encounter, or MCO\nencounter only? Valid values: P (paid), D (denied),\nC (CCO encounter), E (other managed care\nencounter)",
+            "0.0%",
+            ""
+          ],
+          [
+            "DC038A",
+            "",
+            "Denial reason",
+            "Text",
+            "5",
+            "",
+            "Situational",
+            "Report the Claim Adjustment Reason Code\n(CARC) that defines the reason why the claim was\ndenied. Required when DC038 = D.",
+            "1.2 %",
+            ""
+          ],
+          [
+            "DC039",
+            "",
+            "CDT Code",
+            "Text",
+            "5",
+            "",
+            "Yes",
+            "Report the Common Dental Terminology Code for\nthe dental procedure on the claim. CDT codes are\nmaintained by the American Dental Association.",
+            "0.0%",
+            ""
+          ],
+          [
+            "DC039A",
+            "",
+            "Procedure Modifier – 1",
+            "Text",
+            "2",
+            "",
+            "Situational",
+            "Procedure modifier required when a modifier\nclarifies/improves the reporting accuracy of the\nassociated CDT code. Blanks allowed.",
+            "1.2%",
+            ""
+          ],
+          [
+            "DC039B",
+            "",
+            "Procedure Modifier – 2",
+            "Text",
+            "2",
+            "",
+            "Situational",
+            "Procedure modifier required when a modifier\nclarifies/improves the reporting accuracy of the\nassociated CDT code. Blanks allowed.",
+            "1.2%",
+            ""
+          ],
+          [
+            "DC040",
+            "",
+            "Dental Quadrant",
+            "Text",
+            "2",
+            "",
+            "Situational",
+            "Report the standard quadrant identifier when CDT\ncode indicates procedure on 3 or more consecutive\nteeth. Up to four dental quadrant fields can be\nentered. See lookup table DC040. Blanks allowed.",
+            "0.0%",
+            ""
+          ],
+          [
+            "DC040A",
+            "",
+            "Dental Quadrant - 2",
+            "Text",
+            "2",
+            "",
+            "Situational",
+            "Report the second standard quadrant identifier if\napplicable. See lookup table DC040. Blanks\nallowed.",
+            "1.2%",
+            ""
+          ],
+          [
+            "DC040B",
+            "",
+            "Dental Quadrant - 3",
+            "Text",
+            "2",
+            "",
+            "Situational",
+            "Report the third standard quadrant identifier if\napplicable. See lookup table DC040. Blanks\nallowed",
+            "1.2%",
+            ""
+          ],
+          [
+            "DC040C",
+            "",
+            "Dental Quadrant - 4",
+            "Text",
+            "2",
+            "",
+            "Situational",
+            "Report the fourth standard quadrant identifier if\napplicable. See lookup table DC040. Blanks\nallowed",
+            "1.2%",
+            ""
+          ],
+          [
+            "DC041",
+            "",
+            "Diagnosis",
+            "Text",
+            "8",
+            "",
+            "Situational",
+            "ICD-10 Diagnosis code when applicable. Required\nwhen CDT code is within the ranges of D7000-\nD7999 or D9220-D9221.",
+            "1.2%",
+            ""
+          ],
+          [
+            "DC059",
+            "",
+            "Date of Service - From",
+            "Date",
+            "8",
+            "",
+            "Yes",
+            "CCYYMMDD (example: 20090603)",
+            "0.0%",
+            ""
+          ],
+          [
+            "DC060",
+            "",
+            "Date of Service - Thru",
+            "Date",
+            "8",
+            "",
+            "Yes",
+            "CCYYMMDD (example: 20090603)",
+            "0.0%",
+            ""
+          ],
+          [
+            "DC062",
+            "",
+            "Charges",
+            "Numeric",
+            "12",
+            "",
+            "Yes",
+            "Two explicit decimal places. Enter 0 if amount\nequals zero. Leave blank if missing. Example:\n15102.00",
+            "1.2%",
+            ""
+          ],
+          [
+            "DC062A",
+            "",
+            "Allowed amount",
+            "Numeric",
+            "12",
+            "",
+            "Yes",
+            "Two explicit decimal places. Enter 0 if amount\nequals zero. Leave blank if missing. Example:\n15102.00",
+            "1.2%",
+            ""
+          ],
+          [
+            "DC063",
+            "",
+            "Payment",
+            "Numeric",
+            "12",
+            "",
+            "Yes",
+            "Two explicit decimal places. Enter 0 if amount\nequals zero. Leave blank if missing. Example:\n15102.00",
+            "1.2%",
+            ""
+          ],
+          [
+            "DC064",
+            "",
+            "Prepaid amount",
+            "Numeric",
+            "12",
+            "",
+            "Yes",
+            "Two explicit decimal places. Enter 0 if amount\nequals zero. Leave blank if missing. Example:\n15102.00",
+            "1.2%",
+            ""
+          ],
+          [
+            "DC065",
+            "",
+            "Co-payment applied",
+            "Numeric",
+            "12",
+            "",
+            "Yes",
+            "Two explicit decimal places. Enter 0 if amount\nequals zero. Leave blank if missing. Example:\n15102.00",
+            "1.2%",
+            ""
+          ],
+          [
+            "DC066",
+            "",
+            "Co-insurance applied",
+            "Numeric",
+            "12",
+            "",
+            "Yes",
+            "Two explicit decimal places. Enter 0 if amount\nequals zero. Leave blank if missing. Example:\n15102.00",
+            "1.2%",
+            ""
+          ],
+          [
+            "DC067",
+            "",
+            "Deductible applied",
+            "Numeric",
+            "12",
+            "",
+            "Yes",
+            "Two explicit decimal places. Enter 0 if amount\nequals zero. Leave blank if missing. Example:\n15102.00",
+            "1.2%",
+            ""
+          ],
+          [
+            "DC067A",
+            "",
+            "Discontinued",
+            "",
+            "",
+            "",
+            "",
+            "Do not populate; leave blank/null",
+            "0.0%\nstarting\n2024",
+            ""
+          ],
+          [
+            "DC076",
+            "",
+            "Billing provider ID",
+            "Text",
+            "30",
+            "",
+            "Yes",
+            "Identifier for the billing provider as assigned by the\nreporting entity.",
+            "1.2%",
+            ""
+          ],
+          [
+            "DC202",
+            "",
+            "Network",
+            "Text",
+            "1",
+            "",
+            "Yes",
+            "See lookup table MC202 (in medical claims file)",
+            "0.0%",
+            ""
+          ],
+          [
+            "DC207",
+            "",
+            "Tooth Number/Letter\n(1)",
+            "Text",
+            "2",
+            "",
+            "Situational",
+            "Report the tooth identifier. Required when CDT\ncode is within the range of D2000 – D2999. Up to\nfour tooth number/letter fields can be entered\nthrough DC207, DC209, DC211 and DC213.\nBlanks allowed.",
+            "0.0%",
+            ""
+          ],
+          [
+            "DC208",
+            "",
+            "Tooth 1 - Surface 1",
+            "Numeric",
+            "1",
+            "",
+            "Situational",
+            "Report the tooth surface on which the service was\nperformed. See lookup table DC208. Required\nwhen DC207 is populated and CDT code is within\nthe range of D2000 – D2709. Up to six tooth\nsurface fields can be entered for each tooth\nnumber/letter.",
+            "0.0%",
+            ""
+          ],
+          [
+            "DC208A",
+            "",
+            "Tooth 1 - Surface 2",
+            "Numeric",
+            "1",
+            "",
+            "Situational",
+            "See comment under DC208. Blanks allowed.",
+            "0.0%",
+            ""
+          ],
+          [
+            "DC208B",
+            "",
+            "Tooth 1 - Surface 3",
+            "Numeric",
+            "1",
+            "",
+            "Situational",
+            "See comment under DC208. Blanks allowed.",
+            "0.0%",
+            ""
+          ],
+          [
+            "DC208C",
+            "",
+            "Tooth 1 - Surface 4",
+            "Numeric",
+            "1",
+            "",
+            "Situational",
+            "See comment under DC208. Blanks allowed.",
+            "0.0%",
+            ""
+          ],
+          [
+            "DC208D",
+            "",
+            "Tooth 1 - Surface 5",
+            "Numeric",
+            "1",
+            "",
+            "Situational",
+            "See comment under DC208. Blanks allowed.",
+            "0.0%",
+            ""
+          ],
+          [
+            "DC208E",
+            "",
+            "Tooth 1 - Surface 6",
+            "Numeric",
+            "1",
+            "",
+            "Situational",
+            "See comment under DC208. Blanks allowed.",
+            "0.0%",
+            ""
+          ],
+          [
+            "DC209",
+            "",
+            "Tooth Number/Letter\n(2)",
+            "Text",
+            "2",
+            "",
+            "Situational",
+            "Report the tooth identifier. Required when CDT\ncode is within the range of D2000 – D2999. Up to\nfour tooth number/letter fields can be entered\nthrough DC207, DC209, DC211 and DC213.\nBlanks allowed.",
+            "0.0%",
+            ""
+          ],
+          [
+            "DC210",
+            "",
+            "Tooth 2 - Surface 1",
+            "Numeric",
+            "1",
+            "",
+            "Situational",
+            "Report the tooth surface on which the service was\nperformed. See lookup table DC208. Required\nwhen DC209 is populated and CDT code is within\nthe range of D2000 – D2709. Up to six tooth\nsurface fields can be entered for each tooth\nnumber/letter.",
+            "0.0%",
+            ""
+          ],
+          [
+            "DC210A",
+            "",
+            "Tooth 2 - Surface 2",
+            "Numeric",
+            "1",
+            "",
+            "Situational",
+            "See comment under DC210. Blanks allowed.",
+            "0.0%",
+            ""
+          ],
+          [
+            "DC210B",
+            "",
+            "Tooth 2 - Surface 3",
+            "Numeric",
+            "1",
+            "",
+            "Situational",
+            "See comment under DC210. Blanks allowed.",
+            "0.0%",
+            ""
+          ],
+          [
+            "DC210C",
+            "",
+            "Tooth 2 - Surface 4",
+            "Numeric",
+            "1",
+            "",
+            "Situational",
+            "See comment under DC210. Blanks allowed.",
+            "0.0%",
+            ""
+          ],
+          [
+            "DC210D",
+            "",
+            "Tooth 2 - Surface 5",
+            "Numeric",
+            "1",
+            "",
+            "Situational",
+            "See comment under DC210. Blanks allowed.",
+            "0.0%",
+            ""
+          ],
+          [
+            "DC210E",
+            "",
+            "Tooth 2 - Surface 6",
+            "Numeric",
+            "1",
+            "",
+            "Situational",
+            "See comment under DC210. Blanks allowed.",
+            "0.0%",
+            ""
+          ],
+          [
+            "DC211",
+            "",
+            "Tooth Number/Letter\n(3)",
+            "Text",
+            "2",
+            "",
+            "Situational",
+            "Report the third tooth identifier, if applicable on\nwhich the service was performed. See comment\nunder DC207. Blanks allowed.",
+            "0.0%",
+            ""
+          ],
+          [
+            "DC212",
+            "",
+            "Tooth 3 - Surface 1",
+            "Numeric",
+            "1",
+            "",
+            "Situational",
+            "Report the tooth surface on which the service was\nperformed. See lookup table DC208. Required\nwhen DC211 is populated and CDT code is within\nthe range of D2000 – D2709. Up to six tooth\nsurface fields can be entered for each tooth\nnumber/letter.",
+            "0.0%",
+            ""
+          ],
+          [
+            "DC212A",
+            "",
+            "Tooth 3 - Surface 2",
+            "Numeric",
+            "1",
+            "",
+            "Situational",
+            "See comment under DC212. Blanks allowed.",
+            "0.0%",
+            ""
+          ],
+          [
+            "DC212B",
+            "",
+            "Tooth 3 - Surface 3",
+            "Numeric",
+            "1",
+            "",
+            "Situational",
+            "See comment under DC212. Blanks allowed.",
+            "0.0%",
+            ""
+          ],
+          [
+            "DC212C",
+            "",
+            "Tooth 3 - Surface 4",
+            "Numeric",
+            "1",
+            "",
+            "Situational",
+            "See comment under DC212. Blanks allowed.",
+            "0.0%",
+            ""
+          ],
+          [
+            "DC212D",
+            "",
+            "Tooth 3 - Surface 5",
+            "Numeric",
+            "1",
+            "",
+            "Situational",
+            "See comment under DC212. Blanks allowed.",
+            "0.0%",
+            ""
+          ],
+          [
+            "DC212E",
+            "",
+            "Tooth 3 - Surface 6",
+            "Numeric",
+            "1",
+            "",
+            "Situational",
+            "See comment under DC212. Blanks allowed.",
+            "0.0%",
+            ""
+          ],
+          [
+            "DC213",
+            "",
+            "Tooth Number/Letter\n(4)",
+            "Text",
+            "2",
+            "",
+            "Situational",
+            "Report the fourth tooth identifier, if applicable on\nwhich the service was performed. See comment\nunder DC207. Blanks allowed.",
+            "0.0%",
+            ""
+          ],
+          [
+            "DC214",
+            "",
+            "Tooth 4 - Surface 1",
+            "Numeric",
+            "1",
+            "",
+            "Situational",
+            "Report the tooth surface on which the service was\nperformed. See lookup table DC208. Required\nwhen DC213 is populated and CDT code is within\nthe range of D2000 – D2709. Up to six tooth\nsurface fields can be entered for each tooth\nnumber/letter.",
+            "0.0%",
+            ""
+          ],
+          [
+            "DC214A",
+            "",
+            "Tooth 4 - Surface 2",
+            "Numeric",
+            "1",
+            "",
+            "Situational",
+            "See comment under DC214. Blanks allowed.",
+            "0.0%",
+            ""
+          ],
+          [
+            "DC214B",
+            "",
+            "Tooth 4 - Surface 3",
+            "Numeric",
+            "1",
+            "",
+            "Situational",
+            "See comment under DC214. Blanks allowed.",
+            "0.0%",
+            ""
+          ],
+          [
+            "DC214C",
+            "",
+            "Tooth 4 - Surface 4",
+            "Numeric",
+            "1",
+            "",
+            "Situational",
+            "See comment under DC214. Blanks allowed.",
+            "0.0%",
+            ""
+          ],
+          [
+            "DC214D",
+            "",
+            "Tooth 4 - Surface 5",
+            "Numeric",
+            "1",
+            "",
+            "Situational",
+            "See comment under DC214. Blanks allowed.",
+            "0.0%",
+            ""
+          ],
+          [
+            "DC214E",
+            "",
+            "Tooth 4 - Surface 6",
+            "Numeric",
+            "1",
+            "",
+            "Situational",
+            "See comment under DC214. Blanks allowed.",
+            "0.0%",
+            ""
+          ],
+          [
+            "DC299",
+            "",
+            "CCO Identifier",
+            "Text",
+            "15",
+            "",
+            "Situational",
+            "Populated by Medicaid only. Blank otherwise.",
+            "N/A",
+            ""
+          ],
+          [
+            "DC300",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "For future implementation",
+            "N/A",
+            ""
+          ],
+          [
+            "DC301",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "For future implementation",
+            "N/A",
+            ""
+          ],
+          [
+            "DC302",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "For future implementation",
+            "N/A",
+            ""
+          ],
+          [
+            "DC303",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "For future implementation",
+            "N/A",
+            ""
+          ],
+          [
+            "DC304",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "For future implementation",
+            "N/A",
+            ""
+          ]
+        ]
+      },
+      "footer_context": [
+        "File naming convention is",
+        "<payer abbreviation>_<submitter abbreviation>_dental_dental__<quarter>_<file created date_timestamp>.dat",
+        "Note: There is a double underscore between ‘dental_dental’ and <quarter>. Example: OMIP_OMIP_dental_dental__2015Q2_20150521_010101.dat",
+        "Lookup Table DC040: Dental Quadrant",
+        "This field contains the dental quadrant associated with the dental procedure."
+      ]
+    },
+    {
+      "element_id": "context_group_24",
+      "type": "schema_cluster",
+      "pages_spanned": [
+        34
+      ],
+      "introductory_context": [
+        "<payer abbreviation>_<submitter abbreviation>_dental_dental__<quarter>_<file created date_timestamp>.dat",
+        "Note: There is a double underscore between ‘dental_dental’ and <quarter>. Example: OMIP_OMIP_dental_dental__2015Q2_20150521_010101.dat",
+        "Lookup Table DC040: Dental Quadrant",
+        "This field contains the dental quadrant associated with the dental procedure."
+      ],
+      "table": {
+        "headers": [
+          "Code",
+          "Value"
+        ],
+        "matrix": [
+          [
+            "00",
+            "Entire Oral Cavity"
+          ],
+          [
+            "01",
+            "Maxillary arch"
+          ],
+          [
+            "02",
+            "Mandibular arch"
+          ],
+          [
+            "10",
+            "Maxillary (upper) right"
+          ],
+          [
+            "20",
+            "Maxillary (upper) left"
+          ],
+          [
+            "30",
+            "Mandibular (lower) right"
+          ],
+          [
+            "40",
+            "Mandibular (lower) left"
+          ],
+          [
+            "UL",
+            "Upper left"
+          ],
+          [
+            "UR",
+            "Upper right"
+          ],
+          [
+            "LL",
+            "Lower left"
+          ],
+          [
+            "LR",
+            "Lower right"
+          ]
+        ]
+      },
+      "footer_context": []
+    },
+    {
+      "element_id": "context_group_25",
+      "type": "schema_cluster",
+      "pages_spanned": [
+        34
+      ],
+      "introductory_context": [
+        "Lookup Table DC208: Tooth Surface",
+        "This field contains the tooth surface associated with the dental procedure."
+      ],
+      "table": {
+        "headers": [
+          "Code",
+          "Value"
+        ],
+        "matrix": [
+          [
+            "B",
+            "Buccal"
+          ],
+          [
+            "D",
+            "Distal"
+          ],
+          [
+            "F",
+            "Facial"
+          ],
+          [
+            "I",
+            "Incisal"
+          ],
+          [
+            "L",
+            "Lingual/Palatal"
+          ],
+          [
+            "M",
+            "Mesial"
+          ],
+          [
+            "O",
+            "Occlusal"
+          ]
+        ]
+      },
+      "footer_context": []
+    },
+    {
+      "element_id": "context_group_26",
+      "type": "schema_cluster",
+      "pages_spanned": [
+        35
+      ],
+      "introductory_context": [
+        "Appendix E: Provider File layout and dictionary"
+      ],
+      "table": {
+        "headers": [
+          "",
+          "Data\nelement",
+          "Name",
+          "Type",
+          "",
+          "Max.\nlength",
+          "Required?",
+          "Description/valid values",
+          "",
+          "Error\nthreshold"
+        ],
+        "matrix": [
+          [
+            "MP003",
+            "",
+            "Provider ID",
+            "Text",
+            "30",
+            "",
+            "Yes",
+            "Identifier for the provider as assigned by the\nreporting entity",
+            "1.2%",
+            ""
+          ],
+          [
+            "MP004",
+            "",
+            "Provider Tax ID",
+            "Text",
+            "9",
+            "",
+            "Yes",
+            "Tax ID of the provider (example: 1234567890)",
+            "1.2%",
+            ""
+          ],
+          [
+            "MP006",
+            "",
+            "Provider first name",
+            "Text",
+            "25",
+            "",
+            "Situational",
+            "First name of the provider (example: John); null if\nprovider is an organization entity",
+            "1.2%",
+            ""
+          ],
+          [
+            "MP007",
+            "",
+            "Provider middle initial",
+            "Text",
+            "1",
+            "",
+            "Situational",
+            "Middle initial of the provider (example: M); null if\nprovider is an organization entity",
+            "1.2%",
+            ""
+          ],
+          [
+            "MP008",
+            "",
+            "Provider last name or\norganization",
+            "Text",
+            "100",
+            "",
+            "Yes",
+            "Last name of the provider or organization entity\nname",
+            "1.2%",
+            ""
+          ],
+          [
+            "MP010",
+            "",
+            "Provider specialty",
+            "Text",
+            "10",
+            "",
+            "Yes",
+            "See lookup table MP010",
+            "1.2%",
+            ""
+          ],
+          [
+            "MP010A",
+            "",
+            "Provider second\nspecialty",
+            "Text",
+            "10",
+            "",
+            "Situational",
+            "Required if available. See lookup table MP010",
+            "1.2%",
+            ""
+          ],
+          [
+            "MP010B",
+            "",
+            "Provider third specialty",
+            "Text",
+            "10",
+            "",
+            "Situational",
+            "Required if available. See lookup table MP010",
+            "1.2%",
+            ""
+          ],
+          [
+            "MP011A",
+            "",
+            "Provider street address1",
+            "Text",
+            "50",
+            "",
+            "Yes",
+            "First line of physical address of practice. Example:\n123 Main Street",
+            "1.2%",
+            ""
+          ],
+          [
+            "MP011B",
+            "",
+            "Provider street address2",
+            "Text",
+            "50",
+            "",
+            "Situational",
+            "Required if available. Second line of physical\naddress of practice. Example: Bldg. A, Suite 100",
+            "1.2%",
+            ""
+          ],
+          [
+            "MP011",
+            "",
+            "Provider city",
+            "Text",
+            "30",
+            "",
+            "Yes",
+            "Physical address of practice. Example: Grants\nPass",
+            "1.2%",
+            ""
+          ],
+          [
+            "MP012",
+            "",
+            "Provider state",
+            "Text",
+            "2",
+            "",
+            "Yes",
+            "Physical address of practice. Example: OR",
+            "1.2%",
+            ""
+          ],
+          [
+            "MP013",
+            "",
+            "Provider ZIP",
+            "Text",
+            "10",
+            "",
+            "Yes",
+            "Physical address of practice. Examples: 97209-\n1234 or 97209",
+            "1.2%",
+            ""
+          ],
+          [
+            "MP017",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "Do not populate; blank/null required",
+            "0.0%",
+            ""
+          ],
+          [
+            "MP018",
+            "",
+            "Provider NPI",
+            "Text",
+            "10",
+            "",
+            "Yes",
+            "NPI of the provider (example: 1234567890)",
+            "1.2%",
+            ""
+          ],
+          [
+            "MP201",
+            "",
+            "Primary care\ndesignation",
+            "Text",
+            "2",
+            "",
+            "Yes",
+            "Provider appears in member directory or other\nresource as primary care provider at individual or\nclinic level 1 = Yes 2 = No\n8 = No primary care provider directory\n9 = Unknown",
+            "N/A",
+            ""
+          ]
+        ]
+      },
+      "footer_context": []
+    },
+    {
+      "element_id": "context_group_27",
+      "type": "schema_cluster",
+      "pages_spanned": [
+        36
+      ],
+      "introductory_context": [],
+      "table": {
+        "headers": [
+          "",
+          "Data\nelement",
+          "Name",
+          "Type",
+          "Max.\nlength",
+          "Required?",
+          "Description/valid values",
+          "",
+          "Error\nthreshold"
+        ],
+        "matrix": [
+          [
+            "MP202",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "For future implementation",
+            "N/A",
+            ""
+          ],
+          [
+            "MP203",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "For future implementation",
+            "N/A",
+            ""
+          ],
+          [
+            "MP204",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "For future implementation",
+            "N/A",
+            ""
+          ],
+          [
+            "MP205",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "For future implementation",
+            "N/A",
+            ""
+          ],
+          [
+            "MP206",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "For future implementation",
+            "N/A",
+            ""
+          ],
+          [
+            "MP207",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "For future implementation",
+            "N/A",
+            ""
+          ],
+          [
+            "MP208",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "For future implementation",
+            "N/A",
+            ""
+          ],
+          [
+            "MP209",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "For future implementation",
+            "N/A",
+            ""
+          ],
+          [
+            "MP210",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "For future implementation",
+            "N/A",
+            ""
+          ]
+        ]
+      },
+      "footer_context": [
+        "File naming convention is",
+        "For medical:",
+        "<payer abbreviation>_<submitter abbreviation>_provider_<quarter>_<file created date_timestamp>.dat",
+        "Example: OMIP_OMIP_provider_2015Q2_20150521_010101.dat"
+      ]
+    },
+    {
+      "element_id": "context_group_28",
+      "type": "schema_cluster",
+      "pages_spanned": [
+        38
+      ],
+      "introductory_context": [
+        "<payer abbreviation>_<submitter abbreviation>_provider_<quarter>_<file created date_timestamp>.dat",
+        "Example: OMIP_OMIP_provider_2015Q2_20150521_010101.dat",
+        "For dental:",
+        "<payer abbreviation>_<submitter abbreviation>_dental_provider__<quarter>_<file created date_timestamp>.dat",
+        "Note: There is a double underscore between ‘dental_provider’ and <quarter>.",
+        "Example: OMIP_OMIP_dental_provider__2015Q2_20150521_010101.dat",
+        "Lookup Table MP010: Provider specialty",
+        "Report the HIPAA-compliant health care provider taxonomy code. The reference code set is extensive, published semi-annuallyand available at the National Uniform Claims Committee’s web site: http://www.nucc.org/. To access the taxonomy files, point to the Code Sets menu, then point to the Taxonomy menu, and then click on either PDF (if you want a PDF file) or CSV (if you want a comma-delimited text file).",
+        "Appendix F: Subscriber Billed Premium File layout and dictionary",
+        "Note: All mandatory reporters other than CCO’s are required to file this report for subscribers in fully-insured commercial and Medicare Advantage plans. PBM’s that offer stand-alone prescription drug plans are also required to submit this report. Mandatory reporters do not have to file a Form APAC-1 (waiver or exception of reporting requirements), for subscribers in plans which are not required to file this report."
+      ],
+      "table": {
+        "headers": [
+          "",
+          "Data\nelement",
+          "Name",
+          "Type",
+          "",
+          "Max.\nlength",
+          "Required?",
+          "Description/valid values",
+          "",
+          "Error\nthreshold"
+        ],
+        "matrix": [
+          [
+            "PB001",
+            "",
+            "Payer type",
+            "Text",
+            "1",
+            "",
+            "Yes",
+            "See lookup table ME001 (Appendix A)",
+            "0.0%",
+            ""
+          ],
+          [
+            "PB003",
+            "",
+            "Product code",
+            "Text",
+            "4",
+            "",
+            "Yes",
+            "See lookup table ME003 (Appendix A)",
+            "0.0%",
+            ""
+          ],
+          [
+            "PB202",
+            "",
+            "Market segment",
+            "Text",
+            "2",
+            "",
+            "Yes",
+            "See lookup table ME202 (Appendix A)",
+            "0.0%",
+            ""
+          ],
+          [
+            "PB007",
+            "",
+            "Subscriber ID",
+            "Text",
+            "30",
+            "",
+            "Yes",
+            "Plan-specific unique identifier for subscriber",
+            "0.0%",
+            ""
+          ],
+          [
+            "PB008",
+            "",
+            "Premium billed month",
+            "Date",
+            "6",
+            "",
+            "Yes",
+            "Month in which subscriber and related members\nhad coverage for which subscriber was billed.\nCCYYMM",
+            "0.0%",
+            ""
+          ],
+          [
+            "PB009",
+            "",
+            "Covered members in\npremium billed month",
+            "Numeric",
+            "3",
+            "",
+            "Yes",
+            "Number of members with coverage for which\nsubscriber was billed in the premium billed month",
+            "0.0%",
+            ""
+          ],
+          [
+            "PB010",
+            "",
+            "Total Premium Billed\nfor Premium Billed\nMonth",
+            "Numeric",
+            "12",
+            "",
+            "Yes",
+            "Total premium amount subscriber was billed for\ncoverage in premium billed month. Premium billed\nto subscriber for premium billed month may differ\nfrom premium paid by subscriber in premium billed\nmonth if, for example, subscriber pays for more\nthan 1 month of coverage in premium billed month.\nReport premium billed, not premium paid or\nanother amount. Enter 0 if amount equals zero.\nExample: 15102.00",
+            "0.0%",
+            ""
+          ]
+        ]
+      },
+      "footer_context": [
+        "File naming convention is",
+        "For medical and pharmacy:",
+        "<payer abbreviation>_<submitter abbreviation>_premium_<quarter>_<file created date_timestamp>.dat",
+        "Example: OMIP_OMIP_premium_2015Q2_20150521_010101.dat",
+        "For dental:",
+        "<payer abbreviation>_<submitter abbreviation>_dental_premium__<quarter>_<file created date_timestamp>.dat",
+        "Note: There is a double underscore between ‘dental_premium’ and <quarter>.",
+        "Example: OMIP_OMIP_dental_premium__2015Q2_20150521_010101.dat",
+        "Appendix G: Control Totals",
+        "Note: The control totals file consists of two separate tab-delimited data files. All Mandatory Reporters other than CCOs must submit these files each quarter.",
+        "1. Claims file control totals",
+        "a. Claims file control totals layout and dictionary"
+      ]
+    },
+    {
+      "element_id": "context_group_29",
+      "type": "schema_cluster",
+      "pages_spanned": [
+        40
+      ],
+      "introductory_context": [
+        "<payer abbreviation>_<submitter abbreviation>_premium_<quarter>_<file created date_timestamp>.dat",
+        "Example: OMIP_OMIP_premium_2015Q2_20150521_010101.dat",
+        "For dental:",
+        "<payer abbreviation>_<submitter abbreviation>_dental_premium__<quarter>_<file created date_timestamp>.dat",
+        "Note: There is a double underscore between ‘dental_premium’ and <quarter>.",
+        "Example: OMIP_OMIP_dental_premium__2015Q2_20150521_010101.dat",
+        "Appendix G: Control Totals",
+        "Note: The control totals file consists of two separate tab-delimited data files. All Mandatory Reporters other than CCOs must submit these files each quarter.",
+        "1. Claims file control totals",
+        "a. Claims file control totals layout and dictionary"
+      ],
+      "table": {
+        "headers": [
+          "",
+          "Data\nelement",
+          "Name",
+          "Type",
+          "",
+          "Max.\nlength",
+          "Required?",
+          "Description/valid values",
+          "",
+          "Error\nthreshold"
+        ],
+        "matrix": [
+          [
+            "CFCT1",
+            "",
+            "Payer",
+            "Text",
+            "7",
+            "",
+            "Yes",
+            "Payer abbreviation See Oregon Mandatory Reporters\nand Abbreviations table on website:\nhttps://www.oregon.gov/oha/HPA/ANALYTICS/APAC%2\n0Page%20Docs/2020-APAC-mandatory-reporters-\nabbreviations.pdf",
+            "0.0%",
+            ""
+          ],
+          [
+            "CFCT2",
+            "",
+            "File",
+            "Text",
+            "10",
+            "",
+            "Yes",
+            "Valid values: medical, pharmacy, dental, enrollment,\nprovider, and premium",
+            "0.0%",
+            ""
+          ],
+          [
+            "CFCT3",
+            "",
+            "Data_\nRows",
+            "Numeric",
+            "8",
+            "",
+            "Yes",
+            "Count of data rows in the submitted file",
+            "0.0%",
+            ""
+          ],
+          [
+            "CFCT4",
+            "",
+            "Amt_\nBilled",
+            "Numeric",
+            "14",
+            "",
+            "Yes",
+            "Sum of MC062 (medical), PC035 (pharmacy), DC062\n(dental), or PB010 (premium). Two explicit decimal\nplaces. Do not populate if File is enrollment or provider",
+            "0.1%",
+            ""
+          ],
+          [
+            "CFCT5",
+            "",
+            "Amt_ Paid\n/Premium\nBilled",
+            "Numeric",
+            "14",
+            "",
+            "Yes",
+            "Sum of MC063 (medical), PC036 (pharmacy), DC063\n(dental), or PB010 (premium). Two explicit decimal\nplaces. Do not populate if File is enrollment or provider.",
+            "0.1%",
+            ""
+          ]
+        ]
+      },
+      "footer_context": []
+    },
+    {
+      "element_id": "context_group_30",
+      "type": "schema_cluster",
+      "pages_spanned": [
+        41
+      ],
+      "introductory_context": [
+        "Example when all file types are submitted"
+      ],
+      "table": {
+        "headers": [
+          "Payer",
+          "File",
+          "Data_Rows",
+          "Amt_Billed",
+          "Amt_Paid"
+        ],
+        "matrix": [
+          [
+            "OMIP",
+            "Medical",
+            "12345678",
+            "123456789.12",
+            "123456789.12"
+          ],
+          [
+            "OMIP",
+            "Pharmacy",
+            "12345678",
+            "123456789.12",
+            "123456789.12"
+          ],
+          [
+            "OMIP",
+            "Enrollment",
+            "12345678",
+            "",
+            ""
+          ],
+          [
+            "OMIP",
+            "Provider",
+            "123456",
+            "",
+            ""
+          ],
+          [
+            "OMIP",
+            "Premium",
+            "12345",
+            "123456789.12",
+            ""
+          ],
+          [
+            "OMIP",
+            "Dental",
+            "12345",
+            "123456789.12",
+            "123456789.12"
+          ]
+        ]
+      },
+      "footer_context": []
+    },
+    {
+      "element_id": "context_group_31",
+      "type": "schema_cluster",
+      "pages_spanned": [
+        41
+      ],
+      "introductory_context": [],
+      "table": {
+        "headers": [
+          "Payer",
+          "File",
+          "Data_Rows",
+          "Amt_Billed",
+          "Amt_Paid"
+        ],
+        "matrix": [
+          [
+            "OMIP",
+            "Medical",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "OMIP",
+            "Pharmacy",
+            "12345678",
+            "123456789.12",
+            "123456789.12"
+          ],
+          [
+            "OMIP",
+            "Enrollment",
+            "12345678",
+            "",
+            ""
+          ],
+          [
+            "OMIP",
+            "Provider",
+            "0",
+            "",
+            ""
+          ],
+          [
+            "OMIP",
+            "Premium",
+            "12345",
+            "123456789.12",
+            ""
+          ],
+          [
+            "OMIP",
+            "Dental",
+            "0",
+            "0",
+            "0"
+          ]
+        ]
+      },
+      "footer_context": []
+    },
+    {
+      "element_id": "context_group_32",
+      "type": "schema_cluster",
+      "pages_spanned": [
+        42
+      ],
+      "introductory_context": [
+        "For dental:",
+        "<payer abbreviation>_<submitter abbreviation>_dental_totals__<quarter>_<file created date_timestamp>.dat",
+        "Note: There is a double underscrore between ‘dental_totals’ and <quarter>. Example: OMIP_OMIP_dental_totals__2015Q2_20150521_010101.dat",
+        "2. Member months control totals",
+        "a. Member months control totals layout and dictionary"
+      ],
+      "table": {
+        "headers": [
+          "",
+          "Data\nelement",
+          "Name",
+          "Type",
+          "",
+          "Max.\nlength",
+          "Required?",
+          "Description/valid values",
+          "",
+          "Error\nthreshold"
+        ],
+        "matrix": [
+          [
+            "MMCT1",
+            "",
+            "Payer",
+            "Text",
+            "7",
+            "",
+            "Yes",
+            "Payer abbreviation. See Oregon Mandatory Reporters and\nAbbreviations table on website:\nwww.oregon.gov/oha/HPA/ANALYTICS/APAC%20Page%2\n0Docs/2020-APAC-mandatory-reporters-abbreviations.pdf.",
+            "0.0%",
+            ""
+          ],
+          [
+            "MMCT2",
+            "",
+            "Method",
+            "Text",
+            "1",
+            "",
+            "No",
+            "Placeholder for future compatibility",
+            "N/A",
+            ""
+          ],
+          [
+            "MMCT3",
+            "",
+            "Month",
+            "Date",
+            "6",
+            "",
+            "Yes",
+            "CCYYMM",
+            "0.0%",
+            ""
+          ],
+          [
+            "MMCT4",
+            "",
+            "Medical\nMembers",
+            "Numeric",
+            "8",
+            "",
+            "Situational",
+            "Count of members with medical coverage as of first of\nmonth. The count should match the number of rows, not the\ndistinct members, with medical coverage (ME018) in the\ncorresponding Enrollment file. Do not include members with\ncoverage starting after the first of the month. Do not\npopulate if no medical members.",
+            "0.1%",
+            ""
+          ],
+          [
+            "MMCT5",
+            "",
+            "Pharmacy\nMembers",
+            "Numeric",
+            "8",
+            "",
+            "Situational",
+            "Count of members with pharmacy coverage as of first of\nmonth. The count should match the number of rows, not the\ndistinct members, with medical coverage (ME018) in the\ncorresponding Enrollment file. Do not include members with\ncoverage starting after the first of the month. Do not\npopulate if no pharmacy members.",
+            "0.1%",
+            ""
+          ],
+          [
+            "MMCT6",
+            "",
+            "Dental\nMembers",
+            "Numeric",
+            "8",
+            "",
+            "Situational",
+            "Count of members with dental coverage as of first of month.\nThe count should match the number of rows, not the distinct\nmembers, with medical coverage (ME018) in the\ncorresponding Enrollment file. Do not include members with\ncoverage starting after the first of the month. Do not\npopulate if no dental members.",
+            "0.1%",
+            ""
+          ]
+        ]
+      },
+      "footer_context": []
+    },
+    {
+      "element_id": "context_group_33",
+      "type": "schema_cluster",
+      "pages_spanned": [
+        43
+      ],
+      "introductory_context": [],
+      "table": {
+        "headers": [
+          "Payer",
+          "Method",
+          "Month",
+          "Medical_Members",
+          "Pharmacy_Members",
+          "Dental_Members"
+        ],
+        "matrix": [
+          [
+            "OMIP",
+            "",
+            "201001",
+            "12345678",
+            "12345678",
+            "0"
+          ],
+          [
+            "OMIP",
+            "",
+            "201002",
+            "12345678",
+            "12345678",
+            "0"
+          ],
+          [
+            "OMIP",
+            "",
+            "201003",
+            "12345678",
+            "12345678",
+            "0"
+          ],
+          [
+            "OMIP",
+            "",
+            "201004",
+            "12345678",
+            "12345678",
+            "0"
+          ],
+          [
+            "OMIP",
+            "",
+            "201005",
+            "12345678",
+            "12345678",
+            "0"
+          ],
+          [
+            "OMIP",
+            "",
+            "201006",
+            "12345678",
+            "12345678",
+            "0"
+          ],
+          [
+            "OMIP",
+            "",
+            "201007",
+            "12345678",
+            "12345678",
+            "0"
+          ],
+          [
+            "OMIP",
+            "",
+            "201008",
+            "12345678",
+            "12345678",
+            "0"
+          ],
+          [
+            "OMIP",
+            "",
+            "201009",
+            "12345678",
+            "12345678",
+            "0"
+          ],
+          [
+            "OMIP",
+            "",
+            "201010",
+            "12345678",
+            "12345678",
+            "0"
+          ],
+          [
+            "OMIP",
+            "",
+            "201011",
+            "12345678",
+            "12345678",
+            "0"
+          ],
+          [
+            "OMIP",
+            "",
+            "201012",
+            "12345678",
+            "12345678",
+            "0"
+          ]
+        ]
+      },
+      "footer_context": []
+    }
+  ]
+}
