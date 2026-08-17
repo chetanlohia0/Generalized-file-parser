@@ -23,17 +23,7 @@ CROP_PADDING_PCT = 0.04  # 4% padding
 # Set your API Key
 
 
-# gemini-2.5-flash , flash lite   
-# gemini-3-flash-preview
-# AIzaSyC3Sn25y1BGDXmq2asjZPWZJDAsVOERUAk
-# AIzaSyDsNJ2kkcoQn8dW2P99e3cmT6j5jglmk5g
-# AIzaSyAY-gO6izUUe5Ah5IifRMLMQkYSPizAHHw
-# AIzaSyCOrUAQ40XFbxffzMz4Khgl28n018w1ETs
-# AIzaSyDb4nyCRDKTG7ZnUmzvKYp4SFzV-_Yworo
-# AIzaSyAg21leSUQQH6dB73SrCGOQXhv532-dI2w
-
-
-os.environ["GEMINI_API_KEY"] = "AIzaSyAY-gO6izUUe5Ah5IifRMLMQkYSPizAHHw"  # Replace or load from env
+os.environ["GEMINI_API_KEY"] = "<API KEY>"  # Replace or load from env
 genai.configure(api_key=os.environ["GEMINI_API_KEY"])
 vlm_model = genai.GenerativeModel("gemini-2.5-flash")
 
